@@ -11,6 +11,8 @@
             * [阮一峰的JS教程](https://wangdoc.com/javascript/)
             * [阮一峰的ES6教程](https://es6.ruanyifeng.com/)
             * [廖雪峰](https://www.liaoxuefeng.com/)
+
+            * [毕小烦的学习笔记](https://blog.csdn.net/wirelessqa)
     2. 微信读书: 公众号    
 
 2. 电子书
