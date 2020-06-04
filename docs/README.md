@@ -1,3 +1,5 @@
+# MkDocs作为个人笔记用
+
 ## 1. Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
@@ -41,3 +43,5 @@
 
     $mkdocs build --clean
 
+## 5. 编写文档
+    项目主页应命名为index

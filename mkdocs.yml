@@ -1,4 +1,4 @@
 site_name: ShawnDocs
 nav:
-    - Home: index.md
+    - Home: README.md
 theme: material
