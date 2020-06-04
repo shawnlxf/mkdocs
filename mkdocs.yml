@@ -1,10 +1,16 @@
 site_name: ShawnDocs
 nav:
     - Home: 'README.md'
-    - 方方:
-        - '1': '1.md'
-        - '2': '2.md'
-        - '3': '3.md'
+    - Front End: 'front_end_help.md'
+    - Software: 'software.md'
+    - FF:
+        - '1': 'FF/1.md'
+        - '2': 'FF/2.md'
+        - '3': 'FF/3.md'
     - Markdown:
         - 'Help': 'Markdown/help.md'
+    - shell:
+        - 'Help': 'shell/help.md'
+        - '1': 'shell/1.md'
+
 theme: material
