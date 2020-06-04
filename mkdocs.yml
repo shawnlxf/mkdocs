@@ -1,4 +1,10 @@
 site_name: ShawnDocs
 nav:
-    - Home: README.md
+    - Home: 'README.md'
+    - 方方:
+        - '1': '1.md'
+        - '2': '2.md'
+        - '3': '3.md'
+    - Markdown:
+        - 'Help': 'Markdown/help.md'
 theme: material

@@ -44,4 +44,14 @@
     $mkdocs build --clean
 
 ## 5. 编写文档
-    项目主页应命名为index
+项目主页应命名为index
+
+MkDocs includes some extensions
+
+* Internal links
+
+    * Linking to pages#header: [Home#3. 网站](README.md#3)
+
+    * Linking to images and media: ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png "RUNOOB")
+
+
