@@ -1,5 +1,4 @@
 # MkDocs作为个人笔记用
-<https://blog.csdn.net/weixin_37272286/article/details/80963675>
 <http://www.imooc.com/article/295990>
 
 <https://www.sunbufu.club/2019/01/14/GithubPages-CodingPages/>
@@ -27,8 +26,6 @@
 ## 3. 网站
 [官网](https://www.mkdocs.org/)
 [中文翻译](https://mkdocs.zimoapps.com/)
-
-[知乎](https://zhuanlan.zhihu.com/p/61492480)
 
 ```
     $ mkdocs --version
@@ -69,3 +66,7 @@
     * Linking to images and media: ![RUNOOB 图标](img/runoob-logo.png)
 
 * Meta-Data
+
+## 6. Deploying your docs(部署文档)
+* Project Pages
+    * $ mkdocs gh-deploy
