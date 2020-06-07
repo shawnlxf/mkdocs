@@ -24,7 +24,7 @@
         * Chinese
         * vscode-icons
         * Markdown All in One
-        * prettier
+        * Prettier
         * (图床：PicGo)
         * (Markdown Preview Enhanced)
     * 快捷键：

@@ -2,6 +2,7 @@ site_name: ShawnDocs
 nav:
     - Home: 'README.md'
     - Front End: 'front_end_help.md'
+    - Hugo: 'hugo.md'
     - Software: 'software.md'
     - FF:
         - '1': 'FF/1.md'
@@ -12,5 +13,10 @@ nav:
     - shell:
         - 'Help': 'shell/help.md'
         - '1': 'shell/1.md'
+    - HTML:
+        - 'Help': 'HTML/help.md'
 
 theme: material
+markdown_extensions:
+    - toc:
+        permalink: "#"

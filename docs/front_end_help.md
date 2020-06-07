@@ -7,7 +7,6 @@
         * web_学习网站
             * [MDN](https://developer.mozilla.org/zh-CN/)
         * 博客
-            * [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
             * [阮一峰的JS教程](https://wangdoc.com/javascript/)
             * [阮一峰的ES6教程](https://es6.ruanyifeng.com/)
             * [廖雪峰](https://www.liaoxuefeng.com/)
