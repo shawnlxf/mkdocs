@@ -500,6 +500,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HTML/1/" title="1" class="md-nav__link">
+      1
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -759,24 +771,31 @@ Mindjet 和 XMind 用来做脑图都不错。</p>
 </code></pre>
 <h3 id="7">7. 全局属性<a class="headerlink" href="#7" title="Permanent link">#</a></h3>
 <ul>
-<li>所有标签都有的属性<ol>
+<li>
+<p>所有标签都有的属性</p>
+<ol>
 <li>class</li>
 <li>contenteditable</li>
 <li>hidden</li>
 <li>id</li>
 <li>style</li>
 <li>tabindex</li>
-<li>title</li>
+<li>
+<p>title</p>
+</li>
+<li>
+<p>不要万不得已不用id，因为重复不报错</p>
+</li>
+<li>
+<pre><code>[id=xxx]{border: 10px solid yellow;}
+</code></pre>
+<p>或#xxx{border: 10px solid green;}
+console: window.里面的全局变量作为id的值不能被js找到
+a.style.border = "1px solid red";</p>
+</li>
 </ol>
 </li>
 </ul>
-<p>head里放看不见的元素</p>
-<p>不要万不得已不用id，因为重复不报错
-    1. 
-        [id=xxx]{border: 10px solid yellow;}
-       或#xxx{border: 10px solid green;}
-    console: window.里面的全局变量作为id的值不能被js找到
-    a.style.border = "1px solid red";</p>
 <p>google:
     jsbin 快照 取消</p>
 <pre><code>text-overflow: ellipsis;
