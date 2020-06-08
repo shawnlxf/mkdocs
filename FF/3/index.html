@@ -350,6 +350,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8. 默认样式
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -611,6 +618,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    8. 默认样式
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -632,28 +646,41 @@
                   
                 
                 
+                  <h1>3</h1>
+                
                 <h2 id="1">1. 其他<a class="headerlink" href="#1" title="Permanent link">#</a></h2>
 <ul>
 <li>
-<p>博客：知乎、思否、语雀、掘金</p>
+<p>博客：</p>
+<blockquote>
+<p>知乎、思否、语雀、掘金</p>
+</blockquote>
 </li>
 <li>
 <p>脑图：     </p>
+<blockquote>
 <p>请使用 Mindjet MindManager 打开<br />
 另外推荐一款脑图工具 XMind Zen，可以无限期试用。<br />
 Mindjet 和 XMind 用来做脑图都不错。</p>
+</blockquote>
 </li>
 <li>
-<p>JSBin, js.jirengu.com    </p>
+<p>JSBin, js.jirengu.com  </p>
+<blockquote>
 <p>JSHint取消</p>
+</blockquote>
 </li>
 <li>
 <p>代码沙盒：codesandbox.io    </p>
+<blockquote>
 <p>Auto Save: onFocusChange</p>
+</blockquote>
 </li>
 <li>
-<p>文档类型：
-    html, xml, svg</p>
+<p>文档类型：</p>
+<blockquote>
+<p>html, xml, svg</p>
+</blockquote>
 </li>
 <li>
 <p>vscode每次只开一个目录</p>
@@ -713,8 +740,10 @@ Mindjet 和 XMind 用来做脑图都不错。</p>
 </ul>
 <h3 id="2-htmlemmet">2. HTML起手式：Emmet感叹号<a class="headerlink" href="#2-htmlemmet" title="Permanent link">#</a></h3>
 <ul>
-<li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"><br />
-//禁用缩放，兼容手机</li>
+<li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">  <blockquote>
+<p>禁用缩放，兼容手机</p>
+</blockquote>
+</li>
 </ul>
 <h3 id="3-html">3. HTML语法<a class="headerlink" href="#3-html" title="Permanent link">#</a></h3>
 <pre><code>标签属性值的引号规则跟命令行一样：
@@ -758,93 +787,97 @@ Mindjet 和 XMind 用来做脑图都不错。</p>
 <h3 id="6">6. 内容标签<a class="headerlink" href="#6" title="Permanent link">#</a></h3>
 <pre><code>1. ol + li
 2. ul + li
-3. dl + dt + dd (description list + term + data)
-4. pre (preview)
-5. hr
+3. dl + dt + dd (description list + term + data, dl + tab)
+4. pre (preview, 保留空格，回车，tab)
+5. hr (horizontal rule -&gt; thematic break)
 6. br (break)
 7. a (anchor)
 8. em (emphasis)
 9. strong
-10. code
-11. q (quote)
-12. blockquote
+10. code (外面包pre, 内联, 等宽字体)
+11. q (quote, 内联)
+12. blockquote (块级)
 </code></pre>
 <h3 id="7">7. 全局属性<a class="headerlink" href="#7" title="Permanent link">#</a></h3>
 <ul>
-<li>
-<p>所有标签都有的属性</p>
-<ol>
+<li>所有标签都有的属性<ol>
 <li>class</li>
 <li>contenteditable</li>
 <li>hidden</li>
 <li>id</li>
 <li>style</li>
 <li>tabindex</li>
+<li>title</li>
+<li>元素是全页面唯一的，用id；否则，用id
+  不要万不得已不用id<ol>
+<li>因为重复不报错</li>
 <li>
-<p>title</p>
+<p>有忌讳，console里window.打出的所有单词都不行(window已有的全局属性) <br />
+   可以写但是js无法找到，只能通过document.getElementById('top')  </p>
+<ul>
+<li>[id=xxx]{border: 10px solid yellow;}<br />
+        或#xxx{border: 10px solid green;}<ul>
+<li>id的作用：<ol>
+<li>CSS相关</li>
+<li>JS相关：xxx.style.border = "1px solid red";</li>
+</ol>
 </li>
-<li>
-<p>不要万不得已不用id，因为重复不报错</p>
+<li>tabindex:<ul>
+<li>0是最后一个</li>
+<li>-1：不访问</li>
+</ul>
 </li>
-<li>
-<pre><code>[id=xxx]{border: 10px solid yellow;}
-</code></pre>
-<p>或#xxx{border: 10px solid green;}
-console: window.里面的全局变量作为id的值不能被js找到
-a.style.border = "1px solid red";</p>
+<li>element.style:  <blockquote>
+<p>white-space: nowrap;      //不换行<br />
+overflow: hidden;         //溢出隐藏<br />
+text-overflow: ellipsis;  //有溢出变..., to:e</p>
+</blockquote>
+</li>
+<li>title: 完整的内容</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 </li>
 </ol>
 </li>
 </ul>
-<p>google:
-    jsbin 快照 取消</p>
-<pre><code>text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
+<h3 id="8">8. 默认样式<a class="headerlink" href="#8" title="Permanent link">#</a></h3>
+<ul>
+<li>为什么有默认样式：<blockquote>
+<p>因为HTML发明的时候，CSS还没出生</p>
+</blockquote>
+</li>
+<li>怎么看默认样式<blockquote>
+<p>chrome开发者工具
+Elements -&gt; Styles -&gt; user agent stylesheet</p>
+</blockquote>
+</li>
+<li>User Agent<blockquote>
+<p>就是浏览器</p>
+</blockquote>
+</li>
+<li>CSS Reset<blockquote>
+<p>默认样式已经不符合我们的需求</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>抄大厂代码：
+1. 三击选中
+2. 把其中包含 .类名 后面的删去，默认的标签没有class
+3. 命名为reset.css </p>
+</blockquote>
+<pre><code>    table {   
+      border-collapse: collapse;    //border合并 
+      border-spacing: 0             //for IE 
+    }    
 </code></pre>
-<hr />
-<p><style contenteditable>
-    style{display: block; border: 1px solid red;}
-    .middle{
-      background: black;
-      color: white;
-    }
-    .bordered{
-      border: 10px solid red;
-    }
-    #xxx{
-      border: 10px solid green;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  </style></p>
-<hr />
-<p><header id="xxx" style="border: 10px solid red;"
-          tabindex=1 title="完整的内容">顶部广告</header>
-  <div tabindex=2 class="middle bordered">
-    <main>
-      <h1>文章标题</h1>
-      <section>
-        <h2>第一章</h2>
-        <p>这是一段话这是一段话这是一段话这是一段话这是一段话</p></p>
-<pre><code>    &lt;section&gt;
-      &lt;h3&gt;1.1节&lt;/h3&gt;
-      &lt;p&gt;一段话&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section&gt;
-      &lt;h3&gt;1.2节&lt;/h3&gt;
-      &lt;p&gt;一段话&lt;/p&gt;
-    &lt;/section&gt;
-  &lt;/section&gt;
-&lt;/main&gt;
-&lt;aside&gt;
-  参考资料 1 2 3
-&lt;/aside&gt;
-</code></pre>
-<p></div>
-  <footer tabindex=-1>&copy; 版权所有</footer></p>
-<hr />
+
+<ul>
+<li>table + tab</li>
+</ul>
                 
               
               
