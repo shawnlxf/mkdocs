@@ -715,9 +715,11 @@ git config --global core.quotepath false
 git config --global core.editor "code --wait"
 git config --global core.autocrlf input
 </code></pre>
+<blockquote>
 <p>注意：上面的英文名和邮箱跟 GitHub 没有关系。</p>
 <p>可以跟 GitHub 的用户名和邮箱保持一致，</p>
 <p>也可以不一致。我的是一致的。</p>
+</blockquote>
 <pre><code>git config --global --list
 </code></pre>
 </li>
@@ -725,7 +727,7 @@ git config --global core.autocrlf input
 <p>常用：</p>
 <p>.git目录就是本地仓库</p>
 <ul>
-<li>它不会重复复制相同的文件（优化）</li>
+<li>它不会重复复制相同的文件（优化）  </li>
 <li>它可以支持多个分支<pre><code>git init                    //创建.git目录
 git add 路径
                             //.gitignore
@@ -758,9 +760,9 @@ git branch -d x             //删除分支
 <li>
 <p>ssh key验证身份</p>
 <ul>
-<li>上传代码是用私钥加密的，GitHub用公钥解密。如果解开了，说明是配对的。</li>
-<li>公钥: GitHub账号</li>
-<li>私钥: 我的电脑</li>
+<li>上传代码是用私钥加密的，GitHub用公钥解密。如果解开了，说明是配对的。
+    &gt; 公钥: GitHub账号<br />
+    &gt; 私钥: 我的电脑</li>
 <li>HTTPS协议需要每次都输入密码</li>
 </ul>
 </li>
@@ -929,14 +931,14 @@ Ctrl + P: config.toml
 $ git init
 $ git add .
 $ git commit -v
-github新建仓库: shawnlxf.github.io
-上传之后进入仓库settings, GitHub Pages -&gt; Source -&gt; master branch
-
-在最外层目录下新建.gitignore: 输入/public/
-
-把public外的目录上传到github，如果添加远程仓库出错
-
-$ git remote set-url origin git@xxxxxx
+</code></pre>
+<blockquote>
+<p>github新建仓库: shawnlxf.github.io</p>
+<p>上传之后进入仓库settings, GitHub Pages -&gt; Source -&gt; master branch </p>
+<p>在最外层目录下新建.gitignore: 输入/public/  </p>
+<p>把public外的目录上传到github，如果添加远程仓库出错</p>
+</blockquote>
+<pre><code>$ git remote set-url origin git@xxxxxx
 </code></pre>
 </li>
 <li>
