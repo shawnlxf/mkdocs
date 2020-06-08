@@ -17,20 +17,25 @@
         * Ctrl + W：关闭当前标签
         * Win + Alt + P：设置
 
-* 编辑：vscode
-    * 插件：
-        * Code Spell Checker
-        * Git Easy
-        * Chinese
-        * vscode-icons
-        * Markdown All in One
-        * Prettier
-        * (图床：PicGo)
-        * (Markdown Preview Enhanced)
-    * 快捷键：
-        * ctrl + p：找文件
-        * ctrl + shift + p：输命令
-        * alt + 单击：多位置输入
+* 编辑：
+    1. vscode
+    > 插件：
+    * Code Spell Checker
+    * Git Easy
+    * Chinese
+    * vscode-icons
+    * Markdown All in One
+    * Prettier
+    * (图床：PicGo)
+    * (Markdown Preview Enhanced)
+
+    > 快捷键：
+    * ctrl + p：找文件
+    * ctrl + shift + p：输命令
+    * alt + 单击：多位置输入
+
+    2. notepad++
+    > 主题：solarized
 
 * 浏览器：
     * firefox
@@ -39,6 +44,7 @@
             * Dark Reader
             * uBlocker  
             * Separate Window                        
+            * Death To _blank
         2. 主题：
             * Just Black
         3. 常用快捷键：
