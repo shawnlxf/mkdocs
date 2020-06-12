@@ -1,23 +1,27 @@
 site_name: ShawnDocs
 nav:
-    - Home: 'README.md'
-    - Front End: 'front_end_help.md'
-    - Hugo: 'hugo.md'
-    - Software: 'software.md'
-    - FF:
-        - '1': 'FF/1.md'
-        - '2': 'FF/2.md'
-        - '3': 'FF/3.md'
-    - Markdown:
-        - 'Help': 'Markdown/help.md'
-    - shell:
-        - 'Help': 'shell/help.md'
-        - '1': 'shell/1.md'
-    - HTML:
-        - 'Help': 'HTML/help.md'
-        - '1': 'HTML/1.md'
+  - Web: "web.md"
+  - Web入门:
+      - "1": "Web入门/1.md"
+  - FF:
+      - "1": "FF/1.md"
+      - "2": "FF/2.md"
+      - "3": "FF/3.md"
+      - "4": "FF/4.md"
+      - "5": "FF/5.md"
+  - HTML:
+      - "Help": "HTML/help.md"
+      - "1": "HTML/1.md"
+  - Home: "README.md"
+  - Hugo: "hugo.md"
+  - Software: "software.md"
+  - Markdown:
+      - "Help": "Markdown/help.md"
+  - shell:
+      - "Help": "shell/help.md"
+      - "1": "shell/1.md"
 
 theme: material
 markdown_extensions:
-    - toc:
-        permalink: "#"
+  - toc:
+      permalink: "#"
