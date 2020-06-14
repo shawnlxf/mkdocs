@@ -11,6 +11,7 @@ nav:
       - "5": "FF/5.md"
   - HTML:
       - "Help": "HTML/help.md"
+      - "Elements": "HTML/elements.md"
       - "1": "HTML/1.md"
   - Home: "README.md"
   - Hugo: "hugo.md"
