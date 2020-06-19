@@ -4,11 +4,12 @@ nav:
   - Web入门:
       - "1": "Web入门/1.md"
   - FF:
-      - "1": "FF/1.md"
-      - "2": "FF/2.md"
-      - "3": "FF/3.md"
-      - "4": "FF/4.md"
-      - "5": "FF/5.md"
+      - "1-安装": "FF/1.md"
+      - "2-git-markdown-Hugo": "FF/2.md"
+      - "3-HTML语法-HTML标签": "FF/3.md"
+      - "4-HTML重点标签": "FF/4.md"
+      - "5-CSS基础概念": "FF/5.md"
+      - "6-CSS布局": "FF/6.md"
   - HTML:
       - "Help": "HTML/help.md"
       - "Elements": "HTML/elements.md"
