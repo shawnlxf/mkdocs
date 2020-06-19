@@ -311,8 +311,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/1/" title="1" class="md-nav__link">
-      1
+    <a href="../../FF/1/" title="1-安装" class="md-nav__link">
+      1-安装
     </a>
   </li>
 
@@ -323,8 +323,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/2/" title="2" class="md-nav__link">
-      2
+    <a href="../../FF/2/" title="2-git-markdown-Hugo" class="md-nav__link">
+      2-git-markdown-Hugo
     </a>
   </li>
 
@@ -335,8 +335,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/3/" title="3" class="md-nav__link">
-      3
+    <a href="../../FF/3/" title="3-HTML语法-HTML标签" class="md-nav__link">
+      3-HTML语法-HTML标签
     </a>
   </li>
 
@@ -347,8 +347,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/4/" title="4" class="md-nav__link">
-      4
+    <a href="../../FF/4/" title="4-HTML重点标签" class="md-nav__link">
+      4-HTML重点标签
     </a>
   </li>
 
@@ -359,8 +359,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/5/" title="5" class="md-nav__link">
-      5
+    <a href="../../FF/5/" title="5-CSS基础概念" class="md-nav__link">
+      5-CSS基础概念
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../FF/6/" title="6-CSS布局" class="md-nav__link">
+      6-CSS布局
     </a>
   </li>
 
@@ -662,7 +674,6 @@
 <ul>
 <li>Internet: infrastructure</li>
 <li>Web: service</li>
-<li>email and IRC: other services built on top of the Internet</li>
 <li>router(路由器)</li>
 <li>Internet Service Provider (ISP)</li>
 <li>
@@ -698,20 +709,13 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>
-<p>A web page can embed a variety of different types of resources such as:</p>
-<ul>
-<li>style information — controlling a page's look-and-feel (外观)</li>
-<li>scripts — which add interactivity (交互性) to the page</li>
-<li>media — images, sounds, and videos.</li>
-</ul>
-</li>
-</ul>
 <h2 id="3-web-server">3. web server<a class="headerlink" href="#3-web-server" title="Permanent link">#</a></h2>
 <ul>
 <li>
-<p>An HTTP server is a piece of software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages).</p>
+<p>An HTTP server: </p>
+<blockquote>
+<p>a piece of software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages).</p>
+</blockquote>
 </li>
 <li>
 <p>A static web server</p>
@@ -758,7 +762,7 @@
 <li>
 <p>HTML consists of a series of elements (元素)</p>
 <blockquote>
-<p>wrap, different parts of the content</p>
+<p>wrap different parts of the content</p>
 </blockquote>
 <p><img alt="" src="../../img/element.png" /></p>
 </li>
@@ -899,7 +903,7 @@
 <li>
 <p>CSS ruleset(规则集)</p>
 <blockquote>
-<p>The whole structure is called a ruleset. (rule)</p>
+<p>The whole structure is called a ruleset. (referred-to as just rule)</p>
 <ul>
 <li>Selector: HTML element name</li>
 <li>Declaration: a single rule</li>
@@ -942,6 +946,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Pseudo-class selector: The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</p>
+</blockquote>
 </li>
 <li>
 <p>Fonts and text (字体和文本)</p>
@@ -950,12 +957,12 @@
 <p>Since &lt;html> is the parent element of the whole page, all elements inside it inherit the same font-size and font-family.</p>
 </li>
 <li>
-<p>/<em> </em>/: comment</p>
+<p>/* */: comment</p>
 </li>
 </ul>
 </li>
 <li>
-<p>Boxes</p>
+<p>CSS: all about boxes</p>
 <ul>
 <li>
 <p>CSS layout is mostly based on the box model</p>
@@ -965,7 +972,7 @@
 </li>
 <li>
 <p>Each box's properties:</p>
-<ul>
+<ol>
 <li>
 <p>padding (内边距)</p>
 <blockquote>
@@ -982,11 +989,9 @@
 <p>margin (外边距)</p>
 <blockquote>
 <p>the space around the outside of the border</p>
+<p><img alt="" src="../../img/box-model.png" /></p>
 </blockquote>
 </li>
-</ul>
-<p><img alt="" src="../../img/box-model.png" /></p>
-<ul>
 <li>
 <p>width (of an element).</p>
 </li>
@@ -1014,19 +1019,9 @@
 <p>sets the display mode of an element. </p>
 </blockquote>
 </li>
-</ul>
+</ol>
 </li>
 </ul>
-</li>
-<li>
-<p>note:</p>
-<blockquote>
-<p>The <body> is a block element, meaning it takes up space on the page. </p>
-<p>A block element can have margin and other spacing values applied to it. </p>
-<p>In contrast, images are inline elements. </p>
-<p>It is not possible to apply margin or spacing values to inline elements. </p>
-<p>So to apply margins to the image, we must give the image block-level behavior using "display: block;"</p>
-</blockquote>
 </li>
 </ul>
                 
@@ -1062,13 +1057,13 @@
           </a>
         
         
-          <a href="../../FF/1/" title="1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../FF/1/" title="1-安装" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                1
+                1-安装
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
