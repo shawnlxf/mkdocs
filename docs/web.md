@@ -9,6 +9,8 @@
         1. web\_学习网站
 
             * [MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+            * w3school, w3cschoool, 菜鸟
+            * [php 中文网](https://www.php.cn/web-designer.html)
 
         2. 博客
 
