@@ -5,7 +5,6 @@
 * 推荐：everything, typora
 * node.js, yarn
 
-* 图片：2345 看图王
 * 词典：有道词典
 * pdf：WPS
 
