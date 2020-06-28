@@ -14,12 +14,14 @@ nav:
       - "7-CSS定位": "FF/7.md"
       - "8-CSS动画": "FF/8.md"
       - "9-HTTP入门": "FF/9.md"
+      - "10-JS": "FF/10.md"
   - HTML:
       - "Help": "HTML/help.md"
       - "Elements": "HTML/elements.md"
       - "1": "HTML/1.md"
   - Home: "README.md"
   - Hugo: "hugo.md"
+  - Git: "git.md"
   - Software: "software.md"
   - Markdown:
       - "Help": "Markdown/help.md"
