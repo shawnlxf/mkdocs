@@ -1,72 +1,218 @@
-# MkDocs作为个人笔记用
-<http://www.imooc.com/article/295990>
+# mkdocs 的组织
 
-<https://www.sunbufu.club/2019/01/14/GithubPages-CodingPages/>
-<https://pushmind.org/2017/05/16/the-pit-of-mkdocs-in-traditional-field/#mathjax>
-<https://yangfangs.github.io/2016/08/09/install-build-mkdocs/>
+    * 分为以下几个部分：
 
-## 1. Commands
+        * tools
+        * language
+        * 各个教程：FF, MDN
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-```
-  $ mkdocs --help
-  $ mkdocs build --help
-```
+## 1. 推荐软件 (tools)
 
-## 2. Project layout
+### windows 10:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* 推荐：everything, typora
 
-## 3. 网站
-[官网](https://www.mkdocs.org/)
-[中文翻译](https://mkdocs.zimoapps.com/)
+* node.js, yarn
 
-```
-    $ mkdocs --version
-```
+* 词典：有道词典
+* pdf：WPS
+* 图示：亿图图示 edraw-max
+* 取色软件: Snipaste
+* 图片转换器(图片批量转换)
+* 迅捷压缩
 
-## 4. 入门
-```
-    $ mkdocs new my-project
-    $ cd my-project
-```
+* 命令行：cmder
 
-在mkdocs.yml的同级目录中启动服务器：
-```
-    $ mkdocs serve
-```
+    1. cmder here 在当前目录打开
 
-<http://127.0.0.1:8000/>
+        * <https://www.jianshu.com/p/552b7f0bb18c>
+        * <https://blog.51cto.com/13853366/2352632>
 
-生成文档，创建一个名为site的新目录：
-```
-    $ mkdocs build
-```
+    2. 快捷键：
 
-删除site目录中的旧文件：
-```
-    $mkdocs build --clean
-```
+        * Ctrl + T：新开标签
+        * Ctrl + W：关闭当前标签
+        * Win + Alt + P：设置
 
-## 5. 编写文档
-项目主页应命名为index
+* 编辑： vscode
 
-### MkDocs includes some extensions
+    1. 插件：
 
-* Internal links
+        * Code Spell Checker
+        * Git Easy
+        * Chinese
+        * vscode*icons
+        * Markdown All in One
+        * Prettier(for JS, CSS)
+        * (图床：PicGo)
+        * (Markdown Preview Enhanced)
 
-    * Linking to pages#header: [Home#3. 网站](README.md#3)
+    2. 快捷键：
 
-    * Linking to images and media: ![RUNOOB 图标](img/runoob-logo.png)
+        * ctrl + p：找文件
+        * ctrl + shift + p：输命令
+        * alt + 单击：多位置输入
 
-* Meta-Data
+* 编辑： notepad++
 
-## 6. Deploying your docs(部署文档)
-* Project Pages
-    * $ mkdocs gh-deploy
+    > 主题：solarized
+
+* 浏览器： firefox, QQ
+
+* 浏览器：chrome
+
+    1. 插件：
+
+        * Dark Reader
+        * uBlocker
+        * Separate Window
+        * Death To \_blank
+
+    2. 主题：
+
+        * Just Black
+
+    3. 常用快捷键：
+
+        * 鼠标中键单击：打开或关闭
+        * ctrl + T：新开标签
+        * ctrl + shift + T：撤销关闭
+        * ctrl + W：关闭当前标签
+        * ctrl + Location：输入网址
+        * alt + 左右：前进后退
+        * alt + 回车：在新标签打开
+        * shift + 回车：在新窗口打开
+        * ctrl + shift + delete：删除历史浏览数据
+
+* 原型设计工具
+
+    * Axure
+    * Mockplus, mockups
+    * 墨刀，蓝湖
+    * Adobe XD
+
+* 3D画图: SketchUp Pro
+
+
+## 2. 学习途径
+
+> 3 种：
+
+1. 网上资料
+
+    1. 学习网站/博客 (记录，常看，主线)
+
+        * [MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+        * [阮一峰的 JS 教程](https://wangdoc.com/javascript/)
+        * [阮一峰的 ES6 教程](https://es6.ruanyifeng.com/)
+        * [廖雪峰](https://www.liaoxuefeng.com/)
+
+    2. 词典类/博客/公众号
+
+        * w3school, w3cschoool, 菜鸟
+        * [php 中文网](https://www.php.cn/web-designer.html)
+        * [毕小烦的学习笔记](https://blog.csdn.net/wirelessqa)
+
+2. 电子书 (亚马逊，微信读书)
+
+    * 两本免费的 JS 教材《JavaScript 教程》《ECMAScript 6 入门》
+    * 小黄书上卷
+    * 高性能 javascript
+    * 编写可维护的 javascript
+    * 算法
+    * 图解 http
+    * 深入浅出 react 和 redux
+    * javascript 编程精解
+    * javascript 高级程序设计
+
+3. 视频 (看项目实践)
+
+    * 网课：
+
+        * 慕课网 + 哔哩哔哩 + 腾讯课堂 + php 中文网
+        * 饥人谷
+        * youtube
+
+## 3. 搜集
+
+* <https://www.zhihu.com/question/31059577>
+* <http://web.itheima.com/>
+
+* CSS
+
+    * 阮一峰
+
+* JavaScript 篇
+
+    * 基础书籍
+
+        * 《JavaScript 权威指南 （第 6 版）》
+
+            > 俗称「犀牛书」，JS 的经典之作，提升 JS 技能的必备书籍，我的 JS 基础知识全都是啃这本书啃下来的，刚开始读时可能有会有些吃力，但是只要坚持下来收获满满。
+
+        * 《JavaScript 高级程序设计（第 3 版）》
+  
+            > 俗称「红宝书」，JavaScript 超级畅销书，全书阐述了 JavaScript 语言实现的各个组成部分，ECMAScript，DOM，BOM，事件，面向对象等等，随时拿出来翻翻，更加深入了学习 JS。
+  
+    * 进阶：
+
+        * JavaScript 语言精粹：揭示 JavaScript 中的精华。
+        * JavaScript 秘密花园：对 JS 一些的核心知识点进行梳理讲解，例如：this，闭包/作用域，构造函数，原型等等，都是面试必考知识点。
+        * ECMAScript 6 入门：阮一峰老师 ES6 入门书籍，全面介绍 ECMAScript 6 新引入的语法特性。
+        * JavaScript 使用技巧：可以认识到一些你平时没有接触过的小技巧。
+        * 深入理解 javascript 原型和闭包系列：详细解释了原型和闭包，看完之后对原型与闭包让你彻底明白。
+
+* TypeScript 篇
+
+    > ES6 的超集扩展，严格的数据类型，带来更好的维护，适合大型项目的开发工作，有人说它是未来的发展趋势，你说要不要了解？
+
+    * TypeScript 中文手册：官网翻译版。
+    * TypeScript Handbook（中文版）：中文版。
+    * RxJS 中文文档：中文官网。
+
+* Jquery 篇
+
+    > 虽说现在已经是单页面应用时代，有 React，Vue 这种强大的框架可以使用，
+    > 
+    > 但也不缺乏一些老的项目需要维护，而且在学习之初，可以用它做两个简单的应用还是不错的，
+    >
+    > 可以相对了解下基本用法，它可以让你更好，更方便的操作 DOM。但不建议再深度学习。
+
+    * 《锋利的 jQuery(第 2 版)》：一本很不错的 Jquery 学习书籍。
+    * jQuery API 中文文档：JQuery 中文教程。
+
+* Ajax 篇
+
+    > 掌握了的 HTML、CSS、JavaScript 时，这时候可以尝试自己做一些项目了，
+    > 
+    > 而项目中肯定会有数据的交互，这时候就是 Ajax 的用武之地了。
+
+    * 廖雪峰 AJAX：廖雪峰大佬的博客知识。
+    * JSON 风格指南：前后端的交互数据通常都是 JSON 格式，所以了解 JSON 是必要的。
+
+* NodeJS 与模块化
+
+    > NodeJs 的出现让前端发展进入了一个新的领域，并且滋生出专业的 Node 工程师，
+    > 
+    > 不仅如此 Node 在前端模块化，工程化起到很重要的作用，
+    > 
+    > 所以了解是必须的，如果感兴趣的可以深入学习，可以向全栈工程师发展。
+
+    * Javascript 模块化编程（一）：模块的写法
+    * Javascript 模块化编程（二）：AMD 规范
+    * Javascript 模块化编程（三）：require.js 的用法
+    * 前端模块化开发那点历史：了解下，前端模块化的发展。
+    * Node.js 官方
+  
+    * MVC，MVP 和 MVVM 的图示：在学习框架之前，你应该了解下 MVVM 的设计思想。
+    * 框架原理：了解一些框架的基本原理。
+
+* Angular
+
+    * Angular：Angular 官方社区。
+    * NG-ZORRO：Angular UI 组件库，阿里巴巴出品。
+
+* Vue
+
+    > Vue：官网，最好的学习资料。
+
