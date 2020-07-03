@@ -2,8 +2,13 @@ site_name: ShawnDocs
 nav:
   - Home: "README.md"
   - MDN-Learn: "MDN-Learn/0.md"
+  - MDN-Web:
+      - "Web": "MDN-Web/0.md"
+      - "HTML": "MDN-Web/1.md"
+
   - English:
       - "1": "English/1.md"
+
   - FF:
       - "0-杂项": "FF/0.md"
       - "1-安装": "FF/1.md"
@@ -16,15 +21,27 @@ nav:
       - "8-CSS动画": "FF/8.md"
       - "9-HTTP入门": "FF/9.md"
       - "10-JS": "FF/10.md"
-  - tools:
-      - "Git": "tools/git.md"
-      - "Github": "tools/github.md"
-      - "Hugo": "tools/hugo.md"
-      - "Mkdocs": "tools/mkdocs.md"
-  - language:
-      - "HTML": "language/html.md"
-      - "Markdown": "language/markdown.md"
-      - "Bash": "language/bash.md"
+
+  - Tools:
+      - "Git": "Tools/git.md"
+      - "Github": "Tools/github.md"
+      - "Hugo": "Tools/hugo.md"
+      - "Mkdocs": "Tools/mkdocs.md"
+      
+  - Language:
+      - "HTML": "Language/html.md"
+      - "Markdown": "Language/markdown.md"
+      - "Bash": "Language/bash.md"
+
+  - Blog: 
+      - "1": "Blog/1.md"
+      - "2": "Blog/2.md"
+      - "3": "Blog/3.md"
+      - "4": "Blog/4.md"
+      - "5": "Blog/5.md"
+      - "6": "Blog/6.md"
+
+  - Others: "Others/1.md"
 
 theme: material
 markdown_extensions:
