@@ -230,10 +230,64 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="MDN-Learn/0/" title="MDN-Learn" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
       MDN-Learn
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="MDN-Learn" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        MDN-Learn
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="MDN-Learn/0/" title="大纲" class="md-nav__link">
+      大纲
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="MDN-Learn/1/" title="Web 入门" class="md-nav__link">
+      Web 入门
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="MDN-Learn/css/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -282,6 +336,18 @@
   <li class="md-nav__item">
     <a href="MDN-Web/1/" title="HTML" class="md-nav__link">
       HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="MDN-Web/2/" title="CSS" class="md-nav__link">
+      CSS
     </a>
   </li>
 
@@ -568,6 +634,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Tools/cmder/" title="Cmder" class="md-nav__link">
+      Cmder
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -829,12 +907,17 @@
                 
                 
                 <h1 id="mkdocs">mkdocs 的组织<a class="headerlink" href="#mkdocs" title="Permanent link">#</a></h1>
-<pre><code>* 分为以下几个部分：
-
-    * tools
-    * language
-    * 各个教程：FF, MDN
-</code></pre>
+<p>本笔记 = 方方课的笔记 + MDN的总结 + 博客 + 英语单词 + 计算机语言 + 工具</p>
+<ul>
+<li>
+<p>分为以下几个部分：</p>
+<ul>
+<li>tools</li>
+<li>language</li>
+<li>各个教程：FF, MDN</li>
+</ul>
+</li>
+</ul>
 <h2 id="1-tools">1. 推荐软件 (tools)<a class="headerlink" href="#1-tools" title="Permanent link">#</a></h2>
 <h3 id="windows-10">windows 10:<a class="headerlink" href="#windows-10" title="Permanent link">#</a></h3>
 <ul>
@@ -888,6 +971,7 @@
 <li>Prettier(for JS, CSS)</li>
 <li>(图床：PicGo)</li>
 <li>(Markdown Preview Enhanced)</li>
+<li>运行 html 文件: open in browser / Live Server / HTML Preview</li>
 </ul>
 </li>
 <li>
@@ -896,6 +980,8 @@
 <li>ctrl + p：找文件</li>
 <li>ctrl + shift + p：输命令</li>
 <li>alt + 单击：多位置输入</li>
+<li>ctrl + /：注释</li>
+<li>输入link:css引入css样式文件，输入script:src引入js</li>
 </ul>
 </li>
 </ol>
@@ -965,18 +1051,18 @@
 <p>网上资料</p>
 <ol>
 <li>
-<p>学习网站/博客 (记录，常看，主线)</p>
+<p>学习网站 / 官方 (记录，常看，主线)</p>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web">MDN</a></li>
-<li><a href="https://wangdoc.com/javascript/">阮一峰的 JS 教程</a></li>
-<li><a href="https://es6.ruanyifeng.com/">阮一峰的 ES6 教程</a></li>
-<li><a href="https://www.liaoxuefeng.com/">廖雪峰</a></li>
 </ul>
 </li>
 <li>
-<p>词典类/博客/公众号</p>
+<p>词典类教程 / 博客 / 公众号 (查漏补缺，新潮流)</p>
 <ul>
 <li>w3school, w3cschoool, 菜鸟</li>
+<li><a href="https://wangdoc.com/javascript/">阮一峰的 JS 教程</a></li>
+<li><a href="https://es6.ruanyifeng.com/">阮一峰的 ES6 教程</a></li>
+<li><a href="https://www.liaoxuefeng.com/">廖雪峰</a></li>
 <li><a href="https://www.php.cn/web-designer.html">php 中文网</a></li>
 <li><a href="https://blog.csdn.net/wirelessqa">毕小烦的学习笔记</a></li>
 </ul>
@@ -984,7 +1070,7 @@
 </ol>
 </li>
 <li>
-<p>电子书 (亚马逊，微信读书)</p>
+<p>电子书 / 亚马逊 / 微信读书 (深入)</p>
 <ul>
 <li>两本免费的 JS 教材《JavaScript 教程》《ECMAScript 6 入门》</li>
 <li>小黄书上卷</li>
@@ -1006,6 +1092,7 @@
 <li>慕课网 + 哔哩哔哩 + 腾讯课堂 + php 中文网</li>
 <li>饥人谷</li>
 <li>youtube</li>
+<li><a href="http://www.itcast.cn/course/web.shtml">黑马项目</a></li>
 </ul>
 </li>
 </ul>
@@ -1143,13 +1230,13 @@
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
         
-          <a href="MDN-Learn/0/" title="MDN-Learn" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="MDN-Learn/0/" title="大纲" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                MDN-Learn
+                大纲
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
