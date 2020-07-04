@@ -1,10 +1,15 @@
 site_name: ShawnDocs
 nav:
   - Home: "README.md"
-  - MDN-Learn: "MDN-Learn/0.md"
+  - MDN-Learn: 
+      - "大纲": "MDN-Learn/0.md"
+      - "Web 入门": "MDN-Learn/1.md"
+      - "CSS": "MDN-Learn/css.md"
+
   - MDN-Web:
       - "Web": "MDN-Web/0.md"
       - "HTML": "MDN-Web/1.md"
+      - "CSS": "MDN-Web/2.md"
 
   - English:
       - "1": "English/1.md"
@@ -27,6 +32,7 @@ nav:
       - "Github": "Tools/github.md"
       - "Hugo": "Tools/hugo.md"
       - "Mkdocs": "Tools/mkdocs.md"
+      - "Cmder": "Tools/cmder.md"
       
   - Language:
       - "HTML": "Language/html.md"

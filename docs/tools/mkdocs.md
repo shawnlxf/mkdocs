@@ -1,9 +1,12 @@
 # MkDocs作为个人笔记用
-<http://www.imooc.com/article/295990>
 
-<https://www.sunbufu.club/2019/01/14/GithubPages-CodingPages/>
-<https://pushmind.org/2017/05/16/the-pit-of-mkdocs-in-traditional-field/#mathjax>
-<https://yangfangs.github.io/2016/08/09/install-build-mkdocs/>
+* 路线：
+
+    > 1.a -> 1.b
+    > 
+    > google: mkdocs 学习 / 前3页
+    >
+    > google: mkdocs learn / 前1页
 
 ## 1. Commands
 

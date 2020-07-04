@@ -1,10 +1,12 @@
 # mkdocs 的组织
 
-    * 分为以下几个部分：
+本笔记 = 方方课的笔记 + MDN的总结 + 博客 + 英语单词 + 计算机语言 + 工具
 
-        * tools
-        * language
-        * 各个教程：FF, MDN
+* 分为以下几个部分：
+
+    * tools
+    * language
+    * 各个教程：FF, MDN
 
 ## 1. 推荐软件 (tools)
 
@@ -46,12 +48,15 @@
         * Prettier(for JS, CSS)
         * (图床：PicGo)
         * (Markdown Preview Enhanced)
+        * 运行 html 文件: open in browser / Live Server / HTML Preview
 
     2. 快捷键：
 
         * ctrl + p：找文件
         * ctrl + shift + p：输命令
         * alt + 单击：多位置输入
+        * ctrl + /：注释
+        * 输入link:css引入css样式文件，输入script:src引入js
 
 * 编辑： notepad++
 
@@ -100,20 +105,20 @@
 
 1. 网上资料
 
-    1. 学习网站/博客 (记录，常看，主线)
+    1. 学习网站 / 官方 (记录，常看，主线)
 
         * [MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+
+    2. 词典类教程 / 博客 / 公众号 (查漏补缺，新潮流)
+
+        * w3school, w3cschoool, 菜鸟
         * [阮一峰的 JS 教程](https://wangdoc.com/javascript/)
         * [阮一峰的 ES6 教程](https://es6.ruanyifeng.com/)
         * [廖雪峰](https://www.liaoxuefeng.com/)
-
-    2. 词典类/博客/公众号
-
-        * w3school, w3cschoool, 菜鸟
         * [php 中文网](https://www.php.cn/web-designer.html)
         * [毕小烦的学习笔记](https://blog.csdn.net/wirelessqa)
 
-2. 电子书 (亚马逊，微信读书)
+2. 电子书 / 亚马逊 / 微信读书 (深入)
 
     * 两本免费的 JS 教材《JavaScript 教程》《ECMAScript 6 入门》
     * 小黄书上卷
@@ -132,6 +137,7 @@
         * 慕课网 + 哔哩哔哩 + 腾讯课堂 + php 中文网
         * 饥人谷
         * youtube
+        * [黑马项目](http://www.itcast.cn/course/web.shtml)
 
 ## 3. 搜集
 
