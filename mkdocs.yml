@@ -5,6 +5,7 @@ nav:
       - "大纲": "MDN-Learn/0.md"
       - "Web 入门": "MDN-Learn/1.md"
       - "CSS": "MDN-Learn/css.md"
+      - "常见问题": "MDN-Learn/10.md"
 
   - MDN-Web:
       - "Web": "MDN-Web/0.md"
@@ -13,6 +14,7 @@ nav:
 
   - English:
       - "1": "English/1.md"
+      - "2": "English/2.md"
 
   - FF:
       - "0-杂项": "FF/0.md"
