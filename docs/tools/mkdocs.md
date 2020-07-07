@@ -65,7 +65,7 @@
 
     * Linking to pages#header: [Home#3. 网站](../README.md#3)
 
-    * Linking to images and media: ![RUNOOB 图标](../img/runoob-logo.png)
+    * Linking to images and media: ![图片名](图片地址)
 
 * Meta-Data
 

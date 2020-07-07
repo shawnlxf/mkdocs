@@ -28,6 +28,7 @@ nav:
       - "8-CSS动画": "FF/8.md"
       - "9-HTTP入门": "FF/9.md"
       - "10-JS": "FF/10.md"
+      - "11-JS": "FF/11.md"
 
   - Tools:
       - "Git": "Tools/git.md"
