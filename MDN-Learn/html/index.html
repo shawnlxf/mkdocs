@@ -15,7 +15,7 @@
     
     
       
-        <title>CSS - ShawnDocs</title>
+        <title>HTML - ShawnDocs</title>
       
     
     
@@ -48,7 +48,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#css" class="md-skip">
+        <a href="#html" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              CSS
+              HTML
             
           </span>
         </div>
@@ -211,7 +211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../css.md" title="CSS" class="md-nav__link">
+    <a href="../css/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -507,6 +507,18 @@
   <li class="md-nav__item">
     <a href="../../FF/10/" title="10-JS" class="md-nav__link">
       10-JS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../FF/11/" title="11-JS" class="md-nav__link">
+      11-JS
     </a>
   </li>
 
@@ -836,56 +848,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    1. 第一步
+  <a href="#html_1" class="md-nav__link">
+    HTML 入门
   </a>
-  
-    <nav class="md-nav" aria-label="1. 第一步">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-css" class="md-nav__link">
-    1.1 什么是 CSS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    1.2 开始
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-css" class="md-nav__link">
-    1.3 CSS 的结构
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-css" class="md-nav__link">
-    1.4 CSS 如何工作
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
-    1.5 运用新知识
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-css-building-blocks" class="md-nav__link">
-    2. CSS building blocks
+  <a href="#1-getting-started-with-html" class="md-nav__link">
+    1) Getting started with HTML
   </a>
   
 </li>
@@ -906,77 +877,89 @@
                   
                 
                 
-                <h1 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">#</a></h1>
+                <h1 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">#</a></h1>
+<h2 id="html_1">HTML 入门<a class="headerlink" href="#html_1" title="Permanent link">#</a></h2>
+<p>...</p>
+<h2 id="1-getting-started-with-html">1) Getting started with HTML<a class="headerlink" href="#1-getting-started-with-html" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">参考文档</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto">CSS 常见问题</a></li>
-</ul>
-<h2 id="1">1. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">第一步</a><a class="headerlink" href="#1" title="Permanent link">#</a></h2>
-<h3 id="11-css">1.1 什么是 CSS<a class="headerlink" href="#11-css" title="Permanent link">#</a></h3>
+<li>
+<p>Block versus inline elements（块级元素和内联元素）</p>
+<p>元素分两种类别：</p>
 <ul>
-<li>标记语言：HTML / SVG / XML</li>
+<li>
+<p>Block-level elements</p>
+<blockquote>
+<p>form a visible block on a page (块的形式展现)</p>
+<p>前后都换行 (new line)</p>
+<p>块级元素不会被嵌套进内联元素中，但可以嵌套在其它块级元素中。</p>
+</blockquote>
+</li>
+<li>
+<p>Inline elements</p>
+<blockquote>
+<p>在块级元素中</p>
+</blockquote>
+</li>
 </ul>
-<h3 id="12">1.2 开始<a class="headerlink" href="#12" title="Permanent link">#</a></h3>
-<h3 id="13-css">1.3 CSS 的结构<a class="headerlink" href="#13-css" title="Permanent link">#</a></h3>
-<h3 id="14-css">1.4 CSS 如何工作<a class="headerlink" href="#14-css" title="Permanent link">#</a></h3>
-<h3 id="15">1.5 运用新知识<a class="headerlink" href="#15" title="Permanent link">#</a></h3>
-<h2 id="2-css-building-blocks">2. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks">CSS building blocks</a><a class="headerlink" href="#2-css-building-blocks" title="Permanent link">#</a></h2>
-<pre><code>* [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-
-    &gt; 长度单位
-
-    1. Lengths (长度, 最常遇到)
-
-        1. relative
-
-            &gt; 相对于 something else, 如父元素的字体大小, 或视口的大小等
-            &gt; 可以让文本，或其他元素相对于 everything else 缩放
-
-            * em: 元素本身的字体大小
-            * rem: 根元素的字体大小
-            * vw: 视口宽度的 1%
-            * vh: 视口高度的 1%
-            ...
-
-        2. absolute
-
-            * px
-
-    2. Percentages
-    3. Numbers
+</li>
+<li>
+<p>Attributes</p>
+<ul>
+<li>
+<p><a>: </p>
+<ul>
+<li>href: web address</li>
+<li>
+<p>title: extra information about the link</p>
+<blockquote>
+<p>such as a description of the page</p>
+<p>a tooltip when a cursor hovers</p>
+</blockquote>
+</li>
+<li>
+<p>target: the browsing context used to display the link</p>
+<blockquote>
+<p>target="_blank" will display the link in a new tab</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>Boolean attributes (布尔属性)</p>
+<blockquote>
+<p>他们只能有跟它的属性名一样的属性值</p>
+</blockquote>
+<pre><code>&lt;input type="text" disabled="disabled"&gt;
+&lt;input type="text" disabled&gt;
 </code></pre>
-<ul>
-<li>
-<p>position: absolute;</p>
-<blockquote>
-<p>Elements that are relatively positioned remain in the normal flow of the document. </p>
-<p>In contrast, an element that is absolutely positioned is taken out of the flow.</p>
-</blockquote>
-</li>
-<li>
-<p>line-height</p>
-<blockquote>
-<p>sets the height of a line box</p>
-<p>It's commonly used to set the distance between lines of text</p>
-</blockquote>
-</li>
-<li>
-<p>overflow</p>
-<blockquote>
-<p>sets what to do when an element's content is too big to fit in its block formatting context</p>
-<p>a shorthand for overflow-x and overflow-y.</p>
-<ul>
-<li>auto: Depends on the user agent</li>
-</ul>
-</blockquote>
-</li>
-<li>
-<p>clear</p>
-<blockquote>
-<p>sets whether an element must be moved below (cleared) floating elements that precede it</p>
-</blockquote>
 </li>
 </ul>
+</li>
+<li>
+<p>Entity references(实体引用): Including special characters in HTML</p>
+<blockquote>
+<p>&lt;, &gt;,",' and &amp; are special characters. </p>
+<p>They are parts of the HTML syntax itself (HTML语法自身的一部分)</p>
+<p>&amp; ;</p>
+</blockquote>
+<ul>
+<li>&lt;: lt</li>
+<li>>: gt</li>
+<li>": quot</li>
+<li>': apos</li>
+<li>&amp;: amp</li>
+</ul>
+</li>
+</ul>
+<p>What’s in the head? Metadata in HTML
+  * the head's job is to contain metadata about the document
+Adding a title
+  * <h1>:  the title of your page content
+  * <title>: metadata that represents the title of the overall HTML document (not the document's content.)
+Metadata: the <meta> element
+  * Metadata is data that describes data
+Adding an author and description
+  * name, content</p>
                 
               
               
