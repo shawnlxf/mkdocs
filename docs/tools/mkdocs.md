@@ -1,12 +1,11 @@
 # MkDocs作为个人笔记用
 
-* 路线：
+## 0. 路线：
 
-    > 1.a -> 1.b
-    > 
-    > google: mkdocs 学习 / 前3页
-    >
-    > google: mkdocs learn / 前1页
+* 1.a -> 1.b
+ 
+    * google: mkdocs 学习 / 前3页
+    * google: mkdocs learn / 前1页
 
 ## 1. Commands
 

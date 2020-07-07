@@ -38,6 +38,7 @@ nav:
       
   - Language:
       - "HTML": "Language/html.md"
+      - "CSS": "Language/css.md"
       - "Markdown": "Language/markdown.md"
       - "Bash": "Language/bash.md"
 
@@ -48,6 +49,7 @@ nav:
       - "4": "Blog/4.md"
       - "5": "Blog/5.md"
       - "6": "Blog/6.md"
+      - "7": "Blog/7.md"
 
   - Others: "Others/1.md"
 

@@ -1,8 +1,18 @@
+# HTML
 
-## 学习网站&博客
+## 0. 路线：
 
-* [MDN_HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
-* [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
+* 1.a -> 1.b
+
+    * 1.a
+
+        * MDN
+
+    * 1.b
+
+        * w3school, w3schools
+        * [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
+
 
 ## 视频
 
