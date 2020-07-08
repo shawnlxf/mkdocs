@@ -27,8 +27,8 @@ nav:
       - "7-CSS定位": "FF/7.md"
       - "8-CSS动画": "FF/8.md"
       - "9-HTTP入门": "FF/9.md"
-      - "10-JS": "FF/10.md"
-      - "11-JS": "FF/11.md"
+      - "10-JS概述/内存图": "FF/10.md"
+      - "11-JS语法/数据类型/运算符": "FF/11.md"
 
   - Tools:
       - "Git": "Tools/git.md"
@@ -40,6 +40,7 @@ nav:
   - Language:
       - "HTML": "Language/html.md"
       - "CSS": "Language/css.md"
+      - "JavaScript": "Language/javascript.md"
       - "Markdown": "Language/markdown.md"
       - "Bash": "Language/bash.md"
 
