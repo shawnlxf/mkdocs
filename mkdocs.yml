@@ -29,6 +29,7 @@ nav:
       - "9-HTTP入门": "FF/9.md"
       - "10-JS概述/内存图": "FF/10.md"
       - "11-JS语法/数据类型/运算符": "FF/11.md"
+      - "12-JS对象": "FF/12.md"
 
   - Tools:
       - "Git": "Tools/git.md"
@@ -52,6 +53,7 @@ nav:
       - "5": "Blog/5.md"
       - "6": "Blog/6.md"
       - "7": "Blog/7.md"
+      - "8": "Blog/8.md"
 
   - Others: "Others/1.md"
 
