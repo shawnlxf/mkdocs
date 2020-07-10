@@ -29,7 +29,7 @@ nav:
       - "9-HTTP入门": "FF/9.md"
       - "10-JS概述/内存图": "FF/10.md"
       - "11-JS语法/数据类型/运算符": "FF/11.md"
-      - "12-JS对象": "FF/12.md"
+      - "12-JS对象/对象分类": "FF/12.md"
 
   - Tools:
       - "Git": "Tools/git.md"
@@ -46,16 +46,14 @@ nav:
       - "Bash": "Language/bash.md"
 
   - Blog: 
-      - "1": "Blog/1.md"
-      - "2": "Blog/2.md"
-      - "3": "Blog/3.md"
-      - "4": "Blog/4.md"
-      - "5": "Blog/5.md"
-      - "6": "Blog/6.md"
-      - "7": "Blog/7.md"
-      - "8": "Blog/8.md"
-
-  - Others: "Others/1.md"
+      - "1-Github Pages": "Blog/1.md"
+      - "2-HTML入门笔记1": "Blog/2.md"
+      - "3-HTML常用标签": "Blog/3.md"
+      - "4-CSS知识总结": "Blog/4.md"
+      - "5-浅析URL": "Blog/5.md"
+      - "6-JavaScript的诞生": "Blog/6.md"
+      - "7-JS的基本语法": "Blog/7.md"
+      - "8-JS对象基本用法": "Blog/8.md"
 
 theme: material
 markdown_extensions:

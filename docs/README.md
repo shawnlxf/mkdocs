@@ -8,6 +8,12 @@
     * language
     * 各个教程：FF, MDN
 
+* Java 和 JavaScript 的关系：
+
+    * 就像 雷锋 和 雷峰塔一样
+    * 就像 周杰 和 周杰伦 一样
+    * 就像 北大 和 北大青鸟 一样
+
 ## 1. 推荐软件 (tools)
 
 ### windows 10:
@@ -156,6 +162,27 @@
 ### 3.2 google: html 学习
 
 
+## 4. 工具使用
+
+* MkDocs 
+
+    * 功能：记录，回顾
+
+* 博客 / 公众号
+
+    * 功能：展示，引流
+    * 来源：从 docs 里拣选
+    * 平台：
+
+* 其他
+
+    * [Docsify]
+
+        > 可读性差，不过可以看看 [showcase](https://github.com/docsifyjs/awesome-docsify#showcase)
+
+    * [文档生成器](https://blog.mimvp.com/article/38752.html)
+    * [SSG 1](https://snipcart.com/blog/choose-best-static-site-generator)
+    * [SSG 2](https://idratherbewriting.com/learnapidoc/pubapis_static_site_generators.html)
 
   
 
