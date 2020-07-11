@@ -3,20 +3,15 @@
 ## 0. 路线：
 
 * 1.a -> 1.b
+
+    * 1.a
+    * 1.b
+
+        * [owf-learn-mkdocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/new-project/)
+        * [官网](https://www.mkdocs.org/)
+        * [中文翻译](https://mkdocs.zimoapps.com/)
+        * [Mkdocs 配置和使用](https://www.xncoding.com/2020/03/01/tool/mkdocs.html)
  
-    * google: mkdocs 学习 / 前3页
-    * google: mkdocs learn / 前1页
-
-## 1. Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-```
-  $ mkdocs --help
-  $ mkdocs build --help
-```
 
 ## 2. Project layout
 
@@ -26,37 +21,88 @@
         ...       # Other markdown pages, images and other files.
 
 ## 3. 网站
-[官网](https://www.mkdocs.org/)
-[中文翻译](https://mkdocs.zimoapps.com/)
 
 ```
-    $ mkdocs --version
 ```
+* 模板 
 
-## 4. 入门
-```
-    $ mkdocs new my-project
-    $ cd my-project
-```
+    * [mkdocs教程](https://cyent.github.io/markdown-with-mkdocs-material/)
+    * [Material模板](https://squidfunk.github.io/mkdocs-material/getting-started/)
+    * [南开模板](https://www.nkdacs.com/tutorial/md-template/)
+    * [不要香菜](http://www.nocilantro.cn/front_end/html/)
+    * [机器学习](http://docs.sqdxwz.com/ai-note/)
 
-在mkdocs.yml的同级目录中启动服务器：
-```
-    $ mkdocs serve
-```
+## 4. 官网文档
 
-<http://127.0.0.1:8000/>
+### 4.1 Home
 
-生成文档，创建一个名为site的新目录：
-```
-    $ mkdocs build
-```
+1. 帮助信息
 
-删除site目录中的旧文件：
-```
-    $mkdocs build --clean
-```
+        $ mkdocs -h
+        $ mkdocs --help
+        $ mkdocs build --help
 
-## 5. 编写文档
+* 安装
+
+        $ pip install mkdocs
+
+* 查看版本
+
+        $ mkdocs --version
+
+    或
+
+        $ mkdocs -V
+
+    或
+
+        $ pip show mkdocs
+
+* 升级
+
+        $ pip install -U mkdocs
+
+* 卸载
+
+        $ pip uninstall mkdocs
+
+* 服务器默认地址为 127.0.0.1:8000 ，如果端口被占用怎么办呢？
+
+    当然也支持自定义地址，使用下面这命令：
+
+        $ mkdocs serve --dev-addr=127.0.0.1:8888
+
+    或
+
+        $ mkdocs serve -a 127.0.0.1:9999
+
+* 使用 mkdocs build --clean 可以在构建时清理一些残留资源。
+
+* 创建项目
+
+        $ mkdocs new my-project
+
+* 在mkdocs.yml的同级目录中启动服务器：
+
+        $ mkdocs serve
+
+* mkdocs.yml 
+
+    * site_name: initial heading (初始标题)
+
+    * nav: titles of navigation items (导航项的标题)
+
+        > in navigation menu
+
+* Building the site (建立网站)
+
+        $ mkdocs build
+
+    > 创建一个新目录 site
+
+
+## 4.2 编写文档
+
 项目主页应命名为index
 
 ### MkDocs includes some extensions

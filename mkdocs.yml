@@ -1,61 +1,70 @@
 site_name: ShawnDocs
+
+# Repository
+repo_name: shawnlxf/mkdocs
+repo_url: https://github.com/shawnlxf/mkdocs
+
 nav:
-  - Home: "README.md"
+  - Home: README.md
   - MDN-Learn: 
-      - "大纲": "MDN-Learn/0.md"
-      - "Web 入门": "MDN-Learn/1.md"
-      - "CSS": "MDN-Learn/css.md"
-      - "常见问题": "MDN-Learn/10.md"
+      - 大纲: MDN-Learn/0.md
+      - Web 入门: MDN-Learn/1.md
+      - CSS: MDN-Learn/css.md
+      - 常见问题: MDN-Learn/10.md
 
   - MDN-Web:
-      - "Web": "MDN-Web/0.md"
-      - "HTML": "MDN-Web/1.md"
-      - "CSS": "MDN-Web/2.md"
+      - Web: MDN-Web/0.md
+      - HTML: MDN-Web/1.md
+      - CSS: MDN-Web/2.md
 
   - English:
-      - "1": "English/1.md"
-      - "2": "English/2.md"
+      - 1: English/1.md
+      - 2: English/2.md
 
   - FF:
-      - "0-杂项": "FF/0.md"
-      - "1-安装": "FF/1.md"
-      - "2-git-markdown-Hugo": "FF/2.md"
-      - "3-HTML语法-HTML标签": "FF/3.md"
-      - "4-HTML重点标签": "FF/4.md"
-      - "5-CSS基础概念": "FF/5.md"
-      - "6-CSS布局": "FF/6.md"
-      - "7-CSS定位": "FF/7.md"
-      - "8-CSS动画": "FF/8.md"
-      - "9-HTTP入门": "FF/9.md"
-      - "10-JS概述/内存图": "FF/10.md"
-      - "11-JS语法/数据类型/运算符": "FF/11.md"
-      - "12-JS对象/对象分类": "FF/12.md"
+      - 0-杂项: FF/0.md
+      - 1-安装: FF/1.md
+      - 2-git-markdown-Hugo: FF/2.md
+      - 3-HTML语法-HTML标签: FF/3.md
+      - 4-HTML重点标签: FF/4.md
+      - 5-CSS基础概念: FF/5.md
+      - 6-CSS布局: FF/6.md
+      - 7-CSS定位: FF/7.md
+      - 8-CSS动画: FF/8.md
+      - 9-HTTP入门: FF/9.md
+      - 10-JS概述/内存图: FF/10.md
+      - 11-JS语法/数据类型/运算符: FF/11.md
+      - 12-JS对象/对象分类: FF/12.md
 
   - Tools:
-      - "Git": "Tools/git.md"
-      - "Github": "Tools/github.md"
-      - "Hugo": "Tools/hugo.md"
-      - "Mkdocs": "Tools/mkdocs.md"
-      - "Cmder": "Tools/cmder.md"
+      - Git: Tools/git.md
+      - Github: Tools/github.md
+      - Hugo: Tools/hugo.md
+      - Mkdocs: Tools/mkdocs.md
+      - Cmder: Tools/cmder.md
       
   - Language:
-      - "HTML": "Language/html.md"
-      - "CSS": "Language/css.md"
-      - "JavaScript": "Language/javascript.md"
-      - "Markdown": "Language/markdown.md"
-      - "Bash": "Language/bash.md"
+      - HTML: Language/html.md
+      - CSS: Language/css.md
+      - JavaScript: Language/javascript.md
+      - Markdown: Language/markdown.md
+      - Bash: Language/bash.md
 
   - Blog: 
-      - "1-Github Pages": "Blog/1.md"
-      - "2-HTML入门笔记1": "Blog/2.md"
-      - "3-HTML常用标签": "Blog/3.md"
-      - "4-CSS知识总结": "Blog/4.md"
-      - "5-浅析URL": "Blog/5.md"
-      - "6-JavaScript的诞生": "Blog/6.md"
-      - "7-JS的基本语法": "Blog/7.md"
-      - "8-JS对象基本用法": "Blog/8.md"
+      - 1-Github Pages: Blog/1.md
+      - 2-HTML入门笔记1: Blog/2.md
+      - 3-HTML常用标签: Blog/3.md
+      - 4-CSS知识总结: Blog/4.md
+      - 5-浅析URL: Blog/5.md
+      - 6-JavaScript的诞生: Blog/6.md
+      - 7-JS的基本语法: Blog/7.md
+      - 8-JS对象基本用法: Blog/8.md
 
-theme: material
+theme:
+  name: material
+  favicon: img/favicon.svg
+  logo: img/favicon.svg
+
 markdown_extensions:
   - toc:
       permalink: "#"
