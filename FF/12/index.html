@@ -689,6 +689,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13/" title="13-JS数组" class="md-nav__link">
+      13-JS数组
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1149,6 +1161,8 @@
 </ul>
 <h2 id="2">2. 主体<a class="headerlink" href="#2" title="Permanent link">#</a></h2>
 <p>对象 object (唯一一种复杂类型)</p>
+<p><img alt="" src="../../img/FF/12-hw-prototype.png" />
+<img alt="" src="../../img/FF/12-hw-class.png" /></p>
 <h3 id="1_1">1) 定义<a class="headerlink" href="#1_1" title="Permanent link">#</a></h3>
 <ul>
 <li>
@@ -1287,6 +1301,24 @@
 <p>查看属性（读属性）</p>
 <ol>
 <li>
+<p>单个属性（两种方法）</p>
+<ol>
+<li>
+<p>obj['key']</p>
+<blockquote>
+<p>中括号语法</p>
+<p>obj[key] // 变量 key值一般不为 'key'</p>
+</blockquote>
+</li>
+<li>
+<p>obj.key</p>
+<blockquote>
+<p>点语法，先它翻译为第一种方法再理解</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
 <p>所有属性</p>
 <ul>
 <li>
@@ -1316,24 +1348,6 @@
 </li>
 </ul>
 </li>
-<li>
-<p>单个属性（两种方法）</p>
-<ol>
-<li>
-<p>obj['key']</p>
-<blockquote>
-<p>中括号语法</p>
-<p>obj[key] // 变量 key值一般不为 'key'</p>
-</blockquote>
-</li>
-<li>
-<p>obj.key</p>
-<blockquote>
-<p>点语法，先它翻译为第一种方法再理解</p>
-</blockquote>
-</li>
-</ol>
-</li>
 </ol>
 </li>
 <li>
@@ -1343,10 +1357,10 @@
 <p>直接赋值</p>
 <ul>
 <li>obj.name = 'frank'</li>
-<li>obj['name'] = 'frank'</li>
-<li>obj['na' + 'me'] = 'frank'</li>
 </ul>
 <blockquote>
+<p>obj['name'] = 'frank'</p>
+<p>obj['na' + 'me'] = 'frank'</p>
 <p>无法通过自身 修改或增加 共有属性</p>
 <p>可以强行修改或增加原型上的属性 </p>
 <ol>
@@ -1369,7 +1383,6 @@
 <li>
 <p>修改隐藏属性</p>
 <ul>
-<li>不推荐使用 obj.__proto__ = common  // 所有 __proto__ 代码都不推荐写</li>
 <li>
 <p>推荐使用 Object.create</p>
 <blockquote>
@@ -1380,6 +1393,9 @@ obj.name = 'frank'
 let obj2 = Object.create(common)
 obj2.name = 'jack'
 </code></pre>
+<blockquote>
+<p>不推荐使用 obj.__proto__ = common  // 所有 __proto__ 代码都不推荐写</p>
+</blockquote>
 </li>
 </ul>
 </li>
@@ -1678,13 +1694,13 @@ function Person(){
           </a>
         
         
-          <a href="../../Tools/git/" title="Git" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../13/" title="13-JS数组" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Git
+                13-JS数组
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
