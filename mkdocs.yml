@@ -22,6 +22,7 @@ nav:
       - 11-JS语法/数据类型/运算符: FF/11.md
       - 12-JS对象/对象分类: FF/12.md
       - 13-JS数组: FF/13.md
+      - 14-JS函数: FF/14.md
 
   - MDN-Learn: 
       - 大纲: MDN-Learn/0.md
