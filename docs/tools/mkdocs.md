@@ -23,8 +23,6 @@
 
 ## 3. 网站
 
-```
-```
 * 模板 
 
     * [mkdocs教程](https://cyent.github.io/markdown-with-mkdocs-material/install/local/)
@@ -156,6 +154,16 @@
 
     !!! failure
 
+    !!! danger
+
+        * danger
+        * error
+
+    !!! tip
+
+        * tip
+        * important
+
     !!! abstract
 
         * summary
@@ -166,19 +174,9 @@
         * info
         * todo
 
-    !!! tip
-
-        * tip
-        * important
-
     !!! success
 
     !!! warning
-
-    !!! danger
-
-        * danger
-        * error
 
     !!! bug
 
