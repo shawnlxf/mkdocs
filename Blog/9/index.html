@@ -905,56 +905,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        9-JS函数的执行时机
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
     <a href="./" title="9-JS函数的执行时机" class="md-nav__link md-nav__link--active">
       9-JS函数的执行时机
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-6-6" class="md-nav__link">
-    1 解释为什么如下代码会打印 6 个 6
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-012345" class="md-nav__link">
-    2 写出让上面代码打印 0、1、2、3、4、5 的方法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-for-let-012345" class="md-nav__link">
-    3 （可选内容）除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -981,37 +934,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-6-6" class="md-nav__link">
-    1 解释为什么如下代码会打印 6 个 6
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-012345" class="md-nav__link">
-    2 写出让上面代码打印 0、1、2、3、4、5 的方法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-for-let-012345" class="md-nav__link">
-    3 （可选内容）除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1031,7 +953,8 @@
                 
                 
                 <h1 id="js">JS 函数的执行时机<a class="headerlink" href="#js" title="Permanent link">&para;</a></h1>
-<h2 id="1-6-6">1 解释为什么如下代码会打印 6 个 6<a class="headerlink" href="#1-6-6" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">1 解释为什么如下代码会打印 6 个 6</p>
 <div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span><span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
   <span class="nx">setTimeout</span><span class="p">(()=&gt;{</span>
@@ -1042,7 +965,9 @@
 
 <p>setTimeout()的延迟时间的值为 0，意思是"immediately"执行，或者更准确地说，the next event cycle（事件周期）。</p>
 <p>当执行 <code>console.log(i)</code> 时，i 的值变为 6 而且循环积累了 6 个函数待执行，所以打印出的值是 6 个 6。</p>
-<h2 id="2-012345">2 写出让上面代码打印 0、1、2、3、4、5 的方法<a class="headerlink" href="#2-012345" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition question">
+<p class="admonition-title">2 写出让上面代码打印 0、1、2、3、4、5 的方法</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
     <span class="nx">setTimeout</span><span class="p">(()=&gt;{</span>
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
@@ -1050,8 +975,10 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<p>let语句声明 块级作用域 的变量，和前面for循环使用全局变量i不同，当前的i只在本轮循环有效。</p>
-<h2 id="3-for-let-012345">3 （可选内容）除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5<a class="headerlink" href="#3-for-let-012345" title="Permanent link">&para;</a></h2>
+<p>let 语句声明 块级作用域 的变量，和前面 for 循环使用全局变量 i 不同，当前的 i 只在本轮循环有效。</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">3 除了使用 for let 配合，还有什么其他方法可以打印出 0、1、2、3、4、5</p>
 <ol>
 <li>
 <p>用 立即执行函数 得到 局部变量 i</p>
@@ -1076,6 +1003,7 @@
 
 </li>
 </ol>
+</div>
                 
               
               
