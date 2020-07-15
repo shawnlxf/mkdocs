@@ -19,6 +19,9 @@
         * [学习指南](https://hijiangtao.github.io/2018/01/25/learn-plain-javascript-from-top-tutorials-for-the-past-year-v-2018/)
         * [ES6 新特性列表](https://fangyinghang.com/es-6-tutorials/)
 
+        * [博客-haha](https://www.cnblogs.com/hahazexia/p/9446585.html)
+        * [博客-郑馋师](https://www.jianshu.com/u/66bca46ceb07)
+
     * 2
         * 你不知道的 JavaScript (先看上卷，适合进阶)
 

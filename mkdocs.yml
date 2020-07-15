@@ -1,12 +1,41 @@
+# Project information
 site_name: ShawnDocs
 
 # Repository
 repo_name: shawnlxf/mkdocs
 repo_url: https://github.com/shawnlxf/mkdocs
 
+# Copyright
+copyright: Copyright &copy; 2020 Shawn
+
+# Configuration
+theme:
+  name: material
+  favicon: img/ninja.svg
+  logo: img/ninja.svg
+  language: zh
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shawnlxf
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  # nest code blocks within other blocks
+  - pymdownx.superfences
+  # collapsible Admonition blocks
+  - pymdownx.details
+
+# Page tree
 nav:
   - Home: README.md
-
   - 方方:
       - 0-杂项: FF/0.md
       - 1-安装: FF/1.md
@@ -23,36 +52,30 @@ nav:
       - 12-JS对象/对象分类: FF/12.md
       - 13-JS数组: FF/13.md
       - 14-JS函数: FF/14.md
-
   - MDN-Learn: 
       - 大纲: MDN-Learn/0.md
       - Web 入门: MDN-Learn/1.md
       - CSS: MDN-Learn/css.md
       - 常见问题: MDN-Learn/10.md
-
   - MDN-Web:
       - Web: MDN-Web/0.md
       - HTML: MDN-Web/1.md
       - CSS: MDN-Web/2.md
-
   - Language:
       - HTML: Language/html.md
       - CSS: Language/css.md
       - JavaScript: Language/javascript.md
       - Markdown: Language/markdown.md
       - Bash: Language/bash.md
-
   - Tools:
       - Git: Tools/git.md
       - Github: Tools/github.md
       - Hugo: Tools/hugo.md
       - Mkdocs: Tools/mkdocs.md
       - Cmder: Tools/cmder.md
-      
   - English:
       - 1: English/1.md
       - 2: English/2.md
-
   - Blog: 
       - 1-Github Pages: Blog/1.md
       - 2-HTML入门笔记1: Blog/2.md
@@ -62,12 +85,5 @@ nav:
       - 6-JavaScript的诞生: Blog/6.md
       - 7-JS的基本语法: Blog/7.md
       - 8-JS对象基本用法: Blog/8.md
+      - 9-JS函数的执行时机: Blog/9.md
 
-theme:
-  name: material
-  favicon: img/ninja.svg
-  logo: img/ninja.svg
-
-markdown_extensions:
-  - toc:
-      permalink: "#"

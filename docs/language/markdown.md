@@ -10,6 +10,7 @@
 ---
 
 [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Markdown 基本语法](http://younghz.github.io/Markdown/)
 
 ---
 

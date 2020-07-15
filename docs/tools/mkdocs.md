@@ -11,6 +11,7 @@
         * [官网](https://www.mkdocs.org/)
         * [中文翻译](https://mkdocs.zimoapps.com/)
         * [Mkdocs 配置和使用](https://www.xncoding.com/2020/03/01/tool/mkdocs.html)
+        * [PyMdown](https://facelessuser.github.io/pymdown-extensions/)
  
 
 ## 2. Project layout
@@ -26,7 +27,7 @@
 ```
 * 模板 
 
-    * [mkdocs教程](https://cyent.github.io/markdown-with-mkdocs-material/)
+    * [mkdocs教程](https://cyent.github.io/markdown-with-mkdocs-material/install/local/)
     * [Material模板](https://squidfunk.github.io/mkdocs-material/getting-started/)
     * [南开模板](https://www.nkdacs.com/tutorial/md-template/)
     * [不要香菜](http://www.nocilantro.cn/front_end/html/)
@@ -101,11 +102,11 @@
     > 创建一个新目录 site
 
 
-## 4.2 编写文档
+### 4.2 编写文档
 
 项目主页应命名为index
 
-### MkDocs includes some extensions
+#### MkDocs includes some extensions
 
 * Internal links
 
@@ -115,6 +116,70 @@
 
 * Meta-Data
 
-## 6. Deploying your docs(部署文档)
+### 6. Deploying your docs(部署文档)
 * Project Pages
     * $ mkdocs gh-deploy
+
+
+## 5 mkdocs 教程 
+
+
+### 5.x Admonition
+
+1. note
+
+    !!! note "note 换名字"
+
+        * note
+        * seealso
+
+        ``` javascript
+        let a
+        console.log(a)
+        ``` 
+
+    !!! note ""
+        删除标题的 note
+
+    ??? note "这是可折叠 note"
+        FAQs(常见问题) 或 次要内容
+
+* 其他类型:
+
+    !!! example
+
+    !!! question
+
+        * question
+        * help
+        * faq
+
+    !!! failure
+
+    !!! abstract
+
+        * summary
+        * tldr
+
+    !!! info
+    
+        * info
+        * todo
+
+    !!! tip
+
+        * tip
+        * important
+
+    !!! success
+
+    !!! warning
+
+    !!! danger
+
+        * danger
+        * error
+
+    !!! bug
+
+    !!! quote
