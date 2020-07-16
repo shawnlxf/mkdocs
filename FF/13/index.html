@@ -48,7 +48,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#js" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -237,8 +237,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../2/" title="2-git-markdown-Hugo" class="md-nav__link">
-      2-git-markdown-Hugo
+    <a href="../2/" title="2-git / markdown / Hugo" class="md-nav__link">
+      2-git / markdown / Hugo
     </a>
   </li>
 
@@ -249,8 +249,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../3/" title="3-HTML语法-HTML标签" class="md-nav__link">
-      3-HTML语法-HTML标签
+    <a href="../3/" title="3-HTML语法 / 标签" class="md-nav__link">
+      3-HTML语法 / 标签
     </a>
   </li>
 
@@ -321,8 +321,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../9/" title="9-HTTP入门" class="md-nav__link">
-      9-HTTP入门
+    <a href="../9/" title="9-HTTP入门 / 请求与响应 / node.js" class="md-nav__link">
+      9-HTTP入门 / 请求与响应 / node.js
     </a>
   </li>
 
@@ -333,8 +333,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10/" title="10-JS概述/内存图" class="md-nav__link">
-      10-JS概述/内存图
+    <a href="../10/" title="10-JS概述 / 内存图" class="md-nav__link">
+      10-JS概述 / 内存图
     </a>
   </li>
 
@@ -345,8 +345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../11/" title="11-JS语法/数据类型/运算符" class="md-nav__link">
-      11-JS语法/数据类型/运算符
+    <a href="../11/" title="11-JS语法 / 数据类型 / 运算符" class="md-nav__link">
+      11-JS语法 / 数据类型 / 运算符
     </a>
   </li>
 
@@ -357,8 +357,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../12/" title="12-JS对象/对象分类" class="md-nav__link">
-      12-JS对象/对象分类
+    <a href="../12/" title="12-JS对象 / 对象分类" class="md-nav__link">
+      12-JS对象 / 对象分类
     </a>
   </li>
 
@@ -373,8 +373,6 @@
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -391,8 +389,6 @@
       
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1012,8 +1008,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1098,8 +1092,9 @@
                   
                 
                 
-                <h1 id="js">JS 数组<a class="headerlink" href="#js" title="Permanent link">&para;</a></h1>
-<blockquote>
+                  <h1>13-JS数组</h1>
+                
+                <blockquote>
 <p>JS 其实没有真正的数组，只是用对象模拟数组</p>
 </blockquote>
 <details class="note"><summary>JS 的数组不是典型的数组</summary><ol>
@@ -1231,7 +1226,7 @@
 <span class="p">})</span>
 </code></pre></div>
 
-<details class="example"><summary>自己写 forEach 才能理解 forEach</summary><div class="highlight"><pre><span></span><code><span class="c1">// 为什么要传入 array 呢？规定如此</span>
+<details class="success"><summary>例：自己写 forEach 才能理解 forEach</summary><div class="highlight"><pre><span></span><code><span class="c1">// 为什么要传入 array 呢？规定如此</span>
 <span class="kd">function</span> <span class="nx">forEach</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="nx">fn</span><span class="p">){</span>
     <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
         <span class="nx">fn</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span>
@@ -1338,11 +1333,11 @@
 <li>
 <p>reduce</p>
 <p><img alt="" src="../../img/FF/13-arr-reduce-1.png" /></p>
-<details class="example"><summary>reduce 实现 map</summary><p><img alt="" src="../../img/FF/13-arr-reduce-2.png" /></p>
+<details class="success"><summary>例：reduce 实现 map</summary><p><img alt="" src="../../img/FF/13-arr-reduce-2.png" /></p>
 </details>
-<details class="example"><summary>reduce 实现 filter</summary><p><img alt="" src="../../img/FF/13-arr-reduce-3.png" /></p>
+<details class="success"><summary>例：reduce 实现 filter</summary><p><img alt="" src="../../img/FF/13-arr-reduce-3.png" /></p>
 </details>
-<details class="example"><summary>面试题：把数组变成对象</summary><p><img alt="" src="../../img/FF/13-arr-reduce-4.png" /></p>
+<details class="success"><summary>例：面试题：把数组变成对象</summary><p><img alt="" src="../../img/FF/13-arr-reduce-4.png" /></p>
 <p><img alt="" src="../../img/FF/13-arr-reduce-5.png" /></p>
 </details>
 </li>
@@ -1365,7 +1360,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../12/" title="12-JS对象/对象分类" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../12/" title="12-JS对象 / 对象分类" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1374,7 +1369,7 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                12-JS对象/对象分类
+                12-JS对象 / 对象分类
               </div>
             </div>
           </a>
