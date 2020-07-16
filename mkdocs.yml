@@ -35,6 +35,8 @@ markdown_extensions:
   - pymdownx.details
   # 使用 shebang 可以在一行文本里实现代码高亮
   - pymdownx.inlinehilite
+  # grouping Markdown blocks with tabs
+  - pymdownx.tabbed
 
 # Page tree
 nav:
@@ -42,17 +44,17 @@ nav:
   - 方方:
       - 0-杂项: FF/0.md
       - 1-安装: FF/1.md
-      - 2-git-markdown-Hugo: FF/2.md
-      - 3-HTML语法-HTML标签: FF/3.md
+      - 2-git / markdown / Hugo: FF/2.md
+      - 3-HTML语法 / 标签: FF/3.md
       - 4-HTML重点标签: FF/4.md
       - 5-CSS基础概念: FF/5.md
       - 6-CSS布局: FF/6.md
       - 7-CSS定位: FF/7.md
       - 8-CSS动画: FF/8.md
-      - 9-HTTP入门: FF/9.md
-      - 10-JS概述/内存图: FF/10.md
-      - 11-JS语法/数据类型/运算符: FF/11.md
-      - 12-JS对象/对象分类: FF/12.md
+      - 9-HTTP入门 / 请求与响应 / node.js: FF/9.md
+      - 10-JS概述 / 内存图: FF/10.md
+      - 11-JS语法 / 数据类型 / 运算符: FF/11.md
+      - 12-JS对象 / 对象分类: FF/12.md
       - 13-JS数组: FF/13.md
       - 14-JS函数: FF/14.md
   - MDN-Learn:

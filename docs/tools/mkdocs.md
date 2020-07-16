@@ -144,7 +144,7 @@
 
 * 其他类型:
 
-    !!! example
+    !!! success
 
     !!! question
 
@@ -154,10 +154,10 @@
 
     !!! failure
 
-    !!! danger
-
-        * danger
-        * error
+    !!! info
+    
+        * info
+        * todo
 
     !!! tip
 
@@ -168,13 +168,6 @@
 
         * summary
         * tldr
-
-    !!! info
-    
-        * info
-        * todo
-
-    !!! success
 
     !!! warning
 
