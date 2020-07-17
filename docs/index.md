@@ -62,7 +62,7 @@
     * 博客记录
 
 
-![](../img/frontend.png)
+![](img/frontend.png)
 
 
 
