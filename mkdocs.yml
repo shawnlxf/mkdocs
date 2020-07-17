@@ -48,7 +48,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: README.md
+  - Home: index.md
   - 方方:
       - 0-杂项: FF/0.md
       - 1-安装: FF/1.md
