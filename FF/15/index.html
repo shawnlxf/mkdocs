@@ -15,7 +15,7 @@
     
     
       
-        <title>15 - ShawnDocs</title>
+        <title>15-JS运算符 / 总结 - ShawnDocs</title>
       
     
     
@@ -47,6 +47,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -70,7 +75,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              15
+              15-JS运算符 / 总结
             
           </span>
         </div>
@@ -132,14 +137,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -151,7 +158,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../0/" class="md-tabs__link">
+        <a href="../0/" class="md-tabs__link md-tabs__link--active">
           方方
         </a>
       
@@ -263,10 +270,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       方方
@@ -302,8 +311,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../1/" title="1-安装" class="md-nav__link">
-      1-安装
+    <a href="../1/" title="1-快捷键 / node.js" class="md-nav__link">
+      1-快捷键 / node.js
     </a>
   </li>
 
@@ -314,8 +323,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../2/" title="2-git / markdown / Hugo" class="md-nav__link">
-      2-git / markdown / Hugo
+    <a href="../2/" title="2-git / markdown" class="md-nav__link">
+      2-git / markdown
     </a>
   </li>
 
@@ -461,6 +470,98 @@
     <a href="../14/" title="14-JS函数" class="md-nav__link">
       14-JS函数
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        15-JS运算符 / 总结
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="15-JS运算符 / 总结" class="md-nav__link md-nav__link--active">
+      15-JS运算符 / 总结
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 算术运算符 (数学运算)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 比较运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 布尔运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 二进制位运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 其他运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6 运算符优先级
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7 总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -681,8 +782,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Learn/Books/%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84JS%E6%95%99%E7%A8%8B/" title="阮一峰的JS教程" class="md-nav__link">
-      阮一峰的JS教程
+    <a href="../../Learn/Books/%E7%BD%91%E9%81%93-JavaScript/" title="网道-JavaScript" class="md-nav__link">
+      网道-JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Learn/Books/%E7%BD%91%E9%81%93-HTML/" title="网道-HTML" class="md-nav__link">
+      网道-HTML
     </a>
   </li>
 
@@ -1160,6 +1273,78 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 算术运算符 (数学运算)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 比较运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 布尔运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 二进制位运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 其他运算符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6 运算符优先级
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    7 总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1173,31 +1358,323 @@
                   
                 
                 
-                  <h1>15</h1>
+                  <h1>15-JS运算符 / 总结</h1>
                 
-                <ul>
-<li>错误的代码<ul>
-<li>先把数字变成字符串</li>
-<li>由于字符串不支持 - ，先把字符串变成数字</li>
+                <blockquote>
+<p>==, ++, new Number() 这辈子不用</p>
+</blockquote>
+<h2 id="1">1 算术运算符 (数学运算)<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>number 运算</summary><ol>
+<li>加减乘除</li>
+<li>
+<p>余数 x % 7</p>
+<blockquote>
+<p>-1 % 7 === -1</p>
+</blockquote>
+</li>
+<li>
+<p>指数 x ** 3</p>
+</li>
+<li>
+<p>自增自减 x++ / ++x / x-- / --x</p>
+<details class="success"><summary>例子</summary><p><img alt="" src="../../img/FF/15-%2B%2B.png" /></p>
+</details>
+<blockquote>
+<p>尽量少用，容易记错</p>
+<p>a++ =&gt; a += 1</p>
+</blockquote>
+</li>
+<li>
+<p>求值运算符 +x</p>
+<details class="success"><summary>例子</summary><p><img alt="" src="../../img/FF/15-%2B.png" /></p>
+</details>
+</li>
+<li>
+<p>负数运算符 -x</p>
+</li>
+</ol>
+</details>
+<details class="note"><summary>string 运算</summary><p>连接运算 '123' + '456'</p>
+</details>
+<details class="failure"><summary>不同类型不要加起来</summary><p>把 1 和 '2' 加起来没意义</p>
+<ul>
+<li>
+<p>错误的代码</p>
+<ul>
+<li>
+<p>先把数字变成字符串</p>
+<blockquote>
+<p>1 + '2' === '12'</p>
+</blockquote>
+</li>
+<li>
+<p>由于字符串不支持 - ，先把字符串变成数字</p>
+</li>
 </ul>
 </li>
 </ul>
-<p>a++ =&gt; a += 1</p>
-<p>== 模糊相等</p>
-<p>=== 全等</p>
+</details>
+<h2 id="2">2 比较运算符<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>IE: console === undefined</li>
+<li>>, &lt;</li>
+<li>>=, &lt;=</li>
+<li>==(模糊相等), !=</li>
+<li>===(全等), !==</li>
 </ul>
-<p>防御性编程：console &amp;&amp;
-可选链语法</p>
-<p>保底值：add() 传 undefined，返回 NaN
-n=0: 如果 n 是 NaN 或 undefined，就让 n = 0</p>
+<details class="failure"><summary>忠告：永远不要使用 ==，用 === 代替</summary><p>== 的问题在于，它总是自作聪明（自动类型转换）</p>
+<details class="note"><summary>JS 三位一体</summary><p><img alt="" src="../../img/FF/15-JS-%E4%B8%89%E4%BD%8D%E4%B8%80%E4%BD%93.png" /></p>
+</details>
+</details>
+<details class="note"><summary>x === y</summary><ul>
+<li>基本类型看值是否相等</li>
+<li>
+<p>对象看地址是否相等</p>
+<blockquote>
+<p>[ ] !== [ ]</p>
+<p>{ } !== { }</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">NaN !== NaN</p>
+</div>
+</li>
+</ul>
+</details>
+<h2 id="3">3 布尔运算符<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>或且非</summary><ul>
+<li>||</li>
+<li>&amp;&amp;</li>
+<li>!</li>
+</ul>
+</details>
+<details class="note"><summary>短路逻辑</summary><details class="note"><summary>console &amp;&amp; console.log &amp;&amp; console.log('hi')</summary><blockquote>
+<p>以防 console 不存在报错</p>
+</blockquote>
+<p><img alt="" src="../../img/FF/15-console.png" /></p>
+<blockquote>
+<p>IE: console === undefined</p>
+<p>防御性编程</p>
+<p>可选链语法</p>
+</blockquote>
+</details>
+<details class="note"><summary>a = a || 100</summary><p>a 的保底值</p>
+<p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-1.png" /></p>
+<p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-2.png" /></p>
+<p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-3.png" /></p>
+</details>
+</details>
+<h2 id="4">4 二进制位运算符<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<blockquote>
 <p>位运算不支持小数</p>
-<p>取整：window.parseInt()</p>
-<p>a.toString(): 创建，用，滚
-封装对象</p>
-<p>==, ++, new Number() 这辈子不用</p>
-<p><a href="javascript:;" onclick="console.log('hi')">点击</a></p>
+<p>平时工作很少用，面试喜欢问</p>
+</blockquote>
+<details class="note"><summary>或、与、否</summary><ul>
+<li>
+<p>|</p>
+<blockquote>
+<p>两个位都为 0，则结果为 0，否则为 1</p>
+</blockquote>
+</li>
+<li>
+<p>&amp;</p>
+<ul>
+<li>
+<p>判断奇偶</p>
+<blockquote>
+<p>偶数 &amp; 1 = 0
+奇数 &amp; 1 = 1</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>~</p>
+</li>
+</ul>
+</details>
+<details class="note"><summary>异或</summary><p>^: 两个位相同，则结果为0，否则为1</p>
+<details class="note"><summary>交换 a, b 的值</summary><div class="highlight"><pre><span></span><code><span class="nx">a</span> <span class="o">^=</span> <span class="nx">b</span>
+<span class="nx">b</span> <span class="o">^=</span> <span class="nx">a</span>
+<span class="nx">a</span> <span class="o">^=</span> <span class="nx">b</span>
+</code></pre></div>
+
+</details>
+<details class="success"><summary>[a,b] = [b,a]</summary><p><img alt="" src="../../img/FF/15-swap.png" /></p>
+</details>
+</details>
+<details class="note"><summary>左移, 右移, 头部补零的右移运算符</summary><ul>
+<li>&lt;&lt; </li>
+<li>>></li>
+<li>>>></li>
+</ul>
+</details>
+<details class="note"><summary>使用 ~, &gt;&gt;, &lt;&lt;, &gt;&gt;&gt;, | 取整</summary><blockquote>
+<p>不用：window.parseInt()</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">~~</span> <span class="mf">6.83</span><span class="p">)</span>    <span class="c1">// 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">6.83</span> <span class="o">&gt;&gt;</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1">// 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">6.83</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1">// 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">6.83</span> <span class="o">|</span> <span class="mi">0</span><span class="p">)</span>   <span class="c1">// 6</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">6.83</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="c1">// 6</span>
+</code></pre></div>
+
+</details>
+<h2 id="5">5 其他运算符<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>奇葩</p>
+</blockquote>
+<ul>
+<li>
+<p>点运算符</p>
+<ul>
+<li>
+<p>语法</p>
+<blockquote>
+<p>对象.属性名 = 属性值</p>
+</blockquote>
+</li>
+<li>
+<p>作用</p>
+<blockquote>
+<p>读取对象的属性值</p>
+</blockquote>
+</li>
+</ul>
+<details class="question"><summary>不是对象，为什么也可以有属性？</summary><p><code class="highlight"><span class="s1">&#39;a-b-c&#39;</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span></code></p>
+<div class="admonition note">
+<p class="admonition-title"><code class="highlight"><span class="nx">a</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span></code></p>
+<blockquote>
+<p>创建，用，滚</p>
+</blockquote>
+<p><img alt="" src="../../img/FF/15-tostring.png" /></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">原因：JS 有特殊逻辑</p>
+<p>点前面不是对象，就把它封装成对象</p>
+<ul>
+<li>number 会变成 Number 对象</li>
+<li>string 会变成 String 对象</li>
+<li>bool 会变成 Boolean 对象</li>
+</ul>
+<blockquote>
+<p>程序员从来不用这三种对象，只用简单类型</p>
+</blockquote>
+</div>
+</details>
+</li>
+<li>
+<p>void 运算符</p>
+<ul>
+<li>
+<p>语法</p>
+<blockquote>
+<p>void 表达式 或 语句</p>
+</blockquote>
+</li>
+<li>
+<p>作用</p>
+<details class="note"><summary>求表达式的值，或执行语句，然后 void 的值总是为 undefined</summary><p><img alt="" src="../../img/FF/15-void.png" /></p>
+</details>
+</li>
+</ul>
+<details class="note"><summary>改用 void 可以炫技</summary><div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://baidu.com&quot;</span> <span class="nx">onclick</span><span class="o">=</span><span class="s2">&quot;f(); return false;&quot;</span><span class="o">&gt;</span><span class="nx">点击</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+</code></pre></div>
+
+<blockquote>
+<p>return 假值可以阻止默认动作</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;javascript: void(f())&quot;</span><span class="o">&gt;</span><span class="nx">点击</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+</code></pre></div>
+
+</details>
+</li>
+<li>
+<p>逗号运算符</p>
+<ul>
+<li>
+<p>语法</p>
+<blockquote>
+<p>表达式1, 表达式2, ..., 表达式n</p>
+</blockquote>
+</li>
+<li>
+<p>作用</p>
+<blockquote>
+<p>将表达式 n 的值作为整体的值</p>
+</blockquote>
+</li>
+</ul>
+<details class="note"><summary>使用</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1">// a 的值为 5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;平方值为&#39;</span><span class="p">),</span> <span class="nx">x</span><span class="o">*</span><span class="nx">x</span><span class="p">)</span>
+<span class="c1">// 上面的括号不能省</span>
+</code></pre></div>
+
+</details>
+</li>
+</ul>
+<h2 id="6">6 运算符优先级<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h2 id="7">7 总结<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>最重要的知识</summary><blockquote>
+<p>基于这三个知识和基础知识，可以推出 JS 世界</p>
+</blockquote>
+<ol>
+<li>
+<p>JS 公式 (唯一公式)</p>
+<blockquote>
+<p>对象.__proto__ === 其构造函数.prototype</p>
+<p>用于判断 构造函数之后的对象 的原型</p>
+</blockquote>
+</li>
+<li>
+<p>函数公理</p>
+<blockquote>
+<p>所有函数都是由 Function 构造的</p>
+<p>主要用于判断 构造函数 的原型: Object, Array, Function</p>
+<p>还有 对象里的方法</p>
+</blockquote>
+</li>
+<li>
+<p>根公理 (公理就是规定好的)</p>
+<blockquote>
+<p>Object.prototype 是所有对象的（直接或间接）原型</p>
+<p>普通对象：直接</p>
+<p>主要用于判断构造 函数之前的对象 的原型</p>
+<p>数组、函数：间接</p>
+</blockquote>
+</li>
+</ol>
+</details>
+<details class="note"><summary>JS 世界</summary><p><img alt="" src="../../img/FF/15-JS%E4%B8%96%E7%95%8C.png" /></p>
+</details>
+<details class="note"><summary>其他</summary><ul>
+<li>
+<p>约定："的原型" === ".<strong>proto</strong>"</p>
+<blockquote>
+<p>用于判断 构造函数 和 其之后的对象 的原型</p>
+</blockquote>
+</li>
+<li>
+<p>构造函数是用来构造对象的</p>
+</li>
+<li>
+<p>如果对象想要分类，用构造函数给原型链加一环</p>
+<blockquote>
+<p>如果加了一环之后，想再加一环怎么办？</p>
+<p>继承里讲</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<details class="note"><summary>还有什么没学</summary><blockquote>
+<p>看网道 和 项目中深入理解</p>
+</blockquote>
+<ul>
+<li>错误处理 try...catch...</li>
+<li>Math / Date / 正则 / JSON</li>
+</ul>
+</details>
                 
               
               
@@ -1212,6 +1689,41 @@ n=0: 如果 n 是 NaN 或 undefined，就让 n = 0</p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../14/" title="14-JS函数" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                14-JS函数
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../MDN-Learn/0/" title="大纲" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                大纲
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
