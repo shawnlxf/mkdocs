@@ -1,20 +1,23 @@
-# HTML
 
-## 0. 路线：
+## 1 路线：
 
-* 1.a -> 1.b
+!!! note "1.1 -> 1.2"
 
-    * 1.a
+    > 不要买任何 HTML 的书
+    > 
+    > google: mdn html5
 
-        * MDN
+    * 1.1
 
-    * 1.b
-
-        * w3school, w3schools
         * [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
 
+    * 1.2
 
-## 视频
+        * MDN
+        * w3school, w3schools
+
+
+## mdn
 
 
 * <span\>
