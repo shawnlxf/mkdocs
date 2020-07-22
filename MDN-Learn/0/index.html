@@ -47,6 +47,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -574,9 +579,40 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        大纲
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="大纲" class="md-nav__link md-nav__link--active">
       大纲
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    学习区
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1264,6 +1300,36 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    学习区
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1279,70 +1345,51 @@
                 
                   <h1>大纲</h1>
                 
-                <ul>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn">学习区</a> |
-<a href="https://developer.mozilla.org/en-US/docs/Learn/Release_notes">新增</a> |
-<a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions">常见问题</a></p>
-<div class="codehilite"><pre><span></span><code>git clone https://github.com/mdn/learning-area  // 下载示例代码
-
-git pull  // 更新代码
+                <h2 id="_1"><a href="https://developer.mozilla.org/en-US/docs/Learn">学习区</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[新增]</li>
+<li><a href="../10/">常见问题</a></li>
+</ul>
+<details class="success"><summary>下载示例代码</summary><div class="highlight"><pre><span></span><code>$ git clone https://github.com/mdn/learning-area  // 下载示例代码
+$ git pull  // 更新代码
 </code></pre></div>
 
-
-<ol>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Web 入门</a></li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML</a></p>
-<blockquote>
-<p>structure our web content 的不同部分，定义其意义或目的</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS</a></p>
-<blockquote>
-<p>style and layout our web content, </p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">1. <a href="../1/">Web 入门</a></p>
+</div>
+<details class="note"><summary>2. [HTML]</summary><p>structure our web content 的不同部分，定义其意义或目的</p>
+</details>
+<details class="note"><summary>3. [CSS]</summary><p>style and layout our web content, </p>
 <p>添加 behavior, 如 animation</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></p>
-<blockquote>
-<p>dynamic client-side scripting</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">Forms</a></p>
-<blockquote>
-<p>与用户交互的强大工具</p>
+</details>
+<details class="note"><summary>4. [JavaScript]</summary><p>dynamic client-side scripting</p>
+</details>
+<details class="note"><summary>5. [Forms]</summary><p>与用户交互的强大工具</p>
 <p>通常，从用户收集数据 或 允许他们控制用户界面</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">Accessibility</a></p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Performance">Performance</a></p>
-<blockquote>
-<p>确保 Web应用程序 快速下载并响应用户交互的艺术</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing">Tools_and_testing</a></p>
-<blockquote>
-<p>促进工作的工具，如跨浏览器测试工具, linters, formatters, 转换工具, version control systems, deployment tools, and client-side JavaScript frameworks.</p>
-</blockquote>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side">Server-side</a></p>
-<blockquote>
-<p>如何使用两个流行框架 build up a server-side app: </p>
-<p>Django (Python) and Express (Node.js).</p>
-</blockquote>
-</li>
-</ol>
-</li>
+</details>
+<div class="admonition note">
+<p class="admonition-title">6. [Accessibility]</p>
+</div>
+<details class="note"><summary>7. [Performance]</summary><p>确保 Web应用程序 快速下载并响应用户交互的艺术</p>
+</details>
+<details class="note"><summary>8. [Tools_and_testing]</summary><p>促进工作的工具，如</p>
+<ul>
+<li>跨浏览器测试工具, </li>
+<li>linters, </li>
+<li>formatters, </li>
+<li>转换工具, </li>
+<li>version control systems, </li>
+<li>deployment tools, </li>
+<li>client-side JavaScript frameworks.</li>
 </ul>
+</details>
+<details class="note"><summary>9. [Server-side]</summary><p>如何使用两个流行框架 build up a server-side app: </p>
+<ul>
+<li>Django (Python) </li>
+<li>Express (Node.js).</li>
+</ul>
+</details>
                 
               
               

@@ -548,6 +548,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 算法入门
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1342,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 算法入门
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1530,6 +1544,7 @@ end
 <li>牛逼的程序员更重视数据结构，而不是算法</li>
 </ul>
 </details>
+<h2 id="3">3 算法入门<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>8 种排序算法</p>
@@ -1538,6 +1553,86 @@ end
 </blockquote>
 </li>
 </ul>
+<details class="question"><summary>请写一个 min 函数，要求 min(numbers) 能返回数组 numbers 中的最小数字。</summary><details class="note"><summary>举例:</summary><p>想到数组</p>
+<div class="highlight"><pre><span></span><code>min([1,2,3,4])
+= min( [ 1, min( [2,3,4] ) ] )
+= min( [ 1, min( [2, min([3,4]) ] ) ] )   // 化繁为简，一招鲜吃遍天，想到用递归
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>min([numbers[0], min(numbers.slice(1))])   // 递进
+minOf2([a, b]) =&gt; a &lt; b ? a : b            // 尽头
+</code></pre></div>
+
+</details>
+<details class="note"><summary>实现：</summary><div class="highlight"><pre><span></span><code><span class="c1">//let minOf2 = ([a, b]) =&gt; a &lt; b ? a : b    // 析构赋值</span>
+
+<span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">min</span><span class="p">(</span>
+            <span class="p">[</span><span class="nx">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">min</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">))]</span>
+        <span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">//return minOf2(numbers)</span>
+        <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">numbers</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>现成 API</summary><ul>
+<li>
+<p>JS 内置了 Math.min </p>
+<blockquote>
+<p>Math 只是一个普通对象，惟一的特例</p>
+</blockquote>
+<ul>
+<li>Math.min(1,2)</li>
+<li>Math.min.call(null,1,2)</li>
+<li>Math.min.apply(null, [1,2])</li>
+</ul>
+</li>
+</ul>
+</details>
+</details>
+<details class="question"><summary>请写出一个 sort 函数，要求 sort(numbers) 能返回一个把 numbers 从小到大排列的数组（你可以添加多余的帮助函数）</summary><p>选择排序</p>
+<details class="note"><summary>举例</summary><p>想到数组</p>
+<div class="highlight"><pre><span></span><code>sort([3,2,1])
+= min([3,2,1]).concat( sort([3,2]) )
+...
+= min([3,2,1]).concat( min([3,2]).concat( [3] ) )   // 递归 + 其他函数
+</code></pre></div>
+
+</details>
+<details class="note"><summary>minIndex</summary><p>这是一个取巧的办法，以后会教更好的</p>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">minIndex</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span>
+    <span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">min</span><span class="p">(</span><span class="nx">numbers</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>实现：</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">min</span><span class="p">(</span>
+            <span class="p">[</span><span class="nx">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nx">min</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">))]</span>
+        <span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">numbers</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">sort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">minNum</span> <span class="o">=</span> <span class="nx">min</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span>
+        <span class="kd">let</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">minNum</span><span class="p">)</span>
+        <span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nx">minNum</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span> <span class="nx">sort</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">numbers</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+</details>
                 
               
               
