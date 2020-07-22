@@ -10,7 +10,7 @@
 
         2. 查询 / 博客 / 公众号 (查漏补缺)
 
-            * w3school, w3schools
+            * 菜鸟教程
             * [php 中文网](https://www.php.cn/web-designer.html)
             * [廖雪峰](https://www.liaoxuefeng.com/)
             * [毕小烦的学习笔记](https://blog.csdn.net/wirelessqa)

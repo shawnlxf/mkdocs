@@ -1,20 +1,16 @@
 
 ## 1 路线：
 
-!!! note "1.1 -> 1.2"
+!!! note "1.2"
 
     > 不要买任何 HTML 的书
     > 
     > google: mdn html5
 
-    * 1.1
-
-        * [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
-
     * 1.2
 
         * MDN
-        * w3school, w3schools
+        * [阮一峰的HTML教程](https://wangdoc.com/html/index.html)
 
 
 ## mdn
