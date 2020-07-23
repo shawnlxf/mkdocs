@@ -21,7 +21,9 @@
                 > AJAX 已经被 [Fetch Standard](https://fetch.spec.whatwg.org/) 取代，学习 fetch api 即可 
 
             * github 上的 4 个 star
+            * 阮一峰的博客
             * 方方的博客
+            * 知乎的关注
 
     ??? note "2. 电子书 (亚马逊 / 微信读书)"
 

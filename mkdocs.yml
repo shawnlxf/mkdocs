@@ -77,31 +77,30 @@ nav:
           - Web: MDN-Web/0.md
           - HTML: MDN-Web/1.md
           - CSS: MDN-Web/2.md
+      - Language:
+          - HTML: Learn/Language/html.md
+          - CSS: Learn/Language/css.md
+          - JavaScript: Learn/Language/javascript.md
+          - Markdown: Learn/Language/markdown.md
+          - Bash: Learn/Language/bash.md
       - Projects:
           - 1: Learn/Projects/1.md
+      - Tools:
+          - Software: Learn/Tools/software.md
+          - Git: Learn/Tools/git.md
+          - Github: Learn/Tools/github.md
+          - Hugo: Learn/Tools/hugo.md
+          - MkDocs: Learn/Tools/mkdocs.md
+          - Cmder: Learn/Tools/cmder.md
+      - English:
+          - 1: Learn/English/1.md
+          - 2: Learn/English/2.md
   - Books:
-      - 你不知道的JavaScript: Learn/Books/你不知道的JavaScript.md
+      - 你不知道的JavaScript: Books/你不知道的JavaScript.md
       - 网道-JavaScript:
           - 1-入门篇: Books/网道-JavaScript/1.md
           - 2-数据类型: Books/网道-JavaScript/2.md
-      - 网道-HTML: Learn/Books/网道-HTML.md
-  - Skills:
-      - Language:
-          - HTML: Skills/Language/html.md
-          - CSS: Skills/Language/css.md
-          - JavaScript: Skills/Language/javascript.md
-          - Markdown: Skills/Language/markdown.md
-          - Bash: Skills/Language/bash.md
-      - Tools:
-          - Software: Skills/Tools/software.md
-          - Git: Skills/Tools/git.md
-          - Github: Skills/Tools/github.md
-          - Hugo: Skills/Tools/hugo.md
-          - MkDocs: Skills/Tools/mkdocs.md
-          - Cmder: Skills/Tools/cmder.md
-      - English:
-          - 1: Skills/English/1.md
-          - 2: Skills/English/2.md
+      - 网道-HTML: Books/网道-HTML.md
   - Blog:
       - 1-Github Pages: Blog/1.md
       - 2-HTML入门笔记1: Blog/2.md
