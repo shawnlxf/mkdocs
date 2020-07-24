@@ -1,5 +1,8 @@
 # Project information
 site_name: ShawnDocs
+site_author: Shawn
+site_description: >-
+  前端学习笔记，包含饥人谷方方课的笔记，MDN 的学习总结，读书笔记 和 项目记录 等。
 
 # Repository
 repo_name: shawnlxf/mkdocs
@@ -71,6 +74,7 @@ nav:
       - MDN-Learn:
           - 大纲: MDN-Learn/0.md
           - Web 入门: MDN-Learn/1.md
+          - HTML: MDN-Learn/2.md
           - CSS: MDN-Learn/css.md
           - 常见问题: MDN-Learn/10.md
       - MDN-Web:
