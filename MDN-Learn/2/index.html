@@ -701,7 +701,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../css/" title="CSS" class="md-nav__link">
+    <a href="../3/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -1680,34 +1680,90 @@
 <blockquote>
 <p>&lt;header></p>
 </blockquote>
+<details class="note"><summary>&lt;header></summary><p>代表一组介绍性内容。</p>
+<ul>
+<li>如果它是 &lt;body> 的子元素，则定义网页的全局 header</li>
+<li>如果它是 &lt;article> 或 &lt;section> 的子元素，定义那个 section 的 特定的 header</li>
+</ul>
+</details>
 </li>
 <li>
 <p>navigation bar: 导航栏</p>
 <blockquote>
 <p>&lt;nav></p>
 </blockquote>
+<details class="note"><summary>&lt;nav></summary><p>包含页面的主要导航功能。其中不应包含二级链接(Secondary links)等内容。</p>
+</details>
 </li>
 <li>
 <p>main content: 主内容 </p>
 <blockquote>
 <p>&lt;main>，和不同内容的 subsections，用以下元素表示：&lt;article>, &lt;section>, 和 &lt;div></p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">&lt;main>: 存放每个页面独有的内容，每个页面上只能用一次</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">&lt;article>: 包围的内容即一篇文章，比如一篇博客</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">&lt;section>: </p>
+<ul>
+<li>更适用于组织页面使其按功能（比如迷你地图、一组文章标题和摘要）分块。</li>
+<li>最好以 标题(heading) 开头</li>
+</ul>
+</div>
 </li>
 <li>
 <p>sidebar: 侧边栏</p>
 <blockquote>
 <p>&lt;aside>; 经常放在 &lt;main> 里</p>
 </blockquote>
+<details class="note"><summary>&lt;aside></summary><p>提供与主要内容间接相关的其他信息（词汇表条目，作者传记，相关链接等）(glossary entries, author biography, related links, etc.)。</p>
+</details>
 </li>
 <li>
 <p>footer: 页脚</p>
 <blockquote>
-<p>&lt;footer></p>
+<p>&lt;footer>: 页面的一组结束内容</p>
 </blockquote>
 </li>
 </ul>
 </details>
+<details class="note"><summary>无语义元素 (Non-semantic wrappers)</summary><ul>
+<li>span</li>
+<li>div: 只有在没有更好的语义方案时才选择它，而且要尽可能少用，否则文档的升级和维护工作会非常困难。</li>
+</ul>
+</details>
+<details class="note"><summary>换行和水平分割线 (Line breaks and horizontal rules)</summary><ul>
+<li>
+<p>&lt;br></p>
+<ul>
+<li>在段落中创建换行; </li>
+<li>这是在需要一系列固定短线的情况下（例如在邮寄地址或一首诗中）施加刚性结构的唯一方法。</li>
+</ul>
+</li>
+<li>
+<p>&lt;hr></p>
+<ul>
+<li>在文档中创建一个水平规则，该水平规则表示文本的主题变化（例如主题或场景的改变）。在视觉上，它看起来像一条水平线。</li>
+</ul>
+</li>
+</ul>
+</details>
 <h3 id="17-debugging-html">1.7 Debugging HTML<a class="headerlink" href="#17-debugging-html" title="Permanent link">&para;</a></h3>
+<details class="note"><summary>解析 HTML</summary><ul>
+<li>浏览器并不会将 HTML 编译成其它形式，而是直接解析并显示结果（称之为解释(interpreted)，而非编译(compiled)）</li>
+<li>浏览器解析 HTML 的方式比运行编程语言的方式要宽容(permissive)得多，这既是好事也是坏事。</li>
+</ul>
+</details>
+<div class="admonition note">
+<p class="admonition-title">错误</p>
+<ul>
+<li>语法错误</li>
+<li>逻辑错误</li>
+</ul>
+</div>
 <h2 id="2">2 <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">多媒体 和 嵌入</a><a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h2 id="3-html">3 <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables">HTML 表格</a><a class="headerlink" href="#3-html" title="Permanent link">&para;</a></h2>
                 
@@ -1743,7 +1799,7 @@
           </a>
         
         
-          <a href="../css/" title="CSS" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../3/" title="CSS" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
