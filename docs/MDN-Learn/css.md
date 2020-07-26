@@ -1,33 +1,3 @@
-# CSS
-
-## 1. [第一步](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
-
-### 1.1 什么是 CSS
-
-* 标记语言：HTML / SVG / XML
-
-### 1.2 开始
-
-??? note "链接 styles.css 到 index.html 的 <head\>"
-
-    ``` css
-    <link rel="stylesheet" href="styles.css">
-    ```
-
-??? note "改变元素的默认行为"
-
-    <ul\>,  不要 list bullets
-
-    ``` css
-    li {
-        list-style-type: none;
-    }
-    ```
-
-
-### 1.3 CSS 的结构
-### 1.4 CSS 如何工作
-### 1.5 运用新知识
 
 ## 2. [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
 

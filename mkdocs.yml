@@ -73,9 +73,16 @@ nav:
   - Learn:
       - MDN-Learn:
           - 大纲: MDN-Learn/0.md
-          - Web 入门: MDN-Learn/1.md
-          - HTML: MDN-Learn/2.md
-          - CSS: MDN-Learn/3.md
+          - 1 Web入门: MDN-Learn/1.md
+          - 2 HTML: 
+
+              - 2.1 HTML简介: MDN-Learn/html-1.md
+
+          - 3 CSS: 
+
+              - 3.1 第一步: MDN-Learn/css-1.md
+              - 3.2 构建块: MDN-Learn/css-2.md
+
           - 常见问题: MDN-Learn/10.md
       - MDN-Web:
           - Web: MDN-Web/0.md
