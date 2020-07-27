@@ -1748,23 +1748,25 @@ li[class*=&quot;box&quot;]
 </details>
 <details class="note"><summary>3 组合器 (Combinators)</summary><ul>
 <li>
-<p>后代组合器（Descendant combinator）</p>
+<p>后代组合器（Descendant combinator，空格）</p>
 <blockquote>
 <p>选择前一个元素的后代节点。</p>
+<p>第一个元素可以是 parent's parent's parent</p>
 <p>语法：<code>A B</code></p>
 </blockquote>
 </li>
 <li>
-<p>直接子代组合器（Child combinator）</p>
+<p>直接子代组合器（Child combinator, &gt;）</p>
 <blockquote>
-<p>选择第一个元素的直接子代的节点。</p>
+<p>选择第一个元素的 直接 子代的节点。</p>
 <p>语法：<code>A &gt; B</code></p>
 </blockquote>
 </li>
 <li>
-<p>一般兄弟组合器（General sibling combinator）</p>
+<p>全体兄弟组合器（General sibling combinator）</p>
 <blockquote>
 <p>选择兄弟元素，这意味着第二个元素在第一个元素后面的任意位置，并且共享相同的父元素。</p>
+<p>所有 all</p>
 <p>语法：<code>A ~ B</code></p>
 </blockquote>
 </li>
@@ -1772,31 +1774,279 @@ li[class*=&quot;box&quot;]
 <p>紧邻兄弟组合器（Adjacent sibling combinator）</p>
 <blockquote>
 <p>选择相邻的兄弟元素。这意味着第二个元素直接跟随第一个元素，并且共享相同的父元素。</p>
+<p>相同 level</p>
 <p>语法：<code>A + B</code></p>
 </blockquote>
 </li>
 </ul>
+<details class="success"><summary>使用 combinators</summary><div class="highlight"><pre><span></span><code><span class="c">/* select list items with a class of &quot;a&quot;, which are direct children of a &lt;ul&gt; */</span>
+<span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s2">&quot;a&quot;</span><span class="o">]</span>  <span class="p">{</span>  <span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>通常最好创建一个 class</summary><p>就是说，如果您需要访问文档中的某些内容但是无法访问 HTML（可能因为是由 CMS 生成的），combinators 会非常有用。</p>
+</details>
 </details>
 <details class="note"><summary>4 伪选择器 (Pseudo)</summary><ul>
 <li>
 <p>伪类 (Pseudo classes, 十)</p>
 <blockquote>
 <p>允许基于不包含在 document tree 的状态信息 来选择元素</p>
+<p>语法：:pseudo-class-name</p>
 <p>例子: <code>a:visited</code></p>
 </blockquote>
+<details class="note"><summary>作用</summary><p>它们表现得会像是你向你的文档的某个部分应用了一个 class 一样，通常帮你在你的标记中减少过多的类，让你的代码更灵活、更易于维护。</p>
+</details>
+<details class="success"><summary>简单 (simple) 伪类的例子</summary><div class="highlight"><pre><span></span><code><span class="nt">article</span> <span class="nt">p</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span>   
+</code></pre></div>
+
+<p><code>:last-child</code>
+<code>:only-child</code>
+<code>:invalid</code></p>
+</details>
+<details class="success"><summary>用户操作 (User-action) 伪类</summary><p>表现得就像是一个类在用户和元素交互的时候加到了元素上一样。</p>
+<ul>
+<li><code>:hover</code>: 鼠标</li>
+<li><code>:focus</code>: the user focuses the element using keyboard controls.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">a</span><span class="p">:</span><span class="nd">link</span><span class="o">,</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">rebeccapurple</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span><span class="kc">hotpink</span><span class="p">;</span>
+<span class="p">}</span>   
+</code></pre></div>
+
+</details>
 </li>
 <li>
 <p>伪元素 (Pseudo elements, 个)</p>
 <blockquote>
 <p>表示无法用 HTML 语义表达的实体。</p>
 <p>选择元素的某一部分而不是元素自身</p>
+<p>语法：<code>::pseudo-element-name</code></p>
 <p>例子: <code>p::first-line</code> 匹配所有 &lt;p> 元素的第一行</p>
 </blockquote>
+<details class="note"><summary>作用</summary><p>伪元素的行为类似，但是它们的行为就像您在标记中添加了一个全新的 HTML 元素一样，而不是将类应用于现有元素。</p>
+</details>
+<details class="success"><summary></summary><div class="highlight"><pre><span></span><code><span class="nt">article</span> <span class="nt">p</span><span class="p">::</span><span class="nd">first-line</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span>   
+</code></pre></div>
+
+</details>
+</li>
+</ul>
+<details class="note"><summary>结合伪类和伪元素</summary><p>如果要使第一段的第一行 为粗体，可以将<code>:first-child</code>和<code>::first-line</code>选择器链接 (chain) 在一起。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">article</span> <span class="nt">p</span><span class="p">:</span><span class="nd">first-child</span><span class="p">::</span><span class="nd">first-line</span> <span class="p">{</span> 
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span> 
+  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>使用 ::before 和 ::after 生成内容</summary><p>有几个特殊的伪元素，这些伪元素与 content 属性一起，使用 CSS 将内容插入文档中。</p>
+<blockquote>
+<p>但是，从 CSS 插入文本字符串实际上并不是我们在网络上经常要做的事情，因为某些屏幕阅读器无法访问该文本，并且将来别人很难找到和编辑。</p>
+</blockquote>
+<details class="success"><summary>更有效的用法是插入一个图标 (icon)</summary><div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">box</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot; ➥&quot;</span>
+<span class="p">}</span>   
+</code></pre></div>
+
+</details>
+<details class="success"><summary>这些伪元素还经常用于插入空字符串，然后可以像在页面上的任何元素一样设置其样式。</summary><p>设置为 <code>display: block</code> 以便 style it with a width and height.</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">box</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">rebeccapurple</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>   
+</code></pre></div>
+
+</details>
+<details class="note"><summary>Note</summary><p>在 CSS 中，将 <code>::before</code> 和 <code>::after</code> 伪元素与 content 属性的一起使用 称为 “生成的内容 (Generated Content)”，并且您经常会看到此技术用于各种任务。</p>
+<p>一个很好的例子是 <a href="http://www.cssarrowplease.com/">CSS Arrow Please</a> 网站，它可以帮助您使用 CSS 生成箭头。</p>
+</details>
+</details>
+</details>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#Reference_section">reference</a></li>
+</ul>
+<h3 id="23-the-box-model">2.3 盒模型 (The box model)<a class="headerlink" href="#23-the-box-model" title="Permanent link">&para;</a></h3>
+<p>Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layouts 或 align items with other items 的关键 </p>
+<details class="note"><summary>Block and inline boxes</summary><p>在 CSS 中我们广泛地使用两种“盒子” —— 块级盒子 (block box) 和 内联盒子 (inline box)。这些特征是指 盒子在页面流（page flow）上的行为 和 与页面上其他盒子之间的关系</p>
+<details class="note"><summary>块级盒子的行为</summary><ul>
+<li>盒子会换行</li>
+<li>
+<p>盒子会在 inline 方向上 extend 以填充它的容器内的可用空间。</p>
+<blockquote>
+<p>在大多数情况下，这意味着盒子将变得和它的容器一样宽，将占据100％的可用空间。</p>
+</blockquote>
+</li>
+<li>
+<p>The <code>width</code> and <code>height</code> properties are respected.</p>
+</li>
+<li><code>Padding</code>, <code>margin</code> and <code>border</code> 将导致其他元素被推离盒子</li>
+</ul>
+</details>
+<details class="note"><summary>If a box has an outer display type of inline</summary><blockquote>
+<p>&lt;a>, &lt;span>, &lt;em> and &lt;strong></p>
+<p>应用到元素的盒子的类型是由 display 属性值定义，如 block 和 inline, and relates to the outer value of display.</p>
+</blockquote>
+<ul>
+<li>盒子不会换行</li>
+<li>The <code>width</code> and <code>height</code> properties 不会应用.</li>
+<li>垂直方向的 <code>padding</code>, <code>margins</code>, 和 <code>borders</code> 会应用，但是不会把其他 inline 盒子推开。</li>
+<li>水平方向的 <code>padding</code>, <code>margins</code>, 和 <code>borders</code> 会应用，并会把其他 inline 盒子推开。</li>
+</ul>
+</details>
+</details>
+<details class="abstract"><summary>inline boxes</summary><blockquote>
+<p>例如由 <span> 元素创建的那些。</p>
+</blockquote>
+<ul>
+<li>width 和 height 被忽略</li>
+<li>垂直 margin, padding, and border 受尊重，但它们不会改变其他内容与我们的 inline box 的关系，因此 padding 和 border 与段落中的其他单词重叠。水平的 padding, margins, and borders 受尊重，这将导致其他 content 从盒移开。</li>
+</ul>
+<details class="note"><summary>用途</summary><p>当您想要通过添加 padding 使链接具有更大的命中区域时，这是很有用的。</p>
+<p>&lt;a> 是像 &lt;span> 一样的 inline 元素；你可以使用 display: inline-block 来设置 padding，让用户更容易点击链接。</p>
+</details>
+<details class="success"><summary>您在导航栏中经常看到这种情况。</summary><div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">html</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;links-list&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Link one<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Link two<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Link three<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>    
+</code></pre></div>
+
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">css</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">links-list</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">179</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">81</span><span class="p">);</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span> <span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">links-list</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">66</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">output</label><div class="tabbed-content">
+<p><img alt="" src="../../img/MDN-Learn/css-2-inline-block.png" /></p>
+</div>
+</div>
+</details>
+</details>
+<details class="note"><summary>使用 display: inline-block</summary><p>display 有一个特殊值, 提供了 inline 和 block 之间的中间地带. </p>
+<p>这对于以下情况非常有用: 您不希望 an item 切换到新行，但希望它尊重 width 和 height，并避免重叠 (overlapping)。</p>
+<p>一个元素应用 display: inline-block，做了 block 的事的子集:</p>
+<div class="codehilite"><pre><span></span><code>* width 和 height 属性受尊重
+* padding, margin, 和 border 会导致其他元素被推离盒子
+</code></pre></div>
+
+
+</details>
+<details class="info"><summary>Aside: Inner and outer display types</summary><ul>
+<li>
+<p>outer display type</p>
+<blockquote>
+<p>block 或 inline</p>
+</blockquote>
+<p>改变 display 属性的值可以改变盒子的 outer display type 是 block 或 inline。</p>
+<p>在本课程的其余部分中，我们将专注于外部显示类型。</p>
+</li>
+<li>
+<p>inner display type</p>
+<p>指示盒子内部的元素如何布局。默认情况下，盒子内的元素按 normal flow 布局, 这意味着它们的行为与任何其他 block 和 inline 元素一样。</p>
+<p>但是，我们可以通过使用类似 flex 的 display 属性的值改变 inner display type。如果我们在元素上设置 <code>display: flex;</code>, the outer display type 是 block, 但是 the inner display type 变为 flex. 该盒子的所有直接子元素都会成为flex元素</p>
 </li>
 </ul>
 </details>
-<h3 id="23-the-box-model">2.3 盒模型 (The box model)<a class="headerlink" href="#23-the-box-model" title="Permanent link">&para;</a></h3>
+<details class="success"><summary>例子</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">css</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="o">,</span> 
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">rebeccapurple</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">block</span><span class="o">,</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="c">/* display: inline-flex; */</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+  <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">block</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+<span class="p">}</span>      
+</code></pre></div>
+
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">html</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I am a paragraph. A short one.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item One<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item Two<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Item Three<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I am another paragraph. Some of the <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;block&quot;</span><span class="p">&gt;</span>words<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> have been wrapped in a <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>span element<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">output</label><div class="tabbed-content">
+<p><img alt="" src="../../img/MDN-Learn/css-2-block.png" /></p>
+</div>
+</div>
+</details>
+<details class="success"><summary>The alternative CSS box model</summary><div class="highlight"><pre><span></span><code><span class="nt">html</span> <span class="p">{</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">*,</span> <span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span> <span class="o">*</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>Margin collapsing</summary><p>理解外边距的关键是外边距折叠的概念</p>
+</details>
+<details class="note"><summary>border</summary><p>若要设置所有边的 width, style, or color, 请使用:</p>
+<div class="codehilite"><pre><span></span><code>* border-width
+* border-style
+* border-color
+</code></pre></div>
+
+
+</details>
+<details class="note"><summary>padding</summary><p>与 margin 不同，您不能有负的 padding，因此该值必须为 0 或 正值。</p>
+<p>应用于元素的任何背景都将显示在 padding 的后面，通常用于将 content 推离 border。</p>
+</details>
 <h3 id="24-backgrounds-and-borders">2.4 Backgrounds and borders<a class="headerlink" href="#24-backgrounds-and-borders" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://cssgradient.io/">cssgradient.io</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders">例子</a></li>
+</ul>
 <h3 id="25">2.5 处理不同的文本方向<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
 <h3 id="26">2.6 溢出的内容<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
 <h3 id="27">2.7 值和单位<a class="headerlink" href="#27" title="Permanent link">&para;</a></h3>

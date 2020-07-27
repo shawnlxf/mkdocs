@@ -1684,15 +1684,17 @@
 </details>
 <h3 id="14-css">1.4 CSS 如何工作<a class="headerlink" href="#14-css" title="Permanent link">&para;</a></h3>
 <details class="note"><summary>浏览器显示文档时，必须将文档的内容与其样式信息结合在一起。</summary><p>!!! note "请记住，这是浏览器加载网页的简化版本，并且不同的浏览器将以不同的方式处理该过程。但大致如此。</p>
-<ol>
-<li>浏览器加载 HTML（例如，从网络接收 HTML ）。</li>
-<li>它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。</li>
-<li>然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲</li>
-<li>浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。</li>
-<li>上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。</li>
-<li>页面显示在屏幕上（这个阶段称为绘画 painting）。</li>
-</ol>
-<p><img alt="" src="../../img/MDN-Learn/rendering.svg" /></p>
+<div class="codehilite"><pre><span></span><code>1. 浏览器加载 HTML（例如，从网络接收 HTML ）。
+* 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
+* 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
+* 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 &quot;bucket&quot;(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
+* 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
+* 页面显示在屏幕上（这个阶段称为绘画 painting）。
+
+![](../img/MDN-Learn/rendering.svg)
+</code></pre></div>
+
+
 </details>
 <details class="note"><summary>关于 DOM</summary><p>DOM 具有树状结构。标记语言中的 每个 element, attribute, and piece of text (一段文本) 都成为树结构中的 一个 DOM 节点。节点由它们与其他 DOM 节点的关系定义。Some elements are parents of child nodes, and child nodes have siblings （同级节点）.</p>
 <p>DOM 可以帮助你设计，调试和维护 CSS，因为 DOM 是 CSS 与 文档内容 结合的地方。当你开始使用浏览器 DevTools 时，将在选择项目时浏览 DOM，以查看使用了哪些规则。</p>
