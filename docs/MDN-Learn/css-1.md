@@ -249,14 +249,14 @@
 
     !!! note "请记住，这是浏览器加载网页的简化版本，并且不同的浏览器将以不同的方式处理该过程。但大致如此。
 
-    1. 浏览器加载 HTML（例如，从网络接收 HTML ）。
-    2. 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
-    3. 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
-    4. 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
-    5. 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
-    6. 页面显示在屏幕上（这个阶段称为绘画 painting）。
+        1. 浏览器加载 HTML（例如，从网络接收 HTML ）。
+        * 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
+        * 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
+        * 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
+        * 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
+        * 页面显示在屏幕上（这个阶段称为绘画 painting）。
 
-    ![](../img/MDN-Learn/rendering.svg)
+        ![](../img/MDN-Learn/rendering.svg)
 
 ??? note "关于 DOM"
 
