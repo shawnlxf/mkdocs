@@ -127,6 +127,10 @@
 
             > 进入otf/，全选，右键安装
 
+        * Menu Bar
+
+            > toggle
+
     ??? note "插件"
 
         * Code Spell Checker

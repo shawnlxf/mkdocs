@@ -136,7 +136,7 @@ head 的工作是包含关于文档的 metadata
 
     几乎可以将任何内容转化成链接，甚至块级元素。
     
-    ??? success "img"
+    !!! success "img"
 
         ``` html
         <a href="https://www.mozilla.org/en-US/">
@@ -144,7 +144,7 @@ head 的工作是包含关于文档的 metadata
         </a>
         ```
 
-??? note "URLs and paths"
+??? abstract "URLs and paths"
 
     * URL(Uniform Resource Locator)
 
@@ -152,32 +152,30 @@ head 的工作是包含关于文档的 metadata
 
     * URL 使用路径查找文件
 
-??? note "文件片段(Document fragments)"
+    ??? note "文件片段(Document fragments)"
 
-    1. 分配 id attribute 给被链接的元素
 
-    ``` html
-    <h2 id="Mailing_address">Mailing address</h2>
-    ```
+        ``` html
+        <!-- 1. 分配 id attribute 给被链接的元素 -->
+        <h2 id="Mailing_address">Mailing address</h2>
+        ```
 
-    2. 在URL的末尾加 #id
+        ``` html
+        <!-- 2. 在URL的末尾加 #id -->
+        <p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">mailing address</a>.</p>
+        ```
 
-    ``` html
-    <p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">mailing address</a>.</p>
-    ```
+        ``` html
+        <!-- 或 同一文档的另一部分 -->
+        <p>The <a href="#Mailing_address">company mailing address</a> can be found at the bottom of this page.</p>
+        ```
 
-    同一文档的另一部分
+    ??? note "在链接到同一网站内的其他位置时，应尽可能使用相对链接"
 
-    ``` html
-    <p>The <a href="#Mailing_address">company mailing address</a> can be found at the bottom of this page.</p>
-    ```
+        1. 读代码更加容易
+        2. 浏览器效率降低
 
-??? note "在链接到同一网站内的其他位置时，应尽可能使用相对链接"
-
-    1. 读代码更加容易
-    2. 浏览器效率降低
-
-??? note "链接到非HTML资源-留下清晰的路标"
+??? success "链接到非HTML资源-留下清晰的路标"
 
     ``` html
     <p><a href="http://www.example.com/large-report.pdf">
@@ -193,7 +191,7 @@ head 的工作是包含关于文档的 metadata
     </a></p>
     ```
 
-??? note "链接到下载时使用 download 属性"
+??? download "链接到下载时使用 download 属性"
 
     > 使用 download 属性提供默认的保存文件名
 
@@ -204,59 +202,53 @@ head 的工作是包含关于文档的 metadata
     </a>
     ```
 
-??? note "standard URL query notation"
+??? note "标准的 URL 查询表示法"
 
-    使用问号（?）将主URL与字段值 (field values) 分开，并使用 & 号将 `mailto:` URL中的每个字段分开。这是标准的URL查询表示法。阅读GET方法以了解更常用的URL查询符号。
+    使用问号（?）将主URL与字段值 (field values) 分开，并使用 & 号将 `mailto:` URL中的每个字段分开。
+    
+    这是标准的URL查询表示法 (URL query notation)。
 
 ### 1.5 进阶 text formatting
 
 ### 1.6 文件 和 网站 结构
 
-定义网站区域的块级元素 (例如："the header 标题", "the navigation menu 导航菜单", "the main content column 主内容列").
+> 定义网站区域的块级元素 (例如："the header 标题", "the navigation menu 导航菜单", "the main content column 主内容列").
 
-??? note "文档的基本组成部分"
+* 文档的基本组成部分
 
-    类似的标准组件:
+    > 类似的标准组件:
 
-    * header: 页眉 
+    ??? note "1. header: 页眉"
 
-        > <header\>
+        > <header\>: 代表一组介绍性内容。
 
-        ??? note "<header\>"
+        * 如果它是 <body\> 的子元素，则定义网页的全局 header
+        * 如果它是 <article\> 或 <section\> 的子元素，定义那个 section 的 特定的 header
 
-            代表一组介绍性内容。
-
-            * 如果它是 <body\> 的子元素，则定义网页的全局 header
-            * 如果它是 <article\> 或 <section\> 的子元素，定义那个 section 的 特定的 header
-
-    * navigation bar: 导航栏
+    ??? note "2. navigation bar: 导航栏"
 
         > <nav\>
 
-        ??? note "<nav\>"
+        包含页面的主要导航功能。其中不应包含二级链接(Secondary links)等内容。
 
-            包含页面的主要导航功能。其中不应包含二级链接(Secondary links)等内容。
-
-    * main content: 主内容 
+    ??? abstract "3. main content: 主内容"
 
         > <main\>，和不同内容的 subsections，用以下元素表示：<article\>, <section\>, 和 <div\>
 
         !!! note "<main\>: 存放每个页面独有的内容，每个页面上只能用一次"
         !!! note "<article\>: 包围的内容即一篇文章，比如一篇博客"
-        !!! note "<section\>: "
+        ??? note "<section\>: "
 
             * 更适用于组织页面使其按功能（比如迷你地图、一组文章标题和摘要）分块。
             * 最好以 标题(heading) 开头
 
-    * sidebar: 侧边栏
+    ??? abstract "4. sidebar: 侧边栏"
 
-        > <aside\>; 经常放在 <main\> 里
+        > <aside\>: 经常放在 <main\> 里
 
-        ??? note "<aside\>"
+        提供与主要内容间接相关的其他信息（词汇表条目，作者传记，相关链接等）(glossary entries, author biography, related links, etc.)。
 
-            提供与主要内容间接相关的其他信息（词汇表条目，作者传记，相关链接等）(glossary entries, author biography, related links, etc.)。
-
-    * footer: 页脚
+    ??? note "5. footer: 页脚"
 
         > <footer\>: 页面的一组结束内容
 
@@ -267,12 +259,12 @@ head 的工作是包含关于文档的 metadata
 
 ??? note "换行和水平分割线 (Line breaks and horizontal rules)"
 
-    * <br\>
+    1. <br\>
 
         * 在段落中创建换行; 
         * 这是在需要一系列固定短线的情况下（例如在邮寄地址或一首诗中）施加刚性结构的唯一方法。
 
-    * <hr\>
+    2. <hr\>
 
         * 在文档中创建一个水平规则，该水平规则表示文本的主题变化（例如主题或场景的改变）。在视觉上，它看起来像一条水平线。
 

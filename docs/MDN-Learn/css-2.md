@@ -11,39 +11,38 @@
 
     像 widths (上面提到的), margins, padding, 和 borders 不会被继承。
 
-??? note "控制继承"
+* 理解 继承 (inheritance)
 
-    CSS提供了四个特殊的通用属性值来控制继承。每个CSS属性都接受这些值。
+    ??? note "控制继承"
 
-    1. inherit
+        CSS提供了四个特殊的通用属性值来控制继承。每个CSS属性都接受这些值。
 
-        > 使 选定元素 的属性值和父元素相同。实际上，就是 "开启继承".
+        1. inherit: 使 选定元素 的属性值和父元素相同。实际上，就是 "开启继承".
 
-    2. initial
+        2. initial: 设置 选定元素 的属性值 为 该属性的初始值
 
-        > 设置 选定元素 的属性值 为 该属性的初始值
+        3. unset: 将属性重置为其自然值。这意味着，如果该属性是自然继承的，则其行为类似于inherit，否则，其行为类似于initial。
 
-    3. unset
+        !!! note "注: 还有一个新的属性, revert，只有很少的浏览器支持。"
 
-        > 将属性重置为其自然值。这意味着，如果该属性是自然继承的，则其行为类似于inherit，否则，其行为类似于initial。
-    
-    !!! note "注: 还有一个新的属性, revert，只有很少的浏览器支持。"
+    ??? note "重置所有属性值"
 
-??? note "重置所有属性值"
+        CSS速记属性all可用于一次将这些继承值之一应用于（几乎）所有属性。其值可以是继承值中的任何一个（inherit，initial，unset，或revert）。这是撤消对样式所做的更改的便捷方法，以便您可以在开始新的更改之前回到已知的起点。
 
-    CSS速记属性all可用于一次将这些继承值之一应用于（几乎）所有属性。其值可以是继承值中的任何一个（inherit，initial，unset，或revert）。这是撤消对样式所做的更改的便捷方法，以便您可以在开始新的更改之前回到已知的起点。
-
-    ``` css
-    .fix-this {
-        all: unset;
-    }
-    ```
+        ``` css
+        .fix-this {
+            all: unset;
+        }
+        ```
 
 * 理解层叠 (cascade)
 
     要考虑三个因素，这里按重要性从高到低的顺序列出。前面的否决后面的
 
     1. Importance
+
+        > 除非绝对必要，否则不要使用它
+
     2. Specificity
 
         ??? note "a class selector has more weight (权重) than an element selector"
@@ -65,8 +64,6 @@
 
 
     3. Source order
-
-
 
 
 
@@ -139,7 +136,7 @@ CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
         >
         > 例：`a[title] { }`
 
-        ```
+        ``` css
         // 匹配具有 attr 属性的元素，该元素的值恰好是 value，或者在其（空格分隔的）值列表中包含 value。
         [attr~=value]
         // 匹配具有 attr 属性的元素，该属性的值恰好是 value 或 以 value 开头，之后紧跟一个连字符。
@@ -148,7 +145,7 @@ CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
 
         ??? note "子字符串匹配选择器"
 
-            ```
+            ``` css
             // 属性的值以 "box-" 开头
             li[class^="box-"]  (or [class|="box"])
             // 属性的值以 "-box" 结尾
@@ -282,7 +279,7 @@ CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
 
             伪元素的行为类似，但是它们的行为就像您在标记中添加了一个全新的 HTML 元素一样，而不是将类应用于现有元素。
 
-        ??? success ""
+        ??? success "例子"
 
             ``` css
             article p::first-line {
@@ -372,7 +369,7 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
 ??? abstract "inline boxes"
 
-    > 例如由 <span> 元素创建的那些。
+    > 例如由 <span\> 元素创建的那些。
 
     * width 和 height 被忽略
     * 垂直 margin, padding, and border 受尊重，但它们不会改变其他内容与我们的 inline box 的关系，因此 padding 和 border 与段落中的其他单词重叠。水平的 padding, margins, and borders 受尊重，这将导致其他 content 从盒移开。
@@ -429,8 +426,8 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
     一个元素应用 display: inline-block，做了 block 的事的子集:
 
-        * width 和 height 属性受尊重
-        * padding, margin, 和 border 会导致其他元素被推离盒子
+    * width 和 height 属性受尊重
+    * padding, margin, 和 border 会导致其他元素被推离盒子
 
 
 
@@ -450,49 +447,49 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
         但是，我们可以通过使用类似 flex 的 display 属性的值改变 inner display type。如果我们在元素上设置 `display: flex;`, the outer display type 是 block, 但是 the inner display type 变为 flex. 该盒子的所有直接子元素都会成为flex元素
 
-??? success "例子"
+    ??? success "例子"
 
-    === "css"
+        === "css"
 
-        ``` css
-        p, 
-        ul {
-          border: 2px solid rebeccapurple;
-          padding: .5em;
-        }
+            ``` css
+            p, 
+            ul {
+              border: 2px solid rebeccapurple;
+              padding: .5em;
+            }
 
-        .block,
-        li {
-          border: 2px solid blue;
-          padding: .5em;
-        }
+            .block,
+            li {
+              border: 2px solid blue;
+              padding: .5em;
+            }
 
-        ul {
-          /* display: inline-flex; */
-          display: flex;
-          list-style: none;
-        }
+            ul {
+              /* display: inline-flex; */
+              display: flex;
+              list-style: none;
+            }
 
-        .block {
-          display: block;
-        }      
-        ```
+            .block {
+              display: block;
+            }      
+            ```
 
-    === "html"
+        === "html"
 
-        ``` html
-        <p>I am a paragraph. A short one.</p>
-        <ul>
-          <li>Item One</li>
-          <li>Item Two</li>
-          <li>Item Three</li>
-        </ul>
-        <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
-        ```
+            ``` html
+            <p>I am a paragraph. A short one.</p>
+            <ul>
+              <li>Item One</li>
+              <li>Item Two</li>
+              <li>Item Three</li>
+            </ul>
+            <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+            ```
 
-    === "output"
+        === "output"
 
-        ![](../img/MDN-Learn/css-2-block.png)
+            ![](../img/MDN-Learn/css-2-block.png)
 
 
 ??? success "The alternative CSS box model"
@@ -514,9 +511,9 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
     若要设置所有边的 width, style, or color, 请使用:
 
-        * border-width
-        * border-style
-        * border-color
+    * border-width
+    * border-style
+    * border-color
 
 ??? note "padding"
 
@@ -531,22 +528,110 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
 ### 2.5 处理不同的文本方向
 
+跳过
+
 ### 2.6 溢出的内容
 
-### 2.7 值和单位
+??? note "您也可以使用 overflow-x 实现在x轴上滚动，尽管不建议使用这种方法来容纳长字！"
+
+    如果在一个小框中有一个长字，则可以考虑使用 word-break 或 overflow-wrap 属性。此外，在 CSS "调整项目大小" 中讨论的某些方法可能有助于您创建可以和有变化容量的内容相协调的盒子。
+
+??? note "Overflow establishes a Block Formatting Context"
+
+
+    当你使用 a value of overflow such as scroll or auto, you create a Block Formatting Context (BFC). 您已更改 overflow 的值的盒子的 content 将获得一个独立的布局. 容器外面的 Content 无法戳入容器, 也无法将容器中的内容戳出容器到周围的布局. 这可以实现滚动行为，因为所有盒内容都需要被包含且不重叠，以便创建一致的滚动体验。
+
+??? note "Unwanted overflow in web design"
+
+    现代的布局方法 (在 CSS layout 中描述) 管理溢出.
+
+    开发网站时，请始终牢记溢出。测试包含大量和少量内容的设计。增加文本的字体大小。通常，请确保 CSS 具有稳定的功能。更改 overflow 的值来隐藏内容或添加滚动条，会是你仅仅在少数特别情况下需要的。
+
+### 2.7 值和单位 (values and units)
+
+!!! note "CSS values = data types (数据类型)"
+
+!!! note "CSS 值倾向于使用尖括号来表示，以将它们与 CSS 属性（例如，color 属性 (property) 与 <color\> 数据类型）区分开。"
+
+??? abstract "1. 数字，长度和百分比"
+
+    numeric (数字的) data types:
+
+    * <integer\>: 整数
+    * <number\>: 小数（可能没有小数部分）
+
+        如 opacity: 0 - 1 
+
+    * <dimension\>: <number\> + unit
+
+        > 包含 <length\>, <angle\>, <time\>, <resolution\> 类型
+
+        ??? note "Lengths"
+
+            分为 相对长度 和 绝对长度
+
+            * 绝对长度单位: px
+            * 相对长度单位: 相对于 something else, 比如 父元素字体的大小, 或者 viewport (视口) 的大小.
+
+                * em: 如果是印刷属性如 font-size，用于父元素的字体大小；如果是其他属性如 width，用于元素本身的字体大小。
+                * rem: 根元素的字体大小
+                * lh: 元素的 line-height
+                * vw: 视口宽度的 1%
+                * vh: 视口高度的 1%
+
+    * <percentage\>
+
+??? note "2. color"
+
+    * 颜色关键字
+
+        这些关键字被更准确地描述为标识符 (identifiers)，CSS 可以理解的一个特殊值。因此它们没有使用引号括起来——它们不被当作字符串。
+
+    * 十六进制 RGB 值
+
+        a hash/pound symbol (#) + 6 个十六进制数字
+
+    * RGB and RGBA 值
+
+        RGB 值是一个函数— rgb()，有 3 个参数，十进制数字表示
+
+        Alpha通道，该值控制不透明度。
+
+    * HSL和HSLA值
+
+        hsl() 函数接受 hue (色调), saturation (饱和度), and lightness (亮度) 值:
+
+        * Hue: The base shade of the color. 0 - 360, 代表色轮周围的角度
+        * Saturation: 0–100%, 0: 无颜色 (显示为灰色阴影), 100%: full color saturation
+        * Lightness: 0–100%, 0: 没有光 (显示为完全黑色), 100%: full light (显示为完全白色)
+
+!!! note "3. images (图片)"
+
+!!! note "4. Strings (字符串) and identifiers (标识符)"
+
+!!! note "5. Functions (函数)"
+
 
 ### 2.8 调整项目大小 (Sizing items in CSS)
 
+* max-width 的例子
+
 ### 2.9 Images, media, and form (表单) elements
+
+略
 
 ### 2.10 样式化表格 (Styling tables)
 
+略
+
 ### 2.11 Debugging CSS
+
+略
 
 ### 2.12 组织 CSS
 
-
+略
 
 ## 3 [样式化文本(styling text)]()
 
-## 4 [CSS 布局(layout)]()
+略

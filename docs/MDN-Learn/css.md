@@ -1,31 +1,4 @@
 
-## 2. [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
-
-    * [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-
-        > 长度单位
-
-        1. Lengths (长度, 最常遇到)
-
-            1. relative
-
-                > 相对于 something else, 如父元素的字体大小, 或视口的大小等
-                > 可以让文本，或其他元素相对于 everything else 缩放
-
-                * em: 元素本身的字体大小
-                * rem: 根元素的字体大小
-                * vw: 视口宽度的 1%
-                * vh: 视口高度的 1%
-                ...
-
-            2. absolute
-
-                * px
-
-        2. Percentages
-        3. Numbers
-
-
 * position: absolute;
 
     > Elements that are relatively positioned remain in the normal flow of the document. 

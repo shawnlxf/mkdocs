@@ -17,16 +17,13 @@
 
 ??? note "改变元素的默认行为"
 
-    <ul\>,  不要 list bullets
+    > <ul\>,  不要 list bullets
 
     ``` css
     li {
         list-style-type: none;
     }
     ```
-
-
-### 1.3 CSS 的结构
 
 ??? note "根据元素在文档中的位置(location)加样式"
 
@@ -68,9 +65,6 @@
         }
         ```
     
-    focused via the keyboard, or in the process of being clicked (activated)
-
-
 ??? note "Combining selectors and combinators"
 
     * you can combine multiple selectors and combinators together
@@ -99,7 +93,7 @@
 
 ??? note "将CSS应用于文档的三种方法："
 
-    * 使用外部样式表 (with an external stylesheet)
+    1. 使用外部样式表 (with an external stylesheet)
     * 内部样式表 (with an internal stylesheet)
 
         > <head\> 里的 <style\>
@@ -207,11 +201,11 @@
 
     一些属性(properties)，如 
 
-        * font，
-        * background，
-        * padding，
-        * border，和
-        * margin
+    * font，
+    * background，
+    * padding，
+    * border，和
+    * margin
 
     被称为速记属性 (shorthand properties)。这是因为速记属性在一行中设置了多个值。
 
@@ -237,26 +231,28 @@
 
     White space means
 
-        * actual spaces, 
-        * tabs (制表符) and 
-        * new lines (换行符)
+    * actual spaces, 
+    * tabs (制表符) and 
+    * new lines (换行符)
 
-    就像浏览器忽略HTML中的空白一样，浏览器也忽略CSS内部的空白。空白的价值在于它如何提高可读性。
+    就像浏览器忽略HTML中的空白一样，浏览器也忽略CSS内部的空白。
+    
+    空白的价值在于它如何提高可读性。
 
 ### 1.4 CSS 如何工作
 
 ??? note "浏览器显示文档时，必须将文档的内容与其样式信息结合在一起。"
 
-    !!! note "请记住，这是浏览器加载网页的简化版本，并且不同的浏览器将以不同的方式处理该过程。但大致如此。
+    > 请记住，这是浏览器加载网页的简化版本，并且不同的浏览器将以不同的方式处理该过程。但大致如此。
 
-        1. 浏览器加载 HTML（例如，从网络接收 HTML ）。
-        * 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
-        * 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
-        * 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
-        * 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
-        * 页面显示在屏幕上（这个阶段称为绘画 painting）。
+    1. 浏览器加载 HTML（例如，从网络接收 HTML ）。
+    * 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
+    * 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
+    * 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
+    * 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
+    * 页面显示在屏幕上（这个阶段称为绘画 painting）。
 
-        ![](../img/MDN-Learn/rendering.svg)
+    ![](../img/MDN-Learn/rendering.svg)
 
 ??? note "关于 DOM"
 
