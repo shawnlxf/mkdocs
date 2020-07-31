@@ -493,6 +493,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../FF/17/" title="17-DOM编程" class="md-nav__link">
+      17-DOM编程
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -744,8 +756,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#27" class="md-nav__link">
-    2.7 值和单位
+  <a href="#27-values-and-units" class="md-nav__link">
+    2.7 值和单位 (values and units)
   </a>
   
 </li>
@@ -797,17 +809,22 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4-css-layout" class="md-nav__link">
-    4 CSS 布局(layout)
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../css-4/" title="3.4 布局" class="md-nav__link">
+      3.4 布局
+    </a>
   </li>
 
         
@@ -1512,8 +1529,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#27" class="md-nav__link">
-    2.7 值和单位
+  <a href="#27-values-and-units" class="md-nav__link">
+    2.7 值和单位 (values and units)
   </a>
   
 </li>
@@ -1565,13 +1582,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4-css-layout" class="md-nav__link">
-    4 CSS 布局(layout)
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1600,25 +1610,19 @@
 <p>举个例子: 如果你在一个元素上设置 width 为 50% ，所有的后代不会是父元素的宽度的50% 。如果这个也可以继承的话，CSS就会很难使用了!</p>
 <p>像 widths (上面提到的), margins, padding, 和 borders 不会被继承。</p>
 </details>
+<ul>
+<li>
+<p>理解 继承 (inheritance)</p>
 <details class="note"><summary>控制继承</summary><p>CSS提供了四个特殊的通用属性值来控制继承。每个CSS属性都接受这些值。</p>
 <ol>
 <li>
-<p>inherit</p>
-<blockquote>
-<p>使 选定元素 的属性值和父元素相同。实际上，就是 "开启继承".</p>
-</blockquote>
+<p>inherit: 使 选定元素 的属性值和父元素相同。实际上，就是 "开启继承".</p>
 </li>
 <li>
-<p>initial</p>
-<blockquote>
-<p>设置 选定元素 的属性值 为 该属性的初始值</p>
-</blockquote>
+<p>initial: 设置 选定元素 的属性值 为 该属性的初始值</p>
 </li>
 <li>
-<p>unset</p>
-<blockquote>
-<p>将属性重置为其自然值。这意味着，如果该属性是自然继承的，则其行为类似于inherit，否则，其行为类似于initial。</p>
-</blockquote>
+<p>unset: 将属性重置为其自然值。这意味着，如果该属性是自然继承的，则其行为类似于inherit，否则，其行为类似于initial。</p>
 </li>
 </ol>
 <div class="admonition note">
@@ -1632,12 +1636,17 @@
 </code></pre></div>
 
 </details>
-<ul>
+</li>
 <li>
 <p>理解层叠 (cascade)</p>
 <p>要考虑三个因素，这里按重要性从高到低的顺序列出。前面的否决后面的</p>
 <ol>
-<li>Importance</li>
+<li>
+<p>Importance</p>
+<blockquote>
+<p>除非绝对必要，否则不要使用它</p>
+</blockquote>
+</li>
 <li>
 <p>Specificity</p>
 <details class="note"><summary>a class selector has more weight (权重) than an element selector</summary><p>此行为有助于避免CSS中的重复。一种常见的做法是为基本元素定义通用样式，然后为那些不同的元素创建类。</p>
@@ -1710,18 +1719,18 @@
 <p>语法：<code>[attr]</code>, <code>[attr=value]</code></p>
 <p>例：<code>a[title] { }</code></p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>// 匹配具有 attr 属性的元素，该元素的值恰好是 value，或者在其（空格分隔的）值列表中包含 value。
-[attr~=value]
-// 匹配具有 attr 属性的元素，该属性的值恰好是 value 或 以 value 开头，之后紧跟一个连字符。
-[attr|=value]
+<div class="highlight"><pre><span></span><code><span class="o">//</span> <span class="nt">匹配具有</span> <span class="nt">attr</span> <span class="nt">属性的元素</span><span class="err">，</span><span class="nt">该元素的值恰好是</span> <span class="nt">value</span><span class="err">，</span><span class="nt">或者在其</span><span class="err">（</span><span class="nt">空格分隔的</span><span class="err">）</span><span class="nt">值列表中包含</span> <span class="nt">value</span><span class="err">。</span>
+<span class="o">[</span><span class="nt">attr</span><span class="o">~=</span><span class="nt">value</span><span class="o">]</span>
+<span class="o">//</span> <span class="nt">匹配具有</span> <span class="nt">attr</span> <span class="nt">属性的元素</span><span class="err">，</span><span class="nt">该属性的值恰好是</span> <span class="nt">value</span> <span class="nt">或</span> <span class="nt">以</span> <span class="nt">value</span> <span class="nt">开头</span><span class="err">，</span><span class="nt">之后紧跟一个连字符</span><span class="err">。</span>
+<span class="o">[</span><span class="nt">attr</span><span class="o">|=</span><span class="nt">value</span><span class="o">]</span>
 </code></pre></div>
 
-<details class="note"><summary>子字符串匹配选择器</summary><div class="highlight"><pre><span></span><code>// 属性的值以 &quot;box-&quot; 开头
-li[class^=&quot;box-&quot;]  (or [class|=&quot;box&quot;])
-// 属性的值以 &quot;-box&quot; 结尾
-li[class$=&quot;-box&quot;]
-// 属性的值在字符串中的任何位置包含了 &quot;box&quot;。
-li[class*=&quot;box&quot;]
+<details class="note"><summary>子字符串匹配选择器</summary><div class="highlight"><pre><span></span><code><span class="o">//</span> <span class="nt">属性的值以</span> <span class="s2">&quot;box-&quot;</span> <span class="nt">开头</span>
+<span class="nt">li</span><span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&quot;box-&quot;</span><span class="o">]</span>  <span class="o">(</span><span class="nt">or</span> <span class="o">[</span><span class="nt">class</span><span class="o">|=</span><span class="s2">&quot;box&quot;</span><span class="o">])</span>
+<span class="o">//</span> <span class="nt">属性的值以</span> <span class="s2">&quot;-box&quot;</span> <span class="nt">结尾</span>
+<span class="nt">li</span><span class="o">[</span><span class="nt">class</span><span class="o">$=</span><span class="s2">&quot;-box&quot;</span><span class="o">]</span>
+<span class="o">//</span> <span class="nt">属性的值在字符串中的任何位置包含了</span> <span class="s2">&quot;box&quot;</span><span class="err">。</span>
+<span class="nt">li</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;box&quot;</span><span class="o">]</span>
 </code></pre></div>
 
 </details>
@@ -1835,7 +1844,7 @@ li[class*=&quot;box&quot;]
 </blockquote>
 <details class="note"><summary>作用</summary><p>伪元素的行为类似，但是它们的行为就像您在标记中添加了一个全新的 HTML 元素一样，而不是将类应用于现有元素。</p>
 </details>
-<details class="success"><summary></summary><div class="highlight"><pre><span></span><code><span class="nt">article</span> <span class="nt">p</span><span class="p">::</span><span class="nd">first-line</span> <span class="p">{</span>
+<details class="success"><summary>例子</summary><div class="highlight"><pre><span></span><code><span class="nt">article</span> <span class="nt">p</span><span class="p">::</span><span class="nd">first-line</span> <span class="p">{</span>
     <span class="k">font-size</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
     <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
 <span class="p">}</span>   
@@ -1912,7 +1921,7 @@ li[class*=&quot;box&quot;]
 </details>
 </details>
 <details class="abstract"><summary>inline boxes</summary><blockquote>
-<p>例如由 <span> 元素创建的那些。</p>
+<p>例如由 &lt;span> 元素创建的那些。</p>
 </blockquote>
 <ul>
 <li>width 和 height 被忽略</li>
@@ -1957,11 +1966,10 @@ li[class*=&quot;box&quot;]
 <details class="note"><summary>使用 display: inline-block</summary><p>display 有一个特殊值, 提供了 inline 和 block 之间的中间地带. </p>
 <p>这对于以下情况非常有用: 您不希望 an item 切换到新行，但希望它尊重 width 和 height，并避免重叠 (overlapping)。</p>
 <p>一个元素应用 display: inline-block，做了 block 的事的子集:</p>
-<div class="codehilite"><pre><span></span><code>* width 和 height 属性受尊重
-* padding, margin, 和 border 会导致其他元素被推离盒子
-</code></pre></div>
-
-
+<ul>
+<li>width 和 height 属性受尊重</li>
+<li>padding, margin, 和 border 会导致其他元素被推离盒子</li>
+</ul>
 </details>
 <details class="info"><summary>Aside: Inner and outer display types</summary><ul>
 <li>
@@ -1978,7 +1986,6 @@ li[class*=&quot;box&quot;]
 <p>但是，我们可以通过使用类似 flex 的 display 属性的值改变 inner display type。如果我们在元素上设置 <code>display: flex;</code>, the outer display type 是 block, 但是 the inner display type 变为 flex. 该盒子的所有直接子元素都会成为flex元素</p>
 </li>
 </ul>
-</details>
 <details class="success"><summary>例子</summary><div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">css</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="o">,</span> 
 <span class="nt">ul</span> <span class="p">{</span>
@@ -2020,6 +2027,7 @@ li[class*=&quot;box&quot;]
 </div>
 </div>
 </details>
+</details>
 <details class="success"><summary>The alternative CSS box model</summary><div class="highlight"><pre><span></span><code><span class="nt">html</span> <span class="p">{</span>
   <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
 <span class="p">}</span>
@@ -2032,12 +2040,11 @@ li[class*=&quot;box&quot;]
 <details class="note"><summary>Margin collapsing</summary><p>理解外边距的关键是外边距折叠的概念</p>
 </details>
 <details class="note"><summary>border</summary><p>若要设置所有边的 width, style, or color, 请使用:</p>
-<div class="codehilite"><pre><span></span><code>* border-width
-* border-style
-* border-color
-</code></pre></div>
-
-
+<ul>
+<li>border-width</li>
+<li>border-style</li>
+<li>border-color</li>
+</ul>
 </details>
 <details class="note"><summary>padding</summary><p>与 margin 不同，您不能有负的 padding，因此该值必须为 0 或 正值。</p>
 <p>应用于元素的任何背景都将显示在 padding 的后面，通常用于将 content 推离 border。</p>
@@ -2048,15 +2055,102 @@ li[class*=&quot;box&quot;]
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders">例子</a></li>
 </ul>
 <h3 id="25">2.5 处理不同的文本方向<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<p>跳过</p>
 <h3 id="26">2.6 溢出的内容<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
-<h3 id="27">2.7 值和单位<a class="headerlink" href="#27" title="Permanent link">&para;</a></h3>
+<details class="note"><summary>您也可以使用 overflow-x 实现在x轴上滚动，尽管不建议使用这种方法来容纳长字！</summary><p>如果在一个小框中有一个长字，则可以考虑使用 word-break 或 overflow-wrap 属性。此外，在 CSS "调整项目大小" 中讨论的某些方法可能有助于您创建可以和有变化容量的内容相协调的盒子。</p>
+</details>
+<details class="note"><summary>Overflow establishes a Block Formatting Context</summary><p>当你使用 a value of overflow such as scroll or auto, you create a Block Formatting Context (BFC). 您已更改 overflow 的值的盒子的 content 将获得一个独立的布局. 容器外面的 Content 无法戳入容器, 也无法将容器中的内容戳出容器到周围的布局. 这可以实现滚动行为，因为所有盒内容都需要被包含且不重叠，以便创建一致的滚动体验。</p>
+</details>
+<details class="note"><summary>Unwanted overflow in web design</summary><p>现代的布局方法 (在 CSS layout 中描述) 管理溢出.</p>
+<p>开发网站时，请始终牢记溢出。测试包含大量和少量内容的设计。增加文本的字体大小。通常，请确保 CSS 具有稳定的功能。更改 overflow 的值来隐藏内容或添加滚动条，会是你仅仅在少数特别情况下需要的。</p>
+</details>
+<h3 id="27-values-and-units">2.7 值和单位 (values and units)<a class="headerlink" href="#27-values-and-units" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">CSS values = data types (数据类型)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">CSS 值倾向于使用尖括号来表示，以将它们与 CSS 属性（例如，color 属性 (property) 与 &lt;color> 数据类型）区分开。</p>
+</div>
+<details class="abstract"><summary>1. 数字，长度和百分比</summary><p>numeric (数字的) data types:</p>
+<ul>
+<li>&lt;integer>: 整数</li>
+<li>
+<p>&lt;number>: 小数（可能没有小数部分）</p>
+<p>如 opacity: 0 - 1 </p>
+</li>
+<li>
+<p>&lt;dimension>: &lt;number> + unit</p>
+<blockquote>
+<p>包含 &lt;length>, &lt;angle>, &lt;time>, &lt;resolution> 类型</p>
+</blockquote>
+<details class="note"><summary>Lengths</summary><p>分为 相对长度 和 绝对长度</p>
+<ul>
+<li>绝对长度单位: px</li>
+<li>相对长度单位: 相对于 something else, 比如 父元素字体的大小, 或者 viewport (视口) 的大小.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>* em: 如果是印刷属性如 font-size，用于父元素的字体大小；如果是其他属性如 width，用于元素本身的字体大小。
+* rem: 根元素的字体大小
+* lh: 元素的 line-height
+* vw: 视口宽度的 1%
+* vh: 视口高度的 1%
+</code></pre></div>
+
+
+</details>
+</li>
+<li>
+<p>&lt;percentage></p>
+</li>
+</ul>
+</details>
+<details class="note"><summary>2. color</summary><ul>
+<li>
+<p>颜色关键字</p>
+<p>这些关键字被更准确地描述为标识符 (identifiers)，CSS 可以理解的一个特殊值。因此它们没有使用引号括起来——它们不被当作字符串。</p>
+</li>
+<li>
+<p>十六进制 RGB 值</p>
+<p>a hash/pound symbol (#) + 6 个十六进制数字</p>
+</li>
+<li>
+<p>RGB and RGBA 值</p>
+<p>RGB 值是一个函数— rgb()，有 3 个参数，十进制数字表示</p>
+<p>Alpha通道，该值控制不透明度。</p>
+</li>
+<li>
+<p>HSL和HSLA值</p>
+<p>hsl() 函数接受 hue (色调), saturation (饱和度), and lightness (亮度) 值:</p>
+<ul>
+<li>Hue: The base shade of the color. 0 - 360, 代表色轮周围的角度</li>
+<li>Saturation: 0–100%, 0: 无颜色 (显示为灰色阴影), 100%: full color saturation</li>
+<li>Lightness: 0–100%, 0: 没有光 (显示为完全黑色), 100%: full light (显示为完全白色)</li>
+</ul>
+</li>
+</ul>
+</details>
+<div class="admonition note">
+<p class="admonition-title">3. images (图片)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">4. Strings (字符串) and identifiers (标识符)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">5. Functions (函数)</p>
+</div>
 <h3 id="28-sizing-items-in-css">2.8 调整项目大小 (Sizing items in CSS)<a class="headerlink" href="#28-sizing-items-in-css" title="Permanent link">&para;</a></h3>
+<ul>
+<li>max-width 的例子</li>
+</ul>
 <h3 id="29-images-media-and-form-elements">2.9 Images, media, and form (表单) elements<a class="headerlink" href="#29-images-media-and-form-elements" title="Permanent link">&para;</a></h3>
+<p>略</p>
 <h3 id="210-styling-tables">2.10 样式化表格 (Styling tables)<a class="headerlink" href="#210-styling-tables" title="Permanent link">&para;</a></h3>
+<p>略</p>
 <h3 id="211-debugging-css">2.11 Debugging CSS<a class="headerlink" href="#211-debugging-css" title="Permanent link">&para;</a></h3>
+<p>略</p>
 <h3 id="212-css">2.12 组织 CSS<a class="headerlink" href="#212-css" title="Permanent link">&para;</a></h3>
+<p>略</p>
 <h2 id="3-styling-text">3 <a href="">样式化文本(styling text)</a><a class="headerlink" href="#3-styling-text" title="Permanent link">&para;</a></h2>
-<h2 id="4-css-layout">4 <a href="">CSS 布局(layout)</a><a class="headerlink" href="#4-css-layout" title="Permanent link">&para;</a></h2>
+<p>略</p>
                 
               
               
@@ -2090,13 +2184,13 @@ li[class*=&quot;box&quot;]
           </a>
         
         
-          <a href="../10/" title="常见问题" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../css-4/" title="3.4 布局" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                常见问题
+                3.4 布局
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
