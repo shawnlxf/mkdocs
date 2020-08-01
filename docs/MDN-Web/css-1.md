@@ -49,31 +49,60 @@
 
 * property
 
-    1. [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+??? note "text-align"
 
-        * Types (类型)
+    The text-align CSS property 设置 块元素 或 table-cell box 的水平对齐。
+    
+    这意味着它的工作方式像 vertical-align 但是在水平方向。
 
-            * positioned element (定位元素)
+??? note "使块本身居中而不使行内内容居中的标准兼容方法是将 left 和 right margin 设置为 auto，例如："
 
-                > 计算值不是 static
+    ``` css
+    .something {
+      margin: auto;
+    }
+    ```
 
-                * relatively positioned element (相对定位元素)
+    ``` css
+    .something {
+      margin: 0 auto;
+    }
+    ```
 
-                    > 计算值：relative
+    ``` css
+    .something {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ```
 
-                * absolutely positioned element (绝对定位元素)
 
-                    > 计算值：absolute 或 fixed
-                    >
-                    > properties: top, right, bottom, left 的偏移从 包含块 计算得来
 
-                * stickily positioned element (粘性定位元素)
+??? note "[position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)"
 
-                    > 计算值：sticky
-                    >
-                    > 一般情况：relatve
-                    >
-                    > 特殊情况：在 container 里滚动 包含块超过 container 的边缘就粘住
+    * Types (类型)
+
+        * positioned element (定位元素)
+
+            > 计算值不是 static
+
+            * relatively positioned element (相对定位元素)
+
+                > 计算值：relative
+
+            * absolutely positioned element (绝对定位元素)
+
+                > 计算值：absolute 或 fixed
+                >
+                > properties: top, right, bottom, left 的偏移从 包含块 计算得来
+
+            * stickily positioned element (粘性定位元素)
+
+                > 计算值：sticky
+                >
+                > 一般情况：relatve
+                >
+                > 特殊情况：在 container 里滚动 包含块超过 container 的边缘就粘住
 
     2. float
 

@@ -108,7 +108,7 @@
 
 * Internal links
 
-    * Linking to pages#header: [Home#3. 网站](../README.md#3)
+    * Linking to pages#header: [software#1-tools](../software/#1-tools)
 
     * Linking to images and media: ![图片名](图片地址)
 
@@ -124,7 +124,7 @@
 
 ### 5.x Admonition
 
-1. note
+??? note "note"
 
     !!! note "note 换名字"
 
@@ -142,7 +142,7 @@
     ??? note "这是可折叠 note"
         FAQs(常见问题) 或 次要内容
 
-* 其他类型:
+??? note "其他类型"
 
     !!! success
 

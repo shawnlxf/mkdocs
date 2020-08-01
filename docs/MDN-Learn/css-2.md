@@ -1,7 +1,7 @@
 
-## 2 [CSS 构建块(building blocks)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
+> [CSS 构建块(building blocks)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
 
-### 2.1 层叠与继承 (Cascade and inheritance)
+## 1 层叠与继承 (Cascade and inheritance)
 
 ??? note "继承 (Inheritance)"
 
@@ -68,7 +68,7 @@
 
 
 
-### 2.2 CSS选择器
+## 2 CSS选择器
 
 
 CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
@@ -338,7 +338,7 @@ CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
 
 
 
-### 2.3 盒模型 (The box model)
+## 3 盒模型 (The box model)
 
 Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layouts 或 align items with other items 的关键 
 
@@ -521,16 +521,16 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
     应用于元素的任何背景都将显示在 padding 的后面，通常用于将 content 推离 border。
 
-### 2.4 Backgrounds and borders
+## 4 Backgrounds and borders
 
 * [cssgradient.io](https://cssgradient.io/)
 * [例子](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders)
 
-### 2.5 处理不同的文本方向
+## 5 处理不同的文本方向
 
 跳过
 
-### 2.6 溢出的内容
+## 6 溢出的内容
 
 ??? note "您也可以使用 overflow-x 实现在x轴上滚动，尽管不建议使用这种方法来容纳长字！"
 
@@ -547,7 +547,7 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
     开发网站时，请始终牢记溢出。测试包含大量和少量内容的设计。增加文本的字体大小。通常，请确保 CSS 具有稳定的功能。更改 overflow 的值来隐藏内容或添加滚动条，会是你仅仅在少数特别情况下需要的。
 
-### 2.7 值和单位 (values and units)
+## 7 值和单位 (values and units)
 
 !!! note "CSS values = data types (数据类型)"
 
@@ -612,23 +612,23 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 !!! note "5. Functions (函数)"
 
 
-### 2.8 调整项目大小 (Sizing items in CSS)
+## 8 调整项目大小 (Sizing items in CSS)
 
 * max-width 的例子
 
-### 2.9 Images, media, and form (表单) elements
+## 9 Images, media, and form (表单) elements
 
 略
 
-### 2.10 样式化表格 (Styling tables)
+## 10 样式化表格 (Styling tables)
 
 略
 
-### 2.11 Debugging CSS
+## 11 Debugging CSS
 
 略
 
-### 2.12 组织 CSS
+## 12 组织 CSS
 
 略
 

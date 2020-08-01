@@ -87,9 +87,9 @@ nav:
 
           - 常见问题: MDN-Learn/10.md
       - MDN-Web:
-          - Web: MDN-Web/0.md
-          - HTML: MDN-Web/1.md
-          - CSS: MDN-Web/2.md
+          - 大纲: MDN-Web/0.md
+          - HTML 元素: MDN-Web/html-1.md
+          - CSS: MDN-Web/css-1.md
       - Language:
           - HTML: Learn/Language/html.md
           - CSS: Learn/Language/css.md

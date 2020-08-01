@@ -1,13 +1,13 @@
 
 [Howto](https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto)
 
-## 1 [第一步](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
+> [第一步](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 
-### 1.1 什么是 CSS
+## 1 什么是 CSS
 
 * 标记语言：HTML / SVG / XML
 
-### 1.2 CSS 入门
+## 2 CSS 入门
 
 ??? note "链接 styles.css 到 index.html 的 <head\>"
 
@@ -89,7 +89,7 @@
         ```
 
 
-### 1.3 CSS 的结构
+## 3 CSS 的结构
 
 ??? note "将CSS应用于文档的三种方法："
 
@@ -239,7 +239,7 @@
     
     空白的价值在于它如何提高可读性。
 
-### 1.4 CSS 如何工作
+## 4 CSS 如何工作
 
 ??? note "浏览器显示文档时，必须将文档的内容与其样式信息结合在一起。"
 
