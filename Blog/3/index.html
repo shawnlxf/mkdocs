@@ -19,7 +19,7 @@
     
     
       
-        <title>3-HTML常用标签 - ShawnDocs</title>
+        <title>3-HTML-a/img/table/form - ShawnDocs</title>
       
     
     
@@ -79,7 +79,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              3-HTML常用标签
+              3-HTML-a/img/table/form
             
           </span>
         </div>
@@ -207,7 +207,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../1/" class="md-tabs__link md-tabs__link--active">
+        <a href="../0/" class="md-tabs__link md-tabs__link--active">
           Blog
         </a>
       
@@ -1209,8 +1209,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../1/" title="1-Github Pages" class="md-nav__link">
-      1-Github Pages
+    <a href="../0/" title="0-Github Pages" class="md-nav__link">
+      0-Github Pages
     </a>
   </li>
 
@@ -1221,8 +1221,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../2/" title="2-HTML入门笔记1" class="md-nav__link">
-      2-HTML入门笔记1
+    <a href="../1/" title="1-HTML-全局属性" class="md-nav__link">
+      1-HTML-全局属性
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2/" title="2-HTML-章节标签/文本标签" class="md-nav__link">
+      2-HTML-章节标签/文本标签
     </a>
   </li>
 
@@ -1240,14 +1252,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        3-HTML常用标签
+        3-HTML-a/img/table/form
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="3-HTML常用标签" class="md-nav__link md-nav__link--active">
-      3-HTML常用标签
+    <a href="./" title="3-HTML-a/img/table/form" class="md-nav__link md-nav__link--active">
+      3-HTML-a/img/table/form
     </a>
     
       
@@ -1285,15 +1297,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-form" class="md-nav__link">
-    4 form 标签(表单) 的属性
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-input-form-input" class="md-nav__link">
-    5 input 标签(form input)
+  <a href="#4-forms" class="md-nav__link">
+    4 Forms (表单)
   </a>
   
 </li>
@@ -1427,15 +1432,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-form" class="md-nav__link">
-    4 form 标签(表单) 的属性
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-input-form-input" class="md-nav__link">
-    5 input 标签(form input)
+  <a href="#4-forms" class="md-nav__link">
+    4 Forms (表单)
   </a>
   
 </li>
@@ -1460,7 +1458,7 @@
                   
                 
                 
-                  <h1>3-HTML常用标签</h1>
+                  <h1>3-HTML-a/img/table/form</h1>
                 
                 <h2 id="1-a">1 a 标签<a class="headerlink" href="#1-a" title="Permanent link">&para;</a></h2>
 <details class="quote"><summary>作用：(href)</summary><ol>
@@ -1571,41 +1569,45 @@
 <li>rel="noopener"</li>
 </ul>
 <h2 id="2-img">2 img 标签<a class="headerlink" href="#2-img" title="Permanent link">&para;</a></h2>
-<ul>
+<div class="admonition quote">
+<p class="admonition-title">作用: 发出 get 请求，展示一张图片</p>
+</div>
+<details class="note"><summary>属性</summary><ul>
 <li>
-<p>作用</p>
-<blockquote>
-<p>发出 get 请求，展示一张图片</p>
-</blockquote>
+<p>src  </p>
+<p>图像 URL. 强制的.</p>
 </li>
 <li>
-<p>属性</p>
-<blockquote>
-<p>alt / height / width / src  </p>
+<p>alt</p>
+<p>定义图像的 alternative text description。</p>
+</li>
+<li>
+<p>height</p>
+<p>图像的 intrinsic 高度, 以像素为单位. 必须是不带单位的整数.</p>
 <p>可以只指定 width 和 height 中的一个值，浏览器会根据原始图像进行缩放。</p>
-</blockquote>
 </li>
 <li>
-<p>事件</p>
-<blockquote>
+<p>width</p>
+<p>图像的 intrinsic 宽度, 以像素为单位. 必须是不带单位的整数.</p>
+</li>
+</ul>
+</details>
+<div class="admonition quote">
+<p class="admonition-title">事件</p>
 <p>onload / onerror</p>
-</blockquote>
-</li>
-<li>
-<p>响应式</p>
-<blockquote>
-<p>max-width: 100%</p>
-</blockquote>
-</li>
-<li>
-<p>可替换元素(CSS)</p>
-</li>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">响应式</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS/#min-_and_max-_sizes">max-width: 100%</a></p>
+</div>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">可替换元素(CSS)</a></li>
 </ul>
 <h2 id="3-table-content">3 表格内容 (Table content)<a class="headerlink" href="#3-table-content" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>标签里只能有 3 个标签</p>
 </blockquote>
-<details class="note"><summary><code>&lt;table&gt;</code>: 例子</summary><ul>
+<details class="note"><summary><code>&lt;table&gt;</code>: 见例子</summary><ul>
 <li>
 <p>相关的样式</p>
 <ul>
@@ -1697,159 +1699,174 @@
 </li>
 </ul>
 </details>
-<h2 id="4-form">4 form 标签(表单) 的属性<a class="headerlink" href="#4-form" title="Permanent link">&para;</a></h2>
+<h2 id="4-forms">4 Forms (表单)<a class="headerlink" href="#4-forms" title="Permanent link">&para;</a></h2>
+<details class="abstract"><summary><code>&lt;form&gt;</code>: 见例子</summary><ul>
+<li>作用: 发 get 或 post 请求，然后刷新页面</li>
+<li>事件: onsubmit</li>
+<li>
+<p>其他</p>
+<ul>
+<li>form 必须要有一个 type="submit"的按钮  </li>
+<li>button 里如果不写 type，则默认为 submit</li>
+</ul>
+</li>
+</ul>
+<details class="note"><summary>属性</summary><ul>
+<li>
+<p>autocomplete</p>
+<p>指示默认情况下输入元素是否可以由浏览器自动补全其值。</p>
+<p>此设定可以被属于此表单的子元素的 autocomplete 属性覆盖。</p>
+<p>可能的值有：</p>
+<ul>
+<li>off：浏览器可能不会自动补全条目 (entries)。（在疑似登录表单中，浏览器倾向于忽略该值，而提供密码自动填充功能，参见 <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion#The_autocomplete_attribute_and_login_fields">The autocomplete attribute and login fields</a>）</li>
+<li>on：浏览器可能会自动补全条目 (entries)。</li>
+</ul>
+</li>
+</ul>
 <blockquote>
-<ul>
-<li>作用</li>
-</ul>
-<p>发 get 或 post 请求，然后刷新页面</p>
-<ul>
-<li>事件</li>
-</ul>
-<p>onsubmit</p>
-<ul>
-<li>其他</li>
-</ul>
-<p>form 必须要有一个 type="submit"的按钮  </p>
-<p>button 里如果不写 type，则默认为 submit</p>
+<p>以下为关于表单提交的属性</p>
 </blockquote>
 <ol>
 <li>
 <p>action</p>
-<blockquote>
-<p>The URL that processes the form submission.</p>
-</blockquote>
+<p>处理表单提交的 URL。这个值可被 <code>&lt;button&gt;</code>、<code>&lt;input type="submit"&gt;</code> 或 <code>&lt;input type="image"&gt;</code> 元素上的 formaction 属性覆盖。</p>
 </li>
 <li>
-<p>autocomplete</p>
-<blockquote>
-<p>用于指示 input 元素是否能够拥有一个默认值，此默认值是由浏览器自动补全的。</p>
-</blockquote>
-</li>
-<li>
-<p>method 可能的值</p>
-<blockquote>
-<p>The HTTP method to submit the form with.</p>
-</blockquote>
+<p>method</p>
+<p>提交表单的 HTTP 方法。可能的（不区分大小写）值有：</p>
 <ul>
 <li>
-<p>post</p>
-<blockquote>
-<p>The POST method; form data sent as the request body.</p>
-</blockquote>
+<p>post: The <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5">POST method</a>; 表单数据作为 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Body">request body</a> 发送.</p>
 </li>
 <li>
-<p>get</p>
-<blockquote>
-<p>The GET method; form data appended to the action URL with a ? separator. Use this method when the form has no side-effects.</p>
-</blockquote>
+<p>get: The <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3">GET method</a>; 表单数据会附加在 action URL 中，并以 '?' 作为分隔符，当表单<a href="https://developer.mozilla.org/en-US/docs/Glossary/Idempotent">没有副作用</a>时使用这个方法。</p>
 </li>
 <li>
-<p>dialog</p>
-<blockquote>
-<p>When the form is inside a &lt;dialog>, closes the dialog on submission.</p>
-</blockquote>
+<p>dialog: 如果表单在 <code>&lt;dialog&gt;</code> 元素中，提交时关闭对话框。</p>
 </li>
 </ul>
+<p>此值可以被 <code>&lt;button&gt;</code>、<code>&lt;input type="submit"&gt;</code> 或 <code>&lt;input type="image"&gt;</code> 元素中的 formmethod 属性覆盖。</p>
 </li>
 <li>
-<p>target 可选的值</p>
-<blockquote>
-<p>用来指示在提交表单之后，在哪里显示收到的回复</p>
-<p>In HTML5, it is a name/keyword for a browsing context  </p>
-<p>(for example, tab, window, or iframe).</p>
-</blockquote>
+<p>target</p>
+<p>指示在提交表单之后，在哪里显示响应 (response)。</p>
+<p>在 HTML 4 中, 这是一个 frame 的名字/关键字对 (name/keyword)。</p>
+<p>在 HTML5 中，这是一个浏览上下文 (browsing context)（如标签页 tab、窗口 window 或 iframe） 的名字/关键字。</p>
+<p>以下关键字具有特殊含义：</p>
 <ul>
-<li>
-<p>_self (default)</p>
-<blockquote>
-<p>Load into the same browsing context as the current one.</p>
-</blockquote>
-</li>
-<li>
-<p>_blank</p>
-<blockquote>
-<p>Load into a new unnamed browsing context.</p>
-</blockquote>
-</li>
-<li>
-<p>_parent</p>
-<blockquote>
-<p>Load into the parent browsing context of the current one. If no parent, behaves the same as _self.</p>
-</blockquote>
-</li>
-<li>
-<p>_top</p>
-<blockquote>
-<p>Load into the top-level browsing context (i.e., the browsing context that is an ancestor of the current one and has no parent). If no parent, behaves the same as _self.</p>
-</blockquote>
-</li>
+<li>_self (默认): 加载到与当前浏览上下文相同的浏览上下文中。</li>
+<li>_blank: 加载到新的未命名浏览上下文中。</li>
+<li>_parent: 加载到当前上下文的父级浏览上下文中。如果没有父级 (parent)，则与 _self 表现一致。</li>
+<li>_top: 加载到顶级 (top-level) 的浏览上下文中（即当前上下文的一个祖先浏览上下文，并且没有父级）。如果没有父级，则与 _self 表现一致。</li>
 </ul>
+<p>此值可以被 <code>&lt;button&gt;</code>、 <code>&lt;input type="submit"&gt;</code> 或 <code>&lt;input type="image"&gt;</code> 元素中的 formtarget 属性覆盖。</p>
 </li>
 </ol>
-<h2 id="5-input-form-input">5 input 标签(form input)<a class="headerlink" href="#5-input-form-input" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>为基于 Web 的表单创建交互式控件，以便接受来自用户的数据;  </p>
-<p>可以使用各种类型的输入数据和控件小部件，具体取决于设备和 user agent。  </p>
+</details>
+</details>
+<details class="abstract"><summary><code>&lt;input&gt;</code>: 见例子</summary><blockquote>
 <p>最强大和复杂的元素之一，因为 input 的 types 和 attributes 的组合有很多</p>
 </blockquote>
 <ul>
-<li>
-<p>作用</p>
-<blockquote>
-<p>让用户输入内容</p>
-</blockquote>
-</li>
-<li>
-<p>属性</p>
-<ul>
-<li>
-<p>type(类型):</p>
-<blockquote>
-<p>未指定则默认为 text</p>
-<p>button / checkbox / email / file / hidden / number / password / radio / search / submit / tel / text  </p>
-</blockquote>
-<ul>
+<li>作用: 让用户输入内容</li>
+</ul>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/#&lt;input&gt;_types"><code>&lt;input&gt;</code> 类型</a></summary><ol>
+<li>text (默认值): 单行文本字段 (field)。换行符 (Line-breaks) 会自动从输入值中删除。</li>
+<li>search: 用于输入搜索字符串的单行文本字段 (field) 。换行符 (Line-breaks) 会自动从输入值中删除。在支持的浏览器中可能包含删除图标，可用于清除该字段。</li>
 <li>checkbox: 复选框</li>
-<li>radio: 单选按钮，允许在多个拥有相同 name 值的选项中选中其中一个。</li>
+<li>radio: 单选按钮，允许从具有相同 name 值的多个选项中选择一个值。</li>
 <li>submit: 用于提交表单的按钮。</li>
+<li>range: 此控件用于输入不需要精确的数字。默认显示在中间值。结合使用 min 和 max 定义可接受值的范围。</li>
 <li>hidden: 不显示的控件，其值仍会提交到服务器。</li>
-</ul>
+</ol>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes">其他 Attributes</a></summary><p><code>&lt;input&gt;</code> 元素因其属性而非常强大，上面的 type 属性最重要. </p>
+<blockquote>
+<p>由于每个 <code>&lt;input&gt;</code> 元素（无论类型如何）都基于 HTMLInputElement 接口，因此从技术上讲，它们共享完全相同的属性集。</p>
+<p>但是，实际上，大多数属性仅对输入类型的特定子集有影响。</p>
+<p>另外，某些属性影响输入的方式取决于输入类型，以不同的方式影响不同的输入类型。</p>
+</blockquote>
+<ol>
+<li>
+<p>name / value: all</p>
 </li>
 <li>
-<p>其他属性：</p>
+<p>required: almost all</p>
 <blockquote>
-<p>name / autofocus / checked / disabled / maxlength / pattern / value / placeholder</p>
+<p>Boolean. A value is required(必填) 或 提交表单前必须先检查该值</p>
 </blockquote>
+</li>
+<li>
+<p>multiple: email, file </p>
+<blockquote>
+<p>Boolean. 是否允许多个值</p>
+</blockquote>
+</li>
+<li>
+<p>accept: file  </p>
+<blockquote>
+<p>用于规定(hint) 文件上传控件 中 期望的文件类型</p>
+</blockquote>
+</li>
+<li>
+<p>width: image  </p>
+<blockquote>
+<p>与 <code>&lt;img&gt;</code> 的 width 属性一样</p>
+</blockquote>
+</li>
+<li>
+<p>alt: image</p>
+<blockquote>
+<p>image 类型的 alt 属性. Required for accessibility</p>
+</blockquote>
+</li>
+<li>
+<p>src: image</p>
+<blockquote>
+<p>和 <code>&lt;img&gt;</code> 的 src 属性一样；图像资源的地址</p>
+</blockquote>
+</li>
+<li>
+<p>autofocus: all</p>
+<blockquote>
+<p>页面加载时自动聚焦到此表单控件</p>
+</blockquote>
+</li>
+<li>
+<p>checked: radio, checkbox</p>
+<blockquote>
+<p>命令 (command) 或 控件 (control) 是否被选中 (checked)</p>
+</blockquote>
+</li>
+<li>
+<p>disabled: all </p>
+<blockquote>
+<p>表单控件是否被禁用 (disabled)</p>
+</blockquote>
+</li>
+<li>
+<p>maxlength: password, search, tel, text, url   </p>
+<blockquote>
+<p>value 的最大长度（字符数）</p>
+</blockquote>
+</li>
+<li>
+<p>pattern: password, text, tel  </p>
+<blockquote>
+<p>Pattern the value must match to be valid</p>
+</blockquote>
+</li>
+</ol>
+</details>
 <ul>
-<li>name</li>
-<li>value</li>
-<li>required</li>
-<li>multiple</li>
-<li>accept</li>
-<li>width</li>
-<li>alt</li>
-<li>src<br />
-  ...</li>
-</ul>
+<li>
+<p>事件: onchange / onfocus / onblur</p>
+</li>
+<li>
+<p>验证器: HTML5 新增功能</p>
 </li>
 </ul>
-</li>
-<li>
-<p>事件</p>
-<blockquote>
-<p>onchange / onfocus / onblur</p>
-</blockquote>
-</li>
-<li>
-<p>验证器</p>
-<blockquote>
-<p>HTML5 新增功能</p>
-</blockquote>
-</li>
-<li>
-<p>其他</p>
-<ul>
+<details class="note"><summary>其他</summary><ul>
 <li>
 <p>input type="submit" 和 button type="submit"的区别：</p>
 <ul>
@@ -1861,8 +1878,25 @@
 <p>input: hidden 用来给 js 自动填 ID、字符串等</p>
 </li>
 </ul>
+</details>
+</details>
+<details class="note"><summary><code>&lt;label&gt;</code></summary></details>
+<ul>
+<li>
+<p>标签</p>
+<ul>
+<li>select + option</li>
+<li>textarea</li>
+<li>label</li>
+</ul>
 </li>
 </ul>
+<details class="note"><summary>注意事项</summary><ul>
+<li>一般不监听 input 的 click 事件</li>
+<li>form 里面的 input 要有 name</li>
+<li>form 里要放一个 type=submit 才能触发 submit 事件</li>
+</ul>
+</details>
                 
               
               
@@ -1881,7 +1915,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../2/" title="2-HTML入门笔记1" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../2/" title="2-HTML-章节标签/文本标签" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1890,7 +1924,7 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                2-HTML入门笔记1
+                2-HTML-章节标签/文本标签
               </div>
             </div>
           </a>
