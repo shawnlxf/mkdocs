@@ -52,7 +52,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#html" class="md-skip">
+        <a href="#1-a" class="md-skip">
           跳转至
         </a>
       
@@ -740,8 +740,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/0/" title="Web" class="md-nav__link">
-      Web
+    <a href="../../MDN-Web/0/" title="大纲" class="md-nav__link">
+      大纲
     </a>
   </li>
 
@@ -752,8 +752,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/1/" title="HTML" class="md-nav__link">
-      HTML
+    <a href="../../MDN-Web/html-1/" title="HTML 元素" class="md-nav__link">
+      HTML 元素
     </a>
   </li>
 
@@ -764,7 +764,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/2/" title="CSS" class="md-nav__link">
+    <a href="../../MDN-Web/css-1/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -1238,8 +1238,6 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         3-HTML常用标签
@@ -1256,8 +1254,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1269,35 +1265,35 @@
       
         <li class="md-nav__item">
   <a href="#1-a" class="md-nav__link">
-    1. a 标签 的属性
+    1 a 标签
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2-img" class="md-nav__link">
-    2. img 标签
+    2 img 标签
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-table" class="md-nav__link">
-    3. table 标签 (表格)
+  <a href="#3-table-content" class="md-nav__link">
+    3 表格内容 (Table content)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#4-form" class="md-nav__link">
-    4. form 标签(表单) 的属性
+    4 form 标签(表单) 的属性
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#5-input-form-input" class="md-nav__link">
-    5. input 标签(form input)
+    5 input 标签(form input)
   </a>
   
 </li>
@@ -1400,8 +1396,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1413,35 +1407,35 @@
       
         <li class="md-nav__item">
   <a href="#1-a" class="md-nav__link">
-    1. a 标签 的属性
+    1 a 标签
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2-img" class="md-nav__link">
-    2. img 标签
+    2 img 标签
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-table" class="md-nav__link">
-    3. table 标签 (表格)
+  <a href="#3-table-content" class="md-nav__link">
+    3 表格内容 (Table content)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#4-form" class="md-nav__link">
-    4. form 标签(表单) 的属性
+    4 form 标签(表单) 的属性
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#5-input-form-input" class="md-nav__link">
-    5. input 标签(form input)
+    5 input 标签(form input)
   </a>
   
 </li>
@@ -1466,26 +1460,16 @@
                   
                 
                 
-                <h1 id="html">HTML常用标签<a class="headerlink" href="#html" title="Permanent link">&para;</a></h1>
-<h2 id="1-a">1. a 标签 的属性<a class="headerlink" href="#1-a" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>作用：</p>
-<ol>
-<li>
-<p>跳转外部页面</p>
-</li>
-<li>
-<p>跳转内部锚点</p>
-</li>
-<li>
-<p>跳转到邮箱或电话等</p>
-</li>
+                  <h1>3-HTML常用标签</h1>
+                
+                <h2 id="1-a">1 a 标签<a class="headerlink" href="#1-a" title="Permanent link">&para;</a></h2>
+<details class="quote"><summary>作用：(href)</summary><ol>
+<li>跳转外部页面，文件</li>
+<li>跳转内部锚点</li>
+<li>跳转到邮箱或电话等</li>
 </ol>
-</blockquote>
-<ol>
-<li>
-<p>href 取值</p>
-<ol>
+</details>
+<details class="note"><summary>属性 href</summary><ol>
 <li>
 <p>网址  </p>
 <ul>
@@ -1510,44 +1494,47 @@
 </ul>
 </li>
 <li>
-<p>id  </p>
+<p>id，同一页面上的元素  </p>
 <ul>
-<li>href=#xxx</li>
+<li>
+<p>href="#xxx"</p>
+<blockquote>
+<p>注意: 你可以使用 href="#top" 或 空片段 (empty fragment) (href="#") 链接到当前页面的顶部</p>
+</blockquote>
+</li>
 </ul>
 </li>
 </ol>
-</li>
-<li>
-<p>target 取值</p>
-<blockquote>
-<p>Where to display the linked URL, as the name for a browsing context (a tab, window, or &lt;iframe>)</p>
+</details>
+<details class="note"><summary>属性 target</summary><blockquote>
+<p>在何处显示链接的 URL，作为 浏览上下文 (browsing context, 如 a tab, window 或 &lt;iframe>) 的名字</p>
 </blockquote>
 <ol>
 <li>
 <p>内置名字  </p>
 <ul>
 <li>
-<p>_self</p>
+<p>_self (默认)</p>
 <blockquote>
-<p>the current browsing context. (Default)</p>
+<p>当前浏览上下文</p>
 </blockquote>
 </li>
 <li>
 <p>_blank</p>
 <blockquote>
-<p>usually a new tab, but users can configure browsers to open a new window instead.</p>
+<p>usually a new tab, 但是用户可以配置浏览器来打开新窗口.</p>
 </blockquote>
 </li>
 <li>
 <p>_parent</p>
 <blockquote>
-<p>the parent browsing context of the current one. If no parent, behaves as _self.</p>
+<p>当前浏览上下文的父浏览上下文. 如果没有 parent, 表现为 _self.</p>
 </blockquote>
 </li>
 <li>
 <p>_top</p>
 <blockquote>
-<p>the topmost browsing context (the "highest" context that’s an ancestor of the current one). If no ancestors, behaves as _self.</p>
+<p>最高浏览上下文 ("最高" 上下文是当前浏览上下文的祖先). 如果没有祖先，则表现为 _self。</p>
 </blockquote>
 </li>
 </ul>
@@ -1567,18 +1554,23 @@
 </ul>
 </li>
 </ol>
-</li>
-<li>
-<p>download</p>
-<blockquote>
+</details>
+<details class="note"><summary>属性 download</summary><p>保存链接的 URL，可以 有值 或 没有值</p>
+<ul>
+<li>没有值</li>
+<li>有值</li>
+</ul>
 <p>问题：不是所有浏览器都支持，尤其是手机浏览器可能不支持</p>
-</blockquote>
-</li>
-<li>
-<p>rel=noopener</p>
-</li>
-</ol>
-<h2 id="2-img">2. img 标签<a class="headerlink" href="#2-img" title="Permanent link">&para;</a></h2>
+</details>
+<details class="quote"><summary>onclick 事件</summary><p><code>&lt;a&gt;</code> 经常被滥用作为假按钮，通过设置 href 为 <code>#</code> 或 <code>javascript:void(0)</code> 来阻止页面刷新, 然后监听其 click 事件.</p>
+<p>这些 <code>href</code> 的假值导致 unexpected behavior 当 复制/拖动 链接，打开链接</p>
+<p>当复制/拖动链接，在新标签页/窗口中打开链接，添加书签或加载，错误或禁用 JavaScript 时，这些假的 <code>href</code> 值会导致 unexpected behavior。</p>
+<p>改用 <code>&lt;button&gt;</code>。通常，只应使用超链接用来导航到真实的 URL。</p>
+</details>
+<ul>
+<li>rel="noopener"</li>
+</ul>
+<h2 id="2-img">2 img 标签<a class="headerlink" href="#2-img" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>作用</p>
@@ -1609,37 +1601,11 @@
 <p>可替换元素(CSS)</p>
 </li>
 </ul>
-<h2 id="3-table">3. table 标签 (表格)<a class="headerlink" href="#3-table" title="Permanent link">&para;</a></h2>
+<h2 id="3-table-content">3 表格内容 (Table content)<a class="headerlink" href="#3-table-content" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>标签里只能有 3 个标签</p>
 </blockquote>
-<ul>
-<li>
-<p>相关的标签</p>
-<ul>
-<li>thead  </li>
-<li>tbody  </li>
-<li>tfoot  </li>
-<li>
-<p>tr</p>
-<blockquote>
-<p>table row  </p>
-</blockquote>
-</li>
-<li>
-<p>td</p>
-<blockquote>
-<p>table data  </p>
-</blockquote>
-</li>
-<li>
-<p>th</p>
-<blockquote>
-<p>table header</p>
-</blockquote>
-</li>
-</ul>
-</li>
+<details class="note"><summary><code>&lt;table&gt;</code>: 例子</summary><ul>
 <li>
 <p>相关的样式</p>
 <ul>
@@ -1649,7 +1615,89 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-form">4. form 标签(表单) 的属性<a class="headerlink" href="#4-form" title="Permanent link">&para;</a></h2>
+</details>
+<details class="note"><summary><code>&lt;caption&gt;</code></summary><blockquote>
+<p>caption (or title)</p>
+</blockquote>
+<p><code>&lt;caption&gt;</code>元素 应该是其父 <code>&lt;table&gt;</code> 元素的第一个孩子.</p>
+<blockquote>
+<p>如果包含 <code>&lt;caption&gt;</code> 的 <code>&lt;table&gt;</code> 元素是 <code>&lt;figure&gt;</code> 元素的唯一后代，则应使用 <code>&lt;figcaption&gt;</code> 元素代替<code>&lt;caption&gt;</code>。</p>
+</blockquote>
+</details>
+<div class="admonition note">
+<p class="admonition-title"><code>&lt;thead&gt;</code></p>
+</div>
+<details class="note"><summary><code>&lt;tbody&gt;</code></summary><p>每个表格可以使用多于 1 个 <code>&lt;tbody&gt;</code>，只要它们都是连续的即可。</p>
+<p>这使您可以将大表中的行划分为多个部分，如果需要，可以分别设置每个部分的格式。</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title"><code>&lt;tfoot&gt;</code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><code>&lt;tr&gt;</code>: 定义表格的 a row of cells</p>
+</div>
+<details class="note"><summary><code>&lt;td&gt;</code></summary><p>定义 a cell of a table that contains data. 它参与 table model.</p>
+<ul>
+<li>
+<p>属性 </p>
+<ul>
+<li>colspan</li>
+<li>
+<p>headers</p>
+<blockquote>
+<p>此属性包含以空格分隔的字符串列表，每个字符串都与应用于此元素的<code>&lt;th&gt;</code> 元素的 id 属性相对应 。</p>
+</blockquote>
+</li>
+<li>
+<p>rowspan</p>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="abstract"><summary><code>&lt;th&gt;</code></summary><p><code>&lt;th&gt;</code> 元素定义 a cell 作为一组 table cells 的 header。</p>
+<p>该组的确切性质由 scope 和 headers 属性定义。</p>
+<ul>
+<li>
+<p>属性</p>
+<ul>
+<li>abbr</li>
+<li>
+<p>headers</p>
+<blockquote>
+<p>此属性包含以空格分隔的字符串列表，每个字符串都与应用于此元素的<code>&lt;th&gt;</code> 元素的 id 属性相对应 。</p>
+</blockquote>
+</li>
+<li>
+<p>colspan</p>
+</li>
+<li>rowspan</li>
+<li>
+<p>scope</p>
+<blockquote>
+<p>这个枚举属性定义了表头 (header) 元素 (在 <code>&lt;th&gt;</code> 中定义) 关联的单元格(cell). 它可能有以下值:</p>
+</blockquote>
+<ul>
+<li>row: 表头关联其所属行中所有的单元格。</li>
+<li>col: 表头关联其所属列中所有的单元格。</li>
+<li>rowgroup: 表头属于一个行组并与其中所有单元格相关联。这些单元格可以被放在表头的左侧或右侧，取决于 <code>&lt;table&gt;</code> 元素中 dir 属性的值 。</li>
+<li>colgroup: 表头属于一个列组并与其中所有单元格相关联。</li>
+<li>auto (默认值)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="note"><summary><code>&lt;colgroup&gt;</code></summary><p>定义表格内的一组列。</p>
+<ul>
+<li>
+<p>属性 span</p>
+<p>此属性包含一个正整数，指示该 <code>&lt;colgroup&gt;</code> 元素跨越的连续列数。如果不存在，则默认值为1。</p>
+</li>
+</ul>
+</details>
+<h2 id="4-form">4 form 标签(表单) 的属性<a class="headerlink" href="#4-form" title="Permanent link">&para;</a></h2>
 <blockquote>
 <ul>
 <li>作用</li>
@@ -1739,7 +1787,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="5-input-form-input">5. input 标签(form input)<a class="headerlink" href="#5-input-form-input" title="Permanent link">&para;</a></h2>
+<h2 id="5-input-form-input">5 input 标签(form input)<a class="headerlink" href="#5-input-form-input" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>为基于 Web 的表单创建交互式控件，以便接受来自用户的数据;  </p>
 <p>可以使用各种类型的输入数据和控件小部件，具体取决于设备和 user agent。  </p>

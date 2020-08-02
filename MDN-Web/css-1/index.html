@@ -744,8 +744,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../0/" title="Web" class="md-nav__link">
-      Web
+    <a href="../0/" title="大纲" class="md-nav__link">
+      大纲
     </a>
   </li>
 
@@ -756,8 +756,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../1/" title="HTML" class="md-nav__link">
-      HTML
+    <a href="../html-1/" title="HTML 元素" class="md-nav__link">
+      HTML 元素
     </a>
   </li>
 
@@ -1418,7 +1418,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/shawnlxf/mkdocs/edit/master/docs/MDN-Web/2.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/shawnlxf/mkdocs/edit/master/docs/MDN-Web/css-1.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1488,12 +1488,29 @@
 </ol>
 <h2 id="2-reference">2. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">reference</a><a class="headerlink" href="#2-reference" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>property</p>
-<ol>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a></p>
-<ul>
+<li>property</li>
+</ul>
+<details class="note"><summary>text-align</summary><p>The text-align CSS property 设置 块元素 或 table-cell box 的水平对齐。</p>
+<p>这意味着它的工作方式像 vertical-align 但是在水平方向。</p>
+</details>
+<details class="note"><summary>使块本身居中而不使行内内容居中的标准兼容方法是将 left 和 right margin 设置为 auto，例如：</summary><div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">something</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">something</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">something</span> <span class="p">{</span>
+  <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a></summary><ul>
 <li>
 <p>Types (类型)</p>
 <ul>
@@ -1528,8 +1545,6 @@
 </li>
 </ul>
 </li>
-</ul>
-</li>
 <li>
 <p>float</p>
 <blockquote>
@@ -1537,9 +1552,8 @@
 <p>从 normal flow 中移除该元素，尽管该元素仍然保留了一部分 flow (对比 absolute positioning).</p>
 </blockquote>
 </li>
-</ol>
-</li>
 </ul>
+</details>
                 
               
               
@@ -1558,7 +1572,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../1/" title="HTML" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../html-1/" title="HTML 元素" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1567,7 +1581,7 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                HTML
+                HTML 元素
               </div>
             </div>
           </a>
