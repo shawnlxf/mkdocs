@@ -115,9 +115,10 @@ nav:
           - 2-数据类型: Books/网道-JavaScript/2.md
       - 网道-HTML: Books/网道-HTML.md
   - Blog:
-      - 1-Github Pages: Blog/1.md
-      - 2-HTML入门笔记1: Blog/2.md
-      - 3-HTML常用标签: Blog/3.md
+      - 0-Github Pages: Blog/0.md
+      - 1-HTML-全局属性: Blog/1.md
+      - 2-HTML-章节标签/文本标签: Blog/2.md
+      - 3-HTML-a/img/table/form: Blog/3.md
       - 4-CSS知识总结: Blog/4.md
       - 5-浅析URL: Blog/5.md
       - 6-JavaScript的诞生: Blog/6.md

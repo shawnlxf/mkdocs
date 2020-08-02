@@ -1,8 +1,11 @@
 
 > [HTML 元素](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
+## 1 Main root
 
-## 文档元数据
+`<html>`
+
+## 2 Document metadata
 
 ??? quote "元数据包含有关页面的信息。"
 
@@ -10,56 +13,85 @@
 
     样式和脚本的元数据可以在页面中定义，也可以链接到具有该信息的另一个文件。 
 
-## Sectioning root
+`<base>`, `<head>`, `<link>`, `<meta>`, `<style>`, `<title>`
+
+
+## 3 Sectioning root
+
+`<body>`
 
 ??? note "`<body>`"
 
     onload: 文档加载完成后调用的函数。
 
 
-## 内容部分 (Content sectioning)
+## 4 Content sectioning
 
-* `<article>`
-* `<aside>`
-* `<footer>`
-* `<header>`
+* `<article>`, `<aside>`, `<footer>`, `<header>`, `<main>`, `<section>`
 * `<h1>, <h2>, <h3>, <h4>, <h5>, <h6>`
-* `<main>`
-* `<section>`
 
-## 文本内容 (Text content)
+* `<nav>`, `<address>`, `<hgroup>`
 
-* `<div>`
-* `<p>`
+## 5 Text content
 
-* `<ol>`
-* `<ul>`
-* `<li>`
-* `<dl>`
-* `<dt>`
-* `<dd>`
-* `<pre>`
-* `<hr>`
-* `<blockquote>`
+* `<div>`, `<p>`, `<ol>`, `<ul>`, `<li>`, `<dl>`, `<dt>`, `<dd>`, `<pre>`, `<hr>`, `<blockquote>`
 
-## Inline text semantics
+* `<figcaption>`, `<figure>`
 
-* `<a>`
-* `<br>`
-* `<em>`
-* `<strong>`
-* `<code>`
-* `<q>`
+## 6 Inline text semantics
 
-## 表单 (Forms)
+* `<a>`, `<br>`, `<em>`, `<strong>`, `<code>`, `<q>`, `<span>`
 
-## Web 组件 (Components)
+* ...
+
+## 7 Image and multimedia
+
+* `<img>`
+
+* ...
+
+## 8 Embedded content
+
+* `<iframe>`
+
+* ...
+
+## 9 Scripting
+
+* `<canvas>`, `<noscript>`, `<script>`
+
+## 10 Demarcating edits
+
+> 这些元素使您可以标示出文本的特定部分已被更改。
+
+* `<del>`, `<ins>`
+
+## 11 Table content
+
+* `<caption>`, `<colgroup>`, `<table>`, `<tbody>`, `<td>`, `<tfoot>`, `<th>`, `<thead>`, `<tr>`
+
+* `<col>` 
+
+## 12 Forms
+
+* `<form>`, `<input>`
+* `<label>`, `<button>`, `<select>`, `<option>`, `<textarea>`
+
+* `<datalist>`, `<fieldset>`, `<legend>`, `<meter>`, `<optgroup>`, `<output>`, `<progress>`
+
+## 13 Interactive elements
+
+* `<details>`, `<dialog>`, `<menu>`, `<summary>`
+
+## 14 Web Components
 
 ??? quote "Web 组件是与 HTML 相关的技术"
 
     从本质上讲，它可以像常规 HTML 一样创建和使用自定义元素。
     
     另外，您可以创建标准 HTML 元素的自定义版本。
+
+* `<slot>`, `<template>`
 
 ??? note "<template\>"
 
