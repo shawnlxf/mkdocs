@@ -6,7 +6,7 @@
 
         1. 学习教程 (主体)
 
-            * [MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+            * MDN
 
         2. 查询 / 博客 / 公众号 (查漏补缺)
 

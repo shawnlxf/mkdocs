@@ -5,7 +5,7 @@
 
 ## 1 什么是 CSS
 
-* 标记语言：HTML / SVG / XML
+* 标记语言：HTML / SVG / XML (包含 XML 方言如 SVG, MathML 或 XHTML)
 
 ## 2 CSS 入门
 
