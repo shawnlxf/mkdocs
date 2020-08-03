@@ -752,8 +752,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/html-1/" title="HTML 元素" class="md-nav__link">
-      HTML 元素
+    <a href="../../MDN-Web/html-1/" title="HTML-元素" class="md-nav__link">
+      HTML-元素
     </a>
   </li>
 
@@ -764,8 +764,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/css-1/" title="CSS" class="md-nav__link">
-      CSS
+    <a href="../../MDN-Web/css-1/" title="CSS-reference" class="md-nav__link">
+      CSS-reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MDN-Web/css-2/" title="CSS-关键概念" class="md-nav__link">
+      CSS-关键概念
     </a>
   </li>
 
@@ -1476,25 +1488,42 @@
 <blockquote>
 <p>都是块级元素, block-level elements</p>
 </blockquote>
-<details class="note"><summary>1. h1–h6: 标题</summary><p>section headings</p>
-</details>
-<details class="note"><summary>2. section: 部分</summary><p>一般来说会有包含一个标题。</p>
-</details>
-<details class="note"><summary>3. article: 文章</summary><ul>
-<li>
-<p>Examples include:</p>
+<div class="admonition note">
+<p class="admonition-title">1. h1–h6: 标题 (section heading)</p>
+</div>
+<details class="note"><summary>2. section: 部分</summary><p><code>&lt;section&gt;</code> 元素表示一个包含在 HTML 文档中的独立部分，它没有更具体的语义元素来表示。</p>
+<p>通常，但并不总是如此，各节都有标题。</p>
+<p>例如，导航菜单应该包含 (wrapped) 在 <code>&lt;nav&gt;</code> 元素中，但 搜索结果列表 和 地图显示 及其控件 没有特定的元素，可以放在 <code>&lt;section&gt;</code> 里。</p>
 <ul>
-<li>a forum post(论坛帖子),</li>
-<li>a magazine or newspaper article,</li>
-<li>a blog entry.</li>
-</ul>
-</li>
+<li>一个经验法是，<code>&lt;section&gt;</code> 应该出现在文档大纲中。</li>
 </ul>
 </details>
-<details class="note"><summary>4. header: 头部</summary><p><header> 元素通常用于包含周围部分的标题（h1 至 h6 元素），但这不是必需的。</p>
+<details class="note"><summary>3. article: 文章</summary><p>HTML <code>&lt;article&gt;</code> 元素表示一个文档，页面，应用程序或网站里的自包含文章，意图可以 独立地分发 或 可以重复使用（例如，在报刊辛迪加）。</p>
+<p>例子包括：论坛帖子，杂志 或 报纸文章 或 博客条目。</p>
+<ul>
+<li>每个 <code>&lt;article&gt;</code> 应该被标识，通常通过包含一个标题 (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>) 作为其子元素</li>
+<li>当 <code>&lt;article&gt;</code> 元素嵌套时，内部元素代表与外部元素相关的文章。例如，博客帖子的评论可以是嵌套在表示博客帖子的 <code>&lt;article&gt;</code> 中的 <code>&lt;article&gt;</code> 元素。</li>
+<li><code>&lt;article&gt;</code> 元素的作者信息可以通过 <code>&lt;address&gt;</code> 元素提供，但不适用于嵌套的 <code>&lt;article&gt;</code> 元素。</li>
+<li>可以使用 <code>&lt;time&gt;</code> 元素的 datetime 属性来描述 <code>&lt;article&gt;</code> 元素的发布日期和时间。</li>
+</ul>
 </details>
-<details class="note"><summary>5. footer: 脚部</summary></details>
-<details class="note"><summary>6. main: 主要内容</summary></details>
+<details class="note"><summary>4. header: 页眉</summary><p><code>&lt;header&gt;</code> 元素表示介绍性内容，通常是一组介绍性的或是导航的帮助内容。</p>
+<p>它可能包含一些标题元素，但也可能包含其他元素，比如 Logo、search form、作者名等等。</p>
+<ul>
+<li><code>&lt;header&gt;</code> 元素通常用于包含周围章节的标题（h1-h6 元素），但这不是必需的。</li>
+</ul>
+</details>
+<details class="note"><summary>5. footer: 页脚</summary><p><code>&lt;footer&gt;</code> 元素表示一个它最近的 sectioning content 或 sectioning root 元素的页脚。</p>
+<p>一个页脚通常包含该章节的作者、版权数据或者与文档相关的链接的信息。</p>
+<ul>
+<li><code>&lt;address&gt;</code> 元素中关于作者的信息，可以包含在 <code>&lt;footer&gt;</code> 元素内</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 版权所有<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>6. main: 主要内容</summary><p>The HTML <main> element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</p>
+</details>
 <details class="note"><summary>7. aside: 旁支内容</summary></details>
 <h2 id="2">2 内容标签<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21-block">2.1 block<a class="headerlink" href="#21-block" title="Permanent link">&para;</a></h3>

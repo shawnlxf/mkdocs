@@ -889,8 +889,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/html-1/" title="HTML 元素" class="md-nav__link">
-      HTML 元素
+    <a href="../../MDN-Web/html-1/" title="HTML-元素" class="md-nav__link">
+      HTML-元素
     </a>
   </li>
 
@@ -901,8 +901,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../MDN-Web/css-1/" title="CSS" class="md-nav__link">
-      CSS
+    <a href="../../MDN-Web/css-1/" title="CSS-reference" class="md-nav__link">
+      CSS-reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MDN-Web/css-2/" title="CSS-关键概念" class="md-nav__link">
+      CSS-关键概念
     </a>
   </li>
 
@@ -1667,8 +1679,8 @@
 </div>
 </details>
 <details class="note"><summary>变量作属性名的情况</summary><ul>
-<li>不加 [ ] 的属性名会 <strong>自动变成字符串</strong></li>
-<li>加了 [ ] 则会 <strong>当做变量求值</strong>；值如果不是字符串，则会自动变成字符串</li>
+<li>不加 [ ] 的属性名会 自动变成字符串</li>
+<li>加了 [ ] 则会 当做变量求值；值如果不是字符串，则会自动变成字符串</li>
 </ul>
 <p><img alt="" src="../../img/FF/12-%E5%8F%98%E9%87%8F%E4%BD%9C%E5%B1%9E%E6%80%A7%E5%90%8D.png" /></p>
 </details>
@@ -1688,11 +1700,11 @@
 <h2 id="3">3 原型<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>对象的<em>隐藏属性</em></p>
+<p>对象的隐藏属性</p>
 <ul>
-<li>JS 中每一个对象都有一个<em>隐藏属性</em></li>
-<li><em>隐藏属性</em> 储存着 <strong>原型</strong> 的地址</li>
-<li>这个 <em>共有属性</em> 组成的对象 叫做 <strong>原型</strong></li>
+<li>JS 中每一个对象都有一个隐藏属性</li>
+<li>隐藏属性 储存着 原型 的地址</li>
+<li>这个 共有属性 组成的对象 叫做 原型</li>
 </ul>
 </li>
 <li>
@@ -1766,7 +1778,7 @@
 <span class="nx">obj</span><span class="p">[</span><span class="s1">&#39;na&#39;</span> <span class="o">+</span> <span class="s1">&#39;me&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;frank&#39;</span>
 </code></pre></div>
 
-<details class="success"><summary>可以强行 修改或增加 <strong>原型</strong> 上的属性</summary><div class="highlight"><pre><span></span><code><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span>
+<details class="success"><summary>可以强行 修改或增加 原型 上的属性</summary><div class="highlight"><pre><span></span><code><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1">// 不推荐用 \_\_proto\_\_，好像有性能问题</span>
