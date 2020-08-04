@@ -1542,111 +1542,73 @@
 </details>
 <p><img alt="" src="../../img/FF/13-arr-tostring.png" /></p>
 <h2 id="1">1 创建一个数组<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>新建</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<details class="note"><summary>1. 新建</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>转化</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="s1">&#39;1,2,3&#39;</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</details>
+<details class="note"><summary>2. 转化</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="s1">&#39;1,2,3&#39;</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <p><img alt="" src="../../img/FF/13-array-from.png" /></p>
-</li>
-<li>
-<p>伪数组</p>
-<blockquote>
-<p>伪数组的<strong>原型链</strong>中并没有数组的原型</p>
-<p>没有数组<em>共用属性</em> 的 数组，就是<strong>伪数组</strong></p>
-</blockquote>
+</details>
+<details class="note"><summary>3. 伪数组</summary><p>伪数组的原型链中并没有数组的原型</p>
+<p>没有数组共用属性 的 数组，就是伪数组</p>
 <p><img alt="" src="../../img/FF/13-%E4%BC%AA%E6%95%B0%E7%BB%84.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">divList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span>
 <span class="kd">let</span> <span class="nx">divArray</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">divList</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>合并得到新数组</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">arr2</span><span class="p">)</span>
+</details>
+<details class="note"><summary>4. 合并得到新数组</summary><div class="highlight"><pre><span></span><code><span class="nx">arr1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">arr2</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>截取一部分</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">// 从第二个元素开始</span>
+</details>
+<details class="note"><summary>5. 截取一部分</summary><div class="highlight"><pre><span></span><code><span class="nx">arr1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">// 从第二个元素开始</span>
 <span class="nx">arr1</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// 全部截取</span>
 </code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">注意，JS只提供浅拷贝</p>
 </div>
-</li>
-</ol>
+</details>
 <h2 id="2">2 增删改查 数组中的元素<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 删元素<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
-<ol>
-<li>删除头部的元素</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span> <span class="c1">// arr 被修改，并返回被删元素</span>
+<details class="note"><summary>1. 删除头部的元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span> <span class="c1">// arr 被修改，并返回被删元素</span>
 </code></pre></div>
 
-<ul>
-<li>删除尾部的元素</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span> <span class="c1">// arr 被修改，并返回被删元素</span>
+</details>
+<details class="note"><summary>2. 删除尾部的元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span> <span class="c1">// arr 被修改，并返回被删元素</span>
 </code></pre></div>
 
-<ul>
-<li>删除中间的元素</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// 删除index的一个元素</span>
+</details>
+<details class="note"><summary>3. 删除中间的元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">// 删除index的一个元素</span>
 <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="c1">// 并在删除位置添加&#39;x&#39;</span>
 <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">)</span> <span class="c1">// 并在删除位置添加&#39;x&#39;, &#39;y&#39;</span>
 </code></pre></div>
 
-<ul>
-<li>
-<p>不用</p>
-<ol>
-<li>
-<p>跟对象一样 delete</p>
-<blockquote>
-<p>数组的长度没有改变</p>
-<p><em>稀疏数组</em></p>
-</blockquote>
-</li>
-<li>
-<p>直接改 length 可以删元素</p>
-<div class="admonition tip">
-<p class="admonition-title">重要: 不要随便改 length</p>
+<details class="quote"><summary>不用</summary><details class="note"><summary>1. 跟对象一样 delete</summary><p>数组的长度没有改变</p>
+<p>稀疏数组</p>
+</details>
+<div class="admonition failure">
+<p class="admonition-title">2. 直接改 length 可以删元素: 不要随便改 length</p>
 </div>
-</li>
-</ol>
-</li>
-</ul>
+</details>
+</details>
 <h3 id="22">2.2 查元素<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>查看所有属性名</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+<details class="note"><summary>1. 查看所有属性名</summary><div class="highlight"><pre><span></span><code><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">key</span><span class="si">}</span><span class="sb">:</span><span class="si">${</span><span class="nx">arr</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="si">}</span><span class="sb">`</span><span class="p">)}</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>查看数字（字符串）属性名和值</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// 1. i: 0 - length-1</span>
+</details>
+<details class="note"><summary>2. 查看数字（字符串）属性名和值</summary><div class="highlight"><pre><span></span><code><span class="c1">// 1. i: 0 - length-1</span>
 <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">: </span><span class="si">${</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
 <span class="p">}</span>
@@ -1667,10 +1629,8 @@
 </code></pre></div>
 
 </details>
-</li>
-<li>
-<p>查看单个属性</p>
-<ol>
+</details>
+<details class="note"><summary>3. 查看单个属性</summary><ol>
 <li>
 <p>跟对象一样</p>
 <div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -1706,65 +1666,43 @@
 
 </li>
 </ol>
-</li>
-</ol>
+</details>
 <h3 id="23">2.3 增元素<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>在尾部加元素</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">newItem</span><span class="p">)</span> <span class="c1">// 修改arr, 返回新长度</span>
+<details class="note"><summary>1. 在尾部加元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">newItem</span><span class="p">)</span> <span class="c1">// 修改arr, 返回新长度</span>
 <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">item1</span><span class="p">,</span> <span class="nx">item2</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>在头部加元素</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">newItem</span><span class="p">)</span> <span class="c1">// 修改arr，返回新长度</span>
+</details>
+<details class="note"><summary>2. 在头部加元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">newItem</span><span class="p">)</span> <span class="c1">// 修改arr，返回新长度</span>
 <span class="nx">arr</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">item1</span><span class="p">,</span> <span class="nx">item2</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>在中间加元素</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="c1">// 在index处插入&#39;x&#39;</span>
+</details>
+<details class="note"><summary>3. 在中间加元素</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">)</span> <span class="c1">// 在index处插入&#39;x&#39;</span>
 <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-</ol>
+</details>
 <h3 id="24">2.4 改元素<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>反转顺序</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span> <span class="c1">// 修改原数组</span>
+<details class="note"><summary>1. 反转顺序</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span> <span class="c1">// 修改原数组</span>
 </code></pre></div>
 
 <p><img alt="" src="../../img/FF/13-reverse.png" /></p>
-</li>
-<li>
-<p>自定义顺序</p>
-<div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span><span class="o">-</span><span class="nx">b</span><span class="p">)</span>
+</details>
+<details class="note"><summary>2. 自定义顺序</summary><div class="highlight"><pre><span></span><code><span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span><span class="o">-</span><span class="nx">b</span><span class="p">)</span>
 </code></pre></div>
 
 <p><img alt="" src="../../img/FF/13-arr-sort-1.png" /></p>
 <p><img alt="" src="../../img/FF/13-arr-sort-2.png" /></p>
 <p><img alt="" src="../../img/FF/13-arr-sort-3.png" /></p>
-</li>
-</ul>
+</details>
 <h2 id="3">3 数组变换<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../img/FF/13-meme.png" /></p>
-<ol>
-<li>
-<p>map</p>
-<p><img alt="" src="../../img/FF/13-arr-map.png" /></p>
-</li>
-<li>
-<p>filter</p>
-<p><img alt="" src="../../img/FF/13-arr-filter.png" /></p>
-</li>
-<li>
-<p>reduce</p>
-<p><img alt="" src="../../img/FF/13-arr-reduce-1.png" /></p>
+<details class="note"><summary>1. map</summary><p><img alt="" src="../../img/FF/13-arr-map.png" /></p>
+</details>
+<details class="note"><summary>2. filter</summary><p><img alt="" src="../../img/FF/13-arr-filter.png" /></p>
+</details>
+<details class="note"><summary>3. reduce</summary><p><img alt="" src="../../img/FF/13-arr-reduce-1.png" /></p>
 <details class="success"><summary>例：reduce 实现 map</summary><p><img alt="" src="../../img/FF/13-arr-reduce-2.png" /></p>
 </details>
 <details class="success"><summary>例：reduce 实现 filter</summary><p><img alt="" src="../../img/FF/13-arr-reduce-3.png" /></p>
@@ -1772,8 +1710,7 @@
 <details class="success"><summary>例：面试题：把数组变成对象</summary><p><img alt="" src="../../img/FF/13-arr-reduce-4.png" /></p>
 <p><img alt="" src="../../img/FF/13-arr-reduce-5.png" /></p>
 </details>
-</li>
-</ol>
+</details>
                 
               
               

@@ -1720,7 +1720,6 @@
 <p><code class="highlight"><span class="nx">obj</span> <span class="o">=</span> <span class="p">{}</span></code> 的原型即为 所有对象的原型</p>
 <blockquote>
 <p>这个原型包含所有对象的共有属性，是 对象的根</p>
-<p>这个原型也有原型，是 null</p>
 </blockquote>
 </li>
 <li>
@@ -1751,9 +1750,9 @@
 <li>
 <p>单个属性（两种方法）</p>
 <details class="success"><summary><code class="highlight"><span class="nx">obj</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span></code></summary><p>中括号语法</p>
-<p><code class="highlight"><span class="nx">obj</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="c1">// 变量 key值一般不为 &#39;key&#39;</span></code></p>
+<p><code class="highlight"><span class="nx">obj</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="c1">// 变量 key 的值一般不为 &#39;key&#39;</span></code></p>
 </details>
-<details class="success"><summary><code class="highlight"><span class="nx">obj</span><span class="p">.</span><span class="nx">key</span></code></summary><p>点语法，建议先它翻译为第一种方法再理解</p>
+<details class="success"><summary><code class="highlight"><span class="nx">obj</span><span class="p">.</span><span class="nx">key</span></code></summary><p>点语法，建议先把它翻译为第一种方法再理解</p>
 </details>
 </li>
 <li>
@@ -1781,12 +1780,12 @@
 <details class="success"><summary>可以强行 修改或增加 原型 上的属性</summary><div class="highlight"><pre><span></span><code><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">// 不推荐用 \_\_proto\_\_，好像有性能问题</span>
-<span class="nx">obj</span><span class="p">.</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_proto</span><span class="err">\</span><span class="nx">_</span><span class="err">\</span><span class="nx">_</span><span class="p">[</span><span class="s1">&#39;toString&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">// 不推荐用 __proto__，好像有性能问题</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span><span class="p">[</span><span class="s1">&#39;toString&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;xxx&#39;</span>
 </code></pre></div>
 
 </details>
-<div class="admonition note">
+<div class="admonition failure">
 <p class="admonition-title">一般来说不要修改原型，会引起很多问题</p>
 </div>
 </li>
@@ -1986,16 +1985,12 @@
 </details>
 <details class="question"><summary>window.Object 是谁构造的</summary><p>window.Function</p>
 <p><img alt="" src="../../img/FF/12-object-constructor.png" /></p>
-<blockquote>
 <p>因为所有函数都是 window.Function 构造的</p>
-</blockquote>
 </details>
 <details class="question"><summary>window.Function 是谁构造的</summary><p>window.Function</p>
 <p><img alt="" src="../../img/FF/12-function-constructor.png" /></p>
-<blockquote>
 <p>因为所有函数都是 window.Function 构造的</p>
 <p>浏览器构造了 Function，然后指定它的构造者是自己</p>
-</blockquote>
 </details>
 <h2 id="10-es6">10 ES6 引入了新语法<a class="headerlink" href="#10-es6" title="Permanent link">&para;</a></h2>
 <details class="note"><summary>class 统治天下</summary><p><img alt="" src="../../img/FF/12-class.png" /></p>

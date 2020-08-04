@@ -1600,9 +1600,7 @@
 <li>!</li>
 </ul>
 </details>
-<details class="note"><summary>短路逻辑</summary><details class="note"><summary>console &amp;&amp; console.log &amp;&amp; console.log('hi')</summary><blockquote>
-<p>以防 console 不存在报错</p>
-</blockquote>
+<details class="note"><summary>短路逻辑</summary><details class="success"><summary>console &amp;&amp; console.log &amp;&amp; console.log('hi')</summary><p>以防 console 不存在 的报错</p>
 <p><img alt="" src="../../img/FF/15-console.png" /></p>
 <blockquote>
 <p>IE: console === undefined</p>
@@ -1610,7 +1608,7 @@
 <p>可选链语法</p>
 </blockquote>
 </details>
-<details class="note"><summary>a = a || 100</summary><p>a 的保底值</p>
+<details class="success"><summary>a = a || 100</summary><p>a 的保底值</p>
 <p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-1.png" /></p>
 <p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-2.png" /></p>
 <p><img alt="" src="../../img/FF/15-%E4%BF%9D%E5%BA%95%E5%80%BC-3.png" /></p>
@@ -1694,16 +1692,10 @@
 </li>
 </ul>
 <details class="question"><summary>不是对象，为什么也可以有属性？</summary><p><code class="highlight"><span class="s1">&#39;a-b-c&#39;</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span></code></p>
-<div class="admonition note">
-<p class="admonition-title"><code class="highlight"><span class="nx">a</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span></code></p>
-<blockquote>
-<p>创建，用，滚</p>
-</blockquote>
+<details class="note"><summary><code class="highlight"><span class="nx">a</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span></code></summary><p>创建，用，滚</p>
 <p><img alt="" src="../../img/FF/15-tostring.png" /></p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">原因：JS 有特殊逻辑</p>
-<p>点前面不是对象，就把它封装成对象</p>
+</details>
+<details class="note"><summary>原因：JS 有特殊逻辑</summary><p>点前面不是对象，就把它封装成对象</p>
 <ul>
 <li>number 会变成 Number 对象</li>
 <li>string 会变成 String 对象</li>
@@ -1712,7 +1704,7 @@
 <blockquote>
 <p>程序员从来不用这三种对象，只用简单类型</p>
 </blockquote>
-</div>
+</details>
 </details>
 </li>
 <li>
@@ -1730,16 +1722,6 @@
 </details>
 </li>
 </ul>
-<details class="note"><summary>改用 void 可以炫技</summary><div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://baidu.com&quot;</span> <span class="nx">onclick</span><span class="o">=</span><span class="s2">&quot;f(); return false;&quot;</span><span class="o">&gt;</span><span class="nx">点击</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
-</code></pre></div>
-
-<blockquote>
-<p>return 假值可以阻止默认动作</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;javascript: void(f())&quot;</span><span class="o">&gt;</span><span class="nx">点击</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
-</code></pre></div>
-
-</details>
 </li>
 <li>
 <p>逗号运算符</p>

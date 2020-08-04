@@ -1616,7 +1616,7 @@
 </li>
 <li>
 <p>用构造函数</p>
-<details class="note"><summary>基本没人用</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;return x+y&#39;</span><span class="p">)</span>
+<details class="quote"><summary>基本没人用</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;return x+y&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <ul>
@@ -1693,7 +1693,7 @@
 <h3 id="34">3.4 形式参数 和 返回值<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
 <h3 id="35">3.5 调用栈<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p>JS 引擎在调用一个函数前，需要把函数所在的环境 push 到一个数组里，这个数组叫做<strong>调用栈</strong>。</p>
+<p>JS 引擎在调用一个函数前，需要把函数所在的环境 push 到一个数组里，这个数组叫做调用栈。</p>
 <p>等函数执行完了，就会把环境 pop 出来，然后 return 到之前的环境，继续执行后续代码</p>
 </blockquote>
 <details class="note"><summary>递归函数实现阶乘</summary><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
@@ -1737,7 +1737,7 @@
 <blockquote>
 <p>目前可以用 <code>fn.call(xxx,1,2,3)</code> 传 this 和 arguments</p>
 </blockquote>
-<details class="note"><summary>xxx 会被<strong>自动转化成对象</strong>（JS的糟粕）</summary><p><img alt="" src="../../img/FF/14-%E5%B0%81%E8%A3%85%E6%88%90%E5%AF%B9%E8%B1%A1.png" /></p>
+<details class="note"><summary>xxx 会被自动转化成对象（JS的糟粕）</summary><p><img alt="" src="../../img/FF/14-%E5%B0%81%E8%A3%85%E6%88%90%E5%AF%B9%E8%B1%A1.png" /></p>
 </details>
 <details class="note"><summary>加 'use strict' 解决问题</summary><p><img alt="" src="../../img/FF/14-function-strict.png" /></p>
 </details>

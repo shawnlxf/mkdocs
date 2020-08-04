@@ -1572,8 +1572,7 @@
 </ul>
 <p>问题：不是所有浏览器都支持，尤其是手机浏览器可能不支持</p>
 </details>
-<details class="quote"><summary>onclick 事件</summary><p><code>&lt;a&gt;</code> 经常被滥用作为假按钮，通过设置 href 为 <code>#</code> 或 <code>javascript:void(0)</code> 来阻止页面刷新, 然后监听其 click 事件.</p>
-<p>这些 <code>href</code> 的假值导致 unexpected behavior 当 复制/拖动 链接，打开链接</p>
+<details class="failure"><summary>onclick 事件</summary><p><code>&lt;a&gt;</code> 经常被滥用作为假按钮，通过设置 href 为 <code>#</code> 或 <code>javascript:void(0)</code> 来阻止页面刷新, 然后监听其 click 事件.</p>
 <p>当复制/拖动链接，在新标签页/窗口中打开链接，添加书签或加载，错误或禁用 JavaScript 时，这些假的 <code>href</code> 值会导致 unexpected behavior。</p>
 <p>改用 <code>&lt;button&gt;</code>。通常，只应使用超链接用来导航到真实的 URL。</p>
 </details>

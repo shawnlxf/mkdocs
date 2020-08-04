@@ -1580,7 +1580,7 @@
 <p>Element.prototype</p>
 <blockquote>
 <p>所有 XML, HTML 标签 共有的属性</p>
-<p>? element: HTML, XML, SVG</p>
+<p>HTML, XML, SVG</p>
 </blockquote>
 </li>
 <li>
@@ -1611,38 +1611,27 @@
 <p>3: Node.TEXT_NODE</p>
 </div>
 <h2 id="3">3 节点的增删改查<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<details class="note"><summary>增</summary><ol>
-<li>
-<p>创建一个标签节点</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">div1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span>
+<details class="abstract"><summary>增</summary><details class="note"><summary>1. 创建一个标签节点</summary><div class="highlight"><pre><span></span><code><span class="kd">let</span> <span class="nx">div1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;style&#39;</span><span class="p">)</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>创建一个文本节点</p>
-<div class="highlight"><pre><span></span><code><span class="nx">text1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;你好&#39;</span><span class="p">)</span>
+</details>
+<details class="note"><summary>2. 创建一个文本节点</summary><div class="highlight"><pre><span></span><code><span class="nx">text1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;你好&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>标签里插入文本</p>
-<div class="highlight"><pre><span></span><code><span class="nx">div1</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">text1</span><span class="p">)</span>
+</details>
+<details class="note"><summary>3. 标签里插入文本</summary><div class="highlight"><pre><span></span><code><span class="nx">div1</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">text1</span><span class="p">)</span>
 </code></pre></div>
 
 <p><img alt="" src="../../img/FF/17-appendChild.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="nx">div1</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="s1">&#39;你好&#39;</span> <span class="nx">或</span> <span class="nx">div1</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;你好&#39;</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>插入页面中</p>
-<blockquote>
-<p>你创建的标签默认处于 JS 线程中
-你必须把它插到 head 或 body 里面，它才会生效</p>
-</blockquote>
+</details>
+<details class="note"><summary>4. 插入页面中</summary><p>你创建的标签默认处于 JS 线程中</p>
+<p>你必须把它插到 head 或 body 里面，它才会生效</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 1</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">)</span>
 </code></pre></div>
@@ -1661,8 +1650,7 @@
 <span class="nx">已在页面中的元素</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">)</span>
 </code></pre></div>
 
-</li>
-</ol>
+</details>
 </details>
 <details class="note"><summary>删</summary><ul>
 <li>
@@ -1685,7 +1673,7 @@
 <li>
 <p>写标准属性</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 改 class</span>
-<span class="nx">div</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;red blue&#39;</span> <span class="p">(</span><span class="nx">全覆盖</span><span class="p">)</span>
+<span class="nx">div</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;red blue&#39;</span> <span class="c1">// 全覆盖</span>
 <span class="nx">div</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 </code></pre></div>
 
@@ -1760,7 +1748,8 @@
 <span class="p">}</span>
 </code></pre></div>
 
-<p><img alt="" src="../../img/FF/17-div-onclick.png" /></p>
+<p><img alt="" src="../../img/FF/17-div-onclick-1.png" /></p>
+<p><img alt="" src="../../img/FF/17-div-onclick-2.png" /></p>
 <p><img alt="" src="../../img/FF/17-window-onclick.png" /></p>
 </li>
 <li>
@@ -1771,7 +1760,7 @@
 </li>
 </ul>
 </details>
-<details class="note"><summary>改内容</summary><ul>
+<details class="note"><summary>改内容</summary><ol>
 <li>
 <p>改 文本内容</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 两者几乎没有区别</span>
@@ -1793,41 +1782,32 @@
 </code></pre></div>
 
 </li>
-</ul>
+</ol>
 </details>
 <details class="note"><summary>改爸爸</summary><div class="highlight"><pre><span></span><code><span class="nx">newParent</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">div</span><span class="p">)</span>
 </code></pre></div>
 
 </details>
 </details>
-<details class="note"><summary>查</summary><ul>
-<li>
-<p>查爸爸</p>
-<div class="highlight"><pre><span></span><code><span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span> 
+<details class="abstract"><summary>查</summary><details class="note"><summary>1. 查爸爸</summary><div class="highlight"><pre><span></span><code><span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span> 
 <span class="nx">或</span>
 <span class="nx">node</span><span class="p">.</span><span class="nx">parentElement</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>查爷爷</p>
-<div class="highlight"><pre><span></span><code><span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">parentNode</span>
+</details>
+<details class="note"><summary>2. 查爷爷</summary><div class="highlight"><pre><span></span><code><span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">parentNode</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>查子代</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// 当子代变化时，两者也会实时变化</span>
+</details>
+<details class="note"><summary>3. 查子代</summary><div class="highlight"><pre><span></span><code><span class="c1">// 当子代变化时，两者也会实时变化</span>
 <span class="c1">// 优先使用 children</span>
 <span class="nx">node</span><span class="p">.</span><span class="nx">children</span>
 <span class="nx">或</span>
 <span class="nx">node</span><span class="p">.</span><span class="nx">childNodes</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>查兄弟姐妹</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// 还要排除自己</span>
+</details>
+<details class="note"><summary>4. 查兄弟姐妹</summary><div class="highlight"><pre><span></span><code><span class="c1">// 还要排除自己</span>
 <span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">children</span>
 <span class="c1">// 还要排除自己</span>
 <span class="nx">node</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">childNodes</span>
@@ -1844,10 +1824,8 @@
 <span class="nx">node</span><span class="p">.</span><span class="nx">nextElementSibling</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>遍历一个 div 里面的所有元素</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// 用到数据结构</span>
+</details>
+<details class="note"><summary>5. 遍历一个 div 里面的所有元素</summary><div class="highlight"><pre><span></span><code><span class="c1">// 用到数据结构</span>
 <span class="nx">travel</span> <span class="o">=</span> <span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="nx">fn</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>
     <span class="k">if</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">children</span><span class="p">){</span>
@@ -1859,8 +1837,7 @@
 <span class="nx">travel</span><span class="p">(</span><span class="nx">div1</span><span class="p">,</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">node</span><span class="p">))</span>
 </code></pre></div>
 
-</li>
-</ul>
+</details>
 </details>
 <h2 id="4-dom">4 DOM 操作是跨线程的<a class="headerlink" href="#4-dom" title="Permanent link">&para;</a></h2>
 <blockquote>
@@ -1870,14 +1847,18 @@
 <details class="node"><summary>跨线程操作</summary><ul>
 <li>
 <p>各线程各司其职</p>
-<p>JS 引擎不能操作页面，只能操作 JS
-渲染引擎不能操作 JS，只能操作页面</p>
+<blockquote>
+<p>JS 引擎不能操作页面，只能操作 JS；</p>
+<p>渲染引擎不能操作 JS，只能操作页面</p>
+</blockquote>
 </li>
 <li>
 <p>跨线程通信</p>
-<p>当浏览器发现 JS 在 body 里面加了个 div1 对象
-浏览器就会通知渲染引擎在页面里也新增一个 div 元素
-新增的 div 元素所有属性都照抄 div1 对象</p>
+<blockquote>
+<p>当浏览器发现 JS 在 body 里面加了个 div1 对象，</p>
+<p>浏览器就会通知渲染引擎在页面里也新增一个 div 元素。</p>
+<p>新增的 div 元素所有属性都照抄 div1 对象</p>
+</blockquote>
 </li>
 </ul>
 </details>
@@ -1970,7 +1951,7 @@
 </ul>
 <p><img alt="" src="../../img/FF/17-%E5%90%8C%E6%AD%A5%E5%B1%9E%E6%80%A7.png" /></p>
 </details>
-<details class="note"><summary>Property vs Attribute</summary><ul>
+<details class="abstract"><summary>Property vs Attribute</summary><ul>
 <li>JS 线程中 div1 的所有属性，叫做 div1 的 property</li>
 <li>渲染引擎中 div1 对应标签的属性，叫做 attribute</li>
 </ul>
