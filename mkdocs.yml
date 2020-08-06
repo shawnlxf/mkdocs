@@ -1,5 +1,5 @@
 # Project information
-site_name: ShawnDocs
+site_name: NinjaDocs
 site_author: Shawn
 site_description: >-
   前端学习笔记，包含饥人谷方方课的笔记，MDN 的学习总结，读书笔记 和 项目记录 等。
@@ -71,6 +71,7 @@ nav:
       - 15-JS运算符 / 总结: FF/15.md
       - 16-伪代码与流程图: FF/16.md
       - 17-DOM编程: FF/17.md
+      - 18-封装DOM: FF/18.md
   - Learn:
       - MDN-Learn:
           - 大纲: MDN-Learn/0.md

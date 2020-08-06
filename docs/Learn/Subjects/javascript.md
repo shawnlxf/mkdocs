@@ -61,6 +61,7 @@
     * [jQuery API](https://api.jquery.com/)
     * [jQuery API 中文文档](https://www.jquery123.com/)
     * [jQuery 基础](http://jqfundamentals.com/)
+    * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
 
 
 * 常见错误
