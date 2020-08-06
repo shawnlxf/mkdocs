@@ -87,12 +87,12 @@ nav:
           - HTML-元素: MDN-Web/html-1.md
           - CSS-reference: MDN-Web/css-1.md
           - CSS-关键概念: MDN-Web/css-2.md
-      - Language:
-          - HTML: Learn/Language/html.md
-          - CSS: Learn/Language/css.md
-          - JavaScript: Learn/Language/javascript.md
-          - Markdown: Learn/Language/markdown.md
-          - Bash: Learn/Language/bash.md
+      - Subjects:
+          - HTML: Learn/Subjects/html.md
+          - CSS: Learn/Subjects/css.md
+          - JavaScript: Learn/Subjects/javascript.md
+          - Markdown: Learn/Subjects/markdown.md
+          - Bash: Learn/Subjects/bash.md
       - Projects:
           - 1: Learn/Projects/1.md
       - Tools:
@@ -122,3 +122,4 @@ nav:
       - 7-JS的基本语法: Blog/7.md
       - 8-JS对象基本用法: Blog/8.md
       - 9-JS函数的执行时机: Blog/9.md
+      - 10-jQuery的功能: Blog/10.md
