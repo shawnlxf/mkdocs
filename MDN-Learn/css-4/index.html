@@ -51,6 +51,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-css" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -143,13 +148,16 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href="../.." class="md-tabs__link">
-        Home
-      </a>
-    
-  </li>
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
 
       
         
@@ -252,10 +260,100 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       Home
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Subjects/html/" title="HTML" class="md-nav__link">
+      HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Subjects/css/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Subjects/javascript/" title="JavaScript" class="md-nav__link">
+      JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Subjects/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Subjects/bash/" title="Bash" class="md-nav__link">
+      Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -512,6 +610,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../FF/19/" title="19-DOM 事件与事件委托" class="md-nav__link">
+      19-DOM 事件与事件委托
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -700,9 +810,68 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        3.4 布局
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="3.4 布局" class="md-nav__link md-nav__link--active">
       3.4 布局
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-css" class="md-nav__link">
+    1. CSS 布局简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    2. 响应式设计 (Responsive design)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-media-queries" class="md-nav__link">
+    3. 媒体查询入门 (media queries)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 旧版布局方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5. 支持旧版浏览器
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -817,103 +986,13 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
     <label class="md-nav__link" for="nav-3-3">
-      Subjects
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Subjects" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Subjects
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Learn/Subjects/html/" title="HTML" class="md-nav__link">
-      HTML
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Learn/Subjects/css/" title="CSS" class="md-nav__link">
-      CSS
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Learn/Subjects/javascript/" title="JavaScript" class="md-nav__link">
-      JavaScript
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Learn/Subjects/markdown/" title="Markdown" class="md-nav__link">
-      Markdown
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Learn/Subjects/bash/" title="Bash" class="md-nav__link">
-      Bash
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
-    
-    <label class="md-nav__link" for="nav-3-4">
       Projects
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Projects" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-4">
+      <label class="md-nav__title" for="nav-3-3">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -946,16 +1025,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
     
-    <label class="md-nav__link" for="nav-3-5">
+    <label class="md-nav__link" for="nav-3-4">
       Tools
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Tools" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-5">
+      <label class="md-nav__title" for="nav-3-4">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -1048,16 +1127,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
     
-    <label class="md-nav__link" for="nav-3-6">
+    <label class="md-nav__link" for="nav-3-5">
       English
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="English" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-6">
+      <label class="md-nav__title" for="nav-3-5">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -1377,6 +1456,64 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-css" class="md-nav__link">
+    1. CSS 布局简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    2. 响应式设计 (Responsive design)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-media-queries" class="md-nav__link">
+    3. 媒体查询入门 (media queries)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 旧版布局方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5. 支持旧版浏览器
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1393,8 +1530,26 @@
                   <h1>3.4 布局</h1>
                 
                 <blockquote>
-<p>4 <a href="">CSS 布局(layout)</a></p>
+<p>4 <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">CSS 布局(layout)</a></p>
+<p>看例子</p>
 </blockquote>
+<h2 id="1-css">1. CSS 布局简介<a class="headerlink" href="#1-css" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>布局技术</summary><p>每种技术都有其用途，优点和缺点，并且没有一种技术被设计为可以单独使用。通过了解每种方法的设计目的，你将很容易理解哪种方法最适合每种任务。</p>
+<ol>
+<li>正常流 (Normal flow)</li>
+<li>The display property</li>
+<li>弹性盒 (Flexbox): 一维布局方法</li>
+<li>网格 (Grids): 二维布局系统</li>
+<li>浮动 (Floats)</li>
+<li>定位 (Positioning)</li>
+<li>Table layout</li>
+<li>多列布局 (Multiple-column layout)</li>
+</ol>
+</details>
+<h2 id="2-responsive-design">2. 响应式设计 (Responsive design)<a class="headerlink" href="#2-responsive-design" title="Permanent link">&para;</a></h2>
+<h2 id="3-media-queries">3. 媒体查询入门 (media queries)<a class="headerlink" href="#3-media-queries" title="Permanent link">&para;</a></h2>
+<h2 id="4">4. 旧版布局方法<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="5">5. 支持旧版浏览器<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
                 
               
               
