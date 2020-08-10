@@ -566,12 +566,15 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
         > 包含 <length\>, <angle\>, <time\>, <resolution\> 类型
 
-        ??? note "Lengths"
+        * Lengths
 
             分为 相对长度 和 绝对长度
 
-            * 绝对长度单位: px
-            * 相对长度单位: 相对于 something else, 比如 父元素字体的大小, 或者 viewport (视口) 的大小.
+            !!! note "绝对长度单位: px"
+
+            ??? note "相对长度单位"
+
+                相对于 something else, 比如 父元素字体的大小, 或者 viewport (视口) 的大小.
 
                 * em: 如果是印刷属性如 font-size，用于父元素的字体大小；如果是其他属性如 width，用于元素本身的字体大小。
                 * rem: 根元素的字体大小

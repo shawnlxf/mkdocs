@@ -51,7 +51,13 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+      - 首页: index.md
+      - HTML: Subjects/html.md
+      - CSS: Subjects/css.md
+      - JavaScript: Subjects/javascript.md
+      - Markdown: Subjects/markdown.md
+      - Bash: Subjects/bash.md
   - 方方:
       - 0-杂项: FF/0.md
       - 1-快捷键 / node.js: FF/1.md
@@ -72,6 +78,7 @@ nav:
       - 16-伪代码与流程图: FF/16.md
       - 17-DOM编程: FF/17.md
       - 18-封装DOM: FF/18.md
+      - 19-DOM 事件与事件委托: FF/19.md
   - Learn:
       - MDN-Learn:
           - 大纲: MDN-Learn/0.md
@@ -88,12 +95,6 @@ nav:
           - HTML-元素: MDN-Web/html-1.md
           - CSS-reference: MDN-Web/css-1.md
           - CSS-关键概念: MDN-Web/css-2.md
-      - Subjects:
-          - HTML: Learn/Subjects/html.md
-          - CSS: Learn/Subjects/css.md
-          - JavaScript: Learn/Subjects/javascript.md
-          - Markdown: Learn/Subjects/markdown.md
-          - Bash: Learn/Subjects/bash.md
       - Projects:
           - 1: Learn/Projects/1.md
       - Tools:

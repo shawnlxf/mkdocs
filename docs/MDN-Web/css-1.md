@@ -1,6 +1,4 @@
 
-> [reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-
 * property
 
 ??? note "text-align"
@@ -29,6 +27,14 @@
       margin-right: auto;
     }
     ```
+
+??? note "line-height"
+
+    设置 line box 的高度。通常用于设置文本行间距。
+    
+    对于块级元素，它指定元素行盒（line boxes）的最小高度。
+
+    对于非替代 (non-replaced) 的 inline 元素，它指定用于计算行盒（line box）高度的高度。
 
 
 
