@@ -19,13 +19,13 @@
     * true 或 空字符串，表示该元素是可编辑的；
     * false，表示该元素是不可编辑的。
 
-    如果属性没有值，例如 `<label contenteditable>Example Label</label>`，则将其值视为空字符串。
+    如果属性没有值，例如 `#!html <label contenteditable>Example Label</label>`，则将其值视为空字符串。
 
     如果 缺少此属性 或 其值无效，则其值将从其父元素继承：因此，如果其父元素可编辑，则该元素是可编辑的。
 
     请注意，尽管其允许的值包括 true 和 false，但此属性是枚举值而不是布尔值。
 
-    你可以使用 CSS `#!css caret-color` 属性设置 (property) 用于绘制文本插入 caret 的颜色。
+    你可以使用 CSS `#!css caret-color` 属性 (property) 设置用于绘制文本插入 caret 的颜色。
 
 
 ??? note "3. hidden"

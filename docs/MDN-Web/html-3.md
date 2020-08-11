@@ -45,10 +45,6 @@
 
     * `<address>` 元素中关于作者的信息，可以包含在 `<footer>` 元素内
 
-    ``` html
-    <footer>&copy; 版权所有</footer>
-    ```
-
 
 ??? note "6. main: 主要内容"
 

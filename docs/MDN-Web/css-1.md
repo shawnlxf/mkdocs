@@ -36,6 +36,51 @@
 
     对于非替代 (non-replaced) 的 inline 元素，它指定用于计算行盒（line box）高度的高度。
 
+??? note "white-space"
+
+    设置如何处理元素中的 white space。
+
+    nowrap
+
+??? note "overflow"
+
+    shorthand property: overflow-x, overflow-y
+
+    设置 元素溢出所期望的行为
+
+    overflow 属性被指定为从下面的值列表中选择的一个或两个关键字。如果指定了两个关键字，则第一个应用于 overflow-x，第二个应用于 overflow-y。否则，overflow-x 和 overflow-y 都被设置为相同的值。
+
+    * visible (初始值)
+    * hidden
+    * scroll
+    * auto
+
+        取决于 用户代理。
+
+        如果内容适合 padding box，则其看起来与 visible 相同，但仍会建立新的 块格式上下文 (block formatting context)。如果内容溢出，桌面浏览器会提供滚动条。
+
+        > 指定非 visible (默认) 值将创建一个新的块格式化上下文
+        >
+        > 为了 overflow 产生效果，块级容器必须具有设置的高度（height 或 max-height）或 white-space 设置为 nowrap。
+        >
+        > 将一个轴设置为 visible（默认），而将另一个轴设置为不同的值将导致 visible 表现为 auto。
+
+??? note "text-overflow"
+
+    * 常用搭配：
+
+        ``` css
+        overflow: hidden;
+        white-space: nowrap;
+        ```
+
+    text-overflow 属性仅影响沿其内联进度方向溢出了块容器元素的内容（例如，不是在盒子底部溢出的文本）。
+
+    text-overflow 属性可以使用一个或两个值来指定。如果给出一个值，则它指定行尾的溢出行为（左到右文本的右端，右到左文本的左端）。如果给出两个值，则第一个指定行左端的溢出行为，第二个指定行右端的溢出行为。
+
+    * clip (初始值)
+    * ellipsis
+
 
 
 ??? note "[position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)"
