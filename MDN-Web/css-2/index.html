@@ -1406,41 +1406,148 @@
                 
                   <h1>Web-关键概念</h1>
                 
-                <details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts">Viewport (视口) 概念</a></summary><p>视口表示计算机图形中正在被查看(view)的区域。</p>
+                <details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts">Viewport (视口) 概念</a></summary><blockquote>
+<p>本文解释了视口的概念 - 它是什么，以及它在 CSS，SVG 和 移动设备 方面的影响，并区分了 visual viewport 和 layout viewport。</p>
+</blockquote>
+<p>概括地说，viewport 基本上是文档的当前可见部分。</p>
 </details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context">Block formatting context (块格式化上下文)</a></summary><p>It's the region in which the layout of block boxes occurs and in which floats interact with other elements.</p>
+<details class="abstract"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">containing block (包含块)</a></summary><p>元素的大小和位置 经常受其 包含块 影响。通常，包含块是元素最接近的块级祖先的内容区域 (content area)，但并非总是如此。</p>
+<details class="note"><summary>包含块 的影响</summary><p>元素的大小和位置经常受其包含块的影响。应用到 width，height，padding，margin，和 绝对定位元素（也就是说，position 设为 absolute 或 fixed）的 offset 属性 的百分比值 从元素的包含块计算得来。</p>
 </details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">The stacking context (层叠上下文)</a></summary></details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">containing block (包含块)</a></summary><p>元素的大小和位置 经常受它的 包含块 的影响，因为 width, height, padding, margin 的百分值 和 绝对定位元素(absolute 或 fixed)的offset properties 从 元素的包含块 计算得来</p>
-<p>当浏览器 lay out a document 时, 它给每一个元素生成一个 box</p>
-</details>
-<details class="abstract"><summary>值</summary><p>指定值（包含初始值） + 计算 = 计算值</p>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value">Initial value (初始值)</a></summary><p>default value (默认值)</p>
-<p>不要与浏览器的 style sheet 指定的值 混淆</p>
-</details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/specified_value">Specified value (指定值)</a></summary><ul>
-<li>CSS property 的指定值是从 document's style sheet 接收的值.</li>
-<li>
-<p>ruls:</p>
+<details class="note"><summary>识别 包含块</summary><p>识别 包含块 的过程完全取决于元素的 position 属性的值：</p>
 <ol>
-<li>style sheet 明确指定</li>
-<li>style sheet 没有指定 但是是继承的 property，从父元素获取</li>
-<li>以上都不是，使用 initial value</li>
+<li>
+<p>如果 position 属性是 static，relative 或 sticky，则 包含块 由最近的祖先元素的 content box 的边缘形成，该元素是一个块容器（例如 inline-block，block 或 list-item 元素）或 建立一个 格式化上下文（例如表 (table) 容器，伸缩 (flex) 容器，网格 (grid) 容器 或 块 (block) 容器本身）。</p>
+</li>
+<li>
+<p>如果 position 属性是 absolute，包含块 由最近的祖先元素的 padding box 的边缘形成，该元素的 position 值不是 static（即 fixed，absolute，relative，或 sticky）。</p>
+</li>
+<li>
+<p>如果 position 属性是 fixed，则 包含块 由 视口（viewport, 对于连续媒体 continuous media 而言）或 页面区域（page area, 对于分页媒体 paged media 而言）建立。</p>
+</li>
+<li>
+<p>如果 position 属性为 absolute 或 fixed，则包含块也可能由 最近的祖先元素的 padding box 的边缘 形成，该元素具有以下内容：</p>
+<ol>
+<li>A transform or perspective value other than none</li>
+<li>A will-change value of transform or perspective</li>
+<li>A filter value other than none or a will-change value of filter (only works on Firefox).</li>
+<li>A contain value of paint (e.g. contain: paint;)</li>
 </ol>
 </li>
-</ul>
+</ol>
+<details class="note"><summary>Note</summary><p>根元素（<code>&lt;html&gt;</code>）所在的 包含块 是一个称为 初始 (initial) 包含块 的矩形。它具有视口（用于连续媒体 continuous media）或 页面区域（page area, 用于分页媒体 paged media）的尺寸。</p>
 </details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">Computed value (计算值)</a></summary><p>CSS property 的计算值是 </p>
+</details>
+<details class="note"><summary>从包含块计算百分比值</summary><p>are box model properties and offset properties:</p>
+<p>如上所述，当给某些属性指定百分比值时，其计算值 取决于元素的包含块。以这种方式工作的属性是 盒模型属性 (box model properties) 和 偏移属性 (offset properties)：</p>
+<ol>
+<li>height, top, 和 bottom 属性 从 包含块的 height 计算百分比值.</li>
+<li>width, left, right, padding, 和 margin 属性 从 包含块的 width 计算百分比值.</li>
+</ol>
+</details>
+<p>...</p>
+</details>
+<details class="abstract"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context">Block formatting context (块格式化上下文)</a></summary><p>块格式化上下文 是 网页的视觉 CSS 渲染的一部分。</p>
+<p>在该区域中，会出现 block boxes 的布局，并且 floats 会与其他元素相互作用。</p>
+<details class="note"><summary>块格式化上下文 由以下至少其中之一创建：</summary><ol>
+<li>文档的根元素（<code>&lt;html&gt;</code>）</li>
+<li>Floats (浮动元素, 元素的 float 不是 none)</li>
+<li>绝对定位元素 (元素的 position 是 absolute 或 fixed)</li>
+<li>Inline-blocks (elements with display: inline-block)</li>
+<li>Table cells (elements with display: table-cell, 这是 HTML table cells 的默认值)</li>
+<li>Table captions (elements with display: table-caption, 这是 HTML table captions 的默认值)</li>
+<li>块元素的 overflow 的值不是 visible</li>
+<li>Flex items (弹性元素，direct children of the element with display: flex or inline-flex) 如果它们本身既不是 flex 也不是 grid 或 table 容器。</li>
+<li>Grid items (网格元素，direct children of the element with display: grid or inline-grid) 如果它们本身既不是 flex 也不是 grid 或 table 容器。</li>
+</ol>
+</details>
+<p>格式化上下文 会影响布局，但是通常，我们为 定位 (positioning) 和 清除浮动元素(clearing floats) 创建新的块格式化上下文，而不是更改布局，因为建立新的块格式化上下文的元素将：</p>
 <ul>
+<li>包含内部 floats.</li>
+<li>排除外部 floats.</li>
+<li>抑制 margin collapsing.</li>
+</ul>
+<details class="note"><summary>Note</summary><p>Flex/Grid 容器（display：flex/grid/inline-flex/inline-grid）建立新的 Flex/Grid 格式化上下文，除了布局外，它与 块格式化上下文 相似。在 flex/grid 容器内部不能用 floating children，但是排除外部 floats 和 抑制 margin collapsing 仍然有效。</p>
+</details>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context">The stacking context (堆叠上下文)</a></summary><details class="note"><summary>在以下情况，会形成堆叠上下文：</summary><ol>
+<li>文档的根元素（<code>&lt;html&gt;</code>）</li>
+<li>Element with a position 值为 absolute 或 relative 且 z-index 值不为 auto.</li>
+<li>Element with a position 值为 fixed 或 sticky (sticky for 所有移动浏览器, 但不适用于较旧的桌面).</li>
+<li>Element 是 flex (flexbox) 容器的子元素, 且 z-index 值不为 auto.</li>
+<li>Element 是 grid (grid) 容器的子元素, 且 z-index 值不为 auto.</li>
+<li>Element with opacity 值小于1.</li>
 <li>
-<p>when：在继承时从父到子转移的值</p>
+<p>Element with 以下任一属性 (properties) 的值不为 none:</p>
+<ul>
+<li>transform</li>
+<li>filter</li>
+<li>perspective</li>
+<li>clip-path</li>
+<li>mask / mask-image / mask-border</li>
+</ul>
 </li>
-<li>
-<p>how: 从 specified value 计算得出 </p>
-</li>
+</ol>
+</details>
+<p>重要的是，其子级堆叠上下文的 z-index 值只在父级中才有意义。子级堆叠上下文被自动视为父级堆叠上下文的一个独立单元。</p>
+<details class="abstract"><summary>In summary</summary><ul>
+<li>堆叠上下文可以包含在其他堆叠上下文中，并一起创建堆叠上下文的层次结构。</li>
+<li>每个堆叠上下文完全独立于其同级 (siblings)：处理堆叠时仅考虑后代元素 (descendant elements)。</li>
+<li>每个堆叠上下文都是自包含的：在元素的内容堆叠之后，将按照父堆叠上下文的堆叠顺序考虑整个元素。</li>
 </ul>
 </details>
+<details class="note"><summary>Note</summary><p>堆叠上下文的层次结构是 HTML 元素层次结构的子集，因为只有某些元素才会创建堆叠上下文。可以这样说，没有创建自己的堆叠上下文的元素会被 父堆叠上下文 同化。</p>
 </details>
+</details>
+<details class="abstract"><summary>值</summary><p>指定值 (包含初始值，继承值) 一部分变为 计算值 (计算完成变为 应用值)</p>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value">Initial value (初始值)</a></summary><p>默认值</p>
+<p>初始值的使用取决于属性是否被继承：</p>
+<ul>
+<li>对于 继承属性，只要不提供 指定值，则只能在根元素上使用初始值。</li>
+<li>对于 非继承属性，只要不提供 指定值，可以在所有元素上使用初始值。</li>
+</ul>
+<p>可以使用 initial 关键字显式指定初始值。</p>
+<div class="admonition important">
+<p class="admonition-title">请勿将初始值与浏览器的样式表指定的值混淆。</p>
+</div>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/specified_value">Specified value (指定值)</a></summary><p>CSS 属性 (property) 的指定值是从 文档的样式表 接收的值.</p>
+<p>给定属性的指定值 是由以下规则决定的：</p>
+<ol>
+<li>如果文档的样式表明确指定属性的值，则将使用给定的值。</li>
+<li>如果文档的样式表未指定值，但它是继承属性，则该值将从父元素中获取。</li>
+<li>如果以上都不是，将使用元素的初始值。</li>
+</ol>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value">Computed value (计算值)</a></summary><p>CSS 属性 (property) 的计算值 是继承过程中 从父到子 转移的值。它从指定值计算得来：</p>
+<ol>
+<li>处理特殊值 inherit, initial, unset, 和 revert.</li>
+<li>进行计算以达到属性定义表中 “计算值” 行中描述的值。</li>
+</ol>
+<p>达到属性的计算值所需的计算 通常包括 将相对值（例如以 em 单位 或 百分比 表示）转换为 绝对值。例如，如果一个元素有指定的值 font-size: 16px 和 padding-top: 2em，则 padding-top 的计算值是 32px（字体大小的两倍）。</p>
+<p>然而，对于一些属性（那些其中的百分比 是 相对于 可能需要布局来决定的 sth，例如 width，margin-right，text-indent，和 top），百分比指定 (percentage-specified) 值 变成 百分比计算 (percentage-computed) 值。此外，在 line-height 属性上指定的无单位数字 将成为指定的计算值。保留在计算值中的相对值 会在应用值确定后成为 绝对值。</p>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/used_value">Used value (应用值)</a></summary><p>CSS 属性 (property) 的应用值（used value）是 计算值 完成所有计算后的值</p>
+<p>用户代理完成计算后，每个 CSS 属性有一个应用值。尺寸的应用值（例如 width，line-height）以像素为单位。速记 (shorthand) 属性（例如 background）的应用值与其组件 (component) 属性（例如 background-color 或 background-size）一致 and with <code>position</code> and <code>float</code>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意：<code>getComputedStyle()</code> DOM API 返回解析值 (resolved value)，其可以是 计算值 或 应用值，具体取决于属性。</p>
+</div>
+<p>...</p>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/resolved_value">Resolved value (解析值)</a></summary><p>CSS 属性 (property) 的解析值 是 <code>getComputedStyle()</code> 的返回值。</p>
+<p>对于大多数属性，它是计算值，但对于一些旧属性（包括 width 和 height），则是 应用值。</p>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value">Actual value (实际值)</a></summary><p>CSS 属性的 实际值 是该属性的 应用值 经过必要的近似之后得到的。例如，只能渲染具有整数像素宽度的 border 的用户代理 可能将 border 的厚度四舍五入到最接近的整数。</p>
+<p>用户代理执行四个步骤 计算属性的 实际 (final) 值：</p>
+<ol>
+<li>基于 级联 (cascading) 的结果, 继承 或 使用初始值 决定指定值 </li>
+<li>根据规范 (specification) 计算得出 计算值 (例如，a span with position: absolute will have its computed display changed to block)</li>
+<li>计算布局，得出 应用值</li>
+<li>根据本地环境的限制对 应用值 进行转换，得出 实际值。</li>
+</ol>
+</details>
+</details>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">cascade</a></p>
                 
               
               
@@ -1521,23 +1628,8 @@
         
         
       
-      <a href="https://twitter.com/shawn02745544" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-      </a>
-    
-      
-      
-        
-        
-      
       <a href="https://www.zhihu.com/people/lin-xiao-feng-28-63" target="_blank" rel="noopener" title="www.zhihu.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M170.54 148.13v217.54l23.43.01 7.71 26.37 42.01-26.37h49.53V148.13H170.54zm97.75 193.93h-27.94l-27.9 17.51-5.08-17.47-11.9-.04V171.75h72.82v170.31zm-118.46-94.39H97.5c1.74-27.1 2.2-51.59 2.2-73.46h51.16s1.97-22.56-8.58-22.31h-88.5c3.49-13.12 7.87-26.66 13.12-40.67 0 0-24.07 0-32.27 21.57-3.39 8.9-13.21 43.14-30.7 78.12 5.89-.64 25.37-1.18 36.84-22.21 2.11-5.89 2.51-6.66 5.14-14.53h28.87c0 10.5-1.2 66.88-1.68 73.44H20.83c-11.74 0-15.56 23.62-15.56 23.62h65.58C66.45 321.1 42.83 363.12 0 396.34c20.49 5.85 40.91-.93 51-9.9 0 0 22.98-20.9 35.59-69.25l53.96 64.94s7.91-26.89-1.24-39.99c-7.58-8.92-28.06-33.06-36.79-41.81L87.9 311.95c4.36-13.98 6.99-27.55 7.87-40.67h61.65s-.09-23.62-7.59-23.62v.01zm412.02-1.6c20.83-25.64 44.98-58.57 44.98-58.57s-18.65-14.8-27.38-4.06c-6 8.15-36.83 48.2-36.83 48.2l19.23 14.43zm-150.09-59.09c-9.01-8.25-25.91 2.13-25.91 2.13s39.52 55.04 41.12 57.45l19.46-13.73s-25.67-37.61-34.66-45.86h-.01zM640 258.35c-19.78 0-130.91.93-131.06.93v-101c4.81 0 12.42-.4 22.85-1.2 40.88-2.41 70.13-4 87.77-4.81 0 0 12.22-27.19-.59-33.44-3.07-1.18-23.17 4.58-23.17 4.58s-165.22 16.49-232.36 18.05c1.6 8.82 7.62 17.08 15.78 19.55 13.31 3.48 22.69 1.7 49.15.89 24.83-1.6 43.68-2.43 56.51-2.43v99.81H351.41s2.82 22.31 25.51 22.85h107.94v70.92c0 13.97-11.19 21.99-24.48 21.12-14.08.11-26.08-1.15-41.69-1.81 1.99 3.97 6.33 14.39 19.31 21.84 9.88 4.81 16.17 6.57 26.02 6.57 29.56 0 45.67-17.28 44.89-45.31v-73.32h122.36c9.68 0 8.7-23.78 8.7-23.78l.03-.01z"/></svg>
-      </a>
-    
-      
-      
-      <a href="img/wechat.png" target="_blank" rel="noopener" title="" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"/></svg>
       </a>
     
   </div>
