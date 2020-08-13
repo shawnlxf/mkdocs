@@ -17,9 +17,8 @@
         > 主题：solarized
 
     * 浏览器： firefox, opera
-    * 原型设计工具
+    * [原型设计工具](https://www.ui.cn/detail/364828.html)
 
-        * 亿图图示
         * Axure
         * Mockplus, mockups
         * 墨刀，蓝湖

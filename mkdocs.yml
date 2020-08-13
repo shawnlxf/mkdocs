@@ -25,12 +25,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/shawnlxf
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/shawn02745544
     - icon: fontawesome/brands/zhihu
       link: https://www.zhihu.com/people/lin-xiao-feng-28-63
-    - icon: fontawesome/brands/weixin
-      link: img/wechat.png
 
 # Extensions
 markdown_extensions:

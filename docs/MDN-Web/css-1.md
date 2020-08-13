@@ -42,7 +42,7 @@
 
     nowrap
 
-??? note "overflow"
+??? abstract "overflow"
 
     shorthand property: overflow-x, overflow-y
 
@@ -59,11 +59,13 @@
 
         如果内容适合 padding box，则其看起来与 visible 相同，但仍会建立新的 块格式上下文 (block formatting context)。如果内容溢出，桌面浏览器会提供滚动条。
 
-        > 指定非 visible (默认) 值将创建一个新的块格式化上下文
-        >
-        > 为了 overflow 产生效果，块级容器必须具有设置的高度（height 或 max-height）或 white-space 设置为 nowrap。
-        >
-        > 将一个轴设置为 visible（默认），而将另一个轴设置为不同的值将导致 visible 表现为 auto。
+    ??? note "描述"
+
+        指定非 visible (默认) 值将创建一个新的块格式化上下文
+        
+        为了 overflow 产生效果，块级容器必须具有设置的高度（height 或 max-height）或 white-space 设置为 nowrap。
+        
+        将一个轴设置为 visible（默认），而将另一个轴设置为不同的值将导致 visible 表现为 auto。
 
 ??? note "text-overflow"
 
@@ -84,6 +86,16 @@
 
 
 ??? note "[position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)"
+
+    position 属性设置元素在文档里如何定位. top, right, bottom, 和 left 属性决定定位了的元素的最终位置.
+
+    ??? note "position 属性被指定为从下面的值列表中选择的单个关键字。"
+
+        * static (默认值)
+
+            > The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+
+
 
     * Types (类型)
 
@@ -115,6 +127,6 @@
         >
         > 从 normal flow 中移除该元素，尽管该元素仍然保留了一部分 flow (对比 absolute positioning).
 
-
+    看 包含块 的例子
 
 
