@@ -1,5 +1,4 @@
 
-
 ??? note "[Viewport (视口) 概念](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)"
 
     > 本文解释了视口的概念 - 它是什么，以及它在 CSS，SVG 和 移动设备 方面的影响，并区分了 visual viewport 和 layout viewport。
@@ -54,7 +53,7 @@
 
     块格式化上下文 是 网页的视觉 CSS 渲染的一部分。
 
-    在该区域中，会出现 block boxes 的布局，并且 floats 会与其他元素相互作用。
+    在该区域中，block boxes 的布局发生 (occur)，并且 floats 会与其他元素相互作用。
 
     ??? note "块格式化上下文 由以下至少其中之一创建："
 

@@ -7,13 +7,14 @@
         1. 学习教程 (主体)
 
             * MDN
+            * w3schools / w3school
 
         2. 查询 / 博客 / 公众号 (查漏补缺)
 
-            * 菜鸟教程
             * [php 中文网](https://www.php.cn/web-designer.html)
             * [廖雪峰](https://www.liaoxuefeng.com/)
             * [毕小烦的学习笔记](https://blog.csdn.net/wirelessqa)
+            * [约德尔蒙](https://blog.csdn.net/gyq04551)
             * javascript语言精粹
             * dom编程艺术
             * 网络编程(简单，搜索)：fetch, websocket, jsonp, cors, formData
@@ -23,6 +24,7 @@
             * github 上的 4 个 star
             * 阮一峰的博客
             * 方方的博客
+            * [阿西河](https://www.axihe.com/anbang/chat/learn-step.html?s=axihe-post)
             * 知乎的关注
 
     ??? note "2. 电子书 (亚马逊 / 微信读书)"
@@ -62,7 +64,6 @@
         * 英语单词
 
     * 博客记录
-
 
 
 

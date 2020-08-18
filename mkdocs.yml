@@ -25,6 +25,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/shawnlxf
+    - icon: fontawesome/brands/codepen
+      link: https://codepen.io/shawnlxf
     - icon: fontawesome/brands/zhihu
       link: https://www.zhihu.com/people/lin-xiao-feng-28-63
 
@@ -67,13 +69,15 @@ nav:
   - CSS:
       - 学习: Subjects/css.md
       - 方方-基础概念: FF/5.md
-      - 方方-布局: FF/6.md
+      - 方方-布局/float/flex/grid: FF/6.md
       - 方方-定位: FF/7.md
       - 方方-动画: FF/8.md
       - Learn-第一步: MDN-Learn/css-1.md
       - Learn-构建块: MDN-Learn/css-2.md
-      - Learn-布局: MDN-Learn/css-4.md
-      - Web-reference: MDN-Web/css-1.md
+      - Learn-布局1: MDN-Learn/css-layout-1.md
+      - Learn-布局2: MDN-Learn/css-layout-2.md
+      - Web-ref-property: MDN-Web/css-ref-1.md
+      - Web-ref-概念: MDN-Web/css-ref-2.md
       - Web-关键概念: MDN-Web/css-2.md
   - JavaScript:
       - 学习: Subjects/javascript.md

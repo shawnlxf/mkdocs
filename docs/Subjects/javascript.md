@@ -57,7 +57,7 @@
         });
         ```
 
-    * [菜鸟教程](https://www.runoob.com/jquery/jquery-tutorial.html)
+    * w3schools / w3school
     * [jQuery API](https://api.jquery.com/)
     * [jQuery API 中文文档](https://www.jquery123.com/)
     * [jQuery 基础](http://jqfundamentals.com/)

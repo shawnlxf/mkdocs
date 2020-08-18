@@ -576,8 +576,8 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
                 相对于 something else, 比如 父元素字体的大小, 或者 viewport (视口) 的大小.
 
-                * em: 如果是印刷属性如 font-size，用于父元素的字体大小；如果是其他属性如 width，用于元素本身的字体大小。
-                * rem: 根元素的字体大小
+                * em: 如果是印刷属性如 font-size，相对于父元素的字体大小；如果是其他属性如 width，相对于元素本身的字体大小。
+                * rem: 相对于根元素的字体大小
                 * lh: 元素的 line-height
                 * vw: 视口宽度的 1%
                 * vh: 视口高度的 1%
@@ -606,7 +606,7 @@ Everything in CSS has a box around it, 理解这些 boxes 是用 CSS create layo
 
         * Hue: The base shade of the color. 0 - 360, 代表色轮周围的角度
         * Saturation: 0–100%, 0: 无颜色 (显示为灰色阴影), 100%: full color saturation
-        * Lightness: 0–100%, 0: 没有光 (显示为完全黑色), 100%: full light (显示为完全白色)
+        * Lightness: 0–100%, 0: 没有光 (显示为完全黑色), 100%: full light (显示为完全白色), 50% lightness is “normal”.
 
 !!! note "3. images (图片)"
 

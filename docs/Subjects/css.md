@@ -8,6 +8,7 @@
 ??? note "1.2"
 
     * MDN
+    * w3schools / w3school
     * [CSS Tricks](https://css-tricks.com/)
     * 张鑫旭
     * [CSS 布局](http://zh.learnlayout.com/)
