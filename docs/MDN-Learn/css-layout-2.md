@@ -148,5 +148,10 @@ Flexbox 是一种用于在行或列中布局 items 的一维布局方法。Items
 
 
 
+## 3 Positioning (定位)
 
+??? note "z-index"
 
+    定位元素 (positioned elements) 胜过 未定位元素 (non-positioned elements)
+
+!!! note "Fixed positioning (固定定位)"

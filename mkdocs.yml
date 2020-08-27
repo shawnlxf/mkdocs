@@ -26,9 +26,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/shawnlxf
     - icon: fontawesome/brands/codepen
-      link: https://codepen.io/shawnlxf
-    - icon: fontawesome/brands/zhihu
-      link: https://www.zhihu.com/people/lin-xiao-feng-28-63
+      link: https://codepen.io/shawnlxf/pens/loved
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/shawn02745544
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/
 
 # Extensions
 markdown_extensions:
@@ -50,7 +52,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: 
-      - 首页: index.md
+      - 前端学习: index.md
       - Learn-大纲: MDN-Learn/0.md
       - Learn-Web入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md
@@ -90,6 +92,9 @@ nav:
       - 方方-DOM编程: FF/17.md
       - 方方-封装DOM: FF/18.md
       - 方方-DOM 事件与事件委托: FF/19.md
+      - Learn-第一步: MDN-Learn/js-1.md
+      - Learn-构建块: MDN-Learn/js-2.md
+      - Web-ref-1: MDN-Web/js-ref-1.md
   #- Vue.js:
   #- 小程序:
   #- React.js:

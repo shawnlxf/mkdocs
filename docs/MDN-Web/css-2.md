@@ -81,6 +81,8 @@
 
 ??? note "[The stacking context (堆叠上下文)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)"
 
+    堆叠上下文是 沿着相对于用户的假想Z轴的HTML元素的三维概念化，用户被假定为面向 视口 (viewport) 或网页。HTML 元素根据元素属性 (attributes) 以优先级顺序占用此空间。
+
     ??? note "在以下情况，会形成堆叠上下文："
 
         1. 文档的根元素（`<html>`）
@@ -108,6 +110,11 @@
     ??? note "Note"
 
         堆叠上下文的层次结构是 HTML 元素层次结构的子集，因为只有某些元素才会创建堆叠上下文。可以这样说，没有创建自己的堆叠上下文的元素会被 父堆叠上下文 同化。
+
+    ??? note "一个简单方法"
+    
+        确定堆叠元素 (stacked elements) 沿 Z 轴的渲染顺序的一种简单方法是将元素视为各种 “版本号 (version number) ”，其中子元素是其父级主要版本号下的次要版本号。
+
 
 
 

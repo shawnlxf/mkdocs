@@ -1,11 +1,39 @@
 
-* property
+[transform playground](https://css-transform.moro.es/)
+
+## 1 property
+
+??? note "z-index"
+
+    Overlapping elements with a larger z-index cover those with a smaller one.
+
+    z-index CSS 属性 (property) 设置一个定位元素 (positioned element) 及其后代 或 Flex items 的 z-order。当元素之间重叠的时候，z-index 较大的元素会覆盖较小的元素。
+
+    * auto: 盒子不会建立新的本地堆叠上下文。当前堆叠上下文中生成的盒子的 stack level 与其父级盒子相同。
+    * <integer>: This <integer> is 在当前堆叠上下文中生成的盒子的 stack level. 该盒子还建立了一个 stack level 为0的 本地堆叠上下文。这意味着后代的 z-indexes 不会与该元素的外部元素的 z-indexes 进行比较。
+
+
 
 ??? note "text-align"
 
     The text-align CSS property 设置 块元素 或 table-cell box 的水平对齐。
     
     这意味着它的工作方式像 vertical-align 但是在水平方向。
+
+??? note "vertical-align"
+
+    vertical-align CSS 属性 (property) 设置 an inline, inline-block or table-cell box 的垂直对齐.
+
+    在两种情况下使用：
+
+    * To vertically align an inline element's box inside its containing line box. For example, it could be used to vertically position an <img> in a line of text
+    * To vertically align the content of a cell in a table
+
+    Line-relative values: 将元素相对于整行垂直对齐
+    * top: 将 元素及其后代元素 的顶部与整行的顶部对齐。
+    * bottom: 将 元素及其后代元素 的底部与整行的底部对齐。
+    对于没有基线 (baseline) 的元素，将使用 bottom margin edge 代替。
+
 
 ??? note "使块本身居中而不使行内内容居中的标准兼容方法是将 left 和 right margin 设置为 auto，例如："
 
@@ -171,5 +199,24 @@
         > 从 normal flow 中移除该元素，尽管该元素仍然保留了一部分 flow (对比 absolute positioning).
 
     看 包含块 的例子
+
+
+## 2 function
+
+??? note "calc()"
+
+    calc() CSS 函数让你在指定 CSS 属性 (property) 值时执行计算。 It can be used anywhere a `<length>`, `<frequency>`, `<angle>`, `<time>`, `<percentage>`, `<number>`, or `<integer>` is allowed.
+
+    ``` css
+    /* property: calc(expression) */
+    width: calc(100% - 80px);
+    ```
+
+    作为参数的表达式 可以是 任何简单表达式 结合 以下运算符:
+
+    +, -, *, /
+
+
+
 
 

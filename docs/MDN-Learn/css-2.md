@@ -242,6 +242,7 @@ CSS 选择器规定了 CSS 规则会被应用到哪些元素上。
             ```
 
             `:last-child`
+            `:nth-child(2)`
             `:only-child`
             `:invalid`
 
