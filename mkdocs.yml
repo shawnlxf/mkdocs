@@ -1,5 +1,5 @@
 # Project information
-site_name: NinjaDocs
+site_name: BreatheDocs
 site_author: Shawn
 site_description: >-
   前端学习笔记，包含饥人谷方方课的笔记，MDN 的学习总结，读书笔记 和 项目记录 等。
@@ -14,8 +14,8 @@ copyright: Copyright &copy; 2020 Shawn
 # Configuration
 theme:
   name: material
-  favicon: img/ninja.svg
-  logo: img/ninja.svg
+  favicon: img/breathe.svg
+  logo: img/breathe.svg
   language: zh
   features:
     - tabs
@@ -53,6 +53,7 @@ markdown_extensions:
 nav:
   - Home: 
       - 前端学习: index.md
+      - 说明书: help.md
       - Learn-大纲: MDN-Learn/0.md
       - Learn-Web入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md

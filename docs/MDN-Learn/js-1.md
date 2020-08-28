@@ -39,6 +39,14 @@
 
     在正确的时间获取脚本来加载涉及很多问题。没有看起来那么简单！一个常见的问题是页面上的所有 HTML 均以其出现顺序加载。如果你正在使用 JavaScript 来操纵页面上的元素（或更准确地说，是 Document Object Model），并且在你尝试执行操作的 HTML 之前加载并解析了 JavaScript，则代码将无法工作。
 
+??? note "Internal JavaScript"
+
+    ``` javascript
+    document.addEventListener("DOMContentLoaded", function() {
+      ...
+    });
+    ```
+
 ??? abstract "async and defer"
 
     实际上，我们可以使用两个现代功能 (features) 来绕过阻塞脚本的问题 - async 和 defer。让我们看一下两者之间的区别。
@@ -254,7 +262,7 @@
 
         * 数组到字符串
 
-            join(): 以相反的方式进行操作
+            join(): 以相反的方式进行操作 (默认用逗号)
             toString(): 使用 join() 可以指定不同的分隔符，而 toString() 始终使用逗号。
 
     * 添加和删​​除数组项
