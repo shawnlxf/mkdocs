@@ -14,12 +14,12 @@
       
         <meta name="author" content="Shawn">
       
-      <link rel="shortcut icon" href="../../img/ninja.svg">
+      <link rel="shortcut icon" href="../../img/breathe.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
-        <title>Learn-构建块 - NinjaDocs</title>
+        <title>Learn-构建块 - BreatheDocs</title>
       
     
     
@@ -63,9 +63,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="NinjaDocs" class="md-header-nav__button md-logo" aria-label="NinjaDocs">
+    <a href="../.." title="BreatheDocs" class="md-header-nav__button md-logo" aria-label="BreatheDocs">
       
-  <img src="../../img/ninja.svg" alt="logo">
+  <img src="../../img/breathe.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -75,7 +75,7 @@
       
         <div class="md-header-nav__ellipsis">
           <span class="md-header-nav__topic md-ellipsis">
-            NinjaDocs
+            BreatheDocs
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
@@ -265,12 +265,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NinjaDocs" class="md-nav__button md-logo" aria-label="NinjaDocs">
+    <a href="../.." title="BreatheDocs" class="md-nav__button md-logo" aria-label="BreatheDocs">
       
-  <img src="../../img/ninja.svg" alt="logo">
+  <img src="../../img/breathe.svg" alt="logo">
 
     </a>
-    NinjaDocs
+    BreatheDocs
   </label>
   
     <div class="md-nav__source">
@@ -321,6 +321,18 @@
   <li class="md-nav__item">
     <a href="../.." title="前端学习" class="md-nav__link">
       前端学习
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="说明书" class="md-nav__link">
+      说明书
     </a>
   </li>
 
@@ -914,6 +926,20 @@
         <li class="md-nav__item">
   <a href="#3-functions-reusable-blocks-of-code" class="md-nav__link">
     3 Functions — reusable blocks of code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 创建自己的函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 函数返回值
   </a>
   
 </li>
@@ -1538,6 +1564,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 创建自己的函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 函数返回值
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1560,7 +1600,10 @@
                 
                   <h1>Learn-构建块</h1>
                 
-                <h2 id="1-conditional-structures">1 条件 (conditional structures)<a class="headerlink" href="#1-conditional-structures" title="Permanent link">&para;</a></h2>
+                <blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks">JavaScript building blocks</a></p>
+</blockquote>
+<h2 id="1-conditional-structures">1 条件 (conditional structures)<a class="headerlink" href="#1-conditional-structures" title="Permanent link">&para;</a></h2>
 <details class="note"><summary>if...else 语句 (statements)</summary><div class="codehilite"><pre><span></span><code>``` javascript
 // 错误
 // 条件始终为 true 因为 7 (或任何其他非零值) 始终为 true
@@ -1632,7 +1675,7 @@ do {
 <li>see also</li>
 </ul>
 <h2 id="3-functions-reusable-blocks-of-code">3 Functions — reusable blocks of code<a class="headerlink" href="#3-functions-reusable-blocks-of-code" title="Permanent link">&para;</a></h2>
-<p>请记住，某些内置 (built-in) 的浏览器函数不是 核心 (core) JavaScript 语言的一部分 - 某些被定义为浏览器 API 的一部分，这些 API 建立在默认语言的基础上，以提供更多功能）。</p>
+<p>请记住，某些内置 (built-in) 的浏览器函数不是 核心 (core) JavaScript 语言的一部分 - 某些被定义为浏览器 API 的一部分，这些 API 建立在默认语言的基础上，以提供更多功能。</p>
 <details class="note"><summary>Functions versus methods</summary><p>程序员把函数称为对象方法（method）的一部分。</p>
 <p>到目前为止，我们使用的内置代码有两种形式：函数和方法。<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">built-in objects</a></p>
 </details>
@@ -1641,6 +1684,24 @@ do {
 <li>你还可以将匿名函数分配为变量的值</li>
 </ul>
 </details>
+<ul>
+<li>see also</li>
+</ul>
+<h2 id="4">4 创建自己的函数<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>显示消息框 (message box) 的条件</summary><ul>
+<li>new data being available, </li>
+<li>an error having occurred, </li>
+<li>the user trying to delete their profile ("are you sure about this?"), </li>
+<li>the user adding a new contact and the operation completing successfully, etc.</li>
+</ul>
+</details>
+<details class="failure"><summary>错误</summary><div class="highlight"><pre><span></span><code><span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">displayMessage</span><span class="p">();</span>
+</code></pre></div>
+
+<p>在这种情况下，括号有时称为“函数调用运算符 (function invocation operator)”。仅当你要在当前作用域中立即运行函数时，才使用它们。同样，匿名函数内部的代码也不会立即运行，因为它在函数作用域内。</p>
+</details>
+<h2 id="5">5 函数返回值<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>通常，在函数是某种计算的中间步骤的情况下，将使用返回值。您想要获得最终结果，其中涉及一些需要由函数计算的值。函数计算出值后，可以返回结果，以便将其存储在变量中；您可以在下一阶段的计算中使用此变量。</p>
                 
               
               

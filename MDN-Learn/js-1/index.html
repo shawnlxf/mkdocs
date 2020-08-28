@@ -14,12 +14,12 @@
       
         <meta name="author" content="Shawn">
       
-      <link rel="shortcut icon" href="../../img/ninja.svg">
+      <link rel="shortcut icon" href="../../img/breathe.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
-        <title>Learn-第一步 - NinjaDocs</title>
+        <title>Learn-第一步 - BreatheDocs</title>
       
     
     
@@ -63,9 +63,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="NinjaDocs" class="md-header-nav__button md-logo" aria-label="NinjaDocs">
+    <a href="../.." title="BreatheDocs" class="md-header-nav__button md-logo" aria-label="BreatheDocs">
       
-  <img src="../../img/ninja.svg" alt="logo">
+  <img src="../../img/breathe.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -75,7 +75,7 @@
       
         <div class="md-header-nav__ellipsis">
           <span class="md-header-nav__topic md-ellipsis">
-            NinjaDocs
+            BreatheDocs
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
@@ -265,12 +265,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NinjaDocs" class="md-nav__button md-logo" aria-label="NinjaDocs">
+    <a href="../.." title="BreatheDocs" class="md-nav__button md-logo" aria-label="BreatheDocs">
       
-  <img src="../../img/ninja.svg" alt="logo">
+  <img src="../../img/breathe.svg" alt="logo">
 
     </a>
-    NinjaDocs
+    BreatheDocs
   </label>
   
     <div class="md-nav__source">
@@ -321,6 +321,18 @@
   <li class="md-nav__item">
     <a href="../.." title="前端学习" class="md-nav__link">
       前端学习
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="说明书" class="md-nav__link">
+      说明书
     </a>
   </li>
 
@@ -1660,6 +1672,12 @@
 </details>
 <details class="note"><summary>脚本加载策略 (Script loading strategies)</summary><p>在正确的时间获取脚本来加载涉及很多问题。没有看起来那么简单！一个常见的问题是页面上的所有 HTML 均以其出现顺序加载。如果你正在使用 JavaScript 来操纵页面上的元素（或更准确地说，是 Document Object Model），并且在你尝试执行操作的 HTML 之前加载并解析了 JavaScript，则代码将无法工作。</p>
 </details>
+<details class="note"><summary>Internal JavaScript</summary><div class="highlight"><pre><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div>
+
+</details>
 <details class="abstract"><summary>async and defer</summary><p>实际上，我们可以使用两个现代功能 (features) 来绕过阻塞脚本的问题 - async 和 defer。让我们看一下两者之间的区别。</p>
 <details class="note"><summary>async</summary><p>使用 async 属性加载的脚本不会阻塞渲染页面而将下载脚本，并在脚本完成下载后立即执行。您无法保证脚本将以任何特定的顺序运行，仅能确保它们不会阻止页面其余部分的显示。最好当页面中的脚本彼此独立运行并且不依赖页面上的其他脚本时，使用 async。</p>
 <p>您不能依赖脚本加载的顺序。</p>
@@ -1833,7 +1851,7 @@
 </li>
 <li>
 <p>数组到字符串</p>
-<p>join(): 以相反的方式进行操作
+<p>join(): 以相反的方式进行操作 (默认用逗号)
 toString(): 使用 join() 可以指定不同的分隔符，而 toString() 始终使用逗号。</p>
 </li>
 </ul>
