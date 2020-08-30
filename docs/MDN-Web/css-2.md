@@ -1,4 +1,6 @@
 
+??? note "[CSS Flow Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)"
+
 ??? note "[Viewport (视口) 概念](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)"
 
     > 本文解释了视口的概念 - 它是什么，以及它在 CSS，SVG 和 移动设备 方面的影响，并区分了 visual viewport 和 layout viewport。
@@ -31,7 +33,7 @@
             3. A filter value other than none or a will-change value of filter (only works on Firefox).
             4. A contain value of paint (e.g. contain: paint;)
 
-        ??? note "Note"
+        ??? note
 
             根元素（`<html>`）所在的 包含块 是一个称为 初始 (initial) 包含块 的矩形。它具有视口（用于连续媒体 continuous media）或 页面区域（page area, 用于分页媒体 paged media）的尺寸。
 
@@ -74,7 +76,7 @@
     * 排除外部 floats.
     * 抑制 margin collapsing.
 
-    ??? note "Note"
+    ??? note
 
         Flex/Grid 容器（display：flex/grid/inline-flex/inline-grid）建立新的 Flex/Grid 格式化上下文，除了布局外，它与 块格式化上下文 相似。在 flex/grid 容器内部不能用 floating children，但是排除外部 floats 和 抑制 margin collapsing 仍然有效。
 
@@ -107,7 +109,7 @@
         * 每个堆叠上下文完全独立于其同级 (siblings)：处理堆叠时仅考虑后代元素 (descendant elements)。
         * 每个堆叠上下文都是自包含的：在元素的内容堆叠之后，将按照父堆叠上下文的堆叠顺序考虑整个元素。
 
-    ??? note "Note"
+    ??? note
 
         堆叠上下文的层次结构是 HTML 元素层次结构的子集，因为只有某些元素才会创建堆叠上下文。可以这样说，没有创建自己的堆叠上下文的元素会被 父堆叠上下文 同化。
 

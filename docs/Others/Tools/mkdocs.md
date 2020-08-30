@@ -124,7 +124,7 @@
 
 ### 5.x Admonition
 
-??? note "note"
+??? note
 
     !!! note "note 换名字"
 

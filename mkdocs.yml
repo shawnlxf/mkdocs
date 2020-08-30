@@ -29,8 +29,6 @@ extra:
       link: https://codepen.io/shawnlxf/pens/loved
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/shawn02745544
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/
 
 # Extensions
 markdown_extensions:
@@ -58,10 +56,7 @@ nav:
       - Learn-Web入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md
       - Web-大纲: MDN-Web/0.md
-      - Markdown: Subjects/markdown.md
-      - Bash: Subjects/bash.md
   - HTML:
-      - 学习: Subjects/html.md
       - 方方-语法/标签: FF/3.md
       - 方方-重点标签: FF/4.md
       - Learn-简介: MDN-Learn/html-1.md
@@ -69,8 +64,8 @@ nav:
       - Web-全局属性: MDN-Web/html-2.md
       - Web-章节标签/文本标签: MDN-Web/html-3.md
       - Web-a/img/table/form: MDN-Web/html-4.md
+      - Web-inline/block: MDN-Web/html-5.md
   - CSS:
-      - 学习: Subjects/css.md
       - 方方-基础概念: FF/5.md
       - 方方-布局/float/flex/grid: FF/6.md
       - 方方-定位: FF/7.md
@@ -83,7 +78,6 @@ nav:
       - Web-ref-概念: MDN-Web/css-ref-2.md
       - Web-关键概念: MDN-Web/css-2.md
   - JavaScript:
-      - 学习: Subjects/javascript.md
       - 方方-概述/内存图: FF/10.md
       - 方方-语法/数据类型/运算符: FF/11.md
       - 方方-对象/对象分类: FF/12.md
@@ -109,12 +103,16 @@ nav:
       - 项目:
           - 1: Others/Projects/1.md
       - 工具:
-          - Software: Others/Tools/software.md
+          - 常用软件: Others/Tools/software.md
           - Git: Others/Tools/git.md
           - Github: Others/Tools/github.md
           - Hugo: Others/Tools/hugo.md
           - MkDocs: Others/Tools/mkdocs.md
           - Cmder: Others/Tools/cmder.md
+          - npm/yarn: Others/Tools/npm-yarn.md
+      - 语言:
+          - markdown: Others/Language/markdown.md
+          - bash: Others/Language/bash.md
       - English:
           - 1: Others/English/1.md
           - 2: Others/English/2.md
