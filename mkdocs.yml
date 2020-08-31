@@ -14,8 +14,8 @@ copyright: Copyright &copy; 2020 Shawn
 # Configuration
 theme:
   name: material
-  favicon: img/breathe.svg
-  logo: img/breathe.svg
+  favicon: img/呼吸内科.svg
+  logo: img/呼吸内科.svg
   language: zh
   features:
     - tabs
@@ -89,7 +89,8 @@ nav:
       - 方方-DOM 事件与事件委托: FF/19.md
       - Learn-第一步: MDN-Learn/js-1.md
       - Learn-构建块: MDN-Learn/js-2.md
-      - Web-ref-1: MDN-Web/js-ref-1.md
+      - Web-ref: MDN-Web/js-ref.md
+      - Web-api: MDN-Web/js-api.md
   #- Vue.js:
   #- 小程序:
   #- React.js:
