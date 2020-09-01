@@ -1,5 +1,6 @@
 # Project information
 site_name: BreatheDocs
+site_url: https://shawnlxf.github.io/mkdocs/
 site_author: Shawn
 site_description: >-
   前端学习笔记，包含饥人谷方方课的笔记，MDN 的学习总结，读书笔记 和 项目记录 等。
@@ -89,6 +90,7 @@ nav:
       - 方方-DOM 事件与事件委托: FF/19.md
       - Learn-第一步: MDN-Learn/js-1.md
       - Learn-构建块: MDN-Learn/js-2.md
+      - Learn-对象: MDN-Learn/js-3.md
       - Web-ref: MDN-Web/js-ref.md
       - Web-api: MDN-Web/js-api.md
   #- Vue.js:
@@ -117,6 +119,7 @@ nav:
       - English:
           - 1: Others/English/1.md
           - 2: Others/English/2.md
+          - 3: Others/English/3.md
   - Books:
       - 你不知道的JavaScript: Books/你不知道的JavaScript.md
       - 网道-JavaScript:
