@@ -295,13 +295,143 @@ how to add new methods onto the prototype property.
 
     一个对象的原型对象可能也有一个原型对象，该对象从中继承了方法和属性，依此类推。这通常被称为原型链 (prototype chain)，并解释了为什么不同的对象具有在其他对象上定义的属性和方法可用。
 
-    在 JavaScript 中，对象实例与其原型（其 __proto__ 属性是从 构造函数上的 prototype 属性派生的 (derived from) ）之间建立了链接 (link) ，并且通过沿原型链向上查找来找到属性和方法。
+    在 JavaScript 中，对象实例与其原型（其 `__proto__` 属性是从 构造函数上的 prototype 属性派生的 (derived from) ）之间建立了链接 (link) ，并且通过沿原型链向上查找来找到属性和方法。
 
     ??? note
 
-        理解对象的 prototype（可以通过 Object.getPrototypeOf(obj) 或者已被弃用的 (deprecated) __proto__ porperty 获得）与构造函数的 prototype property 之间的区别是很重要的。
+        理解对象的 prototype（可以通过 Object.getPrototypeOf(obj) 或者已被弃用的 (deprecated) `__proto__` porperty 获得）与构造函数的 prototype property 之间的区别是很重要的。
         
         前者是每个实例上都有的 property，后者是构造函数的 property。也就是说，`Object.getPrototypeOf(new Foobar())` 和 `Foobar.prototype` 指向着同一个对象。
+
+
+??? abstract "了解原型对象"
+
+    ![](../img/MDN-Learn/MDN-Graphics-person-person-object-2.png)
+
+    !!! note "我们想重申，方法和属性不会在原型链 (prototype chain) 中从一个对象复制到另一个对象。通过如上所述沿着链条向上 (walking up the chain) 访问它们。"
+
+    ??? note
+
+        但是，大多数现代浏览器的确提供了称为 `__proto__` 的可用属性，其中包含对象的构造函数的 prototype object。例如，尝试 `person1.__proto__` 和 `person1.__proto__.__proto__` 看看代码中的原型链是什么样的！
+
+
+??? abstract "The prototype property: Where inherited members are defined"
+
+    As mentioned above, the inherited ones are the ones defined on the prototype property (你可以称之为子命名空间 sub-namespace) — that is, the ones that begin with Object.prototype., and not the ones that begin with just Object. prototype property 的值是一个对象, which is basically a bucket for storing properties and methods that we want to be inherited by objects further down the prototype chain.
+
+    ``` javascript
+    // By default, a constructor's prototype always starts empty
+    Person.prototype
+    ```
+
+    !!! note "深入: [Using prototypes in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#Using_prototypes_in_JavaScript)"
+
+    !!! important
+
+        prototype property 是 JavaScript 中最 confusingly-named 的部分之一 -- 您可能认为 this 指向当前对象的原型对象，但事实并非如此（这是一个内部对象 (internal object) ，可以通过 `__proto__` 访问，记得吗？）。prototype 是一个包含对象的属性，您可以在该对象上定义要被继承的成员。
+
+
+??? note "Revisiting create()"
+
+    ``` javascript
+    let person2 = Object.create(person1);
+    ```
+
+    create() 实际做的是从指定原型对象创建一个新的对象。这里以 person1 为原型对象创建了 person2 对象。在控制台 (console) 输入：
+
+    ``` javascript
+    person2.__proto__
+    ```
+
+    返回 person1 对象
+
+
+??? abstract "The constructor property"
+
+    每个构造函数都有一个 prototype property，其值是一个包含 constructor property 的对象。此 constructor property 指向原始构造函数 (original constructor function) 。
+
+    正如您将在下一节中看到的那样，在 Person.prototype property（或通常在构造函数的 prototype property，即上一节中提到的对象）上定义的 properties 可用于所有使用 Person() 构造函数创建的实例对象。因此，constructor property 也可用于 person1 和 person2 对象。
+
+    ``` javascript
+    // 返回 Person() constructor
+    person1.constructor
+    person2.constructor
+    ```
+
+    you want to use the function as a constructor.
+
+    一个聪明的技巧是，您可以在 constructor property 的末尾添加括号（包含任何需要的参数），以从该构造函数创建另一个对象实例。构造函数毕竟是一个函数，因此可以使用括号来调用。您只需要包含 new 关键字指定您要将函数当构造函数使用即可。
+
+    ``` javascript
+    let person3 = new person1.constructor('Karen', 'Stephenson', 26, 'female', ['playing drums', 'mountain climbing']);
+    ```
+
+    ??? note "其他用途"
+
+        如果您有一个对象实例，并且想要返回其构造函数的 name
+
+        ``` javascript
+        instanceName.constructor.name
+        ```
+
+        ``` javascript
+        person1.constructor.name
+        ```
+
+        constructor.name 的值可以更改（由于原型继承 prototypical inheritance，绑定 binding，预处理器 preprocessors，编译器 transpilers 等）。因此，对于更复杂的示例，您将需要使用 instanceof 运算符 (operator) 。
+
+
+??? note "Modifying prototypes (构造函数的) "
+
+    ``` javascript
+    Person.prototype.farewell = function() {
+      alert(this.name.first + ' has left the building. Bye for now!');
+    };
+    ```
+
+    整个继承链 (inheritance chain) 已动态更新，自动使这个 new method 可用于从构造函数派生 (derived from) 的所有对象实例。
+
+    您很少会看到被定义在 prototype property 上的 properties，因为这样被定义时它们并不十分灵活。
+
+    ``` javascript
+    Person.prototype.fullName = 'Bob Smith';
+    ```
+
+    It'd be much better to build the fullName out of name.first and name.last:
+
+    ``` javascript
+    Person.prototype.fullName = this.name.first + ' ' + this.name.last;
+    ```
+
+    但是，这不起作用。这是因为 this 在这种情况下将引用全局作用域 (global scope) ，而不是函数作用域 (function scope) 。调用此属性将返回 undefined 。这在我们之前在原型中定义的 method 上效果很好，因为它位于函数作用域内，该函数作用域将成功转移 (transfer) 到对象实例作用域 (object instance scope) 。因此，您可以在原型上定义常量属性，但是通常在构造函数里定义属性会更好。
+
+    实际上，用于更多对象定义的相当普遍的模式是在构造函数里定义属性，在原型上定义方法。这使代码更易于阅读，因为构造函数仅包含属性定义，并且方法被拆分为单独的块。例如：
+
+    ``` javascript
+    // Constructor with property definitions
+
+    function Test(a, b, c, d) {
+      // property definitions
+    }
+    
+    // First method definition
+    
+    Test.prototype.x = function() { ... };
+    
+    // Second method definition
+    
+    Test.prototype.y = function() { ... };
+    
+    // etc.
+    ```
+
+## 4 Inheritance (继承) in JavaScript
+
+this article shows how to create "child" object classes (constructors) that inherit features from their "parent" classes. In addition, we present some advice on when and where you might use OOJS, and look at how classes are dealt with in modern ECMAScript syntax.
+
+
+
+
 
 
 
