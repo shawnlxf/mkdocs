@@ -921,8 +921,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../MDN-Web/js-ref-built-ins/" title="Web-ref-built-ins" class="md-nav__link">
+      Web-ref-built-ins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../MDN-Web/js-api/" title="Web-api" class="md-nav__link">
       Web-api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-dom/" title="W3c-dom" class="md-nav__link">
+      W3c-dom
     </a>
   </li>
 
@@ -1685,13 +1709,12 @@
 <p><img alt="" src="../../img/FF/8-rendering.png" /></p>
 </details>
 <details class="question"><summary>如何更新样式</summary><p>一般我们用 JS 来更新样式</p>
-<div class="codehilite"><pre><span></span><code>* 比如 div.style.background = &#39;red&#39;
-* 比如 div.style.display = &#39;none&#39;
-* 比如 div.classList.add(&#39;red&#39;)
-* 比如 div.remove() 直接删掉节点
-</code></pre></div>
-
-
+<ul>
+<li>比如 div.style.background = 'red'</li>
+<li>比如 div.style.display = 'none'</li>
+<li>比如 div.classList.add('red')</li>
+<li>比如 div.remove() 直接删掉节点</li>
+</ul>
 </details>
 <details class="question"><summary>这些方法有什么不同吗</summary><p>有三种不同的渲染方式 </p>
 <p><img alt="" src="../../img/FF/8-render.png" /></p>
@@ -1733,6 +1756,50 @@
 </blockquote>
 </li>
 </ol>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">transform</a></summary><p>rotate, scale, skew, or translate an element</p>
+</details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms">CSS Transforms</a></summary></details>
+<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">transition</a></summary><p>The transition CSS property is a shorthand property for </p>
+<ul>
+<li>transition-property, </li>
+<li>transition-duration, </li>
+<li>transition-timing-function, and </li>
+<li>transition-delay.</li>
+</ul>
+<p>Transitions (过渡) 使你可以定义元素的两种状态之间的过渡。不同的状态可以通过使用伪类 比如 <code>:hover</code> 或 <code>:active</code> 或使用 JavaScript 动态设置 被定义。</p>
+<p>The transition property is specified as one or more single-property transitions, 以逗号分隔.</p>
+<p>每个 single-property transition 都描述了应该应用于 a single property (或特殊值 all 和 none) 的转换. 这包括：</p>
+<ul>
+<li>
+<p>zero or one value 表示 transition 应该应用的属性 (property) 。这可能是以下任何一项：</p>
+<ul>
+<li>关键字 none</li>
+<li>关键字 all</li>
+<li>a <code>&lt;custom-ident&gt;</code> naming a CSS property.</li>
+</ul>
+</li>
+<li>
+<p>zero or one <code>&lt;single-transition-timing-function&gt;</code> value representing the timing function to use</p>
+</li>
+<li>
+<p>zero, one, or two <code>&lt;time&gt;</code> values. 第一个值可以被解析为被分配给 <code>transition-duration</code> 的时间，第二个值可以被解析为被分配给 <code>transition-delay</code> 的时间。</p>
+</li>
+</ul>
+</details>
+<details class="note"><summary>animation</summary><p>The animation shorthand CSS property applies an animation between styles. It is a shorthand for </p>
+<ul>
+<li>animation-name, </li>
+<li>animation-duration, </li>
+<li>animation-timing-function, </li>
+<li>animation-delay, </li>
+<li>animation-iteration-count, </li>
+<li>animation-direction, </li>
+<li>animation-fill-mode, and </li>
+<li>animation-play-state.</li>
+</ul>
+</details>
+<details class="note"><summary>@keyframes</summary><p>The @keyframes CSS at-rule 通过定义 styles for 沿动画序列的 keyframes (or waypoints) 控制 CSS 动画序列中的中间步骤. This gives more control over 动画序列的中间步骤 than transitions.</p>
 </details>
                 
               
