@@ -30,7 +30,7 @@
             * 阮一峰的博客
             * 知乎的关注
 
-    ??? note "2. 电子书 (亚马逊 / 微信读书)"
+    ??? note "2. 电子书 (PDF / 微信读书)"
 
         * (你不知道的JavaScript（上卷）)[https://book.douban.com/subject/26351021/] (JS 进阶)
         * 两本免费的 JS 教材《JavaScript 教程》《ECMAScript 6 入门》
@@ -137,6 +137,7 @@
         * [jQuery API](https://api.jquery.com/)
         * [jQuery API 中文文档](https://www.jquery123.com/)
         * [jQuery 基础](http://jqfundamentals.com/)
+        * [廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022609723552)
         * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
 
 

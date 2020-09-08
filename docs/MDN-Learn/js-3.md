@@ -429,6 +429,50 @@ how to add new methods onto the prototype property.
 
 this article shows how to create "child" object classes (constructors) that inherit features from their "parent" classes. In addition, we present some advice on when and where you might use OOJS, and look at how classes are dealt with in modern ECMAScript syntax.
 
+??? note "Prototypal inheritance (原型继承)"
+
+    But mostly this has involved built-in browser functions. How do we create an object in JavaScript that inherits from another object?
+
+    ``` javascript
+    function Teacher(first, last, age, gender, interests, subject) {
+      Person.call(this, first, last, age, gender, interests);
+
+      this.subject = subject;
+    }
+    ```
+
+??? note "Setting Teacher()'s prototype and constructor reference"
+
+    ```
+    Object.getOwnPropertyNames(Teacher.prototype)
+    ```
+
+    We need to get Teacher() to inherit the methods defined on Person()'s prototype
+
+    ``` javascript
+    Teacher.prototype = Object.create(Person.prototype);
+    ```
+
+    Teacher.prototype's constructor property is now equal to Person() -> Teacher()
+
+    ``` javascript
+    Object.defineProperty(Teacher.prototype, 'constructor', { 
+        value: Teacher, 
+        enumerable: false, // so that it does not appear in 'for in' loop
+        writable: true });
+    ```
+
+??? note "Object member summary"
+
+    总而言之，您需要担心四种类型的属性/方法：
+
+    1. Those defined inside a constructor function that are given to object instances. These are fairly easy to spot — in your own custom code, they are the members defined inside a constructor using the this.x = x type lines; in built in browser code, they are the members only available to object instances (usually created by calling a constructor using the new keyword, e.g. let myInstance = new myConstructor()).
+    2. Those defined directly on the constructor themselves, that are available only on the constructor. These are commonly only available on built-in browser objects, and are recognized by being chained directly onto a constructor, not an instance. For example, Object.keys(). These are also known as static properties/methods.
+    3. Those defined on a constructor's prototype, which are inherited by all instances and inheriting object classes. These include any member defined on a Constructor's prototype property, e.g. myConstructor.prototype.x().
+    4. Those available on an object instance, which can either be an object created when a constructor is instantiated like we saw above (so for example var teacher1 = new Teacher( name = 'Chris' ); and then teacher1.name), or an object literal (let teacher1 = { name = 'Chris' } and then teacher1.name).
+
+### ECMAScript 2015 Classes
+
 
 
 
