@@ -27,11 +27,55 @@
 
 ??? note "[Classes (类)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)"
 
-??? note "[Template literals (Template strings，模板字符串)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)"
+??? abstract "[Template literals (Template strings，模板字符串)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)"
+
+    Template literals are string literals allowing embedded expressions (允许嵌入表达式). 你可以使用多行字符串和字符串插值特性。
+
+    语法：
+
+    ```
+    `string text`
+
+    // 多行字符串
+    `string text line 1
+     string text line 2`
+
+    // Expression interpolation (表达式插值)
+    `string text ${expression} string text`
+
+    tag`string text ${expression} string text`
+    ```
+
+    模板字面量 可以包含 placeholders (占位符, ${expression})。占位符中的表达式 和 (` `) 之间的文本 被传递给一个函数。
+
+    默认函数只是将部分 (the parts) 连接到一个字符串中。如果模板字面量前面有一个表达式(这里是 tag)，这被称为标记模板 (tagged template)。In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
+
+    ??? note "表达式插值"
+
+        ``` javascript
+        let a = 5;
+        let b = 10;
+        console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
+        // "Fifteen is 15 and
+        // not 20."
+        ```
+
+        Now, with template literals, you are able to make use of the syntactic sugar (语法糖), making substitutions like this more readable:
+
+        ``` javascript
+        let a = 5;
+        let b = 10;
+        console.log(`Fifteen is ${a + b} and
+        not ${2 * a + b}.`);
+        // "Fifteen is 15 and
+        // not 20."
+        ```
+
+
 
 ??? note "[Object initializer (对象初始化)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)"
 
-## Statements
+## Statements (语句)
 
 ??? note "for...in"
 
@@ -74,7 +118,7 @@
          typeof(operand)
 
 
-### Relational operators
+### Relational operators (关系运算符)
 
 ??? info
 
@@ -92,7 +136,7 @@
 
 
 
-## Assignment operators
+## Assignment operators (赋值运算符)
 
 ??? note "[Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)"
 

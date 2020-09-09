@@ -10,6 +10,22 @@
         In a function definition, this refers to the "owner" of the function.
 
 
+??? abstract "[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)"
+
+    ??? abstract "Static methods"
+
+        ??? note "Object.create()"
+
+            创建一个新对象，使用已经存在的对象作为新创建对象的原型。
+
+            语法：Object.create(proto, [propertiesObject])
+
+        ??? note "Object.assign()"
+
+            Object.assign() 方法用于将所有 enumerable own properties (可枚举属性) 的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+
+            语法：Object.assign(target, ...sources)
+
 
 
 
@@ -53,7 +69,9 @@
                 ```
             
 
-## [Array](https://www.w3schools.com/JSREF/jsref_obj_array.asp)            
+## [W3-Array](https://www.w3schools.com/JSREF/jsref_obj_array.asp)            
+
+> [MDN-Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ??? note "from()"
 

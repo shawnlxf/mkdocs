@@ -133,13 +133,18 @@
             });
             ```
 
-        * w3schools / 菜鸟
-        * [jQuery API](https://api.jquery.com/)
-        * [jQuery API 中文文档](https://www.jquery123.com/)
-        * [jQuery 基础](http://jqfundamentals.com/)
-        * [廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022609723552)
-        * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
+        * 1
 
+            * w3schools / 菜鸟
+            * [jQuery API](https://api.jquery.com/)
+            * [jQuery API 中文文档](https://www.jquery123.com/)
+            * [jQuery 基础](http://jqfundamentals.com/)
+            * [廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022609723552)
+            * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
+
+        * 2
+
+            * 锋利的 jQuery
 
 
 ??? abstract "笔记内容"
