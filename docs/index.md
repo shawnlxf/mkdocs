@@ -1,7 +1,6 @@
 
 ??? abstract "网站导航"
 
-    * [BBC中文](https://www.bbc.com/zhongwen/simp)
     * [iconfont](https://www.iconfont.cn)
     * [iconfinder](https://www.iconfinder.com/)
     * [material colors](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
@@ -135,10 +134,8 @@
 
         * 1
 
-            * w3schools / 菜鸟
-            * [jQuery API](https://api.jquery.com/)
-            * [jQuery API 中文文档](https://www.jquery123.com/)
-            * [jQuery 基础](http://jqfundamentals.com/)
+            * [w3schools](https://www.w3schools.com/jquery/) / [菜鸟](https://www.runoob.com/jquery/jquery-tutorial.html)
+            * [jQuery API](https://api.jquery.com/) / [jQuery API 中文文档](https://www.jquery123.com/) / [jQuery 基础](http://jqfundamentals.com/)
             * [廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022609723552)
             * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
 

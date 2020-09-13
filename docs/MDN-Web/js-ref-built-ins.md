@@ -69,33 +69,6 @@
                 ```
             
 
-## [W3-Array](https://www.w3schools.com/JSREF/jsref_obj_array.asp)            
-
-> [MDN-Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
-??? note "from()"
-
-    The Array.from() method returns an Array object from any object with a length property or an iterable object.
-
-    语法：Array.from(object, mapFunction, thisValue)
-
-    返回值:	An Array object
-
-??? note "filter()"
-
-    The filter() method creates an array filled with all array elements that pass a test (provided as a function).
-
-    ??? tip
-
-        filter() 不会对空数组进行检测。
-
-        filter() 不会改变原始数组。
-
-    语法：array.filter(function(currentValue, index, arr), thisValue)
-
-    返回值:	返回数组，包含了通过测试的所有数组元素。如果没有元素通过测试则返回空数组。
-
-
 
 
 

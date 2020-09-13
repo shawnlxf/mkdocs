@@ -453,7 +453,7 @@ this article shows how to create "child" object classes (constructors) that inhe
     Teacher.prototype = Object.create(Person.prototype);
     ```
 
-    Teacher.prototype's constructor property is now equal to Person() -> Teacher()
+    Teacher.prototype's constructor property is now equal to Person() 变为 Teacher()
 
     ``` javascript
     Object.defineProperty(Teacher.prototype, 'constructor', { 

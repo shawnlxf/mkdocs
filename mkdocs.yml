@@ -93,8 +93,9 @@ nav:
       - Learn-对象: MDN-Learn/js-3.md
       - Web-ref: MDN-Web/js-ref.md
       - Web-ref-built-ins: MDN-Web/js-ref-built-ins.md
-      - Web-api: MDN-Web/js-api.md
       - W3c-dom: Network/w3c-dom.md
+      - W3c-dom-document: Network/w3c-dom-document.md
+      - W3c-array: Network/w3c-array.md
   #- Vue.js:
   #- 小程序:
   #- React.js:
@@ -124,6 +125,7 @@ nav:
           - 3: Others/English/3.md
   - Books:
       - 你不知道的JavaScript: Books/你不知道的JavaScript.md
+      - 锋利的jQuery: Books/锋利的jQuery.md
       - 网道-JavaScript:
           - 1-入门篇: Books/网道-JavaScript/1.md
           - 2-数据类型: Books/网道-JavaScript/2.md
