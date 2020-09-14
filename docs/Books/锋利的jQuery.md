@@ -63,9 +63,11 @@
         $(DOM对象)
 
 
-## 2 jQuery选择器
+## 2 jQuery 选择器
 
-> 选择器是 jQuery 的根基，在 jQuery 中，对事件处理、遍历 DOM 和 Ajax 操作都依赖于选择器。如果能熟练地使用选择器，不仅能简化代码，而且可以达到事半功倍的效果。
+??? info
+
+    选择器是 jQuery 的根基，在 jQuery 中，对事件处理、遍历 DOM 和 Ajax 操作都依赖于选择器。如果能熟练地使用选择器，不仅能简化代码，而且可以达到事半功倍的效果。
 
 ??? abstract "jQuery 选择器的优势"
 
@@ -147,6 +149,134 @@
 
         ![](../img/Books/选择器-表单-1.jpg)
         ![](../img/Books/选择器-表单-2.jpg)
+
+
+??? abstract "选择器中的一些注意事项"
+
+    ??? note "1. 选择器中含有特殊符号的注意事项"
+
+        选择器中含有 “·” , “#” , “(” 或 “]” 等特殊字符
+
+            ``` javascript
+            $("#id\\#b");
+            $("#id\\[1\\]");
+            ```
+
+    ??? note "2. 选择器中含有空格的注意事项"
+
+            ``` javascript
+            // 选取 class 为 "test" 的元素里的隐藏元素
+        	var $t_a = $('.test :hidden');
+            // 选取 隐藏的 class 为 "test" 的元素
+		    var $t_b = $('.test:hidden');
+            ```
+
+            后代选择器 和 过滤选择器 的不同
+
+
+## 3 jQuery 中的 DOM 操作
+
+??? note "根据 W3C DOM 规范（http://www.w3.org/DOM），DOM 是一种与浏览器、平台、语言无关的接口，使用该接口可以轻松地访问页面中所有的标准组件。"
+
+    简单来说，DOM 解决了 Netscape 的 JavaScript 和 Microsoft 的 JScript 之间的冲突，给予了 Web 设计师和开发者一套标准的方法，让他们能够轻松获取和操作网页中的数据、脚本和表现层对象。
+
+??? abstract "DOM 操作的分类"
+
+    一般来说，DOM 操作分为 3 个方面，即 DOM Core（核心）、HTML-DOM 和 CSS-DOM。
+
+    ??? note "1．DOM Core"
+
+        DOM Core 并不专属于 JavaScript，任何一种支持 DOM 的程序设计语言都可以使用它。它的用途并非仅限于处理网页，也可以用来处理任何一种使用标记语言编写出来的文档，例如 XML。
+        
+        JavaScript 中的 getElmentById()、getElementsByTagName()、getAttribute() 和 setAttribute() 等方法，这些都是 DOM Core 的组成部分。
+
+        ``` javascript
+        // 使用 DOM Core 来获取表单对象的方法
+        document.getElementsByTagName("form");
+        ```
+
+        ``` javascript
+        // 使用 DOM Core 来获取某元素的 src 属性的方法
+        element.getAttribute("src");
+        ```
+
+    ??? note "2．HTML-DOM"
+
+        在使用 JavaScript 和 DOM 为 HTML 文件编写脚本时，有许多专属于 HTML-DOM 的属性。HTML-DOM 的出现甚至比 DOM Core 还要早，它提供了一些更简明的记号来描述各种 HTML 元素的属性。
+
+        ``` javascript
+        // 使用 HTML-DOM 来获取表单对象的方法
+        document.forms
+        ```
+
+        ``` javascript
+        // 使用 HTML-DOM 来获取某元素的 src 属性的方法
+        element.src;
+        ```
+
+        通过上面所说的方法，可以发现获取某些对象、属性既可以用 DOM Core 来实现，也可以使用 HTML-DOM 实现。相比较而言 HTML-DOM 的代码通常比较简短，不过它只能用来处理 Web 文档。
+
+    ??? note "3．CSS-DOM"
+
+        CSS-DOM 是针对 CSS 的操作。在 JavaScript 中，CSS-DOM 技术的主要作用是获取和设置 style 对象的各种属性。通过改变 style 对象的各种属性，可以使网页呈现出各种不同的效果。
+
+        ``` javascript
+        // 设置某元素 style 对象字体颜色的方法
+        element.style.color = "red";
+        ```
+
+??? abstract "jQuery 中的 DOM 操作"
+
+    ??? note "查找节点属性 attr()"
+
+    当创建单个元素时，要注意闭合标签和使用标准的 XHTML 格式。例如创建一个 `<p>` 元素，可以用 `$("<p/>")` 或者 `$("<p></p>")`，但不要使用 `$("<p>")` 或者大写的 `$("<P/>")`。
+
+    ??? note "插入节点"
+
+        这些插入节点的方法不仅能将新创建的 DOM 元素插入到文档中，也能对原有的 DOM 元素进行移动。
+
+        ![](../img/Books/插入节点.jpg)
+
+    ??? note "删除节点"
+
+        jQuery 提供了三种删除节点的方法，即 remove()，detach() 和 empty() 。
+
+        1. remove() 方法作用是从 DOM 中删除所有匹配的元素，传入的参数用于根据 jQuery 表达式来筛选元素。
+
+            当某个节点用 remove() 方法删除后，该节点所包含的所有后代节点将同时被删除。这个方法的返回值是一个指向已被删除的节点的引用，因此可以在以后再使用这些元素。
+
+        2. detach() 和 remove() 一样，也是从 DOM 中去掉所有匹配的元素。但需要注意的是，这个方法不会把匹配的元素从 jQuery 对象中删除，因而可以在将来再使用这些匹配的元素。与 remove() 不同的是，所有绑定的事件、附加的数据等都会保留下来。
+
+        3. 严格来讲，empty() 方法并不是删除节点，而是清空节点，它能清空元素中的所有后代节点
+
+    !!! note "复制节点 clone()"
+
+    ??? note "替换节点"
+
+        replaceWith() 和 replaceAll()
+
+        * replaceWith() 方法的作用是将所有匹配的元素都替换成指定的 HTML 或者 DOM 元素。
+        * replaceAll() 方法与 replaceWith() 方法的作用相同，只是颠倒了 replaceWith() 操作
+
+        注意：如果在替换之前，已经为元素绑定事件，替换后原先绑定的事件将会与被替换的元素一起消失，需要在新元素上重新绑定事件。
+
+    ??? note "包裹节点 wrap()"
+
+        ``` javascript
+        $("strong").wrap("<b></b>");
+        ```
+
+        其他两个方法，即 wrapAll() 和 wrapInner() 。
+
+        1. wrapAll() 方法会将所有匹配的元素用一个元素来包裹。
+
+            注意：如果被包裹的多个元素间有其它元素，其它元素会被放到包裹元素之后。
+
+        2. wrapInner() 方法将每一个匹配的元素的子内容（包括文本节点）用其他结构化的标记包裹起来。
+
+
+
+
 
 
 
