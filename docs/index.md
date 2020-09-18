@@ -94,7 +94,7 @@
         * 2
             * 你不知道的 JavaScript (先看上卷，适合进阶)
 
-    ??? note "jQuery"
+    ??? note "jQuery / AJAX / JSON"
 
         ??? info "mdn 定义"
 
@@ -133,6 +133,7 @@
             * [jQuery API](https://api.jquery.com/) / [jQuery API 中文文档](https://www.jquery123.com/) / [jQuery 基础](http://jqfundamentals.com/)
             * [廖雪峰](https://www.liaoxuefeng.com/wiki/1022910821149312/1023022609723552)
             * [jQuery 都过时了，那我还学它干嘛？](https://fangyinghang.com/why-still-jquery/)
+            * [JSON](https://www.json.org/json-en.html) / [JSON 中文](https://www.json.org/json-zh.html)
 
         * 2
 
