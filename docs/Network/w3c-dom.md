@@ -262,7 +262,13 @@
     返回值:	A new String, where the specified value(s) has been replaced by the new value
 
 
+??? note "toString()"
 
+    返回 a String object 的值.
+
+    返回值:	A String, representing the value of a string
+
+    语法：string.toString()
 
 
 
@@ -310,7 +316,7 @@
     返回值:	A Number, representing the ID value of the timer that is set. Use this value with the clearTimeout() method to cancel the timer
 
 
-
 ## [JS RegExp](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+
 
 

@@ -54,9 +54,8 @@
 
     ??? info "语法：array.copyWithin(target, start, end)"
 
-        start: Optional. default is 0
-
-        end: Optional. default is array.length
+        * start: Optional. default is 0
+        * end: Optional. default is array.length
 
     返回值:	An Array, the changed array
 
@@ -67,8 +66,8 @@
 
     ??? info "语法：Array.from(object, mapFunction, thisValue)"
 
-        mapFunction: optional
-        thisValue: optional
+        * mapFunction: optional
+        * thisValue: optional
 
     返回值:	An Array object
 
@@ -260,5 +259,40 @@
         * item1, ..., itemX: Optional. The new item(s) to be added to the array
 
     返回值:	A new Array, containing the removed items (if any)
+
+
+??? note "map()"
+
+    map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+
+    map() 方法按照原始数组元素顺序依次处理元素。
+
+    Note: map() does not execute the function for array elements without values.
+
+    Note: 此方法不改变 the original array.
+
+    ??? info "语法：array.map(function(currentValue, index, arr), thisValue)"
+
+        * index: Optional. The array index of the current element
+        * arr: Optional. The array object the current element belongs to
+        * thisValue: Optional. A value to be passed to the function to be used as its "this" value. If this parameter is empty, the value "undefined" will be passed as its "this" value
+
+    返回值:	An Array containing the results of calling the provided function for each element in the original array.
+
+
+??? note "join()"
+
+    The join() method returns the array as a string.
+
+    The elements will be separated by a specified separator. The default separator is comma (,).
+
+    Note: this method will not change the original array.
+
+    ??? note "语法：array.join(separator)"
+
+        separator: Optional. The separator to be used. If omitted, the elements are separated with a comma
+
+    返回值:	A String, representing the array values, separated by the specified separator
+
 
 
