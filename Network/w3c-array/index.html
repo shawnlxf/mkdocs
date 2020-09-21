@@ -21,7 +21,7 @@
     
     
       
-        <title>W3c-array - BreatheDocs</title>
+        <title>W3c-Array - BreatheDocs</title>
       
     
     
@@ -81,7 +81,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              W3c-array
+              W3c-Array
             
           </span>
         </div>
@@ -821,8 +821,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FF/20/" title="方方-AJAX" class="md-nav__link">
-      方方-AJAX
+    <a href="../../FF/20/" title="方方-前后分离" class="md-nav__link">
+      方方-前后分离
     </a>
   </li>
 
@@ -893,8 +893,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-dom/" title="W3c-dom" class="md-nav__link">
-      W3c-dom
+    <a href="../w3c-dom/" title="W3c-DOM" class="md-nav__link">
+      W3c-DOM
     </a>
   </li>
 
@@ -905,8 +905,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-dom-document/" title="W3c-dom-document" class="md-nav__link">
-      W3c-dom-document
+    <a href="../w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
+      W3c-DOM-Document
     </a>
   </li>
 
@@ -924,14 +924,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        W3c-array
+        W3c-Array
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="W3c-array" class="md-nav__link md-nav__link--active">
-      W3c-array
+    <a href="./" title="W3c-Array" class="md-nav__link md-nav__link--active">
+      W3c-Array
     </a>
     
       
@@ -978,6 +978,42 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-number/" title="W3c-Number" class="md-nav__link">
+      W3c-Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-json/" title="W3c-JSON" class="md-nav__link">
+      W3c-JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-ajax/" title="W3c-AJAX" class="md-nav__link">
+      W3c-AJAX
+    </a>
   </li>
 
         
@@ -1509,6 +1545,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Books/%E5%9C%A3%E7%BB%8F/" title="圣经" class="md-nav__link">
+      圣经
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Books/%E7%B2%BE%E8%A6%81%E4%B8%BB%E4%B9%89/" title="精要主义" class="md-nav__link">
+      精要主义
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1710,7 +1770,7 @@
                   
                 
                 
-                  <h1>W3c-array</h1>
+                  <h1>W3c-Array</h1>
                 
                 <h2 id="w3-array"><a href="https://www.w3schools.com/JSREF/jsref_obj_array.asp">W3-Array</a><a class="headerlink" href="#w3-array" title="Permanent link">&para;</a></h2>
 <blockquote>
@@ -1740,14 +1800,18 @@
 <details class="note"><summary>copyWithin()</summary><p>拷贝数组元素到数组的另一个位置中，overwriting the existing values。</p>
 <p>This method will never add more items to the array.</p>
 <p>Note: this method overwrites the original array.</p>
-<details class="info"><summary>语法：array.copyWithin(target, start, end)</summary><p>start: Optional. default is 0</p>
-<p>end: Optional. default is array.length</p>
+<details class="info"><summary>语法：array.copyWithin(target, start, end)</summary><ul>
+<li>start: Optional. default is 0</li>
+<li>end: Optional. default is array.length</li>
+</ul>
 </details>
 <p>返回值:    An Array, the changed array</p>
 </details>
 <details class="note"><summary>from()</summary><p>The Array.from() method 从拥有 length 属性的对象或可迭代的对象 返回一个数组对象</p>
-<details class="info"><summary>语法：Array.from(object, mapFunction, thisValue)</summary><p>mapFunction: optional
-thisValue: optional</p>
+<details class="info"><summary>语法：Array.from(object, mapFunction, thisValue)</summary><ul>
+<li>mapFunction: optional</li>
+<li>thisValue: optional</li>
+</ul>
 </details>
 <p>返回值:    An Array object</p>
 </details>
@@ -1862,6 +1926,25 @@ thisValue: optional</p>
 </details>
 <p>返回值:    A new Array, containing the removed items (if any)</p>
 </details>
+<details class="note"><summary>map()</summary><p>map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。</p>
+<p>map() 方法按照原始数组元素顺序依次处理元素。</p>
+<p>Note: map() does not execute the function for array elements without values.</p>
+<p>Note: 此方法不改变 the original array.</p>
+<details class="info"><summary>语法：array.map(function(currentValue, index, arr), thisValue)</summary><ul>
+<li>index: Optional. The array index of the current element</li>
+<li>arr: Optional. The array object the current element belongs to</li>
+<li>thisValue: Optional. A value to be passed to the function to be used as its "this" value. If this parameter is empty, the value "undefined" will be passed as its "this" value</li>
+</ul>
+</details>
+<p>返回值:    An Array containing the results of calling the provided function for each element in the original array.</p>
+</details>
+<details class="note"><summary>join()</summary><p>The join() method returns the array as a string.</p>
+<p>The elements will be separated by a specified separator. The default separator is comma (,).</p>
+<p>Note: this method will not change the original array.</p>
+<details class="note"><summary>语法：array.join(separator)</summary><p>separator: Optional. The separator to be used. If omitted, the elements are separated with a comma</p>
+</details>
+<p>返回值:    A String, representing the array values, separated by the specified separator</p>
+</details>
                 
               
               
@@ -1880,7 +1963,7 @@ thisValue: optional</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../w3c-dom-document/" title="W3c-dom-document" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../w3c-dom-document/" title="W3c-DOM-Document" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1889,19 +1972,19 @@ thisValue: optional</p>
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                W3c-dom-document
+                W3c-DOM-Document
               </div>
             </div>
           </a>
         
         
-          <a href="../../FF/16/" title="方方-伪代码与流程图" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../w3c-number/" title="W3c-Number" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                方方-伪代码与流程图
+                W3c-Number
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

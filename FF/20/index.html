@@ -21,7 +21,7 @@
     
     
       
-        <title>方方-AJAX - BreatheDocs</title>
+        <title>方方-前后分离 - BreatheDocs</title>
       
     
     
@@ -53,6 +53,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ajax" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -76,7 +81,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              方方-AJAX
+              方方-前后分离
             
           </span>
         </div>
@@ -822,9 +827,47 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="方方-AJAX" class="md-nav__link md-nav__link--active">
-      方方-AJAX
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        方方-前后分离
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="方方-前后分离" class="md-nav__link md-nav__link--active">
+      方方-前后分离
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ajax" class="md-nav__link">
+    AJAX 的原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promise" class="md-nav__link">
+    异步与 Promise
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -895,8 +938,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-dom/" title="W3c-dom" class="md-nav__link">
-      W3c-dom
+    <a href="../../Network/w3c-dom/" title="W3c-DOM" class="md-nav__link">
+      W3c-DOM
     </a>
   </li>
 
@@ -907,8 +950,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-dom-document/" title="W3c-dom-document" class="md-nav__link">
-      W3c-dom-document
+    <a href="../../Network/w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
+      W3c-DOM-Document
     </a>
   </li>
 
@@ -919,8 +962,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-array/" title="W3c-array" class="md-nav__link">
-      W3c-array
+    <a href="../../Network/w3c-array/" title="W3c-Array" class="md-nav__link">
+      W3c-Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-number/" title="W3c-Number" class="md-nav__link">
+      W3c-Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-json/" title="W3c-JSON" class="md-nav__link">
+      W3c-JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-ajax/" title="W3c-AJAX" class="md-nav__link">
+      W3c-AJAX
     </a>
   </li>
 
@@ -1453,6 +1532,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Books/%E5%9C%A3%E7%BB%8F/" title="圣经" class="md-nav__link">
+      圣经
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Books/%E7%B2%BE%E8%A6%81%E4%B8%BB%E4%B9%89/" title="精要主义" class="md-nav__link">
+      精要主义
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1591,6 +1694,43 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ajax" class="md-nav__link">
+    AJAX 的原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promise" class="md-nav__link">
+    异步与 Promise
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1604,9 +1744,10 @@
                   
                 
                 
-                  <h1>方方-AJAX</h1>
+                  <h1>方方-前后分离</h1>
                 
-                <details class="question"><summary>如何从 github 复制代码：</summary><ol>
+                <h2 id="ajax">AJAX 的原理<a class="headerlink" href="#ajax" title="Permanent link">&para;</a></h2>
+<details class="question"><summary>如何从 github 复制代码：</summary><ol>
 <li>从最后往前选中部分代码</li>
 <li>到开头，按 shift + 点选最开始部分</li>
 </ol>
@@ -1649,6 +1790,47 @@ yarn global add node-dev
 </code></pre></div>
 
 </details>
+<h2 id="promise">异步与 Promise<a class="headerlink" href="#promise" title="Permanent link">&para;</a></h2>
+<details class="question"><summary>面试题</summary><div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span>
+<span class="c1">// [1, NaN, NaN]</span>
+</code></pre></div>
+
+<p>等同于</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)=&gt;{</span>
+    <span class="k">return</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
+    <span class="c1">// parseInt(&#39;1&#39;, 0, arr) =&gt; 1</span>
+    <span class="c1">// parseInt(&#39;2&#39;, 1, arr) =&gt; NaN 1进制没有2</span>
+    <span class="c1">// parseInt(&#39;3&#39;, 2, arr) =&gt; NaN 2进制没有3</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span>
+<span class="c1">// [1, NaN, NaN]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)=&gt;{</span>
+    <span class="k">return</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span>
+<span class="c1">// [1, 2, 3]</span>
+</code></pre></div>
+
+<p>等同于</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span><span class="p">=&gt;</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">item</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span>
+<span class="c1">// [1, 2, 3]</span>
+</code></pre></div>
+
+</details>
+<ul>
+<li>
+<p>google: mdn 析构赋值</p>
+</li>
+<li>
+<p><a href="https://juejin.im/post/6844903569745788941">Axios 作弊表</a></p>
+</li>
+<li><a href="http://axios-js.com/zh-cn/docs/index.html">axios 中文文档</a></li>
+<li><a href="https://github.com/axios/axios">axios github</a></li>
+</ul>
                 
               
               
