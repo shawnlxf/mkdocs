@@ -938,18 +938,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-dom/" title="W3c-DOM" class="md-nav__link">
-      W3c-DOM
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../Network/w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
       W3c-DOM-Document
     </a>
@@ -962,8 +950,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-array/" title="W3c-Array" class="md-nav__link">
-      W3c-Array
+    <a href="../../Network/w3c-dom-element/" title="W3c-DOM-Element" class="md-nav__link">
+      W3c-DOM-Element
     </a>
   </li>
 
@@ -974,8 +962,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-number/" title="W3c-Number" class="md-nav__link">
-      W3c-Number
+    <a href="../../Network/w3c-dom-window/" title="W3c-DOM-Window" class="md-nav__link">
+      W3c-DOM-Window
     </a>
   </li>
 
@@ -986,8 +974,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-json/" title="W3c-JSON" class="md-nav__link">
-      W3c-JSON
+    <a href="../../Network/w3c-js-regexp/" title="W3c-JS-RegExp" class="md-nav__link">
+      W3c-JS-RegExp
     </a>
   </li>
 
@@ -998,8 +986,56 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-ajax/" title="W3c-AJAX" class="md-nav__link">
-      W3c-AJAX
+    <a href="../../Network/w3c-js-string/" title="W3c-JS-String" class="md-nav__link">
+      W3c-JS-String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-js-array/" title="W3c-JS-Array" class="md-nav__link">
+      W3c-JS-Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-js-number/" title="W3c-JS-Number" class="md-nav__link">
+      W3c-JS-Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-js-json/" title="W3c-JS-JSON" class="md-nav__link">
+      W3c-JS-JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Network/w3c-js-ajax/" title="W3c-JS-AJAX" class="md-nav__link">
+      W3c-JS-AJAX
     </a>
   </li>
 
@@ -1791,6 +1827,47 @@ yarn global add node-dev
 
 </details>
 <h2 id="promise">异步与 Promise<a class="headerlink" href="#promise" title="Permanent link">&para;</a></h2>
+<ul>
+<li>google: mdn 析构赋值</li>
+</ul>
+<details class="question"><summary>什么是异步？什么是同步？</summary><p>网上的解释经常混淆异步与回调</p>
+<ul>
+<li>
+<p>同步：如果能直接拿到结果</p>
+<blockquote>
+<p>比如你在医院挂号，你拿到号才会离开窗口</p>
+</blockquote>
+</li>
+<li>
+<p>异步：如果不能直接拿到结果</p>
+<blockquote>
+<p>比如你在餐厅门口等位，你拿到号可以去逛街</p>
+<p>你可以每 10 分钟去餐厅问一下（轮询）</p>
+<p>你也可以扫码用微信接收通知（回调）</p>
+</blockquote>
+</li>
+</ul>
+<details class="note"><summary>异步举例: 以 AJAX 为例</summary><p>request.send() 之后，并不能直接得到 response</p>
+<p>必须等到 readyState 变为 4 后，浏览器回头调用 request.onreadystatechange 函数，我们才能得到 request.response</p>
+</details>
+</details>
+<details class="note"><summary>回调函数：写了却不调用，给别人调用的函数</summary><p>f2(f1)，可以不写 f1(x) 的 x 参数</p>
+</details>
+<details class="note"><summary>异步和回调的关系</summary><p><img alt="" src="../../img/FF/20-%E5%BC%82%E6%AD%A5%E5%92%8C%E5%9B%9E%E8%B0%83%E7%9A%84%E5%85%B3%E7%B3%BB.png" /></p>
+</details>
+<details class="question"><summary>判断函数是同步还是异步？</summary><p>根据特征 或 文档</p>
+<p>异步函数：如果一个函数的返回值处于以下的内部</p>
+<ul>
+<li>setTimeout</li>
+<li>AJAX (即 XMLHttpRequest)</li>
+<li>AddEventListener</li>
+<li>其他 API</li>
+</ul>
+<p>傻X前端才把 AJAX 设置为同步的，这样做会使请求期间页面卡住。</p>
+</details>
+<details class="note"><summary>摇骰子</summary><p><img alt="" src="../../img/FF/20-%E6%91%87%E9%AA%B0%E5%AD%90-1.png" />
+<img alt="" src="../../img/FF/20-%E6%91%87%E9%AA%B0%E5%AD%90-2.png" />
+<img alt="" src="../../img/FF/20-%E6%91%87%E9%AA%B0%E5%AD%90-3.png" /></p>
 <details class="question"><summary>面试题</summary><div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">)</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span>
 <span class="c1">// [1, NaN, NaN]</span>
@@ -1821,16 +1898,84 @@ yarn global add node-dev
 </code></pre></div>
 
 </details>
+</details>
+<details class="note"><summary>如果异步任务有两个结果，成功或失败，怎么办？</summary><p><img alt="" src="../../img/FF/20-%E4%B8%A4%E4%B8%AA%E7%BB%93%E6%9E%9C.png" />
+<img alt="" src="../../img/FF/20-%E8%BF%99%E4%BA%9B%E6%96%B9%E6%B3%95%E7%9A%84%E4%B8%8D%E8%B6%B3.png" /></p>
+</details>
+<details class="abstract"><summary>以 AJAX 的封装为例来解释 Promise 的用法</summary><p><img alt="" src="../../img/FF/20-ajax-promise-1.png" /></p>
+<p>Promise 说这代码太傻了，我们改成 Promise 写法</p>
+<p><img alt="" src="../../img/FF/20-ajax-promise-2.png" />
+<img alt="" src="../../img/FF/20-ajax-promise-3.png" /></p>
 <ul>
-<li>
-<p>google: mdn 析构赋值</p>
-</li>
-<li>
-<p><a href="https://juejin.im/post/6844903569745788941">Axios 作弊表</a></p>
-</li>
+<li>resolve 和 reject 会再去调用成功和失败函数</li>
+<li>使用 .then(success, fail) 传入成功和失败函数</li>
+<li>Promise 还有高级用法，以后说</li>
+</ul>
+<details class="note"><summary>我们封装的 ajax 的缺点</summary><ul>
+<li>post 无法上传数据 (request.send)</li>
+<li>不能设置请求头 (request.setRequestHeader(key, value))</li>
+</ul>
+<p>解决：</p>
+<ul>
+<li>使用 jQuery.ajax (不用掌握，写篇博客即可)</li>
+<li>使用 axios (这个库比 jQuery 逼格高)</li>
+</ul>
+</details>
+</details>
+<details class="note"><summary>axios</summary><p>目前最新的 AJAX 库，抄袭了 jQuery 的封装思路</p>
+<ul>
+<li><a href="https://juejin.im/post/6844903569745788941">Axios 作弊表</a></li>
 <li><a href="http://axios-js.com/zh-cn/docs/index.html">axios 中文文档</a></li>
 <li><a href="https://github.com/axios/axios">axios github</a></li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// 代码示例</span>
+<span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/5.json&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span> <span class="nx">response</span> <span class="p">=&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> 
+  <span class="p">)</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>axios 高级用法</summary><ul>
+<li>
+<p>JSON 自动处理</p>
+<blockquote>
+<p>axios 如果发现响应的 Content-Type 是 json</p>
+<p>就会自动调用 JSON.parse</p>
+<p>所以说正确设置 Content-Type 是好习惯</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://github.com/axios/axios#interceptors">请求拦截器</a></p>
+<blockquote>
+<p>你可以在所有请求里加些东西，比如加查询参数</p>
+</blockquote>
+</li>
+<li>
+<p>响应拦截器</p>
+<blockquote>
+<p>你可以在所有响应里加些东西，甚至改内容</p>
+</blockquote>
+</li>
+<li>
+<p>可以生成不同实例（对象）</p>
+<blockquote>
+<p>不同的实例可以设置不同的配置，用于复杂场景</p>
+</blockquote>
+</li>
+</ul>
+</details>
+<ul>
+<li>初级程序员学习 API（包括 Vue / React 的 API）</li>
+<li>中级程序员学习如何封装</li>
+<li>高级程序员造轮子</li>
+</ul>
+<details class="note"><summary><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></summary><ul>
+<li>Promise 是目前前端解决异步问题的统一方案</li>
+<li>resolve 和 reject 可以改成任何其他名字，不影响使用，但一般就叫这两个名字</li>
+<li>resolve 和 reject 都只接受一个参数</li>
+</ul>
+</details>
                 
               
               

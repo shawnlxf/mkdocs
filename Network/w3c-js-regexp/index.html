@@ -11,7 +11,7 @@
         <meta name="description" content="前端学习笔记，包含饥人谷方方课的笔记，MDN 的学习总结，读书笔记 和 项目记录 等。">
       
       
-        <link rel="canonical" href="https://shawnlxf.github.io/mkdocs/Network/w3c-number/">
+        <link rel="canonical" href="https://shawnlxf.github.io/mkdocs/Network/w3c-js-regexp/">
       
       
         <meta name="author" content="Shawn">
@@ -21,7 +21,7 @@
     
     
       
-        <title>W3c-Number - BreatheDocs</title>
+        <title>W3c-JS-RegExp - BreatheDocs</title>
       
     
     
@@ -53,6 +53,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#js-regexp" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -76,7 +81,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              W3c-Number
+              W3c-JS-RegExp
             
           </span>
         </div>
@@ -888,18 +893,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-dom/" title="W3c-DOM" class="md-nav__link">
-      W3c-DOM
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
       W3c-DOM-Document
     </a>
@@ -912,8 +905,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-array/" title="W3c-Array" class="md-nav__link">
-      W3c-Array
+    <a href="../w3c-dom-element/" title="W3c-DOM-Element" class="md-nav__link">
+      W3c-DOM-Element
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-dom-window/" title="W3c-DOM-Window" class="md-nav__link">
+      W3c-DOM-Window
     </a>
   </li>
 
@@ -930,9 +935,40 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="W3c-Number" class="md-nav__link md-nav__link--active">
-      W3c-Number
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        W3c-JS-RegExp
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="W3c-JS-RegExp" class="md-nav__link md-nav__link--active">
+      W3c-JS-RegExp
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#js-regexp" class="md-nav__link">
+    JS RegExp
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -943,8 +979,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-json/" title="W3c-JSON" class="md-nav__link">
-      W3c-JSON
+    <a href="../w3c-js-string/" title="W3c-JS-String" class="md-nav__link">
+      W3c-JS-String
     </a>
   </li>
 
@@ -955,8 +991,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../w3c-ajax/" title="W3c-AJAX" class="md-nav__link">
-      W3c-AJAX
+    <a href="../w3c-js-array/" title="W3c-JS-Array" class="md-nav__link">
+      W3c-JS-Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-js-number/" title="W3c-JS-Number" class="md-nav__link">
+      W3c-JS-Number
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-js-json/" title="W3c-JS-JSON" class="md-nav__link">
+      W3c-JS-JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-js-ajax/" title="W3c-JS-AJAX" class="md-nav__link">
+      W3c-JS-AJAX
     </a>
   </li>
 
@@ -1651,12 +1723,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#js-regexp" class="md-nav__link">
+    JS RegExp
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/shawnlxf/mkdocs/edit/master/docs/Network/w3c-number.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/shawnlxf/mkdocs/edit/master/docs/Network/w3c-js-regexp.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1664,14 +1766,9 @@
                   
                 
                 
-                  <h1>W3c-Number</h1>
+                  <h1>W3c-JS-RegExp</h1>
                 
-                <details class="note"><summary>toFixed()</summary><p>The toFixed() method converts a number into a string, 四舍五入为指定小数位数.</p>
-<p>Note: if the desired number of decimals are higher than the actual number, zeros are added to create the desired decimal length.</p>
-<details class="note"><summary>语法：number.toFixed(x)</summary><p>x: Optional. The number of digits after the decimal point. Default is 0 (no digits after the decimal point)</p>
-</details>
-<p>返回值:    A String, representing a number, with the exact number of decimals</p>
-</details>
+                <h2 id="js-regexp"><a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">JS RegExp</a><a class="headerlink" href="#js-regexp" title="Permanent link">&para;</a></h2>
                 
               
               
@@ -1690,7 +1787,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../w3c-array/" title="W3c-Array" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../w3c-dom-window/" title="W3c-DOM-Window" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1699,19 +1796,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                W3c-Array
+                W3c-DOM-Window
               </div>
             </div>
           </a>
         
         
-          <a href="../w3c-json/" title="W3c-JSON" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../w3c-js-string/" title="W3c-JS-String" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                W3c-JSON
+                W3c-JS-String
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
