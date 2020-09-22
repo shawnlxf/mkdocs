@@ -94,12 +94,15 @@ nav:
       - Learn-对象: MDN-Learn/js-3.md
       - Web-ref: MDN-Web/js-ref.md
       - Web-ref-built-ins: MDN-Web/js-ref-built-ins.md
-      - W3c-DOM: Network/w3c-dom.md
       - W3c-DOM-Document: Network/w3c-dom-document.md
-      - W3c-Array: Network/w3c-array.md
-      - W3c-Number: Network/w3c-number.md
-      - W3c-JSON: Network/w3c-json.md
-      - W3c-AJAX: Network/w3c-ajax.md
+      - W3c-DOM-Element: Network/w3c-dom-element.md
+      - W3c-DOM-Window: Network/w3c-dom-window.md
+      - W3c-JS-RegExp: Network/w3c-js-regexp.md
+      - W3c-JS-String: Network/w3c-js-string.md
+      - W3c-JS-Array: Network/w3c-js-array.md
+      - W3c-JS-Number: Network/w3c-js-number.md
+      - W3c-JS-JSON: Network/w3c-js-json.md
+      - W3c-JS-AJAX: Network/w3c-js-ajax.md
   #- Vue.js:
   #- 小程序:
   #- React.js:
