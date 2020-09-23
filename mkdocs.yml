@@ -57,6 +57,8 @@ nav:
       - Learn-Web入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md
       - Web-大纲: MDN-Web/0.md
+      - 项目:
+          - 1: Projects/1.md
   - HTML:
       - 方方-语法/标签: FF/3.md
       - 方方-重点标签: FF/4.md
@@ -113,8 +115,6 @@ nav:
       - 方方-快捷键/node.js: FF/1.md
       - 方方-git/markdown: FF/2.md
       - 方方-HTTP入门/请求与响应/node.js: FF/9.md
-      - 项目:
-          - 1: Others/Projects/1.md
       - 工具:
           - 常用软件: Others/Tools/software.md
           - Git: Others/Tools/git.md

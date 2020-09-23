@@ -159,6 +159,7 @@
         * uBlocker
         * Separate Window
         * Death To \_blank
+        * json viewer
 
     ??? note "主题："
 
