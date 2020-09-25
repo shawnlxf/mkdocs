@@ -21,7 +21,7 @@
     
     
       
-        <title>方方-前后分离 - BreatheDocs</title>
+        <title>方方-前后端分离 - BreatheDocs</title>
       
     
     
@@ -81,7 +81,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              方方-前后分离
+              方方-前后端分离
             
           </span>
         </div>
@@ -882,14 +882,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        方方-前后分离
+        方方-前后端分离
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="方方-前后分离" class="md-nav__link md-nav__link--active">
-      方方-前后分离
+    <a href="./" title="方方-前后端分离" class="md-nav__link md-nav__link--active">
+      方方-前后端分离
     </a>
     
       
@@ -1806,7 +1806,7 @@
                   
                 
                 
-                  <h1>方方-前后分离</h1>
+                  <h1>方方-前后端分离</h1>
                 
                 <h2 id="ajax">AJAX 的原理<a class="headerlink" href="#ajax" title="Permanent link">&para;</a></h2>
 <details class="question"><summary>如何从 github 复制代码：</summary><ol>
@@ -2003,22 +2003,77 @@ yarn global add node-dev
 </ul>
 </details>
 <h2 id="corsjsonp">跨域、CORS、JSONP<a class="headerlink" href="#corsjsonp" title="Permanent link">&para;</a></h2>
+<details class="note"><summary>跨域关键知识</summary><ul>
+<li>
+<p>同源策略</p>
+<p>浏览器故意设计的一个功能限制</p>
+</li>
+<li>
+<p>CORS</p>
+<p>突破浏览器限制的一个方法</p>
+</li>
+<li>
+<p>JSONP</p>
+<p>IE 时代的妥协</p>
+</li>
+</ul>
+</details>
+<details class="note"><summary>同源策略：不同源的页面之间，不准互相访问数据</summary><p><img alt="" src="../../img/FF/20-%E5%90%8C%E6%BA%90%E5%AE%9A%E4%B9%89.png" />
+<img alt="" src="../../img/FF/20-%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%E5%AE%9A%E4%B9%89.png" /></p>
+<p>为了保护用户隐私</p>
+<p><img alt="" src="../../img/FF/20-%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5.png" />
+<img alt="" src="../../img/FF/20-%E9%97%AE%E9%A2%98%E7%9A%84%E6%A0%B9%E6%BA%90.png" />
+<img alt="" src="../../img/FF/20-%E5%85%B6%E4%BB%96%E6%96%B0%E6%89%8B%E7%96%91%E9%97%AE.png" /></p>
+</details>
+<details class="note"><summary>解法</summary><ul>
+<li>
+<p>解法一：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#%E7%AE%80%E5%8D%95%E8%AF%B7%E6%B1%82">CORS</a> 分为 简单请求 和 复杂请求</p>
+<blockquote>
+<p>IE 6 7 8 9 不支持</p>
+</blockquote>
+</li>
+<li>
+<p>JSONP: 引用 JS，让 JS 包含数据</p>
+<ol>
+<li>qq.com 将数据写到 /friends.js</li>
+<li>frank.com 用 script 标签引用 /friends.js</li>
+<li>/friends.js 执行 frank.com 事先定义好的 window.xxx 函数，获取到数据</li>
+</ol>
+</li>
+</ul>
+</details>
 <details class="note"><summary>Referer</summary><p>Nerwork -&gt; 选中 XHR -&gt; 点第一个，看 Headers 里的 Referer</p>
 <p>Referer 显示 https://www.baidu.com/</p>
 <p>chrome 地址栏 按左键显示完整路径</p>
 </details>
-<p>node server.js 8888
-node server.js 9999</p>
-<p>nodepad 以管理员身份运行</p>
-<p>C:\WINDOWS\system32\drivers\etc\hosts</p>
-<p>加</p>
-<p>127.0.0.1 shawn.com
-127.0.0.1 qq.com</p>
+<details class="note"><summary>设置 hosts</summary><p>nodepad 以管理员身份运行 C:\WINDOWS\system32\drivers\etc\hosts，加</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1 shawn.com
+127.0.0.1 qq.com
+</code></pre></div>
+
 <p>在终端</p>
-<p>ping shawn.com
-ping qq.com</p>
+<div class="highlight"><pre><span></span><code>ping shawn.com
+ping qq.com
+</code></pre></div>
+
+<p>可以访问 http://qq.com:8888/index.html
+可以访问 http://frank.com:9999/index.html</p>
 <p>百度的 Network 的第一个的 jQuery </p>
 <p>能引用 js 但不能读取 js</p>
+</details>
+<details class="question"><summary>JSONP 是什么？ 完美回答（优缺点）</summary><p>在跨域时由于当前浏览器不支持 CORS（因为某些条件），必须使用另外一种方式来跨域。于是我们请求一个 JS 文件，这个 JS 文件会执行一个回调，回调里面就有我们的数据。</p>
+<p>回调的名字是可以随机生成的一个随机数，我们把这个名字以 callback 参数传给后台，后台会把函数返回给我们并执行。</p>
+<p>优点：</p>
+<ol>
+<li>兼容 IE</li>
+<li>可以跨域</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>由于是 script 标签，读不到 AJAX 那么精确的状态，不知道状态码是什么、响应头 (header) 是什么。只知道成功 (onload) 和失败 (onerror)</li>
+<li>只能发 GET 请求，不支持 POST</li>
+</ol>
+</details>
                 
               
               
