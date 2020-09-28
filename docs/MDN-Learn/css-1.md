@@ -249,7 +249,7 @@
     * 它将 HTML 转换为 DOM (Document Object Model)。DOM 表示计算机内存中的文档。
     * 然后，浏览器将获取 HTML 文档链接到的大多数资源，例如: 嵌入式图像和视频……以及链接的 CSS ！JavaScript则会稍后进行处理，现在不讲
     * 浏览器解析获取的 CSS ，并根据选择器类型将不同规则分到不同的 "bucket"(桶) 中，例如 element, class, ID 等。根据找到的选择器，它确定应将哪些规则应用于DOM中的哪些节点，并根据需要给它们附加样式（这个中间步骤称为渲染树,  a render tree）。
-    * 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。
+    * 上述的规则应用于 DOM 节点之后，渲染树会依照应该出现的结构进行布局。(The render tree is laid out in the structure it should appear in after the rules have been applied to it.)
     * 页面显示在屏幕上（这个阶段称为绘画 painting）。
 
     ![](../img/MDN-Learn/rendering.svg)

@@ -63,5 +63,6 @@
     语法：string.toString()
 
 
-
+* length, slice, toLowerCase / toUpperCase, replace
+* split
 

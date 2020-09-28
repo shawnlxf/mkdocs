@@ -41,3 +41,20 @@
     语法：setTimeout(function, milliseconds, param1, param2, ...)
 
     返回值:	A Number, representing the ID value of the timer that is set. Use this value with the clearTimeout() method to cancel the timer
+
+
+??? note "prompt() 常用"
+
+    语法：prompt(text, defaultText)
+
+    defaultText(string): Optional. The default input text
+
+    返回值:	A String. If the user clicks "OK", the input value is returned. If the user clicks "cancel", null is returned. If the user clicks OK without entering any text, an empty string is returned.
+
+??? note "alert() 常用"
+
+    语法：alert(message)
+
+    message(string): Optional. Specifies the text to display in the alert box, or an object converted into a string and displayed
+
+

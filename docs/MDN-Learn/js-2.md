@@ -5,20 +5,31 @@
 
 ??? note "if...else 语句 (statements)"
 
-        ``` javascript
-        // 错误
-        // 条件始终为 true 因为 7 (或任何其他非零值) 始终为 true
-        if (x === 5 || 7 || 10 || 20) {
-          // run my code
-        }
-        ```
+    ``` javascript
+    // 错误
+    // 条件始终为 true 因为 7 (或任何其他非零值) 始终为 true
+    if (x === 5 || 7 || 10 || 20) {
+      // run my code
+    }
+    ```
 
-        ``` javascript
-        // 正确
-        if (x === 5 || x === 7 || x === 10 ||x === 20) {
-          // run my code
-        }
-        ```
+    ``` javascript
+    // 正确
+    if (x === 5 || x === 7 || x === 10 ||x === 20) {
+      // run my code
+    }
+    ```
+
+    ``` javascript
+    // 任何不是 false, undefined, null, 0, NaN, or an empty string ('') 的值返回 true when tested as a conditional statement, 因此你可以使用变量名 on its own to test whether it is true, or even that it exists (that is, it is not undefined.) So for example:
+    let cheese = 'Cheddar';
+
+    if (cheese) {
+      console.log('Yay! Cheese available for making cheese on toast.');
+    } else {
+      console.log('No cheese on toast for you today.');
+    }
+    ```
 
 ??? note "switch 语句 (statements) 伪代码 (pseudocode)"
 

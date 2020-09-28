@@ -1,4 +1,9 @@
 
+??? info "HTTP 术语表"
+
+
+
+
 ??? info "[HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)"
 
     超文本传输​​协议（HTTP, Hypertext Transfer Protocol）是用于传输 (transmit) 超媒体文档（例如 HTML）的应用层协议。它是为 Web 浏览器和 Web 服务器之间的通信 (communication) 而设计的，但也可以用于其他目的。HTTP 遵循经典的客户端-服务器模型 (follows a classical client-server model)，客户端打开连接以发出请求 (opening a connection to make a request)，然后等待直到收到响应 (response)。HTTP 是无状态协议 (stateless protocol)，这意味着服务器在两个请求之间不保留任何数据 data（状态 state）。尽管通常基于 TCP / IP 层，但是它可以在任何可靠的传输层 (transport layer) 上使用，可靠即该协议不会像 UDP 那样静默 (silently) 地丢失消息。RUDP — the reliable update of UDP — 是合适的替代方法。

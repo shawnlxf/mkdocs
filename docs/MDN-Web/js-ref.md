@@ -46,7 +46,7 @@
     tag`string text ${expression} string text`
     ```
 
-    模板字面量 可以包含 placeholders (占位符, ${expression})。占位符中的表达式 和 (` `) 之间的文本 被传递给一个函数。
+    模板字面量 可以包含 placeholders (占位符, ${expression})。占位符中的表达式 和 backticks (反引号，\` \`) 之间的文本 被传递给一个函数。
 
     默认函数只是将部分 (the parts) 连接到一个字符串中。如果模板字面量前面有一个表达式(这里是 tag)，这被称为标记模板 (tagged template)。In that case, the tag expression (usually a function) gets called with the template literal, which you can then manipulate before outputting.
 
@@ -145,11 +145,49 @@
 
 
 
+### Assignment operators (赋值运算符)
 
+??? note "[Destructuring assignment (解构赋值)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)"
 
-## Assignment operators (赋值运算符)
+    The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct (不同的) variables.
 
-??? note "[Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)"
+    assignment 的左边定义 what values to unpack from the sourced variable.
+
+    This capability is similar to features present in languages such as Perl and Python.
+
+    ``` javascript
+    // Default values
+    // A variable can be assigned a default, in the case that the value unpacked from the array is undefined.
+    let a, b;
+
+    [a=5, b=7] = [1];
+    console.log(a); // 1
+    console.log(b); // 7
+    ```
+
+    ``` javascript
+    // Swapping variables 交换变量
+    // 没有解构赋值的情况下，交换两个变量需要一个临时变量（或者用低级语言中的 XOR-swap 技巧）。
+    let a = 1;
+    let b = 3;
+
+    [a, b] = [b, a];
+    console.log(a); // 3
+    console.log(b); // 1
+
+    const arr = [1,2,3];
+    [arr[2], arr[1]] = [arr[1], arr[2]];
+    console.log(arr); // [1,3,2]
+    ```
+
+    ``` javascript
+    // 将剩余数组赋值给一个变量
+    // 总是作为最后一个元素
+    const [a, ...b] = [1, 2, 3];
+    console.log(a); // 1
+    console.log(b); // [2, 3]
+    ```
+
 
 
 

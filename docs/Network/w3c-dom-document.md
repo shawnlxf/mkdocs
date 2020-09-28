@@ -7,7 +7,7 @@
 
     The document object is the root node of the HTML document.
 
-??? note "createElement()"
+??? note "createElement() 常用"
 
     ??? tip
 
@@ -23,7 +23,7 @@
 
     返回值:	An Element object, which represents the created Element node
 
-??? note "querySelectorAll()"
+??? note "querySelectorAll() 常用"
 
     querySelectorAll() 方法返回文档中匹配指定 CSS selector(s) 的所有元素，as a static NodeList object.
 
@@ -38,7 +38,7 @@
     返回值:	一个 NodeList 对象，表示文档中匹配指定 CSS selector(s) 的所有元素。The NodeList is a static collection, meaning that changes in the DOM has NO effect in the collection. Throws a SYNTAX_ERR exception if the selector(s) is invalid
 
 
-* querySelector()
+* querySelector() 常用
 * addEventListener()
 * removeEventListener()
 

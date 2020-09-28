@@ -1,5 +1,9 @@
 
 * [前端导航](https://shawnlxf.github.io/nav-1/dist/index.html)
+* [w3c 待办](https://www.w3schools.com/js/js_number_methods.asp)
+* [www](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)
+* 术语表 internet, http
+* 域名
 
 ??? abstract "学习途径"
 

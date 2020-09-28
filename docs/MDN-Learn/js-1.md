@@ -117,7 +117,7 @@
 
     Null 是一个特殊值，表示 “nothing” 或 “no value”。因此 lowOrHi 已经被声明 (declared) 和初始化，但是没有任何有意义的值 - 它没有类型或值。
 
-??? note "scope 作用域"
+??? note "scope (作用域)"
 
     加载页面后不会立即出现此错误，因为此错误发生在函数内部（在 checkGuess() { ... } 块内部）。正如您将在后面的函数文章中更详细地了解的那样，函数内部的代码在独立于函数外部的代码的作用域内运行。在这种情况下，直到 checkGuess() 函数由第86行运行时，代码才运行，并且抛出错误。
 
@@ -135,6 +135,25 @@
     下面说明几个简单的区别。我们现在不会介绍所有差异，但是随着您对JavaScript的更多了解，您将开始发现它们（如果您现在真的想阅读它们，请随时查看我们的let参考页）。
 
     1. [var hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting)
+
+        ``` javascript
+        // the hoisting will affect the variable declaration, but not its value's initialization. The value will be indeed assigned when the assignment statement is reached:
+        function do_something() {
+          console.log(bar); // undefined
+          var bar = 111;
+          console.log(bar); // 111
+        }
+
+        // ...is implicitly understood as:
+
+        function do_something() {
+          var bar;
+          console.log(bar); // undefined
+          bar = 111;
+          console.log(bar); // 111
+        }
+        ```
+
     2. var 可以根据需要多次声明同一变量，但是 let 不行
 
 ??? note "变量命名规则"
@@ -224,9 +243,16 @@
 ??? note "常用"
 
     * 找到长度 length
-    * 检索特定字符 [length-1]
+    * 检索特定字符 browserType[browserType.length-1];
     * 找到并提取子字符串 
         * indexOf()
+
+            ``` javascript
+            if(browserType.indexOf('mozilla') !== -1) {
+              // do stuff with the string
+            }
+            ```
+
         * slice()
 
             ``` javascript
