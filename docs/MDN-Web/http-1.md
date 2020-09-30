@@ -1,5 +1,7 @@
 
-??? info "HTTP 术语表"
+??? quote "HTTP 术语表"
+
+    The current version of the HTTP specification is called HTTP/2.
 
 
 
@@ -12,7 +14,7 @@
 
 ??? abstract "HTTP 概述"
 
-    ??? info "Protocol"
+    ??? quote "Protocol 术语表"
 
         协议是定义了数据如何在计算机内和之间进行交换的规则的系统。设备之间的通信 (Communications) 要求设备就正在交换的数据格式达成一致。定义格式的规则集称为协议。
 

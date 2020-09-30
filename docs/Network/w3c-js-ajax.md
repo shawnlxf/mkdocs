@@ -1,6 +1,10 @@
 
 ## [AJAX (Asynchronous JavaScript And XML)](https://www.w3schools.com/js/js_ajax_intro.asp)
 
+* [MDN-AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
+* [MDN-XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+* [MDN-Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
 ??? note "AJAX 是开发者的梦想，因为你可以："
 
     * Read data from a web server - after the page has loaded

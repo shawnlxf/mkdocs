@@ -53,7 +53,7 @@ nav:
   - Home: 
       - 前端学习: index.md
       - 日常:
-          - 说明书: help.md
+          - ninja 说明书: help.md
           - 万维钢-精英日课1: Books/精英日课1.md
           - 圣经: Books/圣经.md
           - 精要主义: Books/精要主义.md
@@ -61,10 +61,12 @@ nav:
           - 1: Others/English/1.md
           - 2: Others/English/2.md
           - 3: Others/English/3.md
+      - MDN-术语表: mdn-glossary.md
       - Learn-大纲: MDN-Learn/0.md
       - Learn-Web入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md
       - Web-大纲: MDN-Web/0.md
+      - Web-HTTP: MDN-Web/http-1.md
       - 项目:
           - 1: Projects/1.md
       - Books:
@@ -74,7 +76,6 @@ nav:
               - 1-入门篇: Books/网道-JavaScript/1.md
               - 2-数据类型: Books/网道-JavaScript/2.md
           - 网道-HTML: Books/网道-HTML.md
-      - Web-HTTP: MDN-Web/http-1.md
   - HTML:
       - 方方-语法/标签: FF/3.md
       - 方方-重点标签: FF/4.md
@@ -97,16 +98,6 @@ nav:
       - Web-ref-概念: MDN-Web/css-ref-2.md
       - Web-关键概念: MDN-Web/css-2.md
   - JavaScript:
-      - 方方-概述/内存图: FF/10.md
-      - 方方-语法/数据类型/运算符: FF/11.md
-      - 方方-对象/对象分类: FF/12.md
-      - 方方-数组: FF/13.md
-      - 方方-函数: FF/14.md
-      - 方方-运算符/总结: FF/15.md
-      - 方方-DOM编程: FF/17.md
-      - 方方-封装DOM: FF/18.md
-      - 方方-DOM 事件与事件委托: FF/19.md
-      - 方方-前后端分离: FF/20.md
       - Learn-第一步: MDN-Learn/js-1.md
       - Learn-构建块: MDN-Learn/js-2.md
       - Learn-对象: MDN-Learn/js-3.md
@@ -122,6 +113,16 @@ nav:
       - W3c-JS-JSON: Network/w3c-js-json.md
       - W3c-JS-AJAX: Network/w3c-js-ajax.md
       - W3c-JS-Math: Network/w3c-js-math.md
+      - 方方-概述/内存图: FF/10.md
+      - 方方-语法/数据类型/运算符: FF/11.md
+      - 方方-对象/对象分类: FF/12.md
+      - 方方-数组: FF/13.md
+      - 方方-函数: FF/14.md
+      - 方方-运算符/总结: FF/15.md
+      - 方方-DOM编程: FF/17.md
+      - 方方-封装DOM: FF/18.md
+      - 方方-DOM 事件与事件委托: FF/19.md
+      - 方方-前后端分离: FF/20.md
   #- Vue.js:
   #- 小程序:
   #- React.js:

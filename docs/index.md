@@ -1,9 +1,13 @@
 
+* [BBC](https://www.bbc.com/) | [BBC 中文](https://www.bbc.com/zhongwen/simp)
 * [前端导航](https://shawnlxf.github.io/nav-1/dist/index.html)
 * [w3c 待办](https://www.w3schools.com/js/js_number_methods.asp)
-* [www](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)
-* 术语表 internet, http
 * 域名
+* 每日新增常见问题
+* 每日新增 w3c 总结
+* 方方-前后端分离回顾
+* mdn-learn 继续
+* XMLHttpRequest mdn w3c
 
 ??? abstract "学习途径"
 
