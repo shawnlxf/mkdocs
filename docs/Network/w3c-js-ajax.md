@@ -1,15 +1,6 @@
 
 ## [AJAX (Asynchronous JavaScript And XML)](https://www.w3schools.com/js/js_ajax_intro.asp)
 
-* [MDN-AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
-* [MDN-XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
-* [MDN-Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-
-??? note "AJAX 是开发者的梦想，因为你可以："
-
-    * Read data from a web server - after the page has loaded
-    * Update a web page without reloading the page
-    * Send data to a web server - in the background
 
 ??? info
 
@@ -17,7 +8,7 @@
 
     AJAX just uses a combination of:
 
-    * A browser built-in XMLHttpRequest object (to request data from a web server)
+    * A browser built-in `XMLHttpRequest` object (to request data from a web server)
     * JavaScript and HTML DOM (to display or use the data)
 
     ??? info "AJAX is a misleading name."
@@ -25,6 +16,8 @@
         AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.
 
     AJAX 允许网页 to be updated asynchronously 通过在后台与 web server 交换数据. 这意味着可以在不重新加载整个页面的情况下 update 部分 web page.
+
+    The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
 
 ??? question "How AJAX Works"
 
@@ -37,6 +30,77 @@
     5. The server sends a response back to the web page
     6. The response is read by JavaScript
     7. Proper action (like page update) is performed by JavaScript
+
+* [XMLHttpRequest Object Methods / Properties](https://www.w3schools.com/js/js_ajax_http.asp)
+* [XMLHttpRequest 封装](https://www.w3schools.com/js/js_ajax_http_response.asp)
+
+
+## MDN
+
+??? info "[MDN-AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)"
+
+    including JSON, XML, HTML, and text files
+
+    Although X in Ajax stands for XML, JSON is used more than XML nowadays because of its many advantages such as being lighter and a part of JavaScript. Both JSON and XML are used for packaging information in the Ajax model.
+
+??? abstract "[MDN-XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)"
+
+    * [XMLHttpRequest.readyState](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState)
+    * [Sending and Receiving Binary Data](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
+    * [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+    * [HTML in XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/HTML_in_XMLHttpRequest)
+
+
+
+* [MDN-Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+??? abstract "[MDN 入门](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)"
+
+    In a nutshell, it is the use of the XMLHttpRequest object to communicate with servers. It can send and receive information in various formats, including JSON, XML, HTML, and text files.
+
+    ??? note "The two major features of AJAX allow you to do the following:"
+
+        * Make requests to the server without reloading the page
+        * Receive and work with data from the server
+
+    ??? note "[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)"
+
+        [HTTP Messages](https://www.w3schools.com/tags/ref_httpmessages.asp)
+
+        1. Informational responses (100–199),
+        * Successful responses (200–299),
+        * Redirects (300–399),
+        * Client errors (400–499),
+        * and Server errors (500–599).
+
+    ??? note "您可以通过两种方式访问​​该数据："
+
+        * httpRequest.responseText – 以文本字符串形式返回服务器响应
+        * httpRequest.responseXML – 将响应作为 XMLDocument 对象返回，可以使用 JavaScript DOM 函数遍历
+
+    bypassing the cache
+
+
+
+
+* Tools: [axios](https://github.com/axios/axios): Promise based HTTP client, which uses XMLHttpRequest internally.
+
+
+??? abstract "[MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)"
+
+    这使异步方法像同步方法一样返回值：instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+    A Promise 处于以下状态之一：
+
+    * pending: initial state, neither fulfilled nor rejected.
+    * fulfilled: meaning that the operation was completed successfully.
+    * rejected: meaning that the operation failed.
+
+
+??? note "[Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)"
+
+
+
 
 
 

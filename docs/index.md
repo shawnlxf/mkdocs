@@ -1,13 +1,20 @@
 
-* [BBC](https://www.bbc.com/) | [BBC 中文](https://www.bbc.com/zhongwen/simp)
 * [前端导航](https://shawnlxf.github.io/nav-1/dist/index.html)
 * [w3c 待办](https://www.w3schools.com/js/js_number_methods.asp)
-* 域名
-* 每日新增常见问题
-* 每日新增 w3c 总结
+* [w3c whatis](https://www.w3schools.com/whatis/whatis_http.asp)
+* [w3c http](https://www.w3schools.com/tags/ref_httpmessages.asp)
+
+??? info
+
+    * 域名
+    * 每日新增常见问题
+    * 每日新增 w3c 总结
+    * mdn-learn 继续
+    * JSON
+
 * 方方-前后端分离回顾
-* mdn-learn 继续
-* XMLHttpRequest mdn w3c
+* HTTP页面，AJAX页面
+* this
 
 ??? abstract "学习途径"
 

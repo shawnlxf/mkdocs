@@ -63,15 +63,15 @@ nav:
           - 3: Others/English/3.md
       - MDN-术语表: mdn-glossary.md
       - Learn-大纲: MDN-Learn/0.md
-      - Learn-Web入门: MDN-Learn/1.md
+      - Learn-Web 入门: MDN-Learn/1.md
       - Learn-常见问题: MDN-Learn/10.md
       - Web-大纲: MDN-Web/0.md
       - Web-HTTP: MDN-Web/http-1.md
       - 项目:
           - 1: Projects/1.md
       - Books:
-          - 你不知道的JavaScript: Books/你不知道的JavaScript.md
-          - 锋利的jQuery: Books/锋利的jQuery.md
+          - 你不知道的 JavaScript: Books/你不知道的JavaScript.md
+          - 锋利的 jQuery: Books/锋利的jQuery.md
           - 网道-JavaScript:
               - 1-入门篇: Books/网道-JavaScript/1.md
               - 2-数据类型: Books/网道-JavaScript/2.md
@@ -119,8 +119,8 @@ nav:
       - 方方-数组: FF/13.md
       - 方方-函数: FF/14.md
       - 方方-运算符/总结: FF/15.md
-      - 方方-DOM编程: FF/17.md
-      - 方方-封装DOM: FF/18.md
+      - 方方-DOM 编程: FF/17.md
+      - 方方-封装 DOM: FF/18.md
       - 方方-DOM 事件与事件委托: FF/19.md
       - 方方-前后端分离: FF/20.md
   #- Vue.js:
@@ -143,12 +143,13 @@ nav:
       - 语言:
           - markdown: Others/Language/markdown.md
           - bash: Others/Language/bash.md
+          - JSON: Others/Language/json.md
   - Blog:
       - 0-Github Pages: Blog/0.md
-      - 4-CSS知识总结: Blog/4.md
-      - 5-浅析URL: Blog/5.md
-      - 6-JavaScript的诞生: Blog/6.md
-      - 7-JS的基本语法: Blog/7.md
-      - 8-JS对象基本用法: Blog/8.md
-      - 9-JS函数的执行时机: Blog/9.md
-      - 10-jQuery的功能: Blog/10.md
+      - 4-CSS 知识总结: Blog/4.md
+      - 5-浅析 URL: Blog/5.md
+      - 6-JavaScript 的诞生: Blog/6.md
+      - 7-JS 的基本语法: Blog/7.md
+      - 8-JS 对象基本用法: Blog/8.md
+      - 9-JS 函数的执行时机: Blog/9.md
+      - 10-jQuery 的功能: Blog/10.md

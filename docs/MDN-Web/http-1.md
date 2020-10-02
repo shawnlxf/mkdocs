@@ -1,4 +1,6 @@
 
+> [w3c HTTP](https://www.w3schools.com/tags/ref_httpmessages.asp)
+
 ??? quote "HTTP 术语表"
 
     The current version of the HTTP specification is called HTTP/2.
