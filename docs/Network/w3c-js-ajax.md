@@ -88,6 +88,8 @@
 
 ??? abstract "[MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)"
 
+    The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
     这使异步方法像同步方法一样返回值：instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
 
     A Promise 处于以下状态之一：
@@ -96,8 +98,46 @@
     * fulfilled: meaning that the operation was completed successfully.
     * rejected: meaning that the operation failed.
 
+    When either of these options happens, the associated handlers queued up by a promise's then method are called.
 
-??? note "[Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)"
+
+??? abstract "[Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)"
+
+    本质上 Promise 是一个函数返回的对象，我们可以在它上面绑定回调函数 (attach callbacks)，这样我们就不需要在一开始把回调函数作为参数传入这个函数了。
+
+    ``` javascript
+    createAudioFileAsync(audioSettings).then(successCallback, failureCallback);
+    ```
+
+    That's shorthand for:
+
+    ``` javascript
+    const promise = createAudioFileAsync(audioSettings); 
+    promise.then(successCallback, failureCallback);
+    ```
+
+    异步函数调用(asynchronous function call)
+
+    ??? note "Guarantees (保证)"
+
+        Unlike old-fashioned passed-in callbacks, a promise comes with some guarantees:
+
+        * Callbacks will never be called before the completion of the current run of the JavaScript event loop.
+        * Callbacks added with then(), as above, will be called even after the success or failure of the asynchronous operation.
+        * Multiple callbacks may be added by calling then() several times. Each callback is executed one after another, in the order in which they were inserted.
+
+        One of the great things about using promises is chaining (链式调用).
+
+
+
+
+## Blog
+
+??? note "[JavaScript Promises for Dummies](https://www.digitalocean.com/community/tutorials/javascript-promises-for-dummies)"
+
+    Anything that need to wait for promise to proceed, you put that in `.then`.
+
+
 
 
 

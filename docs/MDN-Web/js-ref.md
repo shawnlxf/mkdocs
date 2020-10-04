@@ -97,13 +97,96 @@
 
 ### Primary expressions (主要表达式)
 
-??? note "[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)"
+??? note "[w3 this](https://www.w3schools.com/js/js_this.asp)"
+
+??? note "[MDN this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)"
 
     与其它语言相比，一个函数的 this 关键字在 JavaScript 中的表现有点不同。在 [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) 和 non-strict mode 之间也有一些区别。
 
-    which don't provide their own this binding (it retains the this value of the enclosing lexical context).
-
     在大多数情况下，this 的值取决于函数的调用方式（运行时绑定, runtime binding）。在执行过程 (execution) 中不能通过赋值来设置它，并且每次调用该函数时可能会有所不同。ES5 introduced the [bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) method to [set the value of a function's this regardless of how it's called](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#The_bind_method)，ES2015 引入了箭头函数，箭头函数不提供自己的 this 绑定 (it retains the `this` value of the enclosing lexical context)。
+
+    value: A property of an execution context (global, function or eval) that, in non–strict mode, is always a reference to an object and in strict mode can be any value.
+
+    ??? note "Global context"
+
+        ``` javascript
+        // In web browsers, the window object is also the global object:
+        console.log(this === window); // true
+        
+        a = 37;
+        console.log(window.a); // 37
+        
+        this.b = "MDN";
+        console.log(window.b)  // "MDN"
+        console.log(b)         // "MDN"
+        ```
+
+    ??? note "Function context"
+
+        在函数内部，this 的值取决于函数被调用的方式。
+
+        ``` javascript
+        function f1() {
+          return this;
+        }
+
+        // In a browser:
+        f1() === window; // true
+
+        // In Node:
+        f1() === globalThis; // true
+        ```
+
+        ``` javascript
+        function f2() {
+          'use strict'; // see strict mode
+          return this;
+        }
+
+        f2() === undefined; // true
+        ```
+
+        当调用函数时将 this 值设置为特殊值，使用 call(), 或 apply()
+
+        ``` javascript
+        // An object can be passed as the first argument to call or apply and this will be bound to it.
+        var obj = {a: 'Custom'};
+
+        // We declare a variable and the variable is assigned to the global window as its property.
+        var a = 'Global';
+
+        function whatsThis() {
+          return this.a;  // The value of this is dependent on how the function is called
+        }
+
+        whatsThis();          // 'Global' as this in the function isn't set, so it defaults to the global/window object
+        whatsThis.call(obj);  // 'Custom' as this in the function is set to obj
+        whatsThis.apply(obj); // 'Custom' as this in the function is set to obj
+        ```
+
+    ??? note "Class context"
+
+        与 functions 类似, since classes are functions under the hood. 但有一些不同。
+
+        Within a class constructor, `this` is a regular object. All non-static methods within the class are added to the prototype of `this`:
+
+        ``` javascript
+        class Example {
+          constructor() {
+            const proto = Object.getPrototypeOf(this);
+            console.log(Object.getOwnPropertyNames(proto));
+          }
+          first(){}
+          second(){}
+          static third(){}
+        }
+
+        new Example(); // ['constructor', 'first', 'second']
+        // Note: Static methods are not properties of this. They are properties of the class itself.
+        ```
+
+
+
 
 
 ??? note "[{} Object initializer/literal syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)"

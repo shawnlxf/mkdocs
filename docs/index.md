@@ -2,7 +2,7 @@
 * [前端导航](https://shawnlxf.github.io/nav-1/dist/index.html)
 * [w3c 待办](https://www.w3schools.com/js/js_number_methods.asp)
 * [w3c whatis](https://www.w3schools.com/whatis/whatis_http.asp)
-* [w3c http](https://www.w3schools.com/tags/ref_httpmessages.asp)
+* [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
 
 ??? info
 
@@ -10,11 +10,10 @@
     * 每日新增常见问题
     * 每日新增 w3c 总结
     * mdn-learn 继续
-    * JSON
 
 * 方方-前后端分离回顾
-* HTTP页面，AJAX页面
-* this
+* this, class
+* w3 JSON
 
 ??? abstract "学习途径"
 
