@@ -1218,10 +1218,29 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    Blog
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w3c-js-jquery/" title="W3c-JS-jQuery" class="md-nav__link">
+      W3c-JS-jQuery
+    </a>
   </li>
 
         
@@ -1813,6 +1832,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#blog" class="md-nav__link">
+    Blog
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1901,15 +1927,38 @@
 <ul>
 <li>Tools: <a href="https://github.com/axios/axios">axios</a>: Promise based HTTP client, which uses XMLHttpRequest internally.</li>
 </ul>
-<details class="abstract"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">MDN Promise</a></summary><p>这使异步方法像同步方法一样返回值：instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.</p>
+<details class="abstract"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">MDN Promise</a></summary><p>The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.</p>
+<p>这使异步方法像同步方法一样返回值：instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.</p>
 <p>A Promise 处于以下状态之一：</p>
 <ul>
 <li>pending: initial state, neither fulfilled nor rejected.</li>
 <li>fulfilled: meaning that the operation was completed successfully.</li>
 <li>rejected: meaning that the operation failed.</li>
 </ul>
+<p>When either of these options happens, the associated handlers queued up by a promise's then method are called.</p>
 </details>
-<details class="note"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using Promises</a></summary></details>
+<details class="abstract"><summary><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using Promises</a></summary><p>本质上 Promise 是一个函数返回的对象，我们可以在它上面绑定回调函数 (attach callbacks)，这样我们就不需要在一开始把回调函数作为参数传入这个函数了。</p>
+<div class="highlight"><pre><span></span><code><span class="nx">createAudioFileAsync</span><span class="p">(</span><span class="nx">audioSettings</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">successCallback</span><span class="p">,</span> <span class="nx">failureCallback</span><span class="p">);</span>
+</code></pre></div>
+
+<p>That's shorthand for:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">createAudioFileAsync</span><span class="p">(</span><span class="nx">audioSettings</span><span class="p">);</span> 
+<span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">successCallback</span><span class="p">,</span> <span class="nx">failureCallback</span><span class="p">);</span>
+</code></pre></div>
+
+<p>异步函数调用(asynchronous function call)</p>
+<details class="note"><summary>Guarantees (保证)</summary><p>Unlike old-fashioned passed-in callbacks, a promise comes with some guarantees:</p>
+<ul>
+<li>Callbacks will never be called before the completion of the current run of the JavaScript event loop.</li>
+<li>Callbacks added with then(), as above, will be called even after the success or failure of the asynchronous operation.</li>
+<li>Multiple callbacks may be added by calling then() several times. Each callback is executed one after another, in the order in which they were inserted.</li>
+</ul>
+<p>One of the great things about using promises is chaining (链式调用).</p>
+</details>
+</details>
+<h2 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">&para;</a></h2>
+<details class="note"><summary><a href="https://www.digitalocean.com/community/tutorials/javascript-promises-for-dummies">JavaScript Promises for Dummies</a></summary><p>Anything that need to wait for promise to proceed, you put that in <code>.then</code>.</p>
+</details>
                 
               
               
@@ -1943,13 +1992,13 @@
           </a>
         
         
-          <a href="../w3c-js-math/" title="W3c-JS-Math" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../w3c-js-jquery/" title="W3c-JS-jQuery" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                W3c-JS-Math
+                W3c-JS-jQuery
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
