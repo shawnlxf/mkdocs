@@ -14,6 +14,8 @@
 * 方方-前后端分离回顾
 * this, class
 * w3 JSON
+* vim 技巧
+* vscode 快捷键
 
 ??? abstract "学习途径"
 
