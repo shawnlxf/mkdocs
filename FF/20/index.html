@@ -1377,8 +1377,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    动态服务器
+  <a href="#ajax-cookiesession" class="md-nav__link">
+    动态服务器 / Ajax 实战：Cookie、Session
   </a>
   
 </li>
@@ -1861,8 +1861,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    动态服务器
+  <a href="#ajax-cookiesession" class="md-nav__link">
+    动态服务器 / Ajax 实战：Cookie、Session
   </a>
   
 </li>
@@ -2154,10 +2154,73 @@ ping qq.com
 </details>
 <h2 id="_1">静态服务器<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>自动查找对应文件，即静态文件服务器</p>
-<h2 id="_2">动态服务器<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>$ node test.js</p>
+<h2 id="ajax-cookiesession">动态服务器 / Ajax 实战：Cookie、Session<a class="headerlink" href="#ajax-cookiesession" title="Permanent link">&para;</a></h2>
+<ul>
+<li>没有请求数据库，就是静态服务器</li>
+<li>请求了数据库，就是动态服务器</li>
+<li>程序员应该懂点数据库，今天直接用 json 文件当做数据库</li>
+</ul>
+<details class="abstract"><summary>目标</summary><details class="note"><summary>目标 1</summary><p><img alt="" src="../../img/FF/20-%E7%9B%AE%E6%A0%871.png" /></p>
+</details>
+<details class="note"><summary>目标 2</summary><p><img alt="" src="../../img/FF/20-%E7%9B%AE%E6%A0%872.png" /></p>
+</details>
+<p>目标 2 受阻，目标太大了：目标应该尽量小</p>
+<ul>
+<li>目标 3：标记用户已登录</li>
+</ul>
+<details class="note"><summary>Cookie (公园门票) 定义</summary><ul>
+<li>Cookie 是服务器下发给浏览器的一段字符串</li>
+<li>浏览器必须保存这个 Cookie (除非用户删除)</li>
+<li>之后发起相同二级域名请求（任何请求）时，浏览器必须附上 Cookie</li>
+</ul>
+<p>有 Cookie 就是登录了，没 Cookie 就没登录</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Set-Cookie">Set-Cookie 响应头</a></p>
+</details>
+<ul>
+<li>
+<p>目标 4：显示用户名</p>
+<blockquote>
+<p>home.html 渲染前获取 user 信息</p>
+<p>如果有 user，则将 {{user.name}} 替换成 user.name</p>
+<p>如果无 user，则显示登录按钮</p>
+</blockquote>
+</li>
+</ul>
+<p>有一个大 bug，用户可以篡改 user_id（开发者工具或者 JS 都能改）    </p>
+<details class="note"><summary>目标 5</summary><p><img alt="" src="../../img/FF/20-%E7%9B%AE%E6%A0%875.png" /></p>
+</details>
+<details class="note"><summary>Cookie / Session 总结</summary><p><img alt="" src="../../img/FF/20-cookie-session.png" /></p>
+</details>
+<details class="note"><summary>目标 6</summary><p><img alt="" src="../../img/FF/20-%E7%9B%AE%E6%A0%876.png" /></p>
+</details>
+<details class="note"><summary>目标 7</summary><p><img alt="" src="../../img/FF/20-%E7%9B%AE%E6%A0%877.png" /></p>
+</details>
+<details class="note"><summary>总结</summary><p><img alt="" src="../../img/FF/20-%E5%A4%A7%E6%80%BB%E7%BB%93.png" />
+<img alt="" src="../../img/FF/20-%E5%BA%94%E8%AF%95%E6%8A%80%E5%B7%A7.png" />
+<img alt="" src="../../img/FF/20-cookie%E5%85%B6%E4%BB%96%E7%BB%86%E8%8A%82.png" /></p>
+</details>
+</details>
+<details class="info"><summary>Info</summary><p>$ node test.js</p>
 <p>users.json: 保留 []，或用 try...catch...，失败了就变成空</p>
 <p>json 里只能写 ""</p>
+<ul>
+<li>JSON.parse(): 反序列化</li>
+<li>JSON.stringify(): 序列化</li>
+</ul>
+<p>Application -&gt; Storage -&gt; Cookies</p>
+<p>home.html 读 cookie: </p>
+<ol>
+<li>google: nodejs 中文文档   </li>
+<li>里面的 http</li>
+</ol>
+<p>为什么经常要加 toString ?</p>
+</details>
+<details class="note"><summary>session</summary><p>Session 保存在服务器的文件中</p>
+<p>服务器一般会将 Session id 放到 Cookie 中，发放给浏览器</p>
+</details>
+<details class="question"><summary>注销功能一般如何实现</summary><p>安全起见，不能用 JS 删 Cookie，应该使用 HTTP only 的 Cookie，然后 JS 发请求让服务器删 Cookie</p>
+<p>安全起见，除了删除浏览器端的 Cookie，还需要把对应的 Session 数据删掉</p>
+</details>
                 
               
               
