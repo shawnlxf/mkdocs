@@ -1080,6 +1080,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../MDN-Web/js/" title="Web-JS" class="md-nav__link">
+      Web-JS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Network/w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
       W3c-DOM-Document
     </a>
@@ -1740,6 +1752,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Blog/11/" title="11-Module Pattern" class="md-nav__link">
+      11-Module Pattern
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1774,6 +1798,31 @@
 <li>URL</li>
 <li>HTML</li>
 </ol>
+</details>
+<details class="quote"><summary>IIFE</summary><p>An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">statements</span>
+<span class="p">})();</span>
+</code></pre></div>
+
+<details class="success"><summary>Examples:</summary><p>The function becomes a function expression which is immediately executed. The variable within the expression can not be accessed from outside it.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">aName</span> <span class="o">=</span> <span class="s2">&quot;Barry&quot;</span><span class="p">;</span>
+<span class="p">})();</span>
+<span class="c1">// Variable aName is not accessible from the outside scope</span>
+<span class="nx">aName</span> <span class="c1">// throws &quot;Uncaught ReferenceError: aName is not defined&quot;</span>
+</code></pre></div>
+
+<p>Assigning the IIFE to a variable stores the function's return value, not the function definition itself.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Barry&quot;</span><span class="p">;</span> 
+    <span class="k">return</span> <span class="nx">name</span><span class="p">;</span> 
+<span class="p">})();</span> 
+<span class="c1">// Immediately creates the output: </span>
+<span class="nx">result</span><span class="p">;</span> <span class="c1">// &quot;Barry&quot;</span>
+</code></pre></div>
+
+</details>
 </details>
                 
               
