@@ -103,6 +103,7 @@ nav:
       - Learn-对象: MDN-Learn/js-3.md
       - Web-ref: MDN-Web/js-ref.md
       - Web-ref-built-ins: MDN-Web/js-ref-built-ins.md
+      - Web-JS: MDN-Web/js.md
       - W3c-DOM-Document: Network/w3c-dom-document.md
       - W3c-DOM-Element: Network/w3c-dom-element.md
       - W3c-DOM-Window: Network/w3c-dom-window.md
@@ -154,3 +155,4 @@ nav:
       - 8-JS 对象基本用法: Blog/8.md
       - 9-JS 函数的执行时机: Blog/9.md
       - 10-jQuery 的功能: Blog/10.md
+      - 11-Module Pattern: Blog/11.md
