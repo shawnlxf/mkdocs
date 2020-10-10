@@ -1,4 +1,5 @@
 
+* [MDN Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [菜鸟](https://www.runoob.com/js/js-function-closures.html) | [w3](https://www.w3schools.com/js/js_function_closures.asp) | [w3c](https://www.w3school.com.cn/js/js_function_closures.asp)
 
 
@@ -110,7 +111,8 @@ A closure is the combination of a function bundled together (enclosed) with refe
         Those three public functions are closures that share the same lexical environment.
 
         ``` javascript
-        //You could store this function in a separate variable makeCounter, and then use it to create several counters.
+        // You could store this function in a separate variable makeCounter, 
+        // and then use it to create several counters.
         var makeCounter = function() {
           var privateCounter = 0;
           function changeBy(val) {

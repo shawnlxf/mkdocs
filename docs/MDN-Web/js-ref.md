@@ -185,8 +185,73 @@
         // Note: Static methods are not properties of this. They are properties of the class itself.
         ```
 
+    ??? note "this and object conversion"
 
+        ``` javascript
+        function add(c, d) {
+          return this.a + this.b + c + d;
+        }
 
+        var o = {a: 1, b: 3};
+
+        // The first parameter is the object to use as
+        // 'this', subsequent parameters are passed as 
+        // arguments in the function call
+        add.call(o, 5, 7); // 16
+
+        // The first parameter is the object to use as
+        // 'this', the second is an array whose
+        // members are used as the arguments in the function call
+        add.apply(o, [10, 20]); // 34
+        ```
+
+        Note that in non–strict mode, with call and apply, 如果传递给 this 的值不是对象, 则将尝试将其转换为对象. Values null and undefined become the global object. Primitives like 7 or 'foo' will be converted to an Object using the related constructor, so the primitive number 7 is converted to an object as if by new Number(7) and the string 'foo' to an object as if by new String('foo'), e.g.
+
+        ``` javascript
+        function bar() {
+          console.log(Object.prototype.toString.call(this));
+        }
+
+        bar.call(7);     // [object Number]
+        bar.call('foo'); // [object String]
+        bar.call(undefined); // [object global]
+        ```
+
+    ??? note "As an object method"
+
+        When a function is called as a method of an object, its `this` is set to the object the method is called on (调用该方法的对象).
+
+        ``` javascript
+        var o = {
+          prop: 37,
+          f: function() {
+            return this.prop;
+          }
+        };
+
+        console.log(o.f()); // 37
+        ```
+
+        ``` javascript
+        // This demonstrates that it matters only that 
+        // the function was invoked from the f member of o.
+        var o = {prop: 37};
+
+        function independent() {
+          return this.prop;
+        }
+
+        o.f = independent;
+
+        console.log(o.f()); // 37
+        ```
+
+        ``` javascript
+        // Similarly, the this binding is only affected 
+        // by the most immediate member reference.
+        o.b = {g: independent, prop: 42};
+        console.log(o.b.g()); // 42
+        ```
 
 
 ??? note "[{} Object initializer/literal syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)"

@@ -26,7 +26,7 @@
             * MDN
             * w3schools / 菜鸟
 
-        2. 查询 / 博客 / 公众号 (查漏补缺)
+        2. 查询 / 博客 / 公众号 (查漏补缺): google 搜索 "前端 学习"
 
             * [php 中文网](https://www.php.cn/web-designer.html)
             * [廖雪峰](https://www.liaoxuefeng.com/)
@@ -55,11 +55,11 @@
 
     ??? note "3. 视频 (看项目实践)"
 
-        * 慕课网 + 哔哩哔哩 + 腾讯课堂 + php 中文网
+        * [哔哩哔哩（经验分享）](https://space.bilibili.com/143487021/fans/follow)
+        * 慕课网
         * 饥人谷
         * youtube
-        * [黑马项目](http://www.itcast.cn/course/web.shtml)
-        * [百度前端](http://ife.baidu.com/#)
+        * [黑马项目](http://www.itcast.cn/course/web.shtml) | [尚硅谷](http://www.atguigu.com/web/)
 
 ??? abstract "学习分类"
 
