@@ -1175,8 +1175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../js/" title="Web-JS" class="md-nav__link">
-      Web-JS
+    <a href="../js-closure/" title="Web-闭包" class="md-nav__link">
+      Web-闭包
     </a>
   </li>
 
@@ -1859,6 +1859,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Blog/12/" title="12-期中考试" class="md-nav__link">
+      12-期中考试
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2102,6 +2114,65 @@ tag`string text ${expression} string text`
 
 <span class="k">new</span> <span class="nx">Example</span><span class="p">();</span> <span class="c1">// [&#39;constructor&#39;, &#39;first&#39;, &#39;second&#39;]</span>
 <span class="c1">// Note: Static methods are not properties of this. They are properties of the class itself.</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>this and object conversion</summary><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">a</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">b</span> <span class="o">+</span> <span class="nx">c</span> <span class="o">+</span> <span class="nx">d</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">3</span><span class="p">};</span>
+
+<span class="c1">// The first parameter is the object to use as</span>
+<span class="c1">// &#39;this&#39;, subsequent parameters are passed as </span>
+<span class="c1">// arguments in the function call</span>
+<span class="nx">add</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span> <span class="c1">// 16</span>
+
+<span class="c1">// The first parameter is the object to use as</span>
+<span class="c1">// &#39;this&#39;, the second is an array whose</span>
+<span class="c1">// members are used as the arguments in the function call</span>
+<span class="nx">add</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]);</span> <span class="c1">// 34</span>
+</code></pre></div>
+
+<p>Note that in non–strict mode, with call and apply, 如果传递给 this 的值不是对象, 则将尝试将其转换为对象. Values null and undefined become the global object. Primitives like 7 or 'foo' will be converted to an Object using the related constructor, so the primitive number 7 is converted to an object as if by new Number(7) and the string 'foo' to an object as if by new String('foo'), e.g.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">bar</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="nx">bar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>     <span class="c1">// [object Number]</span>
+<span class="nx">bar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">);</span> <span class="c1">// [object String]</span>
+<span class="nx">bar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span> <span class="c1">// [object global]</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>As an object method</summary><p>When a function is called as a method of an object, its <code>this</code> is set to the object the method is called on (调用该方法的对象).</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">prop</span><span class="o">:</span> <span class="mi">37</span><span class="p">,</span>
+  <span class="nx">f</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">prop</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">f</span><span class="p">());</span> <span class="c1">// 37</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">// This demonstrates that it matters only that </span>
+<span class="c1">// the function was invoked from the f member of o.</span>
+<span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span><span class="nx">prop</span><span class="o">:</span> <span class="mi">37</span><span class="p">};</span>
+
+<span class="kd">function</span> <span class="nx">independent</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">prop</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">o</span><span class="p">.</span><span class="nx">f</span> <span class="o">=</span> <span class="nx">independent</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">f</span><span class="p">());</span> <span class="c1">// 37</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">// Similarly, the this binding is only affected </span>
+<span class="c1">// by the most immediate member reference.</span>
+<span class="nx">o</span><span class="p">.</span><span class="nx">b</span> <span class="o">=</span> <span class="p">{</span><span class="nx">g</span><span class="o">:</span> <span class="nx">independent</span><span class="p">,</span> <span class="nx">prop</span><span class="o">:</span> <span class="mi">42</span><span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">b</span><span class="p">.</span><span class="nx">g</span><span class="p">());</span> <span class="c1">// 42</span>
 </code></pre></div>
 
 </details>
