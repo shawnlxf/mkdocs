@@ -232,9 +232,43 @@
 
         ??? success "Using apply and built-in functions"
 
+            ``` javascript
+            // min/max number in an array
+            const numbers = [5, 6, 2, 3, 7];
 
+            // using Math.min/Math.max apply
+            let max = Math.max.apply(null, numbers); 
+            // This about equal to Math.max(numbers[0], ...)
+            // or Math.max(5, 6, ...)
 
+            let min = Math.min.apply(null, numbers);
 
+            // vs. simple loop based algorithm
+            max = -Infinity, min = +Infinity;
+
+            for (let i = 0; i < numbers.length; i++) {
+              if (numbers[i] > max) {
+                max = numbers[i];
+              }
+              if (numbers[i] < min) {
+                min = numbers[i];
+              }
+            }
+            ```
+
+            The JavaScriptCore engine has hard-coded argument limit of 65536.
+
+        ??? success "Using apply to chain constructors (similar to Java)"
+
+            ``` javascript
+            // create a global Function method called construct
+            // 相对较新，还有其他方法
+            Function.prototype.construct = function(aArgs) {
+              let oNew = Object.create(this.prototype);
+              this.apply(oNew, aArgs);
+              return oNew;
+            };
+            ```
 
 
 

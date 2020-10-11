@@ -1,5 +1,5 @@
 
-## [w3c HTTP](https://www.w3schools.com/tags/ref_httpmessages.asp)
+## [w3c HTTP](https://www.w3schools.com/tags/ref_httpmessages.asp) | [菜鸟1](https://www.runoob.com/tags/html-httpmessages.html) | [菜鸟2](https://www.runoob.com/http/http-status-codes.html)
 
 ??? abstract "HTTP Request Methods"
 
@@ -50,6 +50,30 @@
     ??? note "OPTIONS"
 
         describes the communication options for the target resource.
+
+??? abstract "HTTP response status codes"
+
+    1. Informational responses (100–199),
+    * Successful responses (200–299),
+    * Redirects (300–399),
+    * Client errors (400–499),
+    * and Server errors (500–599).
+
+    ??? note "常用"
+
+        * 200 OK: 请求成功
+        * 206 Partial Content: 服务器传送 (delivering) 部分资源因为客户端发送了 a range header
+        * 301 Moved Permanently: 所请求的页面已经转移至 (move to) 新的 URL
+        * 302 Found: 所请求的页面已经临时 (temporarily) 转移至新的 URL
+        * 400 Bad Request: 因为语法错误，服务器无法理解请求。
+        * 401 Unauthorized: 合法请求，但服务器拒绝响应此请求。因为被请求的页面需要身份验证 (authentication)，客户端没有提供或者身份验证失败。
+        * 403 Forbidden: 合法请求，但服务器拒绝响应此请求。
+        * 404 Not Found: 服务器无法找到被请求的页面。
+        * 500 Internal Server Error: 通用 (generic) 的错误消息，当没有更特定 (specific) 的消息适合时给出 
+        * 502 Bad Gateway: 服务器充当网关 (gateway) 或者代理 (proxy) 的角色时，从上游服务器收到一个无效的响应。
+        
+
+
 
 
 ## MDN

@@ -63,16 +63,6 @@
         * Make requests to the server without reloading the page
         * Receive and work with data from the server
 
-    ??? note "[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)"
-
-        [HTTP Messages](https://www.w3schools.com/tags/ref_httpmessages.asp)
-
-        1. Informational responses (100–199),
-        * Successful responses (200–299),
-        * Redirects (300–399),
-        * Client errors (400–499),
-        * and Server errors (500–599).
-
     ??? note "您可以通过两种方式访问​​该数据："
 
         * httpRequest.responseText – 以文本字符串形式返回服务器响应
