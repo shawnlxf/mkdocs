@@ -1161,32 +1161,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-dom-document/" title="W3c-DOM-Document" class="md-nav__link">
-      W3c-DOM-Document
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Network/w3c-dom-element/" title="W3c-DOM-Element" class="md-nav__link">
-      W3c-DOM-Element
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Network/w3c-dom-window/" title="W3c-DOM-Window" class="md-nav__link">
-      W3c-DOM-Window
+    <a href="../../Network/w3-dom/" title="W3-DOM" class="md-nav__link">
+      W3-DOM
     </a>
   </li>
 
@@ -2110,7 +2086,41 @@
 </code></pre></div>
 
 </details>
-<details class="success"><summary>Using apply and built-in functions</summary></details>
+<details class="success"><summary>Using apply and built-in functions</summary><div class="highlight"><pre><span></span><code><span class="c1">// min/max number in an array</span>
+<span class="kr">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+
+<span class="c1">// using Math.min/Math.max apply</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">numbers</span><span class="p">);</span> 
+<span class="c1">// This about equal to Math.max(numbers[0], ...)</span>
+<span class="c1">// or Math.max(5, 6, ...)</span>
+
+<span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">numbers</span><span class="p">);</span>
+
+<span class="c1">// vs. simple loop based algorithm</span>
+<span class="nx">max</span> <span class="o">=</span> <span class="o">-</span><span class="kc">Infinity</span><span class="p">,</span> <span class="nx">min</span> <span class="o">=</span> <span class="o">+</span><span class="kc">Infinity</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">max</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">min</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">min</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>The JavaScriptCore engine has hard-coded argument limit of 65536.</p>
+</details>
+<details class="success"><summary>Using apply to chain constructors (similar to Java)</summary><div class="highlight"><pre><span></span><code><span class="c1">// create a global Function method called construct</span>
+<span class="c1">// 相对较新，还有其他方法</span>
+<span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">construct</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">aArgs</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">oNew</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">oNew</span><span class="p">,</span> <span class="nx">aArgs</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">oNew</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+
+</details>
 </details>
 </details>
                 
