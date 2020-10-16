@@ -1095,8 +1095,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-js-regexp/" title="W3c-JS-RegExp" class="md-nav__link">
-      W3c-JS-RegExp
+    <a href="../../Network/w3-javascript/" title="W3-JavaScript" class="md-nav__link">
+      W3-JavaScript
     </a>
   </li>
 
@@ -1107,20 +1107,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-js-string/" title="W3c-JS-String" class="md-nav__link">
-      W3c-JS-String
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Network/w3c-js-array/" title="W3c-JS-Array" class="md-nav__link">
-      W3c-JS-Array
+    <a href="../../Network/w3-js-tutorial/" title="W3-JS-Tutorial" class="md-nav__link">
+      W3-JS-Tutorial
     </a>
   </li>
 
@@ -1143,8 +1131,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Network/w3c-js-json/" title="W3c-JS-JSON" class="md-nav__link">
-      W3c-JS-JSON
+    <a href="../../Network/w3c-js-math/" title="W3c-JS-Math" class="md-nav__link">
+      W3c-JS-Math
     </a>
   </li>
 
@@ -1169,18 +1157,6 @@
   <li class="md-nav__item">
     <a href="../../Network/w3c-js-jquery/" title="W3c-JS-jQuery" class="md-nav__link">
       W3c-JS-jQuery
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../Network/w3c-js-math/" title="W3c-JS-Math" class="md-nav__link">
-      W3c-JS-Math
     </a>
   </li>
 
@@ -1846,6 +1822,217 @@ unique(array) 的值为 [1,5,2,3,4]
     说出每个方案缺点的，再额外每个方案加 2 分。
 </code></pre></div>
 
+<details class="quote"><summary>引用</summary><ul>
+<li><a href="https://www.jianshu.com/p/79fe3489600f">JS数组去重的6种算法实现</a></li>
+<li><a href="https://juejin.im/post/6844903602197102605">7种方法实现数组去重</a></li>
+<li><a href="https://segmentfault.com/a/1190000016418021">JavaScript数组去重（12种方法，史上最全）</a></li>
+</ul>
+</details>
+<details class="note"><summary>1. 遍历数组法</summary><p>最简单的去重方法，实现思路：新建一新数组，遍历传入数组，值不在新数组就加入该新数组中；注意点：判断值是否在数组的方法“indexOf”是 ECMAScript5 方法，IE8 以下不支持，需多写一些兼容低版本浏览器代码</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">tempArr</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">tempArr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+      <span class="nx">tempArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">tempArr</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>2.对象键值对法</summary><p>该方法执行的速度比其他任何方法都快，就是占用的内存大一些，实现思路：新建一 js 对象以及新数组，遍历传入数组时，判断值是否为 js 对象的键，不是的话给对象新增该键并放入新数组。注意点：判断是否为 js 对象键时，会自动对传入的键执行“toString()”，不同的键可能会被误认为一样；例如： a[1]、a["1"] 。解决上述问题还是得调“indexOf”。</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="c1">// 速度最快， 占空间最多（空间换时间） </span>
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">json</span> <span class="o">=</span> <span class="p">{},</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">[],</span> <span class="nx">val</span><span class="p">,</span> <span class="nx">type</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">val</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="c1">//判断val是什么数据类型</span>
+    <span class="nx">type</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">val</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;判断类型&quot;</span> <span class="o">+</span> <span class="p">[</span><span class="nx">type</span><span class="p">]);</span>
+    <span class="c1">//判断值是否为js对象的键，不是的话给对象新增该键并放入新数组</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">json</span><span class="p">[</span><span class="nx">val</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">json</span><span class="p">[</span><span class="nx">val</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">type</span><span class="p">];</span>
+      <span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">json</span><span class="p">[</span><span class="nx">val</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">json</span><span class="p">[</span><span class="nx">val</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span>
+      <span class="nx">newArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">newArr</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>3. 数组下标判断法</summary><p>还是得调用“indexOf”，性能跟方法1差不多，实现思路：如果当前数组的第 i 项在当前数组中第一次出现的位置不是 i，那么表示第 i 项是重复的，忽略掉。否则存入结果数组。</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]];</span> <span class="c1">//结果数组 </span>
+  <span class="c1">//从第二项开始遍历 </span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//如果当前数组的第i项在当前数组中第一次出现的位置不是i， </span>
+    <span class="c1">//那么表示第i项是重复的，忽略掉。否则存入结果数组 </span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="o">===</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">n</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">n</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>4. 排序后相邻去除法</summary><p>虽然原生数组的 "sort" 方法排序结果不怎么靠谱，但在不注重顺序的去重里该缺点毫无影响。实现思路：给传入数组排序，排序后相同值相邻，然后遍历时新数组只加入不与前一值重复的值。</p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">re</span> <span class="o">=</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]];</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">!==</span> <span class="nx">re</span><span class="p">[</span><span class="nx">re</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nx">re</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">re</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>5. 通过 hash 表</summary><p>因为 hash 表存的值是存的地址，放在堆内存中，所以有多少个不重复的元素，就要分多少个内存来存放，所以这种方法比较占内存，但是相比之下，这种的运算运动是最快的，这也就是用空间来换取时间了，数据量比较小，推荐用此方法</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// ES5</span>
+<span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">tempArr</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">hash</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">tempArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+      <span class="nx">hash</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">tempArr</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>6. set与解构赋值去重</summary><p>ES6 中新增了数据类型 set，set 的一个最大的特点就是数据不重复。Set函数可以接受一个数组（或类数组对象）作为参数来初始化，利用该特性也能做到给数组去重</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// ES6</span>
+<span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="kd">function</span> <span class="nx">unique</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">[...</span><span class="k">new</span> <span class="nx">Set</span><span class="p">(</span><span class="nx">arr</span><span class="p">)]</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">(</span><span class="nx">array</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<details class="note"><summary>方方的答案</summary><p>不使用 Set，借鉴计数排序的原理</p>
+<div class="highlight"><pre><span></span><code><span class="nx">unique</span> <span class="o">=</span> <span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">hash</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nx">hash</span><span class="p">[</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="p">}</span>
+    <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">k</span> <span class="k">in</span> <span class="nx">hash</span><span class="p">){</span>
+        <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">k</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">result</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>方案一缺点：只支持数字或者字符串数组，如果数组里面有对象，比如 array = [{number:1}, 2]，就会出错。</p>
+<p>接下来使用 Set</p>
+<div class="highlight"><pre><span></span><code><span class="nx">unique</span> <span class="o">=</span> <span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[...</span><span class="k">new</span> <span class="nx">Set</span><span class="p">(</span><span class="nx">array</span><span class="p">)]</span> 
+    <span class="c1">// 或者 return Array.from(new Set(array))</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>方案二缺点：API 太新，旧浏览器不支持。</p>
+<p>接下来使用 Map</p>
+<div class="highlight"><pre><span></span><code><span class="nx">unique</span> <span class="o">=</span> <span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Map</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">map</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]))</span> <span class="p">{</span> <span class="c1">// 判断 map 中是否已有该 key </span>
+      <span class="k">continue</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>  <span class="c1">// 如果 map 中没有该 key，就加入 result 中</span>
+      <span class="nx">map</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="kc">true</span><span class="p">);</span>  
+      <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span> 
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>方案三缺点：API 太新，旧浏览器不支持。</p>
+</details>
+</details>
+<details class="question"><summary>6. 你如何理解 JS 的继承？基于原型的继承，基于 class 的继承</summary><p>基于原型</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Parent</span><span class="p">(</span><span class="nx">name1</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name1</span> <span class="o">=</span> <span class="nx">name1</span>
+<span class="p">}</span>
+<span class="nx">Parent</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">pMethod</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name1</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">Child</span><span class="p">(</span><span class="nx">name2</span><span class="p">,</span> <span class="nx">name1</span><span class="p">){</span>
+    <span class="nx">Parent</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name1</span><span class="p">)</span> <span class="c1">// 得分点</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name2</span> <span class="o">=</span> <span class="nx">name2</span>
+<span class="p">}</span>
+<span class="nx">Child</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">Parent</span><span class="p">.</span><span class="nx">prototype</span> 
+<span class="c1">//上面这句代码的古板写法应该是下面三句</span>
+<span class="c1">//const empty = function(){}</span>
+<span class="c1">//empty.prototype = Parent.prototype</span>
+<span class="c1">//Child.prototype = new empty()</span>
+<span class="c1">//古板写法额外加两分</span>
+
+<span class="nx">Child</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">cMethod</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name2</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">//如果写成下面这种，就扣两分</span>
+<span class="c1">//Child.prototype = {</span>
+<span class="c1">//    cMethod: function(){</span>
+<span class="c1">//        console.log(this.name2)</span>
+<span class="c1">//    }</span>
+<span class="c1">//}</span>
+</code></pre></div>
+
+<p>基于 class</p>
+<div class="highlight"><pre><span></span><code><span class="kr">class</span> <span class="nx">Parent</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name1</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name1</span> <span class="o">=</span> <span class="nx">name1</span>
+    <span class="p">}</span>
+    <span class="nx">pMethod</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name1</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kr">class</span> <span class="nx">Child</span> <span class="kr">extends</span> <span class="nx">Parent</span><span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name2</span><span class="p">,</span> <span class="nx">name1</span><span class="p">){</span>
+        <span class="kr">super</span><span class="p">(</span><span class="nx">name1</span><span class="p">)</span> <span class="c1">// 得分点</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name2</span> <span class="o">=</span> <span class="nx">name2</span>
+    <span class="p">}</span>
+    <span class="nx">cMethod</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name2</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</details>
+<details class="question"><summary>DOM 事件相关</summary><ol>
+<li>事件委托：由于事件会在冒泡阶段向上传播到父节点，因此可以把子节点的监听函数定义在父节点上，由父节点的监听函数统一处理多个子元素的事件。</li>
+<li>DOM 中可以使用 event.preventDefault() 方法阻止默认动作</li>
+<li>event.stopPropagation() 方法阻止事件冒泡到父元素，阻止任何父事件处理程序被执行。</li>
+</ol>
 </details>
                 
               
