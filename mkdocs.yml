@@ -105,14 +105,12 @@ nav:
       - Web-ref-built-ins: MDN-Web/js-ref-built-ins.md
       - Web-闭包: MDN-Web/js-closure.md
       - W3-DOM: Network/w3-dom.md
-      - W3c-JS-RegExp: Network/w3c-js-regexp.md
-      - W3c-JS-String: Network/w3c-js-string.md
-      - W3c-JS-Array: Network/w3c-js-array.md
+      - W3-JavaScript: Network/w3-javascript.md
+      - W3-JS-Tutorial: Network/w3-js-tutorial.md
       - W3c-JS-Number: Network/w3c-js-number.md
-      - W3c-JS-JSON: Network/w3c-js-json.md
+      - W3c-JS-Math: Network/w3c-js-math.md
       - W3c-JS-AJAX: Network/w3c-js-ajax.md
       - W3c-JS-jQuery: Network/w3c-js-jquery.md
-      - W3c-JS-Math: Network/w3c-js-math.md
       - 方方-概述/内存图: FF/10.md
       - 方方-语法/数据类型/运算符: FF/11.md
       - 方方-对象/对象分类: FF/12.md

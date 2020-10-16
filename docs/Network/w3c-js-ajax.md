@@ -1,6 +1,7 @@
 
 ## [AJAX (Asynchronous JavaScript And XML)](https://www.w3schools.com/js/js_ajax_intro.asp)
 
+方方：Promise 用于避免回调地域，让代码看起来更同步
 
 ??? info
 
