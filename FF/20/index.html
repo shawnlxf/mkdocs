@@ -1347,6 +1347,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mvc" class="md-nav__link">
+    MVC
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1792,6 +1799,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Blog/13/" title="13-浅析 MVC" class="md-nav__link">
+      13-浅析 MVC
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1851,6 +1870,13 @@
         <li class="md-nav__item">
   <a href="#ajax-cookiesession" class="md-nav__link">
     动态服务器 / Ajax 实战：Cookie、Session
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvc" class="md-nav__link">
+    MVC
   </a>
   
 </li>
@@ -2209,6 +2235,27 @@ ping qq.com
 <details class="question"><summary>注销功能一般如何实现</summary><p>安全起见，不能用 JS 删 Cookie，应该使用 HTTP only 的 Cookie，然后 JS 发请求让服务器删 Cookie</p>
 <p>安全起见，除了删除浏览器端的 Cookie，还需要把对应的 Session 数据删掉</p>
 </details>
+<h2 id="mvc">MVC<a class="headerlink" href="#mvc" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>yarn init -y
+yarn add jquery
+// google: parcel vue 完整版，package.json 加 &quot;alias&quot;
+yarn add vue
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>npm init
+npm i jquery
+</code></pre></div>
+
+<ul>
+<li>不要用直接操作 css 相关的 api，如 css(), show(), hide()</li>
+<li>
+<p>改成 addClass('active'), removeClass('active')，js 不用管 css 怎么写</p>
+</li>
+<li>
+<p>引入类， 引入继承，路由</p>
+</li>
+<li>解耦</li>
+</ul>
                 
               
               
