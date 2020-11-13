@@ -17,6 +17,21 @@
 * vim 技巧
 * vscode 快捷键
 
+??? tip "prayers"
+
+    ![](../img/Others/prayers-1.png)
+    ![](../img/Others/prayers-2.png)
+    ![](../img/Others/prayers-3.png)
+
+
+!!! note "[打字训练](https://dytiger.github.io/index.html)"
+
+??? note "小鹤双拼"
+
+    ![](img/Others/小鹤-1.png)
+    ![](img/Others/小鹤-2.png)
+    ![](img/Others/小鹤-3.png)
+
 ??? abstract "学习途径"
 
     ??? note "1. 网上资料"
@@ -172,5 +187,4 @@
         * 英语单词
 
     * 博客记录
-
 

@@ -61,12 +61,9 @@ nav:
           - 1: Others/English/1.md
           - 2: Others/English/2.md
           - 3: Others/English/3.md
-      - MDN-术语表: mdn-glossary.md
+      - w3schools: w3.md
       - Learn-大纲: MDN-Learn/0.md
-      - Learn-Web 入门: MDN-Learn/1.md
-      - Learn-常见问题: MDN-Learn/10.md
       - Web-大纲: MDN-Web/0.md
-      - Web-HTTP: MDN-Web/http-1.md
       - 项目:
           - 1: Projects/1.md
       - Books:
@@ -121,6 +118,7 @@ nav:
       - 方方-封装 DOM: FF/18.md
       - 方方-DOM 事件与事件委托: FF/19.md
       - 方方-前后端分离: FF/20.md
+      - 方方-webpack: FF/21.md
   #- Vue.js:
   #- 小程序:
   #- React.js:
@@ -131,6 +129,11 @@ nav:
       - 方方-快捷键/node.js: FF/1.md
       - 方方-git/markdown: FF/2.md
       - 方方-HTTP入门/请求与响应/node.js: FF/9.md
+      - 方方-vue: FF/22.md
+      - Learn-Web 入门: MDN-Learn/1.md
+      - Learn-常见问题: MDN-Learn/10.md
+      - Web-HTTP: MDN-Web/http-1.md
+      - MDN-术语表: mdn-glossary.md
       - 工具:
           - 常用软件: Others/Tools/software.md
           - Git: Others/Tools/git.md
@@ -153,3 +156,4 @@ nav:
       - 10-jQuery 的功能: Blog/10.md
       - 11-Module Pattern: Blog/11.md
       - 12-期中考试: Blog/12.md
+      - 13-浅析 MVC: Blog/13.md

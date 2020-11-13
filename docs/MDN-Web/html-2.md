@@ -76,24 +76,24 @@
     这样的信息通常可以作为工具提示 (tooltip) 呈现给用户，但不是必须的。
 
 
-??? abstract "元素是全页面唯一的，用id；否则，用id"
+??? abstract "元素是全页面唯一的，用 id；否则，用 class"
 
-    ??? failure "不要万不得已不用id"
+    ??? failure "不要万不得已不用 id"
 
         1. 因为重复不报错
-        2. 有忌讳，console里window.打出的所有单词都不行(window已有的全局属性)   
-        3. 可以写但是js无法找到，只能通过document.getElementById('top')  
+        2. 有忌讳，console 里 window.打出的所有单词都不行(window 已有的全局属性)   
+        3. 可以写但是js无法找到，只能通过 document.getElementById('top')  
 
-    ??? note "id的作用："
+    ??? note "id 的作用："
 
-        1. CSS相关
-        2. JS相关
+        1. CSS 相关
+        2. JS 相关
             
             > xxx.style.border = "1px solid red";
 
     ??? note "tabindex:"
 
-        * 0是最后一个
+        * 0 是最后一个
         * -1：不访问
 
     ??? note "element.style:"
