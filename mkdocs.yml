@@ -69,8 +69,9 @@ nav:
           - MkDocs: Others/Tools/mkdocs.md
           - markdown: Others/Language/markdown.md
   - Health:
-      - 1-心跳大力: Health/1.md
+      - 1-呼吸/气功/冥想/泡脚: Health/1.md
       - 2-高血压: Health/2.md
+      - 3-苦行: Health/3.md
   - 回收站:
       - 前端学习: index-frontend.md
       - Learn-大纲: MDN-Learn/0.md
