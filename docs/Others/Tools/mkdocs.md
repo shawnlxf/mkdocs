@@ -115,8 +115,10 @@
 * Meta-Data
 
 ### 6. Deploying your docs(部署文档)
+
 * Project Pages
-    * $ mkdocs gh-deploy
+
+        $ mkdocs gh-deploy
 
 
 ## 5 mkdocs 教程 

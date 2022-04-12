@@ -50,28 +50,31 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: 
-      - PLC 学习: index.md
-      - 日常:
-          - ninja 说明书: help.md
+  - 工作: 
+      - PLC: index.md
+  - 学习:
+      - 干法:
           - 万维钢-精英日课1: Books/精英日课1.md
-          - 圣经: Books/圣经.md
           - 精要主义: Books/精要主义.md
-      - English 日常:
+      - 单词:
           - 1: Others/English/1.md
           - 2: Others/English/2.md
           - 3: Others/English/3.md
-      - 方方-git/markdown: FF/2.md
+      - 方方-git/markdown 及其他: FF/2.md
       - 工具:
           - 常用软件: Others/Tools/software-2.md
           - Git: Others/Tools/git.md
           - Github: Others/Tools/github.md
           - MkDocs: Others/Tools/mkdocs.md
+          - Cmder: Others/Tools/cmder.md
+          - npm/yarn: Others/Tools/npm-yarn.md
+      - 语言:
           - markdown: Others/Language/markdown.md
-  - Health:
-      - 1-呼吸/气功/冥想/泡脚: Health/1.md
-      - 2-高血压: Health/2.md
-      - 3-苦行: Health/3.md
+          - bash: Others/Language/bash.md
+  - 生活:
+      - 健康:
+          - 1-高血压: Health/1.md
+          - 2-预防冠心病/血栓: Health/2.md
   - 回收站:
       - 前端学习: index-frontend.md
       - Learn-大纲: MDN-Learn/0.md
@@ -139,12 +142,10 @@ nav:
       - 项目-前端:
           - 1: Projects/1.md
       - Books-前端:
-          - 你不知道的 JavaScript: Books/你不知道的JavaScript.md
           - 锋利的 jQuery: Books/锋利的jQuery.md
           - 网道-JavaScript:
               - 1-入门篇: Books/网道-JavaScript/1.md
               - 2-数据类型: Books/网道-JavaScript/2.md
-          - 网道-HTML: Books/网道-HTML.md
       - 其他:
           - 方方-杂项: FF/0.md
           - 方方-快捷键/node.js: FF/1.md

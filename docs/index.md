@@ -15,26 +15,15 @@
 
 
 
-    ??? note "2. 电子书 (PDF / 微信读书)"
+    ??? note "2. 电子书 (PDF / 微信读书 / 掌阅)"
 
 
     ??? note "3. 视频 (看项目实践)"
 
         * youtube
+        * [哔哩哔哩](https://space.bilibili.com/143487021/fans/follow)
 
 
-??? abstract "笔记内容"
-
-    * Learn
-
-        * 八方汇的笔记
-        * 书籍总结
-        * 项目总结
-
-    * 技能
-
-        * 计算机语言
-        * 工具
-        * 英语单词
+    
 
 

@@ -157,21 +157,21 @@
 
         选择器中含有 “·” , “#” , “(” 或 “]” 等特殊字符
 
-            ``` javascript
-            $("#id\\#b");
-            $("#id\\[1\\]");
-            ```
+        ``` javascript
+        $("#id\\#b");
+        $("#id\\[1\\]");
+        ```
 
     ??? note "2. 选择器中含有空格的注意事项"
 
-            ``` javascript
-            // 选取 class 为 "test" 的元素里的隐藏元素
-        	var $t_a = $('.test :hidden');
-            // 选取 隐藏的 class 为 "test" 的元素
-		    var $t_b = $('.test:hidden');
-            ```
+        ``` javascript
+        // 选取 class 为 "test" 的元素里的隐藏元素
+        var $t_a = $('.test :hidden');
+        // 选取 隐藏的 class 为 "test" 的元素
+		var $t_b = $('.test:hidden');
+        ```
 
-            后代选择器 和 过滤选择器 的不同
+        后代选择器 和 过滤选择器 的不同
 
 
 ## 3 jQuery 中的 DOM 操作
