@@ -1,4 +1,6 @@
 
+本地便签 -> 云笔记 -> mkdocs
+
 ??? note "小鹤双拼"
 
     * [打字训练](https://dytiger.github.io/index.html)

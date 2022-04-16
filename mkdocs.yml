@@ -30,6 +30,8 @@ extra:
       link: https://codepen.io/shawnlxf/pens/loved
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/shawn02745544
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com
 
 # Extensions
 markdown_extensions:
@@ -56,7 +58,10 @@ nav:
       - 干法:
           - 万维钢-精英日课1: Books/精英日课1.md
           - 精要主义: Books/精要主义.md
+          - 金发姑娘原则: Books/金发姑娘原则.md
+          - 做自己的心脑健康医生: Books/做自己的心脑健康医生.md
       - 单词:
+          - mkdocs-material: Others/English/mkdocs-material.md
           - 1: Others/English/1.md
           - 2: Others/English/2.md
           - 3: Others/English/3.md
@@ -75,6 +80,7 @@ nav:
       - 健康:
           - 1-高血压: Health/1.md
           - 2-预防冠心病/血栓: Health/2.md
+      - 应季蔬果: Books/应季蔬果.md
   - 回收站:
       - 前端学习: index-frontend.md
       - Learn-大纲: MDN-Learn/0.md
