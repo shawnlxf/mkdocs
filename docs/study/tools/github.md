@@ -13,7 +13,10 @@
 
     1. 新建仓库，如果您创建的是用户或组织站点，仓库名称必须为 <user\>.github.io 或 <organization\>.github.io。
     2. 上传代码到该仓库。
-    2. 在仓库名称下，单击Settings（设置）。
-    3. 在“GitHub Pages”下，使用 Source（源）下拉菜单选择发布源（如master branch）。
-    4. 要查看您已发布的站点，请在“GitHub Pages”下点击您的站点 URL。
-    ![](../../img/Blog/1-githubpages.png)
+    3. 在仓库名称下，单击Settings（设置）。
+    4. 在“GitHub Pages”下，使用 Source（源）下拉菜单选择发布源（如master branch）。
+    5. 要查看您已发布的站点，请在“GitHub Pages”下点击您的站点 URL。
+
+    ![Github Pages][Github Pages]
+
+  [Github Pages]: github/github-pages.png

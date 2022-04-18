@@ -26,10 +26,10 @@
 * 模板 
 
     * [mkdocs教程](https://cyent.github.io/markdown-with-mkdocs-material/install/local/)
-    * [Material模板](https://squidfunk.github.io/mkdocs-material/getting-started/)
     * [南开模板](https://www.nkdacs.com/tutorial/md-template/)
-    * [不要香菜](http://www.nocilantro.cn/front_end/html/)
-    * [机器学习](http://docs.sqdxwz.com/ai-note/)
+    * [Material模板](https://squidfunk.github.io/mkdocs-material/getting-started/)
+    * [WTF](https://wtfutil.com/)
+    * [BFE](https://www.bfe-networks.net/en_us/)
 
 ## 4. 官网文档
 
