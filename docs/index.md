@@ -1,13 +1,13 @@
 
-本地便签 -> 云笔记 -> mkdocs
+* 本地便签 -> 云笔记 -> mkdocs
 
 ??? note "小鹤双拼"
 
     * [打字训练](https://dytiger.github.io/index.html)
 
-    ![](img/Others/小鹤-1.png)
-    ![](img/Others/小鹤-2.png)
-    ![](img/Others/小鹤-3.png)
+    ![](images/小鹤-1.png)
+    ![](images/小鹤-2.png)
+    ![](images/小鹤-3.png)
 
 ??? abstract "学习途径"
 

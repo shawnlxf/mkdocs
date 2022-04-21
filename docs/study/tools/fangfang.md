@@ -372,7 +372,7 @@
 
 ??? note "GitHub"
 
-    ![](../img/FF/2-github.png)
+    ![Github][Github]
 
 ??? note "ssh key 验证身份"
 
@@ -508,7 +508,7 @@ yarn global add git-open
     git rebase -i xxxx
     ```
 
-    ![](../img/FF/2-git-rebase.png)
+    ![Git Rebase][Git Rebase]
 
     ??? question "出错怎么办："
 
@@ -541,6 +541,9 @@ yarn global add git-open
         $ git remote set-url origin git@xxxxxx
         ```
 
+  [Github]: fangfang/github.png
+  [Git Rebase]: fangfang/git-rebase.png
+
 ## 5 markdown
 
 * GitHub直接预览markdown
@@ -548,10 +551,11 @@ yarn global add git-open
 
 ??? note "markdown 语法"
 
-    ![](../img/FF/2-markdown.png)
-
     [其他标题语法](https://markdown-zh.readthedocs.io/en/latest/blockelements/#header)
 
+    ![Markdown][Markdown]
+
+  [Markdown]: fangfang/markdown.png
   
 
 
