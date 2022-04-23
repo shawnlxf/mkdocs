@@ -1,5 +1,15 @@
 
 * 本地便签 -> 云笔记 -> mkdocs
+* 工作日：云听；周末：B站，youtube
+* 世界：虚拟矩阵
+
+??? note "健康三要素：起居有常，食疗，运动"
+
+    > 网址：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w)
+
+    1. 自我同情
+    2. 元宇宙（自然+医院+广播）
+    3. 松弛疗法（正念呼吸）：放松肌肉，调整呼吸，集中意念
 
 ??? note "小鹤双拼"
 

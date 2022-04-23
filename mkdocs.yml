@@ -68,8 +68,8 @@ nav:
           - github: study/tools/github.md
           - mkdocs: study/tools/mkdocs.md
           - cmder: study/tools/cmder.md
-          - npm & yarn: study/tools/npm-and-yarn.md
-          - 方方-shell & git & markdown & 其他: study/tools/fangfang.md
+          - npm/yarn: study/tools/npm-and-yarn.md
+          - 方方-shell/git/markdown/其他: study/tools/fangfang.md
       - 语言:
           - markdown: study/computer-languages/markdown.md
           - bash: study/computer-languages/bash.md
@@ -79,15 +79,17 @@ nav:
           - 2-预防冠心病/血栓: life/health/2.md
           - 应季蔬果: life/health/应季蔬果.md
           - 做自己的心脑健康医生: life/health/做自己的心脑健康医生.md
+      - 做菜:
+          - 蒸菜: life/cooking/蒸菜.md
       - vpn: life/vpn.md
   - 放弃:
-      - 前端学习:
+      - 前端:
           - 其他:
               - 方方-杂项: front-end/FF/0.md
               - 方方-快捷键/node.js: front-end/FF/1.md
               - 方方-HTTP入门/请求与响应/node.js: front-end/FF/9.md
               - 方方-vue: front-end/FF/22.md
-              - Learn-Web 入门: front-end/MDN-Learn/1.md
+              - Learn-Web入门: front-end/MDN-Learn/1.md
               - Learn-常见问题: front-end/MDN-Learn/10.md
               - Web-HTTP: front-end/MDN-Web/http-1.md
               - MDN-术语表: front-end/mdn-glossary.md
@@ -139,28 +141,28 @@ nav:
               - 方方-数组: front-end/FF/13.md
               - 方方-函数: front-end/FF/14.md
               - 方方-运算符/总结: front-end/FF/15.md
-              - 方方-DOM 编程: front-end/FF/17.md
-              - 方方-封装 DOM: front-end/FF/18.md
-              - 方方-DOM 事件与事件委托: front-end/FF/19.md
+              - 方方-DOM编程: front-end/FF/17.md
+              - 方方-封装DOM: front-end/FF/18.md
+              - 方方-DOM事件与事件委托: front-end/FF/19.md
               - 方方-前后端分离: front-end/FF/20.md
               - 方方-webpack: front-end/FF/21.md
           - 算法:
               - 方方-伪代码与流程图: front-end/FF/16.md
           - Blog:
-              - 4-CSS 知识总结: front-end/Blog/4.md
-              - 5-浅析 URL: front-end/Blog/5.md
-              - 6-JavaScript 的诞生: front-end/Blog/6.md
-              - 7-JS 的基本语法: front-end/Blog/7.md
-              - 8-JS 对象基本用法: front-end/Blog/8.md
-              - 9-JS 函数的执行时机: front-end/Blog/9.md
-              - 10-jQuery 的功能: front-end/Blog/10.md
+              - 4-CSS知识总结: front-end/Blog/4.md
+              - 5-浅析URL: front-end/Blog/5.md
+              - 6-JavaScript的诞生: front-end/Blog/6.md
+              - 7-JS的基本语法: front-end/Blog/7.md
+              - 8-JS对象基本用法: front-end/Blog/8.md
+              - 9-JS函数的执行时机: front-end/Blog/9.md
+              - 10-jQuery的功能: front-end/Blog/10.md
               - 11-Module Pattern: front-end/Blog/11.md
               - 12-期中考试: front-end/Blog/12.md
-              - 13-浅析 MVC: front-end/Blog/13.md
+              - 13-浅析MVC: front-end/Blog/13.md
           - 项目-前端:
               - 1: front-end/Projects/1.md
           - Books-前端:
-              - 锋利的 jQuery: front-end/Books/锋利的jQuery.md
+              - 锋利的jQuery: front-end/Books/锋利的jQuery.md
               - 网道-JavaScript:
                   - 1-入门篇: front-end/Books/网道-JavaScript/1.md
                   - 2-数据类型: front-end/Books/网道-JavaScript/2.md
