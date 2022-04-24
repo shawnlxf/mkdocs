@@ -50,9 +50,18 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - 健康:
+      - index.md
+      - 1-高血压: health/1.md
+      - 2-预防冠心病/血栓: health/2.md
+      - 宜忌: health/宜忌.md
+      - 失眠星人自救指南: health/失眠星人自救指南.md
+      - 冠心病: health/冠心病.md
+      - 做自己的心脑健康医生: health/做自己的心脑健康医生.md
+      - 应季蔬果: health/应季蔬果.md
 #  - 工作:
   - 学习:
+      - study/index.md
       - 个人管理:
           - 万维钢-精英日课1: study/personal-control/精英日课1.md
           - 精要主义: study/personal-control/精要主义.md
@@ -74,97 +83,91 @@ nav:
           - markdown: study/computer-languages/markdown.md
           - bash: study/computer-languages/bash.md
   - 生活:
-      - 健康:
-          - 1-高血压: life/health/1.md
-          - 2-预防冠心病/血栓: life/health/2.md
-          - 应季蔬果: life/health/应季蔬果.md
-          - 做自己的心脑健康医生: life/health/做自己的心脑健康医生.md
       - 做菜:
           - 蒸菜: life/cooking/蒸菜.md
       - vpn: life/vpn.md
-  - 放弃:
-      - 前端:
-          - 其他:
-              - 方方-杂项: front-end/FF/0.md
-              - 方方-快捷键/node.js: front-end/FF/1.md
-              - 方方-HTTP入门/请求与响应/node.js: front-end/FF/9.md
-              - 方方-vue: front-end/FF/22.md
-              - Learn-Web入门: front-end/MDN-Learn/1.md
-              - Learn-常见问题: front-end/MDN-Learn/10.md
-              - Web-HTTP: front-end/MDN-Web/http-1.md
-              - MDN-术语表: front-end/mdn-glossary.md
-              - 工具-前端:
-                  - 常用软件: front-end/Others/Tools/software.md
-              - 语言:
-                  - JSON: front-end/Others/Language/json.md
-          - Home: front-end/index-frontend.md
-          - Learn-大纲: front-end/MDN-Learn/0.md
-          - Web-大纲: front-end/MDN-Web/0.md
-          - HTML:
-              - 方方-语法/标签: front-end/FF/3.md
-              - 方方-重点标签: front-end/FF/4.md
-              - Learn-简介: front-end/MDN-Learn/html-1.md
-              - Web-元素: front-end/MDN-Web/html-1.md
-              - Web-全局属性: front-end/MDN-Web/html-2.md
-              - Web-章节标签/文本标签: front-end/MDN-Web/html-3.md
-              - Web-a/img/table/form: front-end/MDN-Web/html-4.md
-              - Web-inline/block: front-end/MDN-Web/html-5.md
-          - CSS:
-              - 方方-基础概念: front-end/FF/5.md
-              - 方方-布局/float/flex/grid: front-end/FF/6.md
-              - 方方-定位: front-end/FF/7.md
-              - 方方-动画: front-end/FF/8.md
-              - Learn-第一步: front-end/MDN-Learn/css-1.md
-              - Learn-构建块: front-end/MDN-Learn/css-2.md
-              - Learn-布局1: front-end/MDN-Learn/css-layout-1.md
-              - Learn-布局2: front-end/MDN-Learn/css-layout-2.md
-              - Web-ref-property: front-end/MDN-Web/css-ref-1.md
-              - Web-ref-概念: front-end/MDN-Web/css-ref-2.md
-              - Web-关键概念: front-end/MDN-Web/css-2.md
-          - JavaScript:
-              - Learn-第一步: front-end/MDN-Learn/js-1.md
-              - Learn-构建块: front-end/MDN-Learn/js-2.md
-              - Learn-对象: front-end/MDN-Learn/js-3.md
-              - Web-ref: front-end/MDN-Web/js-ref.md
-              - Web-ref-built-ins: front-end/MDN-Web/js-ref-built-ins.md
-              - Web-闭包: front-end/MDN-Web/js-closure.md
-              - W3-DOM: front-end/Network/w3-dom.md
-              - W3-JavaScript: front-end/Network/w3-javascript.md
-              - W3-JS-Tutorial: front-end/Network/w3-js-tutorial.md
-              - W3c-JS-Number: front-end/Network/w3c-js-number.md
-              - W3c-JS-Math: front-end/Network/w3c-js-math.md
-              - W3c-JS-AJAX: front-end/Network/w3c-js-ajax.md
-              - W3c-JS-jQuery: front-end/Network/w3c-js-jquery.md
-              - 方方-概述/内存图: front-end/FF/10.md
-              - 方方-语法/数据类型/运算符: front-end/FF/11.md
-              - 方方-对象/对象分类: front-end/FF/12.md
-              - 方方-数组: front-end/FF/13.md
-              - 方方-函数: front-end/FF/14.md
-              - 方方-运算符/总结: front-end/FF/15.md
-              - 方方-DOM编程: front-end/FF/17.md
-              - 方方-封装DOM: front-end/FF/18.md
-              - 方方-DOM事件与事件委托: front-end/FF/19.md
-              - 方方-前后端分离: front-end/FF/20.md
-              - 方方-webpack: front-end/FF/21.md
-          - 算法:
-              - 方方-伪代码与流程图: front-end/FF/16.md
-          - Blog:
-              - 4-CSS知识总结: front-end/Blog/4.md
-              - 5-浅析URL: front-end/Blog/5.md
-              - 6-JavaScript的诞生: front-end/Blog/6.md
-              - 7-JS的基本语法: front-end/Blog/7.md
-              - 8-JS对象基本用法: front-end/Blog/8.md
-              - 9-JS函数的执行时机: front-end/Blog/9.md
-              - 10-jQuery的功能: front-end/Blog/10.md
-              - 11-Module Pattern: front-end/Blog/11.md
-              - 12-期中考试: front-end/Blog/12.md
-              - 13-浅析MVC: front-end/Blog/13.md
-          - 项目-前端:
-              - 1: front-end/Projects/1.md
-          - Books-前端:
-              - 锋利的jQuery: front-end/Books/锋利的jQuery.md
-              - 网道-JavaScript:
-                  - 1-入门篇: front-end/Books/网道-JavaScript/1.md
-                  - 2-数据类型: front-end/Books/网道-JavaScript/2.md
+  - 前端（放弃）:
+      - front-end/index.md
+      - 其他:
+          - 方方-杂项: front-end/FF/0.md
+          - 方方-快捷键/node.js: front-end/FF/1.md
+          - 方方-HTTP入门/请求与响应/node.js: front-end/FF/9.md
+          - 方方-vue: front-end/FF/22.md
+          - Learn-Web入门: front-end/MDN-Learn/1.md
+          - Learn-常见问题: front-end/MDN-Learn/10.md
+          - Web-HTTP: front-end/MDN-Web/http-1.md
+          - MDN-术语表: front-end/mdn-glossary.md
+          - 工具-前端:
+              - 常用软件: front-end/Others/Tools/software.md
+          - 语言:
+              - JSON: front-end/Others/Language/json.md
+      - Learn-大纲: front-end/MDN-Learn/0.md
+      - Web-大纲: front-end/MDN-Web/0.md
+      - HTML:
+          - 方方-语法/标签: front-end/FF/3.md
+          - 方方-重点标签: front-end/FF/4.md
+          - Learn-简介: front-end/MDN-Learn/html-1.md
+          - Web-元素: front-end/MDN-Web/html-1.md
+          - Web-全局属性: front-end/MDN-Web/html-2.md
+          - Web-章节标签/文本标签: front-end/MDN-Web/html-3.md
+          - Web-a/img/table/form: front-end/MDN-Web/html-4.md
+          - Web-inline/block: front-end/MDN-Web/html-5.md
+      - CSS:
+          - 方方-基础概念: front-end/FF/5.md
+          - 方方-布局/float/flex/grid: front-end/FF/6.md
+          - 方方-定位: front-end/FF/7.md
+          - 方方-动画: front-end/FF/8.md
+          - Learn-第一步: front-end/MDN-Learn/css-1.md
+          - Learn-构建块: front-end/MDN-Learn/css-2.md
+          - Learn-布局1: front-end/MDN-Learn/css-layout-1.md
+          - Learn-布局2: front-end/MDN-Learn/css-layout-2.md
+          - Web-ref-property: front-end/MDN-Web/css-ref-1.md
+          - Web-ref-概念: front-end/MDN-Web/css-ref-2.md
+          - Web-关键概念: front-end/MDN-Web/css-2.md
+      - JavaScript:
+          - Learn-第一步: front-end/MDN-Learn/js-1.md
+          - Learn-构建块: front-end/MDN-Learn/js-2.md
+          - Learn-对象: front-end/MDN-Learn/js-3.md
+          - Web-ref: front-end/MDN-Web/js-ref.md
+          - Web-ref-built-ins: front-end/MDN-Web/js-ref-built-ins.md
+          - Web-闭包: front-end/MDN-Web/js-closure.md
+          - W3-DOM: front-end/Network/w3-dom.md
+          - W3-JavaScript: front-end/Network/w3-javascript.md
+          - W3-JS-Tutorial: front-end/Network/w3-js-tutorial.md
+          - W3c-JS-Number: front-end/Network/w3c-js-number.md
+          - W3c-JS-Math: front-end/Network/w3c-js-math.md
+          - W3c-JS-AJAX: front-end/Network/w3c-js-ajax.md
+          - W3c-JS-jQuery: front-end/Network/w3c-js-jquery.md
+          - 方方-概述/内存图: front-end/FF/10.md
+          - 方方-语法/数据类型/运算符: front-end/FF/11.md
+          - 方方-对象/对象分类: front-end/FF/12.md
+          - 方方-数组: front-end/FF/13.md
+          - 方方-函数: front-end/FF/14.md
+          - 方方-运算符/总结: front-end/FF/15.md
+          - 方方-DOM编程: front-end/FF/17.md
+          - 方方-封装DOM: front-end/FF/18.md
+          - 方方-DOM事件与事件委托: front-end/FF/19.md
+          - 方方-前后端分离: front-end/FF/20.md
+          - 方方-webpack: front-end/FF/21.md
+      - 算法:
+          - 方方-伪代码与流程图: front-end/FF/16.md
+      - Blog:
+          - 4-CSS知识总结: front-end/Blog/4.md
+          - 5-浅析URL: front-end/Blog/5.md
+          - 6-JavaScript的诞生: front-end/Blog/6.md
+          - 7-JS的基本语法: front-end/Blog/7.md
+          - 8-JS对象基本用法: front-end/Blog/8.md
+          - 9-JS函数的执行时机: front-end/Blog/9.md
+          - 10-jQuery的功能: front-end/Blog/10.md
+          - 11-Module Pattern: front-end/Blog/11.md
+          - 12-期中考试: front-end/Blog/12.md
+          - 13-浅析MVC: front-end/Blog/13.md
+      - 项目:
+          - 1: front-end/Projects/1.md
+      - Books:
+          - 锋利的jQuery: front-end/Books/锋利的jQuery.md
+          - 网道-JavaScript:
+              - 1-入门篇: front-end/Books/网道-JavaScript/1.md
+              - 2-数据类型: front-end/Books/网道-JavaScript/2.md
 
 
