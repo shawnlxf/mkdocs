@@ -1,4 +1,4 @@
-
+* [mkdocs](study/tools/mkdocs.md)
 * 工作日：云听，B站；周六晚：youtube
 * 世界：虚拟矩阵
 
@@ -31,5 +31,7 @@
     | 22:00-22:30   | 睡觉                                                                                                 |
 
 
+??? abstract "收藏夹"
 
+    * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
 
