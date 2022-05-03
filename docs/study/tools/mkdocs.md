@@ -168,11 +168,16 @@
 
     !!! abstract
 
+        * abstract
         * summary
         * tldr
 
     !!! warning
 
+    !!! danger
+
     !!! bug
+
+    !!! example
 
     !!! quote

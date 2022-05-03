@@ -19,4 +19,4 @@
 
     ![Github Pages][Github Pages]
 
-  [Github Pages]: github/github-pages.png
+  [Github Pages]: github-images/github-pages.png

@@ -1,5 +1,6 @@
 * [mkdocs](study/tools/mkdocs.md)
-* 工作日：云听，B站；周六晚：youtube
+* 清晨，空闲时间出去散散步
+* 早起刷B站；工作日：云听，B站；周六晚：youtube
 * 世界：虚拟矩阵
 
 ??? note "健康三要素：起居有常，食疗，运动"
@@ -34,4 +35,5 @@
 ??? abstract "收藏夹"
 
     * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
-
+    * 做饭：[下厨房](https://www.xiachufang.com/)
+    * 视频：[哔哩哔哩](https://space.bilibili.com/143487021/fans/follow)

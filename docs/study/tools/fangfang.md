@@ -541,8 +541,8 @@ yarn global add git-open
         $ git remote set-url origin git@xxxxxx
         ```
 
-  [Github]: fangfang/github.png
-  [Git Rebase]: fangfang/git-rebase.png
+  [Github]: fangfang-images/github.png
+  [Git Rebase]: fangfang-images/git-rebase.png
 
 ## 5 markdown
 
@@ -555,7 +555,7 @@ yarn global add git-open
 
     ![Markdown][Markdown]
 
-  [Markdown]: fangfang/markdown.png
+  [Markdown]: fangfang-images/markdown.png
   
 
 

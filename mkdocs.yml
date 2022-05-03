@@ -55,6 +55,7 @@ nav:
       - 1-高血压: health/1.md
       - 2-预防冠心病/血栓: health/2.md
       - 宜忌: health/宜忌.md
+      - 关灯就睡觉: health/关灯就睡觉.md
       - 失眠调养/失眠症: health/失眠调养-失眠症.md
       - 失眠星人自救指南: health/失眠星人自救指南.md
       - 冠心病: health/冠心病.md
@@ -86,6 +87,8 @@ nav:
   - 生活:
       - 做菜:
           - 蒸菜: life/cooking/蒸菜.md
+          - 食谱: life/cooking/食谱.md
+      - 说明书: life/instructions.md
       - vpn: life/vpn.md
   - 前端（放弃）:
       - front-end/index.md

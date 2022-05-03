@@ -23,4 +23,4 @@
     ??? note "3. 视频 (看项目实践)"
 
         * youtube
-        * [哔哩哔哩](https://space.bilibili.com/143487021/fans/follow)
+        * 哔哩哔哩
