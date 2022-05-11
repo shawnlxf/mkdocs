@@ -1,15 +1,17 @@
 * [mkdocs](study/tools/mkdocs.md)
-* 清晨，空闲时间出去散散步
-* 早起刷B站；工作日：云听，B站；周六晚：youtube
+* 广播永不为奴
+* LCD永不为奴
+* 不买立省100%，等等党永远不亏
+* 休息时刷贴吧
 * 世界：虚拟矩阵
 
 ??? note "健康三要素：起居有常，食疗，运动"
 
     > 网址：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w)
 
-    1. 自我同情
+    1. 自我同情（观世音菩萨）
     2. 元宇宙（自然+医院+广播）
-    3. 松弛疗法（正念呼吸）：放松肌肉，调整呼吸，集中意念
+    3. 松弛疗法（正念呼吸）：放松肌肉，调整呼吸，集中意念（措手搓脚搓耳）
 
 ??? todo "作息时间"
 
@@ -34,6 +36,11 @@
 
 ??? abstract "收藏夹"
 
+    * 效率：[QQ邮箱](https://mail.qq.com/)
     * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
     * 做饭：[下厨房](https://www.xiachufang.com/)
     * 视频：[哔哩哔哩](https://space.bilibili.com/143487021/fans/follow)
+
+??? note "二氧化硫检测"
+
+    * 安全：香菇，南瓜子，山楂，菊花，黑木耳

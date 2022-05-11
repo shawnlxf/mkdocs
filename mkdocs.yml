@@ -61,7 +61,8 @@ nav:
       - 冠心病: health/冠心病.md
       - 做自己的心脑健康医生: health/做自己的心脑健康医生.md
       - 应季蔬果: health/应季蔬果.md
-#  - 工作:
+  - 工作:
+      - 三菱-PLC: work/三菱-PLC.md
   - 学习:
       - study/index.md
       - 个人管理:
@@ -90,6 +91,7 @@ nav:
           - 食谱: life/cooking/食谱.md
       - 说明书: life/instructions.md
       - vpn: life/vpn.md
+      - 显示器/防蓝光眼镜: life/moniter.md
   - 前端（放弃）:
       - front-end/index.md
       - 其他:
