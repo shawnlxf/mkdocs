@@ -28,8 +28,6 @@ extra:
       link: https://codepen.io/shawnlxf/pens/loved
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/shawn20111416
-    - icon: fontawesome/brands/youtube
-      link: https://youtube.com
 
 # Extensions
 markdown_extensions:
@@ -62,7 +60,11 @@ nav:
       - 做自己的心脑健康医生: health/做自己的心脑健康医生.md
       - 应季蔬果: health/应季蔬果.md
   - 工作:
+      - 事业单位:
+          - 面试: work/public-institution/interview.md
       - 三菱-PLC: work/三菱-PLC.md
+      - 八方汇: work/八方汇.md
+      - 煤气: work/煤气.md
   - 学习:
       - study/index.md
       - 个人管理:
@@ -89,6 +91,7 @@ nav:
       - 做菜:
           - 蒸菜: life/cooking/蒸菜.md
           - 食谱: life/cooking/食谱.md
+          - 买锅: life/cooking/买锅.md
       - 说明书: life/instructions.md
       - vpn: life/vpn.md
       - 显示器/防蓝光眼镜: life/moniter.md
