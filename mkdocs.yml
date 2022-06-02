@@ -48,8 +48,8 @@ markdown_extensions:
 
 # Page tree
 nav:
+  - index.md
   - 健康:
-      - index.md
       - 1-高血压: health/1.md
       - 2-预防冠心病/血栓: health/2.md
       - 宜忌: health/宜忌.md
@@ -62,11 +62,13 @@ nav:
   - 工作:
       - 事业单位:
           - 面试: work/public-institution/interview.md
-      - 三菱-PLC: work/三菱-PLC.md
+      - 三菱-PLC:
+          - work/三菱-PLC/index.md
+          - e-learning: work/三菱-PLC/e-learning.md
       - 八方汇: work/八方汇.md
       - 煤气: work/煤气.md
   - 学习:
-      - study/index.md
+      - 小鹤双拼: study/小鹤双拼.md
       - 个人管理:
           - 万维钢-精英日课1: study/personal-control/精英日课1.md
           - 精要主义: study/personal-control/精要主义.md
@@ -94,7 +96,9 @@ nav:
           - 买锅: life/cooking/买锅.md
       - 说明书: life/instructions.md
       - vpn: life/vpn.md
+      - 修电脑: life/computer.md
       - 显示器/防蓝光眼镜: life/moniter.md
+      - 购物: life/shopping.md
   - 前端（放弃）:
       - front-end/index.md
       - 其他:

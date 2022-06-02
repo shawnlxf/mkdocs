@@ -1,7 +1,4 @@
-## 1. 推荐软件 (tools)
-
-> windows 10
-
+## 1. 推荐软件
 
 ??? note "普通软件"
 
@@ -19,10 +16,12 @@
 
     * 浏览器： firefox, opera
 
-??? note "我的网站"
 
-    * MkDocs 
+## 2. windows 10
 
-        * 功能：记录，回顾
+!!! question "睡眠"
+
+    win+x 调出常用菜单 -> 对应按键
+
 
 
