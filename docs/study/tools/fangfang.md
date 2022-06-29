@@ -178,7 +178,7 @@
 
     ??? note "主题："
 
-        * Just Black
+        * Morpheon Dark
 
     ??? note "常用快捷键："
 

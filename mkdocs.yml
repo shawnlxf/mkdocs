@@ -50,6 +50,7 @@ markdown_extensions:
 nav:
   - index.md
   - 健康:
+      - 高度近视: health/高度近视.md
       - 1-高血压: health/1.md
       - 2-预防冠心病/血栓: health/2.md
       - 宜忌: health/宜忌.md
@@ -64,7 +65,12 @@ nav:
           - 面试: work/public-institution/interview.md
       - 三菱-PLC:
           - work/三菱-PLC/index.md
-          - e-learning: work/三菱-PLC/e-learning.md
+          - e-learning:
+              - PLC入门: work/三菱-PLC/e-learning/PLC入门.md
+              - MELSEC-F/Q系列基础: work/三菱-PLC/e-learning/MELSEC-系列基础.md
+              - 编程基础: work/三菱-PLC/e-learning/编程基础.md
+              - GX Works2基础: work/三菱-PLC/e-learning/GX-Works2基础.md
+              - GX Works2应用: work/三菱-PLC/e-learning/GX-Works2应用.md
       - 八方汇: work/八方汇.md
       - 煤气: work/煤气.md
   - 学习:
@@ -79,7 +85,7 @@ nav:
           - 2: study/english-words/2.md
           - 3: study/english-words/3.md
       - 工具:
-          - 常用软件: study/tools/software.md
+          - windows: study/tools/windows.md
           - git: study/tools/git.md
           - github: study/tools/github.md
           - mkdocs: study/tools/mkdocs.md
@@ -95,7 +101,6 @@ nav:
           - 食谱: life/cooking/食谱.md
           - 买锅: life/cooking/买锅.md
       - 说明书: life/instructions.md
-      - vpn: life/vpn.md
       - 修电脑: life/computer.md
       - 显示器/防蓝光眼镜: life/moniter.md
       - 购物: life/shopping.md

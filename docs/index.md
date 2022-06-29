@@ -1,13 +1,14 @@
 
 ??? abstract "收藏夹"
 
-    * 站内：[mkdocs](study/tools/mkdocs.md)
+    * 站内：[mkdocs](study/tools/mkdocs.md) | [windows](study/tools/windows.md) | [高度近视](health/高度近视.md)
     * 搜索：[百度](https://www.baidu.com/)
     * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog)
     * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w)
     * 效率：[QQ邮箱](https://mail.qq.com/)
     * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
     * 做饭：[下厨房](https://www.xiachufang.com/)
+    * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml)
     * 视频：[哔哩哔哩](https://space.bilibili.com/143487021/fans/follow) | [youtube](https://youtube.com)
     * 求职：[慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/))
     * 时政：[时事一点通](https://www.ssydt.com/article)
@@ -15,6 +16,8 @@
 !!! tip
 
     * 许名祥：与世无争，保持年轻，儿子都读高中了
+    * 注意坐姿
+    * 晚上脚水肿
     * 非必要不看LCD手机：LCD手机 < 15分钟；墨水屏手机 < 2小时
     * 看电脑多眨眼，多活动脚趾，对扣手指
     * 不买立省100%，等等党永远不亏
