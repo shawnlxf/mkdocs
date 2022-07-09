@@ -2,16 +2,13 @@
 ??? abstract "收藏夹"
 
     * 站内：[mkdocs](study/tools/mkdocs.md) | [windows](study/tools/windows.md) | [高度近视](health/高度近视.md)
-    * 搜索：[百度](https://www.baidu.com/)
-    * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog)
-    * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w)
-    * 效率：[QQ邮箱](https://mail.qq.com/)
+    * 搜索：[百度](https://www.baidu.com/) | [天涯kk](https://github.com/shengcaishizhan/kkndme_tianya)
+    * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog) | [博客园](https://www.cnblogs.com/shawnlxf/)
+    * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w) | [下厨房](https://www.xiachufang.com/)
+    * 工作：[QQ邮箱](https://mail.qq.com/) | [乔布简历](https://cv.qiaobutang.com/) | [慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/)) | [时事一点通](https://www.ssydt.com/article)
     * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
-    * 做饭：[下厨房](https://www.xiachufang.com/)
-    * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml)
+    * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml) | [苏州音乐广播](https://www.ximalaya.com/radio/65)
     * 视频：[哔哩哔哩](https://space.bilibili.com/143487021/fans/follow) | [youtube](https://youtube.com)
-    * 求职：[慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/))
-    * 时政：[时事一点通](https://www.ssydt.com/article)
 
 !!! tip
 
@@ -26,11 +23,12 @@
 
 !!! warning "身体警报"
 
-    | 日期 | 时间      | 事件                 |
-    | :--- | :-------- | :------------------- |
-    | 5.13 | 大约6点多 | 心动过速             |
-    | 5.19 | 2:00      | 小便，心动过速       |
-    | 5.27 | 19:17     | 看电脑时突然一阵头晕 |
+    | 日期 | 时间      | 事件                                                                  |
+    | :--- | :-------- | :-------------------------------------------------------------------- |
+    | 5.13 | 大约6点多 | 心动过速                                                              |
+    | 5.19 | 2:00      | 小便，心动过速                                                        |
+    | 5.27 | 19:17     | 看电脑时突然一阵头晕                                                  |
+    | 6.9  | 1:30      | 心脏跳得厉害，心前区难受，脖子左侧发紧。白天吃了两个鸡蛋，120克虾仁。 |
 
 ??? summary "健康三要素：起居有常，食疗，运动"
 
@@ -110,6 +108,19 @@
         * B站
         * youtube
 
+??? quote "英语学习"
+
+    背词顺序：
+
+    1. 正序记忆
+    2. 逆序记忆
+    3. 乱序记忆
+
+    单词只背一遍（记中文意思2-3个）
+
+    检查（白纸盖上中文意思）
+
+    英译汉是提高阅读和翻译最好的方法，最笨的方法就是最好的方法
 
 ??? note "二氧化硫检测"
 

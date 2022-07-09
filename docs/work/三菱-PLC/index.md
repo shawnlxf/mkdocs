@@ -1,4 +1,6 @@
 
+## 三菱
+
 * GX Works3对MELSEC iQ-R/iQ-F系列通用。
 * GX Works2对MELSEC-Q/L/F系列通用。
 
@@ -10,6 +12,13 @@
     * [电工学习网-三菱PLC](https://www.diangon.com/wenku/plc/sl/)
     * [PLC之家-三菱PLC](http://www.plc100.com/sanling/)
     * [电工天下-PLC](https://www.dgjs123.com/plc/)
+
+??? note "微信读书 搜索"
+
+    * 中间继电器 接线
+    * 锁机模式 plc
+    * 触点无限使用
+    * mcr n1
 
 ??? question "GX Works2 存储器空间或桌面堆栈不足"
 
@@ -38,3 +47,13 @@
     * 570-986818410
     * 804-999559933
     * 998-598638072
+
+## 松下
+
+??? summary "搜索：松下 PLC"
+
+    * [松下PLC官网](https://device.panasonic.cn/ac/c/fasys/plc/)
+    * [我要自学网](https://www.51zxw.net/list.aspx?cid=720&isappinstalled=0)
+    * [电工学习网](https://www.22plc.com/xuexi/rumen/863.html)
+    * [工控论坛](http://bbs.gongkong.com/product/PanasonicPLC.htm)
+    * [PLC之家-松下PLC](http://www.plc100.com/songxia/)

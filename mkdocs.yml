@@ -63,6 +63,8 @@ nav:
   - 工作:
       - 事业单位:
           - 面试: work/public-institution/interview.md
+      - 经历: work/经历.md
+      - 电工: work/电工.md
       - 三菱-PLC:
           - work/三菱-PLC/index.md
           - e-learning:
