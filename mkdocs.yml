@@ -73,6 +73,8 @@ nav:
               - 编程基础: work/三菱-PLC/e-learning/编程基础.md
               - GX Works2基础: work/三菱-PLC/e-learning/GX-Works2基础.md
               - GX Works2应用: work/三菱-PLC/e-learning/GX-Works2应用.md
+          - books:
+              - 电气控制与PLC应用（第3版）: work/三菱-PLC/books/电气控制与PLC应用（第3版）.md
       - 八方汇: work/八方汇.md
       - 煤气: work/煤气.md
   - 学习:
@@ -103,7 +105,7 @@ nav:
           - 食谱: life/cooking/食谱.md
           - 买锅: life/cooking/买锅.md
       - 说明书: life/instructions.md
-      - 修电脑: life/computer.md
+      - 修电脑/手机: life/computer.md
       - 显示器/防蓝光眼镜: life/moniter.md
       - 购物: life/shopping.md
   - 前端（放弃）:
