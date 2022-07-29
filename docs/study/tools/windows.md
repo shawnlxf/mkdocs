@@ -67,9 +67,15 @@
 
 ## 4. vpn
 
+??? note "[freefq](https://github.com/freefq/free)"
+
+    * github 搜索 翻墙，按最近更新时间排序。看 freefq，因为有免费节点。
+    * github 找免费节点、机场、你懂的网站：搜 free，免费节点(Recently updated)，最新网址
+    * chrome插件: "GitHub加速"，试了一次反而上不了github，可能哪里配置不对。
+
+* [自由门](https://dongtaiwang.com/loc/mobile/?pm=y)
 * [玛瑙云免费加速器](https://manaocloud.xyz)
 * 789vpn
-* [自由门](https://dongtaiwang.com/loc/mobile/?pm=y)
 
 !!! question "vpn授权时无法点击“确定”按键"
 

@@ -10,7 +10,7 @@ repo_name: shawnlxf/mkdocs
 repo_url: https://github.com/shawnlxf/mkdocs
 
 # Copyright
-copyright: Copyright &copy; 2020 Shawn
+copyright: Copyright &copy; 2020 - 2022 Shawn
 
 # Configuration
 theme:
@@ -28,6 +28,8 @@ extra:
       link: https://codepen.io/shawnlxf/pens/loved
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/shawn20111416
+    - icon: fontawesome/brands/youtube
+      link: https://space.bilibili.com/143487021
 
 # Extensions
 markdown_extensions:
@@ -108,6 +110,7 @@ nav:
       - 修电脑/手机: life/computer.md
       - 显示器/防蓝光眼镜: life/moniter.md
       - 购物: life/shopping.md
+      - 独立日: life/独立日.md
   - 前端（放弃）:
       - front-end/index.md
       - 其他:

@@ -2,13 +2,14 @@
 ??? abstract "收藏夹"
 
     * 站内：[mkdocs](study/tools/mkdocs.md) | [windows](study/tools/windows.md) | [高度近视](health/高度近视.md)
-    * 搜索：[百度](https://www.baidu.com/) | [天涯kk](https://github.com/shengcaishizhan/kkndme_tianya)
+    * 搜索：[百度](https://www.baidu.com/) | [天涯kk](https://github.com/shengcaishizhan/kkndme_tianya) | [freefq](https://github.com/freefq/free) | [mkdocs图标](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social)
     * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog) | [博客园](https://www.cnblogs.com/shawnlxf/)
     * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w) | [下厨房](https://www.xiachufang.com/)
     * 工作：[QQ邮箱](https://mail.qq.com/) | [乔布简历](https://cv.qiaobutang.com/) | [慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/)) | [时事一点通](https://www.ssydt.com/article)
     * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
     * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml) | [苏州音乐广播](https://www.ximalaya.com/radio/65)
-    * 视频：[哔哩哔哩](https://space.bilibili.com/143487021/fans/follow) | [youtube](https://youtube.com)
+    * 视频：[youtube](https://youtube.com) | [独立日](https://mp.weixin.qq.com/s/Rwp6cA1FCljchSpG4H0MDg) | [下载](https://bilibili.iiilab.com/)
+    * 翻译：[谷歌](https://translate.google.com/) | [百度](https://fanyi.baidu.com/)
 
 !!! tip
 
