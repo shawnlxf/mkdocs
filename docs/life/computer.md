@@ -1,4 +1,6 @@
 
+* Office用工具激活就可以哦
+
 ??? question "删除需要权限"
 
     ??? info "图"
@@ -16,6 +18,10 @@
     3. 输入explorer.exe，点击确定。
 
         ![][不显示桌面]
+
+??? question "win10 复制粘贴无法使用"
+
+    可能方法：ComfortClipboardSetup.exe 安装之后再卸载，重启。
 
 
 ??? question "戴尔 自动修复无法修复你的电脑"

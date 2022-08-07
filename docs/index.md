@@ -1,35 +1,36 @@
 
 ??? abstract "收藏夹"
 
-    * 站内：[mkdocs](study/tools/mkdocs.md) | [windows](study/tools/windows.md) | [高度近视](health/高度近视.md)
-    * 搜索：[百度](https://www.baidu.com/) | [天涯kk](https://github.com/shengcaishizhan/kkndme_tianya) | [freefq](https://github.com/freefq/free) | [mkdocs图标](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social)
-    * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog) | [博客园](https://www.cnblogs.com/shawnlxf/)
-    * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w) | [下厨房](https://www.xiachufang.com/)
-    * 工作：[QQ邮箱](https://mail.qq.com/) | [乔布简历](https://cv.qiaobutang.com/) | [慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/)) | [时事一点通](https://www.ssydt.com/article)
-    * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
-    * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml) | [苏州音乐广播](https://www.ximalaya.com/radio/65)
-    * 视频：[youtube](https://youtube.com) | [独立日](https://mp.weixin.qq.com/s/Rwp6cA1FCljchSpG4H0MDg) | [下载](https://bilibili.iiilab.com/)
-    * 翻译：[谷歌](https://translate.google.com/) | [百度](https://fanyi.baidu.com/)
+    * 待办：[freefq](https://github.com/freefq/free) | [mkdocs图标](https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social) | [天涯kk](https://github.com/shengcaishizhan/kkndme_tianya)
+    * 站内：[mkdocs](study/tools/mkdocs.md) | [windows](study/tools/windows.md) | [高度近视](health/高度近视.md) | [购物](life/shopping.md)
+    * 搜索：[google](https://www.google.com/) | [百度](https://www.baidu.com/)
 
-!!! tip
+    ??? note "工作"
 
-    * 许名祥：与世无争，保持年轻，儿子都读高中了
-    * 注意坐姿
-    * 晚上脚水肿
-    * 非必要不看LCD手机：LCD手机 < 15分钟；墨水屏手机 < 2小时
-    * 看电脑多眨眼，多活动脚趾，对扣手指
-    * 不买立省100%，等等党永远不亏
-    * 世界：虚拟矩阵
-    * 高度近视的人应选择室内工作的职业。如一般服务行业、商店、学校、机关、企业的行政部门、仓库管理员等，这些行业没有重体力劳动，且活动量也较小，用眼近距离工作的时间短，有利于近视眼的稳定。应尽可能避免选择近距离工作时间长且比较精细的职业。如修表人员、雕刻人员、医院的超声波室人员、外科大夫等。
+        * 邮箱：[QQ邮箱](https://mail.qq.com/)
+        * 翻译：[谷歌](https://translate.google.com/) | [百度](https://fanyi.baidu.com/)
+        * 压缩：[迅捷](https://yasuo.xunjiepdf.com/img/) | [TinyPNG](https://tinify.cn/)
+        * 博客：[csdn](https://blog.csdn.net/u011290127?type=blog) | [博客园](https://www.cnblogs.com/shawnlxf/)
+        * 求职：[乔布简历](https://cv.qiaobutang.com/) | [慈溪人才网](https://www.cxhr.com/)([手机版](http://m.cxhr.com/)) | [时事一点通](https://www.ssydt.com/article)
 
-!!! warning "身体警报"
+    ??? note "生活"
 
-    | 日期 | 时间      | 事件                                                                  |
-    | :--- | :-------- | :-------------------------------------------------------------------- |
-    | 5.13 | 大约6点多 | 心动过速                                                              |
-    | 5.19 | 2:00      | 小便，心动过速                                                        |
-    | 5.27 | 19:17     | 看电脑时突然一阵头晕                                                  |
-    | 6.9  | 1:30      | 心脏跳得厉害，心前区难受，脖子左侧发紧。白天吃了两个鸡蛋，120克虾仁。 |
+        * 健康：[健康-人民网](http://health.people.com.cn/) | [强心复健操](https://www.bilibili.com/video/BV1Lr4y1j7yj?spm_id_from=333.999.0.0&vd_source=2a6888cb74bf84455ed158e3468980a1)([来源](https://mp.weixin.qq.com/s/poOsmAu7AOxDCkkvd5-m9w)) | [下厨房](https://www.xiachufang.com/)
+        * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml) | [苏州音乐广播](https://www.ximalaya.com/radio/65)
+        * 视频：[youtube](https://youtube.com) | [独立日](https://mp.weixin.qq.com/s/Rwp6cA1FCljchSpG4H0MDg) | [下载](https://bilibili.iiilab.com/) | [人人](https://yyets.dmesg.app/)
+        * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
+
+    ??? note "软件"
+
+        * Pomodoro: [Pomotroid](https://splode.github.io/pomotroid/) | [Pomatez](https://roldanjr.github.io/pomatez/)
+        * blue light filter: [Eye Saver](https://www.eye-saver.net/) | 护眼宝
+        * notepad++, theme, 字体
+        * color picker: [Just Color Picker](https://annystudio.com/software/colorpicker/) | [ColorPicker](https://github.com/martinchrzan/ColorPicker) | [Colorpicker](https://colorpicker.fr/)
+        * image compressor: [Caesium](https://saerasoft.com/caesium)
+        * image viewer
+        * input method
+        * [Obsidian](https://obsidian.md/)
+        * 其他：ToDesk
 
 ??? summary "健康三要素：起居有常，食疗，运动"
 
@@ -88,6 +89,26 @@
     | 21:00       | 洗漱                                                                                                 |
     | 21:45       | 冥想                                                                                                 |
     | 22:00-22:30 | 睡觉                                                                                                 |
+
+!!! tip
+
+    * 许名祥：与世无争，保持年轻，儿子都读高中了
+    * 注意坐姿
+    * 晚上脚水肿
+    * 非必要不看LCD手机：LCD手机 < 15分钟；墨水屏手机 < 2小时
+    * 看电脑多眨眼，多活动脚趾，对扣手指
+    * 不买立省100%，等等党永远不亏
+    * 世界：虚拟矩阵
+    * 高度近视的人应选择室内工作的职业。如一般服务行业、商店、学校、机关、企业的行政部门、仓库管理员等，这些行业没有重体力劳动，且活动量也较小，用眼近距离工作的时间短，有利于近视眼的稳定。应尽可能避免选择近距离工作时间长且比较精细的职业。如修表人员、雕刻人员、医院的超声波室人员、外科大夫等。
+
+!!! warning "身体警报"
+
+    | 日期 | 时间      | 事件                                                                  |
+    | :--- | :-------- | :-------------------------------------------------------------------- |
+    | 5.13 | 大约6点多 | 心动过速                                                              |
+    | 5.19 | 2:00      | 小便，心动过速                                                        |
+    | 5.27 | 19:17     | 看电脑时突然一阵头晕                                                  |
+    | 6.9  | 1:30      | 心脏跳得厉害，心前区难受，脖子左侧发紧。白天吃了两个鸡蛋，120克虾仁。 |
 
 
 ??? abstract "学习途径"
