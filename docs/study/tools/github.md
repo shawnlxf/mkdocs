@@ -1,6 +1,39 @@
 * [GitHub pages CNAME file](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site)
-* [GitHub中文帮助](https://help.github.com/cn/github)
-* [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages)
+
+??? summary "[GitHub Docs](https://docs.github.com/en)"
+
+    * Authentication
+        * Connecting to GitHub with SSH
+
+??? question "git push 失败"
+
+    ??? quote "[参考](https://www.v2ex.com/t/841032)"
+
+        * [一文让你了解如何为 Git 设置代理](https://ericclose.github.io/git-proxy-config.html)
+        * [Correct way to set git proxy](https://www.wuyiting.cn/blog/Correct%20way%20to%20set%20git%20proxy)
+
+    ??? info "1"
+
+        ![][ssh-problem-1]
+        ![][ssh-problem-2]
+
+        ## 解决方法
+
+        创建 ~/.ssh/config 文件，添加
+
+        ```
+        Host github.com
+            User git
+            ProxyCommand connect -H 127.0.0.1:8580 %h %p
+        ```
+
+    ??? info "2"
+
+        ![][ssh-problem-3]
+
+        ## 解决方法
+
+        删除并生成新的 SSH key
 
 
 ??? question "如何使用 GitHub Pages 预览 HTML"
@@ -20,3 +53,6 @@
     ![Github Pages][Github Pages]
 
   [Github Pages]: github-images/github-pages.png
+  [ssh-problem-1]: github-images/ssh-problem-1.png
+  [ssh-problem-2]: github-images/ssh-problem-2.png
+  [ssh-problem-3]: github-images/ssh-problem-3.png

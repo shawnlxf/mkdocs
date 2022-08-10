@@ -19,6 +19,7 @@
         * 直播：[央广网](http://www.cnr.cn/) | [CCTV](https://tv.cctv.com/index.shtml) | [苏州音乐广播](https://www.ximalaya.com/radio/65)
         * 视频：[youtube](https://youtube.com) | [独立日](https://mp.weixin.qq.com/s/Rwp6cA1FCljchSpG4H0MDg) | [下载](https://bilibili.iiilab.com/) | [人人](https://yyets.dmesg.app/)
         * 购物：[淘宝](https://www.taobao.com/) | [京东](https://www.jd.com/) | [什么值得买](https://www.smzdm.com/)
+        * 下棋：[chess](https://lichess.org/)
 
     ??? note "软件"
 
@@ -29,7 +30,6 @@
         * image compressor: [Caesium](https://saerasoft.com/caesium)
         * image viewer
         * input method
-        * [Obsidian](https://obsidian.md/)
         * 其他：ToDesk
 
 ??? summary "健康三要素：起居有常，食疗，运动"
@@ -101,7 +101,7 @@
     * 世界：虚拟矩阵
     * 高度近视的人应选择室内工作的职业。如一般服务行业、商店、学校、机关、企业的行政部门、仓库管理员等，这些行业没有重体力劳动，且活动量也较小，用眼近距离工作的时间短，有利于近视眼的稳定。应尽可能避免选择近距离工作时间长且比较精细的职业。如修表人员、雕刻人员、医院的超声波室人员、外科大夫等。
 
-!!! warning "身体警报"
+??? warning "身体警报"
 
     | 日期 | 时间      | 事件                                                                  |
     | :--- | :-------- | :-------------------------------------------------------------------- |
